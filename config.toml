@@ -10,7 +10,7 @@ relativeURLs = true
 [params]
   description = "Radiant Earth Foundation is a nonprofit technology company working to expand access to geospatial data and machine learning models that can be used to address the impacts of climate change and support conservation efforts."
   copyright = "Copyright © 2023 Radiant Earth Foundation"
-  dark = "off"
+  dark = "auto"
   highlight = true
 
 [menu]
