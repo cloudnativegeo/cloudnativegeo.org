@@ -1,5 +1,5 @@
-baseURL = "https://radiant.earth"
-title = "Radiant Earth Foundation"
+baseURL = "https://cloudnativegeo.org"
+title = "Cloud-native Geospatial Foundation"
 theme = "etch"
 languageCode = "en-US"
 enableInlineShortcodes = true
@@ -8,7 +8,7 @@ pygmentsUseClasses = true
 relativeURLs = true
 
 [params]
-  description = "Radiant Earth Foundation is a nonprofit technology company working to expand access to geospatial data and machine learning models that can be used to address the impacts of climate change and support conservation efforts."
+  description = "Expanding access to geospatial data with commonly-used data formats and HTTP."
   copyright = "Copyright © 2023 Radiant Earth Foundation"
   dark = "auto"
   highlight = true
