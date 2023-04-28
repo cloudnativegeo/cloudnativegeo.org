@@ -1,0 +1,83 @@
+{{ if not (eq .Site.Params.dark "on") -}}
+@media (prefers-color-scheme: dark) {
+{{ end -}}
+html {
+    scrollbar-color: #6c6c6c #2e2e2e;
+}
+
+body {
+    color: #CCC;
+    background: #2f343b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header hr {
+    background-color: #666;
+    border: 0 none;
+    color: #666;
+    height: 1px;
+    clear:both;
+}
+
+g#cng-logo-text path, g#cng-logo-text polygon {
+    fill:#fff;
+}
+a {
+    color: #AACBEA;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #53B4FF;
+    text-decoration: none;
+    transition: color .2s ease-in;
+}
+
+h1#logo a, h1#logo {
+    background-image: url('/img/ref-logo-white.svg');
+}
+
+main#content p {
+    color: #ccc;
+}
+
+main#content hr {
+    background: #666;
+}
+
+.showcase-column h3 {
+    border-bottom:1px solid #666;
+}
+
+main#content #toc h4 {
+    color: #d4d4d4;
+}
+
+main#content ul#posts small {
+    color: #CCC;
+}
+
+header#banner nav ul li.active a{
+    color: #CCC;
+}
+
+header#banner nav ul li.active a:hover{
+    color: #CCC;
+}
+
+main#content header#post-header div {
+    color: #999;
+}
+
+footer#footer {
+    color: #CCC;
+}
+
+ul#funderlogos li {
+    background-color:#fff;
+}
+
+{{- if not (eq .Site.Params.dark "on") -}}
+}
+{{- end -}}

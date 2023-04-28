@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article {{if eq .Title "About Radiant Earth Foundation"}}id="aboutpage"{{ end }}>
+    <header id="post-header">
+        <h1>{{ .Title }}</h1>
+    </header>
+    {{- .Content -}}
+
+</article>
+{{ end }}

@@ -1,0 +1,54 @@
+baseURL = "https://radiant.earth"
+title = "Radiant Earth Foundation"
+theme = "etch"
+languageCode = "en-US"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+relativeURLs = true
+
+[params]
+  description = "Radiant Earth Foundation is a nonprofit technology company working to expand access to geospatial data and machine learning models that can be used to address the impacts of climate change and support conservation efforts."
+  copyright = "Copyright © 2023 Radiant Earth Foundation"
+  dark = "off"
+  highlight = true
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "home"
+    title = "home"
+    pageref = "/"
+    weight = 5
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "about"
+    pageref = "/about"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    title = "blog"
+    pageref = "/blog"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "donate"
+    name = "donate"
+    title = "donate"
+    pageref = "/donate"
+    weight = 30
+
+
+[permalinks]
+  blog = "blog/:year/:month/:slug/"
+
+[markup.goldmark.renderer]
+  # Allow HTML in Markdown
+  unsafe = true
+
+  [markup.tableOfContents]
+    ordered = true

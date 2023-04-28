@@ -1,0 +1,128 @@
+@media (min-width: 770px) {
+body {
+    width: 100%;
+    line-height: 1.5;
+}
+
+iframe {
+    margin:2em 0 0 20%;
+}
+
+div#placeholder {
+    width:40%;
+}
+
+header#banner, main#content p, main#content h2, footer#footer, main ul#homepage-blog, article, ul#posts {
+    max-width:680px;
+    margin-left: auto;
+    margin-right: auto;
+    clear:both;
+}
+
+main#content hr {
+    width: 108%;
+    margin-left: -4%;
+}
+
+header#banner nav {
+    display: inline-block;
+    float:right;
+    display: flex;
+    height:60px;
+}
+
+header#banner nav ul {
+    margin: 0;
+}
+
+header#banner nav ul li {
+    display: inline;
+    margin: 0 0 0 1em;
+}
+
+h1#logo {
+    margin: .2em 0 .5em 0;
+    width: 280px;
+}
+
+/* index.html styles */
+header#banner h2 {
+    font-size: 25px;
+    font-size: 2.5rem;
+}
+
+main #homepage h2 {
+    font-size: 25px;
+    font-size: 2.5rem;
+    padding:1em 0 0 0;
+    text-align: center;
+}
+
+
+main #homepage-showcase {
+    max-width: 80%;
+}
+
+
+.showcase-column {
+    width: 33.33%;
+    margin:0;
+    padding: 0 1em;
+    float: left;
+}
+
+/* single.html styles */
+main#content header#post-header h1 {
+    font-size: 24px;
+    font-size: 2.4rem;
+}
+
+main#content img {
+/*    max-width: 108%;
+    margin-left: -3.8%;
+*/}
+
+main#content figure {
+    margin-left: -3.8%;
+}
+
+main#content figure img {
+    max-width: 108%;
+}
+
+main#content pre {
+    width: 108%;
+    margin-left: -3.8%;
+    padding: 1.5rem 2.2rem;
+}
+
+main#content .team-name-title {
+    text-align: center;
+    max-width: 30%;
+    float:left;
+    display:block;
+    clear:both;
+}
+
+main#content .team-description {
+    max-width: 66%;
+    float:left;
+    display:block;
+    font-size: 90%;
+    margin:0 0 10% 4%;
+}
+
+main#content .board-member {
+    width:33%;
+    display: block;
+    padding:0 2%;
+    margin: 0 auto 2em auto;
+    float: left;
+    height:16em;
+}
+
+ul#funderlogos li {
+    height:100px;
+}
+
+}
