@@ -50,6 +50,10 @@ path#hex {
     fill:url(#CNGGradient);
 }
 
+path#hex:hover {
+    fill:#0B5FBF;
+}
+
 header#banner {
     margin: 25px 0;
 }
