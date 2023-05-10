@@ -3,7 +3,7 @@ slug = "/"
 title = "Cloud-native Geospatial Foundation"
 +++
 
-The Cloud-Native Geospatial Foundation is a forthcoming initiative from [Radiant Earth](https://radiant.earth) created to increase adoption of highly efficient approaches to working with geospatial data in public cloud environments. 
+The Cloud-native Geospatial Foundation is a forthcoming initiative from [Radiant Earth](https://radiant.earth) created to increase adoption of highly efficient approaches to working with geospatial data in public cloud environments. 
 
 Please enter your email address below to receive updates as we begin operations.
 
@@ -51,7 +51,7 @@ There are two primary benefits to cloud-native geospatial data:
 Competition within the public cloud sector has reliably led to reduction in object storage costs, continual improvement in performance, and a commodification of services. These trends combine to make public cloud object storage the best available technology to expand access to planetary-scale volumes of data for the foreseeable future.
 
 ### Why is Radiant Earth doing this?
-The Cloud-Native Geo Foundation is an expansion of Radiant Earth's work to support the community of users that have adopted the SpatioTemporal Asset Catalog (STAC) metadata specification. Since its release in May 2021, STAC has been widely adopted by both public and private sector organizations (including Microsoft, Google, AWS, NASA, MAXAR, Planet, Esri, and Natural Resources Canada). The rapid progress of STAC has been made possible through a variety of activities, including:
+The Cloud-native Geo Foundation is an expansion of Radiant Earth's work to support the community of users that have adopted the SpatioTemporal Asset Catalog (STAC) metadata specification. Since its release in May 2021, STAC has been widely adopted by both public and private sector organizations (including Microsoft, Google, AWS, NASA, MAXAR, Planet, Esri, and Natural Resources Canada). The rapid progress of STAC has been made possible through a variety of activities, including:
 
 - Development sprints
 - Paid fellowships for software developers
@@ -60,7 +60,7 @@ The Cloud-Native Geo Foundation is an expansion of Radiant Earth's work to suppo
 - Creation and provision of open source tools and utilities
 - Engagement with other community stakeholders such as the [Open Geospatial Consortium](https://ogc.org)
 
-The Cloud-Native Geo Foundation will support similar coordination for other cloud-native projects. 
+The Cloud-native Geo Foundation will support similar coordination for other cloud-native projects. 
 
 ### What does success look like?
 There are a number of ways to measure adoption of cloud-native geospatial data, including:
