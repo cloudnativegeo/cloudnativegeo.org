@@ -43,7 +43,7 @@ Examples of cloud-native geospatial data formats include:
 - [PMTiles](https://protomaps.com/docs/pmtiles)
 
 ### What are the benefits of cloud-native geospatial data?
-1. **It's faster for users.** Cloud-native formats allow people to “bring their compute to the data” within a cloud environment. When data is hosted in a public cloud, people can work with it without needing to download and store their own copies. This saves users' time and money, lowering the cost of research and and accelerating innovation.
+1. **It's faster for users.** Cloud-native formats allow people to “bring their compute to the data” within a cloud environment. When data is hosted in a public cloud, people can work with it without needing to download and store their own copies. This saves users time and money, lowering the cost of research and and accelerating innovation.
 2. **It's easier to maintain for data providers.** Cloud-native formats take advantage of the performance, scalability, and durability of generic cloud object storage services. This allows data providers to make data available without needing to run and maintain their own servers, databases, or proprietary APIs. 
 2. **It's easy to build tools on top of it.** Because cloud-native formats allow efficient access to data over HTTP, they enable the creation of new web-based tools that can interact with large volumes of remotely stored data. For example, the availability of data in Cloud-optimized GeoTIFFs has led to the creation of a [wide array of new open source tools and software libraries](https://www.cogeo.org/#implementations). This increased diversity of open source and browser-based tools that can work with data is necessary to increase the size and diversity of the Earth science community.
 
@@ -75,8 +75,6 @@ We will work with members of our community to identify success metrics that we c
 ### How can I help?
 There are three ways you can help right now:
 
-1. Please consider filling out our [Cloud-native Geospatial Community survey](https://forms.gle/JrkVWE1qKYFL7RCC7)
+1. Fill out our [Cloud-native Geospatial Community survey](https://forms.gle/JrkVWE1qKYFL7RCC7)
 2. Send us an email at hello@cloudnativegeo.org if you have specific ideas of how you would like to contribute
 3. Donate to [Radiant Earth](https://radiant.earth/donate/)
-
-Otherwise, watch this space. We will be announcing more soon.
