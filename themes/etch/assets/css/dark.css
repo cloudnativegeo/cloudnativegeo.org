@@ -20,9 +20,6 @@ header hr {
     clear:both;
 }
 
-g#cng-logo-text path, g#cng-logo-text polygon {
-    fill:#fff;
-}
 a {
     color: #AACBEA;
     text-decoration: underline;

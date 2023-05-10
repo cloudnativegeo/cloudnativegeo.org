@@ -12,7 +12,7 @@ div#placeholder {
     width:40%;
 }
 
-header#banner, main#content p, main#content h2, footer#footer, main ul#homepage-blog, article, ul#posts {
+header#banner, main#content p, main#content h2, main#content h3, footer#footer, main ul#homepage-blog, main#content ol, main#content ul, article, ul#posts, #mc_embed_signup {
     max-width:680px;
     margin-left: auto;
     margin-right: auto;
