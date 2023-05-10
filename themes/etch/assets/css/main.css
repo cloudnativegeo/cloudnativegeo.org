@@ -56,9 +56,9 @@ input#mce-EMAIL {
     width:50%;
     padding:.4em;
     box-sizing: border-box;
-    border:none;
+    border:1px solid #24292E;
     border-radius: 4px;
-    margin-right:.5em;
+    margin:0 .5em 0 .1em;
 }
 
 #mc-embedded-subscribe {
@@ -219,6 +219,9 @@ header#banner nav ul li:first-child.hide {
     display:none;
 }
 
+main {
+    margin-bottom:2em;
+}
 
 main#content h1,
 main#content h2,
