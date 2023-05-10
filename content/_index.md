@@ -40,18 +40,19 @@ Examples of cloud-native geospatial data formats include:
 - [GeoParquet](https://geoparquet.org)
 - [Cloud-optimized Point Cloud (COPC)](https://copc.io)
 - [GeoZarr](https://github.com/zarr-developers/geozarr-spec)
+- [PMTiles](https://protomaps.com/docs/pmtiles)
 
 ### What are the benefits of cloud-native geospatial data?
 There are two primary benefits to cloud-native geospatial data:
 
 1. Cloud-native formats allow people to “bring their compute to the data” within the cloud environment. When data is hosted in a public cloud, users benefit from access to scalable and parallelizable computing resources that are physically proximate to the data. This allows users to save time and money because they do not need to transfer and copy very large volumes of data before starting a project.
-2. Because cloud-native formats allow efficient access to data over HTTP, they enable the creation of new tools that can interact with large volumes of remotely stored data. For example, the availability of data in Cloud-optimized GeoTIFFs has led to the creation of a [wide array of new open source tools and software libraries](https://www.cogeo.org/#implementations). This increased diversity of open source and browser-based tools that can work with data is necessary to increase the size and diversity of the broader Earth science community.
+2. Because cloud-native formats allow efficient access to data over HTTP, they enable the creation of new tools that can interact with large volumes of remotely stored data. For example, the availability of data in Cloud-optimized GeoTIFFs has led to the creation of a [wide array of new open source tools and software libraries](https://www.cogeo.org/#implementations). This increased diversity of open source and browser-based tools that can work with data is necessary to increase the size and diversity of the Earth science community.
 
 ### What are the benefits of cloud object storage?
 Competition within the public cloud sector has reliably led to reduction in object storage costs, continual improvement in performance, and a commodification of services. These trends combine to make public cloud object storage the best available technology to expand access to planetary-scale volumes of data for the foreseeable future.
 
 ### Why is Radiant Earth doing this?
-The Cloud-native Geo Foundation is an expansion of Radiant Earth's work to support the community of users that have adopted the SpatioTemporal Asset Catalog (STAC) metadata specification. Since its release in May 2021, STAC has been widely adopted by both public and private sector organizations (including Microsoft, Google, AWS, NASA, MAXAR, Planet, Esri, and Natural Resources Canada). The rapid progress of STAC has been made possible through a variety of activities, including:
+The Cloud-native Geospatial Foundation is an expansion of Radiant Earth's work to support the community of users that have adopted the SpatioTemporal Asset Catalog (STAC) metadata specification. Since its release in May 2021, STAC has been widely adopted by both public and private sector organizations (including Microsoft, Google, AWS, NASA, MAXAR, Planet, Esri, and Natural Resources Canada). The rapid progress of STAC has been made possible through a variety of activities, including:
 
 - Development sprints
 - Paid fellowships for software developers
@@ -60,7 +61,7 @@ The Cloud-native Geo Foundation is an expansion of Radiant Earth's work to suppo
 - Creation and provision of open source tools and utilities
 - Engagement with other community stakeholders such as the [Open Geospatial Consortium](https://ogc.org)
 
-The Cloud-native Geo Foundation will support similar coordination for other cloud-native projects. 
+The Cloud-native Geospatial Foundation will support similar coordination for other cloud-native technologies. 
 
 ### What does success look like?
 There are a number of ways to measure adoption of cloud-native geospatial data, including:
