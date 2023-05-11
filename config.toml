@@ -1,5 +1,5 @@
 baseURL = "https://cloudnativegeo.org"
-title = "Cloud-native Geospatial Foundation"
+title = "Cloud-Native Geospatial Foundation"
 theme = "etch"
 languageCode = "en-US"
 enableInlineShortcodes = true

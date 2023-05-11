@@ -1,9 +1,9 @@
 +++
 slug = "/"
-title = "Cloud-native Geospatial Foundation"
+title = "Cloud-Native Geospatial Foundation"
 +++
 
-The Cloud-native Geospatial Foundation is a forthcoming initiative from [Radiant Earth](https://radiant.earth) created to increase adoption of highly efficient approaches to working with geospatial data in public cloud environments. 
+The Cloud-Native Geospatial Foundation is a forthcoming initiative from [Radiant Earth](https://radiant.earth) created to increase adoption of highly efficient approaches to working with geospatial data in public cloud environments. 
 
 Please enter your email address below to receive updates as we begin operations.
 
@@ -32,7 +32,7 @@ Please enter your email address below to receive updates as we begin operations.
 ## FAQs
 
 ### What is cloud-native geospatial data?
-Cloud-native data formats are structured to allow users to use [HTTP range requests](https://en.wikipedia.org/wiki/Byte_serving) to efficiently access specific data needed for analysis. These formats are well-suited to be hosted in cloud [object storage](https://en.wikipedia.org/wiki/Object_storage) services which are designed to serve large volumes of data using generic RESTful / HTTP data transfer protocols.
+Cloud-Native data formats are structured to allow users to use [HTTP range requests](https://en.wikipedia.org/wiki/Byte_serving) to efficiently access specific data needed for analysis. These formats are well-suited to be hosted in cloud [object storage](https://en.wikipedia.org/wiki/Object_storage) services which are designed to serve large volumes of data using generic RESTful / HTTP data transfer protocols.
 
 Examples of cloud-native geospatial data formats include:
 
@@ -43,15 +43,15 @@ Examples of cloud-native geospatial data formats include:
 - [PMTiles](https://protomaps.com/docs/pmtiles)
 
 ### What are the benefits of cloud-native geospatial data?
-1. **It's faster for users.** Cloud-native formats allow people to “bring their compute to the data” within a cloud environment. When data is hosted in a public cloud, people can work with it without needing to download and store their own copies. This saves users time and money, lowering the cost of research and and accelerating innovation.
-2. **It's easier to maintain for data providers.** Cloud-native formats take advantage of the performance, scalability, and durability of generic cloud object storage services. This allows data providers to make data available without needing to run and maintain their own servers, databases, or proprietary APIs. 
+1. **It's faster for users.** Cloud-Native formats allow people to “bring their compute to the data” within a cloud environment. When data is hosted in a public cloud, people can work with it without needing to download and store their own copies. This saves users time and money, lowering the cost of research and and accelerating innovation.
+2. **It's easier to maintain for data providers.** Cloud-Native formats take advantage of the performance, scalability, and durability of generic cloud object storage services. This allows data providers to make data available without needing to run and maintain their own servers, databases, or proprietary APIs. 
 2. **It's easy to build tools on top of it.** Because cloud-native formats allow efficient access to data over HTTP, they enable the creation of new web-based tools that can interact with large volumes of remotely stored data. For example, the availability of data in Cloud-optimized GeoTIFFs has led to the creation of a [wide array of new open source tools and software libraries](https://www.cogeo.org/#implementations). This increased diversity of open source and browser-based tools that can work with data is necessary to increase the size and diversity of the Earth science community.
 
 ### What are the benefits of cloud object storage?
 Competition within the public cloud sector has reliably led to reduction in object storage costs, continual improvement in performance, and a commodification of services. These trends combine to make public cloud object storage the best available technology to expand access to planetary-scale volumes of data for the foreseeable future.
 
 ### Why is Radiant Earth doing this?
-The Cloud-native Geospatial Foundation is an expansion of Radiant Earth's work to support the community of users that have adopted the SpatioTemporal Asset Catalog (STAC) metadata specification. Since its release in May 2021, STAC has been widely adopted by both public and private sector organizations (including Microsoft, Google, AWS, NASA, MAXAR, Planet, Esri, and Natural Resources Canada). The rapid progress of STAC has been made possible through a variety of activities, including:
+The Cloud-Native Geospatial Foundation is an expansion of Radiant Earth's work to support the community of users that have adopted the SpatioTemporal Asset Catalog (STAC) metadata specification. Since its release in May 2021, STAC has been widely adopted by both public and private sector organizations (including Microsoft, Google, AWS, NASA, MAXAR, Planet, Esri, and Natural Resources Canada). The rapid progress of STAC has been made possible through a variety of activities, including:
 
 - Development sprints
 - Paid fellowships for software developers
@@ -60,7 +60,7 @@ The Cloud-native Geospatial Foundation is an expansion of Radiant Earth's work t
 - Creation and provision of open source tools and utilities
 - Engagement with other community stakeholders such as the [Open Geospatial Consortium](https://ogc.org)
 
-The Cloud-native Geospatial Foundation will support similar coordination for other cloud-native technologies. 
+The Cloud-Native Geospatial Foundation will support similar coordination for other cloud-native technologies. 
 
 ### What does success look like?
 There are a number of ways to measure adoption of cloud-native geospatial data, including:
@@ -75,6 +75,6 @@ We will work with members of our community to identify success metrics that we c
 ### How can I help?
 There are three ways you can help right now:
 
-1. Fill out our [Cloud-native Geospatial Community survey](https://forms.gle/JrkVWE1qKYFL7RCC7)
+1. Fill out our [Cloud-Native Geospatial Community survey](https://forms.gle/JrkVWE1qKYFL7RCC7)
 2. Send us an email at hello@cloudnativegeo.org if you have specific ideas of how you would like to contribute
 3. Donate to [Radiant Earth](https://radiant.earth/donate/)
