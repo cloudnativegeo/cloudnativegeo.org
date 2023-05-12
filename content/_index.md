@@ -34,13 +34,7 @@ Please enter your email address below to receive updates as we begin operations.
 ### What is cloud-native geospatial data?
 Cloud-Native data formats are structured to allow users to use [HTTP range requests](https://en.wikipedia.org/wiki/Byte_serving) to efficiently access specific data needed for analysis. These formats are well-suited to be hosted in cloud [object storage](https://en.wikipedia.org/wiki/Object_storage) services which are designed to serve large volumes of data using generic RESTful / HTTP data transfer protocols.
 
-Examples of cloud-native geospatial data formats include:
-
-- [Cloud-optimized GeoTIFF (COG)](https://www.cogeo.org)
-- [GeoParquet](https://geoparquet.org)
-- [Cloud-optimized Point Cloud (COPC)](https://copc.io)
-- [GeoZarr](https://github.com/zarr-developers/geozarr-spec)
-- [PMTiles](https://protomaps.com/docs/pmtiles)
+NASA performed [a helpful analysis of some cloud-native formats in 2020](https://ntrs.nasa.gov/citations/20200001178).
 
 ### What are the benefits of cloud-native geospatial data?
 1. **It's faster for users.** Cloud-native formats allow people to interact with massive amounts of data by allowing them to stream only the data that they need for their analysis. By relieving the burden of needing to download and store copies of data before starting a project, cloud-native data saves users time and money, lowering the cost of research and and accelerating innovation.
