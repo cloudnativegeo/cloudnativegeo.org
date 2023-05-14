@@ -28,7 +28,7 @@ Please enter your email address below to receive updates as we begin operations.
 
 <!--End mc_embed_signup-->
 
-You can follow us on Twitter at [@cloudnativegeo](https://twitter.com/cloudnativegeo].
+You can follow us on Twitter at [@cloudnativegeo](https://twitter.com/cloudnativegeo).
 
 ---
 ## FAQs
