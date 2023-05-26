@@ -19,10 +19,6 @@ header#banner, main#content p, main#content h2, main#content h3, footer#footer, 
     clear:both;
 }
 
-main#content hr {
-    width: 108%;
-    margin-left: -4%;
-}
 
 header#banner nav {
     display: inline-block;
