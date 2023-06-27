@@ -5,7 +5,9 @@ title = "Cloud-Native Geospatial Foundation"
 
 The Cloud-Native Geospatial Foundation is a forthcoming initiative from [Radiant Earth](https://radiant.earth) created to increase adoption of highly efficient approaches to working with geospatial data in public cloud environments. 
 
-Please enter your email address below to receive updates as we begin operations.
+Please fill out our [Cloud-Native Geospatial Community survey](https://forms.gle/JrkVWE1qKYFL7RCC7) to share your feedback as we get started.
+
+Please enter your email address below to receive updates.
 
 <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup">
