@@ -168,6 +168,12 @@ path#hex g#cnglogohex, path#a{
     fill:url(#CNGGradient);
 }
 
+a.readmore {
+}
+a.readmore:hover path.minihex {
+    fill:url(#MinihexGradient);
+}
+
 div#banner {
     padding: 1em 0 .5em 0;
     margin:0 0 .5em 0;
@@ -269,6 +275,14 @@ main#content article p, main#content article li {
     line-height: 1.7;
 }
 
+main#content article li ul li {
+    font-size: 100%;
+} 
+
+main#content article ul li {
+    margin-bottom: .5em;
+} 
+
 main#content #aboutpage p {
     float:left;
 }
@@ -306,7 +320,6 @@ main#content ul#posts {
 main#content ul#posts li {
     margin: 1.5em 0;
     padding: 0;
-    font-size: 80%;
 }
 
 main#content ul#posts a {
@@ -331,8 +344,10 @@ main#content ul#posts li a.post-title:hover svg {
     color: #53B4FF;
 }
 
-main#content ul#posts li time {
-    font-size: 85%;
+main#content ul#posts li time, a.readmore {
+    font-size: 80%;
+    font-family: 'BerkeleyMono', monospace;
+    text-transform: uppercase;
 }
 
 main#content ul#posts small {
@@ -505,7 +520,7 @@ main#content blockquote {
 
 main#content code,
 main#content pre {
-    font-family: 'Menlo', monospace;
+    font-family: 'BerkeleyMono', monospace;
 }
 
 main#content code {

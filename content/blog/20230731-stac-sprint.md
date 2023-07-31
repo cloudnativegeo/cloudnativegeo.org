@@ -3,7 +3,7 @@ date = "2023-07-31T10:00:00-00:00"
 title = "Join STAC Sprint #8" 
 tags = [ "" ] 
 slug = "stac-sprint-8"
-summary = "The Cloud-Native Geospatial Foundation, in partnership with the SpatioTemporal Asset Catalog Project Steering Committee (STAC PSC), announces the first in-person STAC sprint since the pandemic." 
+summary = "The Cloud-Native Geospatial Foundation, in partnership with the SpatioTemporal Asset Catalog Project Steering Committee (STAC PSC), announces STAC Sprint #8, to be held in Philadelphia from September 26th to 28th." 
 +++
 
 The Cloud-Native Geospatial Foundation, in partnership with the [SpatioTemporal Asset Catalog](https://stacspec.org) Project Steering Committee (STAC PSC), is excited to announce the first in-person STAC sprint [since 2019](https://medium.com/radiant-earth-insights/join-stac-sprint-5-ogc-api-hackathon-november-5-7-48178137f778). The 8th STAC sprint will take place in Philadelphia, PA from September 26th to 28th. The sprint has two goals:
@@ -26,10 +26,10 @@ In order to help more people benefit from STAC, we need to develop educational m
 Throughout the 3-day event, the STAC sprint will feature a similar structure each day:
 
 - Morning Plenary: All participants, both in-person and potential virtual attendees.
-    - Lightning Talks: Sponsors will be offered presentation slots to present, spread across the three days. 
-    - Division of Labor: determine work to be done and divide participants up into working groups.  
+  - Lightning Talks: Sponsors will be offered presentation slots to present, spread across the three days. 
+  - Division of Labor: determine work to be done and divide participants up into working groups.  
 - Breakout Groups:  Disperse throughout the building to work on designated tasks.
-    - Lunch and snacks are provided during the day.
+  - Lunch and snacks are provided during the day.
 - End-of-day update: All participants, both in-person and potential virtual attendees, to reconvene and update on progress made during the breakout sessions. 
 - Optional Social Event: An evening social gathering. 
 
