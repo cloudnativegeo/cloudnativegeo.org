@@ -1,6 +1,11 @@
 {{ define "main" }}
-<div id="placeholder">
-  {{- partial "logo.html" . -}}
-</div>
+  {{ .Site.Params.Description }}
   {{- .Content -}}
+  <h2>Latest updates:</h2>
+  <div id="homepage-blog">
+  {{- partial "homepage-posts.html" . -}}
+  </div>
+  <h2>Join our mailing list:</h2>
+  {{- partial "email-signup.html" . -}}
+</div>
 {{ end }}

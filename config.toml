@@ -8,7 +8,7 @@ pygmentsUseClasses = true
 relativeURLs = true
 
 [params]
-  description = "Expanding access to geospatial data with commonly-used data formats and HTTP."
+  description = "The Cloud-Native Geospatial Foundation enourages adoption of highly efficient and accessible approaches to working with geospatial data over the Internet."
   copyright = "Copyright © 2023 Radiant Earth Foundation"
   dark = "auto"
   highlight = true
@@ -34,14 +34,6 @@ relativeURLs = true
     title = "blog"
     pageref = "/blog"
     weight = 20
-
-  [[menu.main]]
-    identifier = "donate"
-    name = "donate"
-    title = "donate"
-    pageref = "/donate"
-    weight = 30
-
 
 [permalinks]
   blog = "blog/:year/:month/:slug/"

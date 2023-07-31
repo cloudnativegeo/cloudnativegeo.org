@@ -7,9 +7,13 @@ html {
 
 body {
     color: #CCC;
-    background: #2f343b;
+    background: #383e46;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+header#page-header, footer {
+    background-color: #2f343b;
 }
 
 header hr {
