@@ -41,4 +41,4 @@ If you are interested in attending in person but don’t have travel funding we 
 
 ## Interested in sponsoring the sprint?
 
-We are seeking sponsors who want to help make the sprint a success. To learn more about sponsorship opportunities, please see our [sponsorship prospectus](https://cloudnativegeo.org/sponsor-stac-sprint-8.pdf).
+We are seeking sponsors who want to help make the sprint a success. To learn more about sponsorship opportunities, please see our [sponsorship prospectus](/sponsor-stac-sprint-8.pdf).
