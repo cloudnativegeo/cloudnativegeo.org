@@ -176,7 +176,6 @@ a.readmore:hover path.minihex {
 
 div#banner {
     padding: 1em 0 .5em 0;
-    margin:0 0 .5em 0;
 }
 
 div#logo {
@@ -235,7 +234,7 @@ main {
     margin-bottom:2em;
 }
 
-div#banner, main#content, main#content h2, main#content h3, footer p, main ul#homepage-blog, main#content ol, main#content ul, article, ul#posts, #mc_embed_signup {
+div#banner, main#content, main#content h2, main#content h3, footer p, main ul#homepage-blog, main#content ol, main#content ul, #mc_embed_signup {
     margin-left:1em;
     margin-right:1em;
 }
@@ -318,7 +317,7 @@ main#content abbr {
 /* index.html styles */
 main#content ul#posts {
     list-style-type: none;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -379,6 +378,13 @@ main #homepage-showcase {
 main div#homepage-blog {
     padding:0;
     margin:0;
+}
+
+div.site-description {
+    font-weight: 600;
+    font-size: 1.1em;
+    padding:1em;
+    border-bottom: 1px #CCC solid;
 }
 
 /* single.html styles */

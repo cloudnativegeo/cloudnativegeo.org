@@ -2,9 +2,8 @@
 title = "About"
 +++
 
-{{<about>}}
+{{<description>}}
 
----
 ## FAQs
 
 ### What is cloud-native geospatial data?

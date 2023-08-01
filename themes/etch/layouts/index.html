@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ .Site.Params.Description }}
+  {{- partial "description.html" . -}}
   {{- .Content -}}
   <h2>Latest updates:</h2>
   <div id="homepage-blog">
