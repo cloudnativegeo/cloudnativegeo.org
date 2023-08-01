@@ -235,6 +235,11 @@ main {
     margin-bottom:2em;
 }
 
+div#banner, main#content, main#content h2, main#content h3, footer p, main ul#homepage-blog, main#content ol, main#content ul, article, ul#posts, #mc_embed_signup {
+    margin-left:1em;
+    margin-right:1em;
+}
+
 main#content h1,
 main#content h2,
 main#content h3,
