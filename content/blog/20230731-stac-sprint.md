@@ -6,7 +6,7 @@ slug = "stac-sprint-8"
 summary = "The Cloud-Native Geospatial Foundation, in partnership with the SpatioTemporal Asset Catalog Project Steering Committee (STAC PSC), announces STAC Sprint #8, to be held in Philadelphia from September 26th to 28th." 
 +++
 
-The Cloud-Native Geospatial Foundation, in partnership with the [SpatioTemporal Asset Catalog](https://stacspec.org) Project Steering Committee (STAC PSC), is excited to announce the first in-person STAC sprint [since 2019](https://medium.com/radiant-earth-insights/join-stac-sprint-5-ogc-api-hackathon-november-5-7-48178137f778). The 8th STAC sprint will take place at [Element84's](https://www.element84.com) offices in Philadelphia, PA from September 26th to 28th. The sprint has two goals:
+The Cloud-Native Geospatial Foundation, in partnership with the [SpatioTemporal Asset Catalog](https://stacspec.org) Project Steering Committee (STAC PSC), is excited to announce the first in-person STAC sprint [since 2019](https://medium.com/radiant-earth-insights/join-stac-sprint-5-ogc-api-hackathon-november-5-7-48178137f778). The 8th STAC sprint will take place at [Element 84's](https://www.element84.com) offices in Philadelphia, PA from September 26th to 28th. The sprint has two goals:
 
 1. To make improvements to the STAC specifications
 2. To improve the educational ecosystem around STAC
@@ -41,4 +41,4 @@ If you are interested in attending in person but don’t have travel funding we 
 
 ## Interested in sponsoring the sprint?
 
-We are seeking sponsors who want to help make the sprint a success. To learn more about sponsorship opportunities, please see our [sponsorship prospectus](/sponsor-stac-sprint-8.pdf). We are grateful to [Element84](https://www.element84.com) hosting the sprint.
+We are seeking sponsors who want to help make the sprint a success. To learn more about sponsorship opportunities, please see our [sponsorship prospectus](/sponsor-stac-sprint-8.pdf). We are grateful to [Element 84](https://www.element84.com) hosting the sprint.
