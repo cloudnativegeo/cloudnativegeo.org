@@ -3,7 +3,7 @@ date = "2023-08-14T21:33:22-07:00"
 title = "Performance Explorations of GeoParquet (and DuckDB)"
 tags = [ ""
 ]
-summary = "Chris Holmes, a Radiant Earth Technical Fellow, examines the performance of different geospatial formats for the Google Open Buildings dataset."
+summary = "Chris Holmes, a Radiant Earth Technology Fellow, examines the performance of different geospatial formats for the Google Open Buildings dataset."
 author = "Chris Holmes"
 author_url = "https://beta.source.coop/cholmes"
 author_title = "Radiant Earth Technical Fellow"
