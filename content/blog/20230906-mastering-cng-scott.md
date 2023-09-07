@@ -1,6 +1,6 @@
 +++
 date = "2023-09-06T21:33:22-07:00"
-title = "How Postholer Went Serverless Using Cloud Native Geospatial Data"
+title = "How Postholer Went Serverless Using Cloud-Native Geospatial Data"
 tags = [ ""
 ]
 summary = "An interview with Scott Parks, Trailblazer in Map Development for Hikers."
@@ -18,7 +18,7 @@ While planning my first hike of the [Pacific Crest Trail](https://www.pcta.org/)
 
 In 2003, I introduced the embarrassingly general sierra snow graphic using data from [CDEC](https://cdec.water.ca.gov/) and [SnoTEL](https://www.nrcs.usda.gov/wps/portal/wcc/home/quicklinks/imap). Ironically, 2003 was the first year the [Snow Data Assimilation System (SNODAS)](https://nsidc.org/data/g02158/versions/1) was modeled, which eventually became my go-to source for snow data. That beginning led to the addition of climate, weather, wildfires, fauna and other data over the next 20 years (and counting).
 
-{{< img src="images/20230906-PCT-snow-conditions-map-comparison.png"  alt="Map showing the 2006 and 2009 comparison of Pacific Crest Trail Snow Conditions Map" caption="Comparison of the Pacific Crest Trail Snow Conditions Maps: 2006 (left) vs. 2023 (right)." >}}
+{{< img src="images/20230906-PCT-snow-conditions-map-comparison.png"  alt="Map showing the 2006 and 2009 comparison of Pacific Crest Trail Snow Conditions Map" caption="Comparison of the Pacific Crest Trail Snow Conditions Maps: 2006 (left) vs. 2023 (right)" >}}
 
 Catering to the specific needs of the hiking community is the easy part: I just have to listen. The hiking community asks the questions that I may or may not have asked myself. The difficult (and fun) part is creating answers for the community expressed in numerous iterations of web/print maps, data books, tables, and charts.
 
@@ -34,7 +34,7 @@ For me, the most compelling reason to utilize cloud-native tools/data is the abi
 
 ### Can you take us through the process of how you learned and familiarized yourself with these cloud-native tools? Were there any particular resources or experts that played a significant role in your learning journey?
 
-Read the fine manual, right? Both [Flatgeobuf](http://flatgeobuf.org/) and [georaster-layer-for-leaflet](https://github.com/GeoTIFF/georaster-layer-for-leaflet) API's have fully functional examples and documentation. GDAL has notoriously good documentation for all of its supported formats and utilities. With that, it's a matter of reading the documentation, studying those examples, and through trial and error, adapting it to your own needs.
+Read the fine manual, right? Both [Flatgeobuf](http://flatgeobuf.org/) and [georaster-layer-for-leaflet](https://github.com/GeoTIFF/georaster-layer-for-leaflet) API's have fully functional examples and documentation. GDAL has notoriously good documentation for all of its supported formats and utilities. With that, it's a matter of reading the documentation, studying those examples and through trial and error, adapting it to your own needs.
 
 In the larger context of cloud-native and geo-spatial, when people like Even Rouault, Daniel DuFour, Paul Ramsey, Chris Holmes, Matthias Mohr, Howard Butler, et al, post on social media or mailing lists, I lean forward to listen. The geo-spatial community is fortunate to have so many smart/creative individuals. Oh, and what would any of us be without Google?
 
@@ -42,7 +42,7 @@ When met with a new spatial format or concept, my first stop is GDAL. Does GDAL 
 
 ### Could you elaborate on how cloud-native geospatial technologies have contributed to optimizing the performance of your mapping applications, or if there have been any challenges in implementing them?
 
-As mentioned, with cloud-native data you don't need any back-end servers or services. You don't need resources to maintain those services. Once I went all in on cloud-native, I removed from production a WMS/WFS/WMTS server using [PostgreSQL](https://www.postgresql.org/)/[PostGIS](https://postgis.net/), [MapServer](https://mapserver.org/), MapCache running on a r5.large EC2 server with 400GB of disk storage. Removing the need to run that server was huge. While I maintain the same kind of environment for development, it is no longer needed in production.
+As mentioned, with cloud-native data you don't need any back-end servers or services. You don't need resources to maintain those services. Once I went all in on cloud-native, I removed from production a WMS/WFS/WMTS server using [PostgreSQL/PostGIS, MapServer](https://postgis.net/), MapCache running on a r5.large EC2 server with 400GB of disk storage. Removing the need to run that server was huge. While I maintain the same kind of environment for development, it was no longer needed in production.
 
 In 2007, I created my first web maps using [Google Maps API](https://developers.google.com/maps) and continued to do so until I fully switched to cloud-native in June of 2023. Relying solely on open source is a big plus.
 
@@ -58,7 +58,7 @@ For example, on [femaFHZ.com](https://www.femafhz.com/probsurge/storm/-82.5/27.8
 
 ### Building upon your experience, do you have any advice or recommendations for other map developers who may be considering adopting cloud-native geospatial tools? What key insights would you share with them? 
 
-Thoughtful data creation. Perhaps you're displaying building footprints for the entire state of Utah. Should every web client calculate the area of every polygon each time it accesses the data? Maybe it’s wise to add an 'area' attribute in each FGB feature to avoid so much repetitive client-side math. You could calculate the area of the polygon only when the user interacts with it. Your approach may vary when dealing with hundreds vs. millions of features.
+Thoughtful data creation. Perhaps you're displaying building footprints for the entire state of Utah. Should every web client calculate the area of every polygon each time it accesses the data? Maybe it’s wise to add an 'area' attribute in each FGB feature to avoid so much repetitive client-side math. You could calculate the area of the polygon only when the user interacts with it. Your approach may vary when dealing with hundreds vs millions of features.
 
 Should my layer be COG or FGB? It's not necessarily one or the other – it can be both. Using the building footprint example, is it practical to display vector footprints at zoom level 12 on your Leaflet map? You can't make out any detail at that zoom level. Maybe have 2 versions of the data, a low resolution raster for displaying at zoom level 1-13 and vector at zoom 14-20. This is the technique I use at femaFHZ.com to display [FEMA](https://www.fema.gov/dynamic-home) flood hazard data and the building footprint example.
 
@@ -66,7 +66,7 @@ Caution with FGB. If the extent of your 10GB vector data is contained within you
 
 It's OK if you don't use cloud-native data exclusively. Most of my base maps ([OSM](https://www.openstreetmap.org/), Satellite, Topo, etc) are hosted and maintained by someone else (thank you, open source community!). These are likely large, high availability tile cache servers behind [content delivery networks](https://en.wikipedia.org/wiki/Content_delivery_network). Don't reinvent the wheel unless you can build a better mousetrap!
 
-Keep it simple. Use core open source technology such as (GDAL, [SQL](https://en.wikipedia.org/wiki/SQL), [QGIS](https://qgis.org/), PostgreSQL/PostGIS, [SQLite](https://www.sqlite.org/)/[Spatialite](https://www.gaia-gis.it/fossil/libspatialite/index), [STAC](https://stacspec.org/), [Leaflet](https://leafletjs.com/), [OpenLayers](https://openlayers.org/)). Have a good understanding of how to use your tools! That cool tech you're emotionally attached to may not be supported tomorrow and it might not be the best tool for the job.
+Keep it simple. Use core open source technology such as (GDAL, [SQL](https://en.wikipedia.org/wiki/SQL), [QGIS](https://qgis.org/), PostgreSQL/PostGIS, [SQLite](https://www.sqlite.org/)/[Spatialite](https://www.gaia-gis.it/fossil/libspatialite/index), [STAC](https://stacspec.org/), [Leaflet](https://leafletjs.com/),[OpenLayers](https://openlayers.org/)). Have a good understanding of how to use your tools! That cool tech you're emotionally attached to may not be supported tomorrow and it might not be the best tool for the job.
 
 Beware of proprietary geo-spatial companies offering cloud-native solutions who lost sight of their mission many, many financial statements ago.
 
