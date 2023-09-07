@@ -1,6 +1,6 @@
 +++
 date = "2023-09-06T21:33:22-07:00"
-title = "How Postholer Went Serverless Using Cloud-Native Geospatial Data"
+title = "How Postholer Went Serverless Using Cloud Native Geospatial Data"
 tags = [ ""
 ]
 summary = "An interview with Scott Parks, Trailblazer in Map Development for Hikers."
