@@ -34,7 +34,7 @@ For me, the most compelling reason to utilize cloud-native tools/data is the abi
 
 ### Can you take us through the process of how you learned and familiarized yourself with these cloud-native tools? Were there any particular resources or experts that played a significant role in your learning journey?
 
-Read the fine manual, right? Both [Flatgeobuf](http://flatgeobuf.org/) and [georaster-layer-for-leaflet](https://github.com/GeoTIFF/georaster-layer-for-leaflet) API's have fully functional examples and documentation. GDAL has notoriously good documentation for all of its supported formats and utilities. With that, it's a matter of reading the documentation, studying those examples and through trial and error, adapting it to your own needs.
+Read the fine manual, right? Both [Flatgeobuf](http://flatgeobuf.org/) and [georaster-layer-for-leaflet](https://github.com/GeoTIFF/georaster-layer-for-leaflet) API's have fully functional examples and documentation. GDAL has notoriously good documentation for all of its supported formats and utilities. With that, it's a matter of reading the documentation, studying those examples, and through trial and error, adapting it to your own needs.
 
 In the larger context of cloud-native and geo-spatial, when people like Even Rouault, Daniel DuFour, Paul Ramsey, Chris Holmes, Matthias Mohr, Howard Butler, et al, post on social media or mailing lists, I lean forward to listen. The geo-spatial community is fortunate to have so many smart/creative individuals. Oh, and what would any of us be without Google?
 
@@ -42,7 +42,7 @@ When met with a new spatial format or concept, my first stop is GDAL. Does GDAL 
 
 ### Could you elaborate on how cloud-native geospatial technologies have contributed to optimizing the performance of your mapping applications, or if there have been any challenges in implementing them?
 
-As mentioned, with cloud-native data you don't need any back-end servers or services. You don't need resources to maintain those services. Once I went all in on cloud-native, I removed from production a WMS/WFS/WMTS server using [PostgreSQL(https://www.postgresql.org/)]/[PostGIS (https://postgis.net/)], [MapServer](https://mapserver.org/)], MapCache running on a r5.large EC2 server with 400GB of disk storage. Removing the need to run that server was huge. While I maintain the same kind of environment for development, it is no longer needed in production.
+As mentioned, with cloud-native data you don't need any back-end servers or services. You don't need resources to maintain those services. Once I went all in on cloud-native, I removed from production a WMS/WFS/WMTS server using [PostgreSQL](https://www.postgresql.org/)/[PostGIS] (https://postgis.net/), [MapServer](https://mapserver.org/), MapCache running on a r5.large EC2 server with 400GB of disk storage. Removing the need to run that server was huge. While I maintain the same kind of environment for development, it is no longer needed in production.
 
 In 2007, I created my first web maps using [Google Maps API](https://developers.google.com/maps) and continued to do so until I fully switched to cloud-native in June of 2023. Relying solely on open source is a big plus.
 
