@@ -18,7 +18,7 @@ While planning my first hike of the [Pacific Crest Trail](https://www.pcta.org/)
 
 In 2003, I introduced the embarrassingly general sierra snow graphic using data from [CDEC](https://cdec.water.ca.gov/) and [SnoTEL](https://www.nrcs.usda.gov/wps/portal/wcc/home/quicklinks/imap). Ironically, 2003 was the first year the [Snow Data Assimilation System (SNODAS)](https://nsidc.org/data/g02158/versions/1) was modeled, which eventually became my go-to source for snow data. That beginning led to the addition of climate, weather, wildfires, fauna and other data over the next 20 years (and counting).
 
-{{< img src="images/20230906-PCT-snow-conditions-map-comparison.png"  alt="Map showing the 2006 and 2009 comparison of Pacific Crest Trail Snow Conditions Map" caption="Comparison of the Pacific Crest Trail Snow Conditions Maps: 2006 (left) vs. 2023 (right)" >}}
+{{< img src="images/20230906-PCT-snow-conditions-map-comparison.png"  alt="Map showing the 2006 and 2009 comparison of Pacific Crest Trail Snow Conditions Map" caption="Comparison of the Pacific Crest Trail Snow Conditions Maps: 2006 (left) vs. 2023 (right)." >}}
 
 Catering to the specific needs of the hiking community is the easy part: I just have to listen. The hiking community asks the questions that I may or may not have asked myself. The difficult (and fun) part is creating answers for the community expressed in numerous iterations of web/print maps, data books, tables, and charts.
 
@@ -42,7 +42,7 @@ When met with a new spatial format or concept, my first stop is GDAL. Does GDAL 
 
 ### Could you elaborate on how cloud-native geospatial technologies have contributed to optimizing the performance of your mapping applications, or if there have been any challenges in implementing them?
 
-As mentioned, with cloud-native data you don't need any back-end servers or services. You don't need resources to maintain those services. Once I went all in on cloud-native, I removed from production a WMS/WFS/WMTS server using [[PostgreSQL(https://www.postgresql.org/)]/[PostGIS (https://postgis.net/)], [MapServer](https://mapserver.org/)], MapCache running on a r5.large EC2 server with 400GB of disk storage. Removing the need to run that server was huge. While I maintain the same kind of environment for development, it is no longer needed in production.
+As mentioned, with cloud-native data you don't need any back-end servers or services. You don't need resources to maintain those services. Once I went all in on cloud-native, I removed from production a WMS/WFS/WMTS server using [PostgreSQL(https://www.postgresql.org/)]/[PostGIS (https://postgis.net/)], [MapServer](https://mapserver.org/)], MapCache running on a r5.large EC2 server with 400GB of disk storage. Removing the need to run that server was huge. While I maintain the same kind of environment for development, it is no longer needed in production.
 
 In 2007, I created my first web maps using [Google Maps API](https://developers.google.com/maps) and continued to do so until I fully switched to cloud-native in June of 2023. Relying solely on open source is a big plus.
 
