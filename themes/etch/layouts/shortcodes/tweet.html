@@ -1,0 +1,13 @@
+{{ $id := .Get "id" }}
+{{ $user := .Get "user" }}
+
+<a href="https://twitter.com/{{$user}}/status/{{$id}}" target="_blank">
+  <figure>
+    <picture>
+    {{ with $id }}
+      <source srcset="{{ $.Site.BaseURL }}/tweets/{{$id}}.png">
+      <img src="{{ $.Site.BaseURL }}/tweets/{{$id}}.png" alt="Image is of a tweet by {{$user}} click on the image to read the original tweet" defer class="lazyautosizes lazyloaded" data-sizes="auto" data-src="{{ $.Site.BaseURL }}/tweets/{{$id}}.png" >
+    {{end}}
+    </picture>
+  </figure>
+</a>
