@@ -47,6 +47,10 @@ main#content hr {
     background: #666;
 }
 
+main#content code {
+    background-color: #2f343b;
+}
+
 .showcase-column h3 {
     border-bottom:1px solid #666;
 }
