@@ -545,7 +545,8 @@ main#content table {
 
 main#content code {
     font-size: 0.96em;
-    padding: 0 5px;
+    padding: .3em .4em;
+    background-color: #eeeff1;
 }
 
 main#content pre {
