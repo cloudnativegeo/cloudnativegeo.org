@@ -33,6 +33,6 @@ We’re also starting to see data providers like Microsoft, Maxar, Planet, Ordna
 ## What’s next?
 The release of 1.0.0 is truly just the beginning. We’re taking it through the full Open Geospatial Consortium’s standardization process, as we’ve started forming an official [GeoParquet Standards Working Group](https://portal.ogc.org/files/103450). We hope to move through the standardization process relatively quickly, to become an full official OGC Standard.
 
-There is also a lot of activity on the [GeoArrow](https://geoarrow.org/) specification, which will form the basis of a columnar geometry format for GeoParquet 1.0.0. That has a lot of potential to make the format and tools around it even more performant.
+There is also a lot of activity on the [GeoArrow](https://geoarrow.org/) specification, which will form the basis of a columnar geometry format for GeoParquet 1.1.0. That has a lot of potential to make the format and tools around it even more performant.
 
 We’re excited to see this community grow, with more data, more tools and more innovation. Please help us by converting data into GeoParquet, demanding GeoParquet from your data providers, and building tools to make use of it. And let us know when you do, so everyone can keep track of the growth of this exciting community.
