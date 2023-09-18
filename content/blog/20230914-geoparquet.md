@@ -1,5 +1,5 @@
 +++
-date = "2023-09-14T21:11:16-07:00"
+date = "2023-09-18T05:11:16-07:00"
 title = "GeoParquet 1.0.0 Released"
 tags = [ ""
 ]
