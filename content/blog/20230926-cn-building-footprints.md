@@ -11,7 +11,10 @@ author_title = "Data & Cloud Engineer at VIDA"
 
 ### One key contribution of geospatial data is building footprints — outlines of buildings as identified by satellite. These are invaluable to planners, governments, investors and even disaster relief efforts. Industry leaders Google and Microsoft both recently released some revolutionary new building footprint datasets — including billions of buildings worldwide. These were generated using advanced machine learning on high-resolution satellite images.
 
+
 Now, at VIDA, we’ve taken it a step further. We’re excited to share that by merging the Google and Microsoft datasets, we’ve created the most comprehensive, freely available, global, cloud-native building footprint dataset available today. It’s hosted on the [Source Cooperative](https://beta.source.coop/) and accessible on [map.vida.place/explore](https://map.vida.place/explore).
+
+{{< img src="images/20230926-cn-building-footprints.png" alt="Image of Source Cooperative" caption="The dataset is freely available for download on Source Cooperative." >}} 
 
 ### Harnessing BigQuery for geospatial excellence
 At VIDA, we rely heavily on BigQuery for handling large-scale geospatial tasks. Given its robust features and efficient processing capabilities, it is our platform of choice.
