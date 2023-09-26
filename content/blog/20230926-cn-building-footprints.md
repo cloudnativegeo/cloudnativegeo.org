@@ -1,10 +1,10 @@
 +++
 date = "2023-09-26T05:47:12-07:00"
-title = "Introducing the ultimate cloud-native building footprints dataset"
+title = "Introducing the Ultimate Cloud-Native Building Footprints Dataset"
 tags = [ ""
 ]
-summary = "The most comprehensive, freely available, global, cloud-native building footprint dataset available today on Source Cooperative."
-author = "Mike Mahoney"
+summary = "This dataset merges Google's V3 Open Buildings and Microsoft's latest Building Footprints, making it the most complete openly available dataset."
+author = "Darell van der Voort"
 author_url = "https://www.linkedin.com/in/darellvdv"
 author_title = "Data & Cloud Engineer at VIDA"
 +++
