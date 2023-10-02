@@ -9,8 +9,6 @@ title = "About"
 ### What is cloud-native geospatial data?
 Cloud-Native data formats are structured to be efficiently retrived from cloud [object storage](https://en.wikipedia.org/wiki/Object_storage) services which are designed to serve large volumes of data using generic RESTful / HTTP data transfer protocols.
 
-NASA performed [a helpful analysis of some cloud-native formats in 2020](https://ntrs.nasa.gov/citations/20200001178).
-
 ### What are the benefits of cloud-native geospatial data?
 1. **It's faster for users.** Cloud-native formats allow people to interact with massive amounts of data by allowing them to stream only the data that they need for their analysis. By relieving the burden of needing to download and store copies of data before starting a project, cloud-native data saves users time and money, lowering the cost of research and and accelerating innovation.
 2. **It's easier to maintain for data providers.** Cloud-native formats take advantage of the performance, scalability, and durability of generic cloud object storage services. This allows data providers to make data available without needing to run and maintain their own servers, databases, or proprietary APIs. 
