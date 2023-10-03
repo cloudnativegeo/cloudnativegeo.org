@@ -59,7 +59,9 @@ CARTO, my long-time favorite web-based analysis platform, added GeoParquet suppo
 
 There’s also been a lot of awesome experimental work that’s not quite ‘tools’ yet, but shows off the potential of GeoParquet on the web. Kyle Barron has been doing a lot with Rust and WASM, really pushing the edge of what’s possible in the browser. Not all his work is actually not using GeoParquet directly, but showing just how far the browser can go in displaying massive amounts of geospatial data. Under the hood he uses a lot of Arrow, which is closely related to Parquet, and GeoParquet will be the preferred way to get data into his tools. You can check out his awesome observable notebooks and learn a ton about the bleeding edge of geospatial data in the browser:
 
-{{< img src="images/20231003-geodata-browser.png" alt="GeoParquet on the web, GeoArrow in deck" caption="" >}}
+{{< img src="images/20231003-geodata-browser1.png" alt="GeoParquet on the web, GeoArrow in deck" caption="" >}}
+{{< img src="images/20231003-geodata-browser2.png" alt="GeoParquet on the web, GeoArrow in deck" caption="" >}}
+{{< img src="images/20231003-geodata-browser3.png" alt="GeoParquet on the web, GeoArrow in deck" caption="" >}}
 
 There’s also cool experiments like [Overture Maps Downloader](https://youssef-harby.github.io/OvertureMapsDownloader/), which uses DuckDB in Web Assembly to interact with Overture Map GeoParquet files up on [source.coop](https://source.coop/). You can check out the [source code on github](https://github.com/Youssef-Harby/OvertureMapsDownloader).
 
