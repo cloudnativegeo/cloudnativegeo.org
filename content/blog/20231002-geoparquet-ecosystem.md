@@ -40,12 +40,16 @@ It’s super easy [to install](https://github.com/planetlabs/gpq#installation) o
 ### Desktop
 For traditional GIS workflows, QGIS uses GDAL/OGR, so can easily read GeoParquet if the right version of GDAL/OGR is there.
 
+{{< img src="images/20231003-desktop.gif" alt="description of GeoParquet" caption="" >}}
+
 For Windows this works out of the box using the [main QGIS installer](https://qgis.org/en/site/forusers/download.html) (OSGeo4W). Unfortunately the Mac OS/X installer doesn’t yet include the right dependencies, but if you’re on a Mac you can install QGIS with conda. Just [install conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html) and then run conda install qgis libgdal-arrow-parquet, then start QGIS from the terminal (just type ‘qgis’). This is a bit annoying, but it’s currently how I always use QGIS, and isn’t bad at all. For Linux Conda works well, just install QGIS with the same command to be sure the right GDAL libraries for GeoParquet are there. The main QGIS installer might also work (hopefully someone can confirm this).
 
 Safe Software’s [FME](https://fme.safe.com/platform/) also added [GeoParquet support](https://docs.safe.com/fme/html/FME-Form-Documentation/FME-ReadersWriters/geoparquet/geoparquet.htm) in version 2023.1. It’s probably the best tool on the market for transforming data, so it’s great to see it supported there.
 
 ### Web-based Tools
 There’s a ton of potential for GeoParquet on the web, and it’s been great to see many of the coolest web tools embracing it. The first to support GeoParquet was Scribble Maps. You can easily drag a GeoParquet on it and everything ‘just works’, and you can also export any layer as GeoParquet.
+
+{{< img src="images/20231003-web-tools.gif" alt="description of GeoParquet" caption="" >}}
 
 It’s a great tool that’s been adding tons of great functionality recently, so definitely check it out. They use a WASM distribution of GPQ under the hood, showing off how capable the browser is becoming.
 
