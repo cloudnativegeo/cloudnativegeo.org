@@ -1,5 +1,5 @@
 +++
-date = "2023-10-03T05:11:16-07:00"
+date = "2023-10-03T02:00:16-07:00"
 title = "The GeoParquet Ecosystem at 1.0.0"
 tags = [ ""
 ]
@@ -54,6 +54,8 @@ You can also make use of a web-based GeoJSON converter, [available on geoparquet
 CARTO, my long-time favorite web-based analysis platform, added GeoParquet support recently. They’ve been one of the biggest supportors of GeoParquet, with [Alberto Asuero](https://github.com/alasarr) helping with core spec work and [Javier de la Torre](https://github.com/jatorre) leading lots of evangelizing of GeoParquet. You can easily import GeoParquet, and they’re starting to support export as well.
 
 There’s also been a lot of awesome experimental work that’s not quite ‘tools’ yet, but shows off the potential of GeoParquet on the web. Kyle Barron has been doing a lot with Rust and WASM, really pushing the edge of what’s possible in the browser. Not all his work is actually not using GeoParquet directly, but showing just how far the browser can go in displaying massive amounts of geospatial data. Under the hood he uses a lot of Arrow, which is closely related to Parquet, and GeoParquet will be the preferred way to get data into his tools. You can check out his awesome observable notebooks and learn a ton about the bleeding edge of geospatial data in the browser:
+
+{{< img src="images/20231003-geodata-browser.png" alt="GeoParquet on the web, GeoArrow in deck" caption="" >}}
 
 There’s also cool experiments like [Overture Maps Downloader](https://youssef-harby.github.io/OvertureMapsDownloader/), which uses DuckDB in Web Assembly to interact with Overture Map GeoParquet files up on [source.coop](https://source.coop/). You can check out the [source code on github](https://github.com/Youssef-Harby/OvertureMapsDownloader).
 
