@@ -1,5 +1,5 @@
 +++
-date = "2023-10-03T17:17:00-07:00"
+date = "2023-10-10T17:17:00-07:00"
 title = "Where is COG for Vector?"
 tags = [ ""
 ]
