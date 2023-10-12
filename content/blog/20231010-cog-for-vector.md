@@ -76,3 +76,7 @@ The 105 MB GeoParquet input turns into a 54MB PMTiles archive, which can then be
 {{< img src="images/20231010-cog-vector5.png" alt="GeoParquet turned into PMTiles for visualization" caption="GeoParquet turned into PMTiles for visualization. Source: Google Open Buildings via Source Cooperative." >}}
 
 This 54MB archive can be stored on S3 and enables simple deployment of interactive visualizations &ndash; a useful complement to analysis-focused vector formats.
+
+## Learn More
+
+PMTiles is the foundation of the **Protomaps open source project** &ndash; an ecosystem of tools, libraries and data for geospatial visualization. Protomaps publishes its datasets to [Source Cooperative](https://beta.source.coop/repositories/protomaps/openstreetmap/description), and helps organizations of all sizes transition to cloud-native mapping. It's supported through commercial development projects, a fellowship through the [Cloud-Native Geospatial Foundation](http://cloudnativegeo.org), and [GitHub Sponsors](https://github.com/sponsors/protomaps). You can learn more at [protomaps.com](https://protomaps.com).
