@@ -1,5 +1,5 @@
 +++
-date = "2023-10-10T17:17:00-07:00"
+date = "2023-10-08T17:17:00-07:00"
 title = "Where is COG for Vector?"
 tags = [ ""
 ]
@@ -7,7 +7,6 @@ summary = "Bringing Cloud-Optimized GeoTIFF to the other half of geodata"
 author = "Brandon Liu"
 author_url = "https://bdon.org/about/"
 author_title = "Radiant Earth Technical Fellow"
-draft = "true"
 +++
 
 In March, Jed described the ["Na&iuml;ve Origins of Cloud Optimized GeoTIFF"](https://radiant.earth/blog/2023/03/the-naive-origins-of-the-cloud-optimized-geotiff/) &ndash; an access pattern and ecosystem that revolutionized data delivery for AWS, its customers, and the public sector.
