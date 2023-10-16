@@ -65,13 +65,13 @@ There is now a work-in-progress specification for STAC-GeoParquet which you can 
 
 ## Outreach and Education
 
-I led a small group discussion around STAC outreach and education.
+I led a small group discussion around STAC outreach and education. The goal of this group was to identify how we can expand the STAC community to include a more diverse crowd.  
 
-A huge shoutout to Mike Mahoney for developing three stellar tutorials that are now on the STAC website and expanding our education into R – [Download data from a STAC API using R, rstac, and GDAL](https://stacspec.org/en/tutorials/1-download-data-using-r/) and one CLI data download tutorial. A few more tutorials from the sprint are still in progress and will be added to the STAC site tutorials section soon.
+During this sprint, we focused on developing tutorials that target non-Python users. A huge shoutout to [Mike Mahoney](https://www.mm218.dev/) for developing three stellar tutorials that are now on the STAC website and expanding our STAC education into R – [Download data from a STAC API using R, rstac, and GDAL](https://stacspec.org/en/tutorials/1-download-data-using-r/) and [How to Query STAC APIs using rstac and CQL2](https://stacspec.org/en/tutorials/2-using-rstac-and-cql2-to-query-stac-api/) – and one [CLI data download tutorial](https://stacspec.org/en/tutorials/gdal_cli/). If you want to read more about cloud-native tools for non-Pyton users, check out Mike’s blog from a few weeks back: [“Cloud-Native Geospatial If You Don't Speak Snake”](https://cloudnativegeo.org/blog/2023/09/cloud-native-geospatial-if-you-dont-speak-snake/). A few more tutorials from the sprint are still in progress and will be added to the STAC site tutorials section soon.
 
-A new STAC FAQ page was further developed (first began building this at a STAC working session this fall) and will be added to the site in the coming months.
+For STAC documentation, a new STAC FAQ page was further developed (first started building this at a STAC working session this fall) and will be added to the site in the coming months.
 
-In addition to material creation, this group discussed important topics including barriers to entry into the STAC community and how to make STAC more accessible to newcomers. Cloud-Native Geospatial will be holding a series of introduction webinars to STAC and cloud-native geospatial in the coming months. The first webinar is an introduction to STAC webinar for the Kenyan Space Agency (though it is free and open to the public) this Wednesday, October 18th at 9 am EST. More information about this webinar can be found [here](https://www.eventbrite.com/e/webinar-series-geospatial-knowledge-sharing-for-professionals-in-kenya-tickets-718139393257).
+In addition to material creation, this group discussed important topics including barriers to entry into the STAC community and how to make STAC more accessible to newcomers. Cloud-Native Geospatial will be holding a series of introduction webinars to STAC and cloud-native geospatial in the coming months. The first webinar is an introduction to STAC webinar for the Kenyan Space Agency (though it is free and open to the public) this Wednesday, October 18th at 9 a.m. EST. More information about this webinar can be found [here](https://www.eventbrite.com/e/webinar-series-geospatial-knowledge-sharing-for-professionals-in-kenya-tickets-718139393257).
 
 ## STAC Lightning Talks
 
