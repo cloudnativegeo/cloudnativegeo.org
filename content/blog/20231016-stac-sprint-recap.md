@@ -86,5 +86,3 @@ If you want to know more about a given lightning talk or specifics about any of 
 
 
 {{< img src="images/20231016-sponsors.jpg" alt="image showing the 8th STAC sprint sponsors" caption="" >}}
-
-A final thank you to the sponsors that made this sprint possible!
