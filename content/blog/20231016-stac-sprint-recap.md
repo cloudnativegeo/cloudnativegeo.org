@@ -15,7 +15,7 @@ At the end of September, the Spatio-Temporal Asset Catalog (STAC) community memb
 
 {{< img src="images/20231016-welcome.png" alt="image showing the 8th STAC sprint participants" caption="" >}}
 
-Based on the attendees of the sprint and their areas of expertise, we split up into 4 breakout groups. These groups were:
+Based on the attendees of the sprint and their areas of expertise, we split up into four breakout groups. These groups were:
 
 - STAC Specification(s): STAC core specification (stac-spec), STAC API specification (stac-api-spec), and their extensions
 - STAC Ecosystem (stac-utils)
@@ -28,7 +28,7 @@ The following sections outline what each group accomplished during the three day
 
 ### stac-spec
 
-A considerable benefit of the sprint was to get together in person and resolve some of the debates that the community has been having for a while online. Going into the sprint, there were around 10 issues with the label “discussion needed” in the stac-spec GitHub issues. During the sprint, each of these issues was discussed and a solution was determined. You can see the issues that will be completed as a part of the stac-spec 1.1.0 release in the [1.1 Milestone](https://github.com/radiantearth/stac-spec/milestone/30).
+A considerable benefit of the sprint was to get together in person and resolve some of the community's longstanding online STAC discussions. Going into the sprint, there were around 10 issues with the label “discussion needed” in the stac-spec GitHub issues. During the sprint, each of these issues was discussed and a solution was determined. You can see the issues that will be completed as a part of the stac-spec 1.1.0 release in the [1.1 Milestone](https://github.com/radiantearth/stac-spec/milestone/30).
 
 One of the most notable solutions made for the STAC Specification was the agreement on the [Bands Requests for Comments Discussion](https://github.com/radiantearth/stac-spec/discussions/1213). The agreed-upon solution is to create the new common metadata field `bands` to replace `eo:bands` and `raster:bands` as well as to add the following fields to the common metadata: `data_type`, `nodata`, `statistics`, and `unit`. You can see the pull request for this change at [radiantearth/stac-spec/pull/1254](https://github.com/radiantearth/stac-spec/pull/1254).
 
@@ -44,7 +44,7 @@ As for the STAC API Specification, the group focused mainly on discussing severa
     - [Query Extension](https://github.com/stac-api-extensions/query/releases/tag/v1.0.0)
 - [Transaction Extension:](https://github.com/stac-api-extensions/transaction/releases/tag/v1.0.0-rc.3) v1.0.0-rc.3 release
     - waiting on OGC for OAFeat Part 4, possibly 2024
-- [Filter Extension](https://github.com/stac-api-extensions/filter): Pull Requests towards v1.0.0-rc.3 release
+- [Filter Extension](https://github.com/stac-api-extensions/filter): Pull Request in for v1.0.0-rc.3 release
     - waiting on the CQL2 final from OGC, possibly Q4 2023
 
 For the STAC API Specification, the goals moving forward are to get a release of recent updates to CQL2 released for the Filter extension, advocate for updating in implementations (including a new implementation in stac-serve), and continue to engage with OGC team on the future of CQL2 (including separating functionality into conformance classes that we expect implementers will be able to support).
@@ -69,7 +69,7 @@ I led a small group discussion around STAC outreach and education. The goal of t
 
 During this sprint, we focused on developing tutorials that target non-Python users. A huge shoutout to [Mike Mahoney](https://www.mm218.dev/) for developing three stellar tutorials that are now on the STAC website. These tutorials expand our STAC education into R – [Download data from a STAC API using R, rstac, and GDAL](https://stacspec.org/en/tutorials/1-download-data-using-r/) and [How to Query STAC APIs using rstac and CQL2](https://stacspec.org/en/tutorials/2-using-rstac-and-cql2-to-query-stac-api/) – and Command Line Interface with the [CLI data download tutorial](https://stacspec.org/en/tutorials/gdal_cli/). If you want to read more about cloud-native tools for non-Pyton users, check out Mike’s blog from a few weeks back: [“Cloud-Native Geospatial If You Don't Speak Snake”](https://cloudnativegeo.org/blog/2023/09/cloud-native-geospatial-if-you-dont-speak-snake/).
 
-A few more tutorials from the sprint are still in progress and will be added to the STAC site tutorials section soon including an improved STAC Extensions tutorial by [Dimple Jain](https://www.linkedin.com/in/jaindimple/) and a tutorial on creating a STAC Catalog by [Mansi Shah](https://www.linkedin.com/in/mkshah605/).
+A few more tutorials from the sprint are still in progress and will be added to the STAC site tutorials section soon including an improved STAC Extensions tutorial by [Dimple Jain](https://www.linkedin.com/in/jaindimple/) and a tutorial on creating a STAC Catalog via the command line by [Mansi Shah](https://www.linkedin.com/in/mkshah605/).
 
 For STAC documentation, a new STAC FAQ page was further developed (we first started building this at a STAC working session this fall) and will be added to the site in the coming months.
 
