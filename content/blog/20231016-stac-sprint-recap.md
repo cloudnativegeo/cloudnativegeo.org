@@ -15,14 +15,14 @@ At the end of September, Spatio-Temporal Asset Catalog (STAC) community members 
 
 {{< img src="images/20231016-welcome.png" alt="Image of introduction session of the STAC Sprint." caption="" >}}
 
-<p align="middle">
+<!-- <p align="middle">
   <img src="images/20231016-welcome.jpeg" width="100" />
   <img src="images/20231016-welcome2.jpeg" width="100" /> 
 </p>
 
 Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-![](images/20231016-welcome.jpeg)  |  ![](images/20231016-welcome2.jpeg)
+![](images/20231016-welcome.jpeg)  |  ![](images/20231016-welcome2.jpeg) -->
 
 Based on the attendees of the sprint and their background/areas of expertise, we split up into 4 different groups. These breakout groups were:
 
@@ -93,6 +93,5 @@ If you want to know more about a specific topic from the lightning talks or spec
 You can join the STAC Community Google group to be added to the biweekly meeting and receive STAC-related emails: [groups.google.com/g/stac-community](https://groups.google.com/g/stac-community).
 
 if you are interested in being connected to this community, join the [Cloud-Native Geospatial Foundation Slack organization](https://join.slack.com/t/cloudnativegeo/shared_invite/zt-259rmhcyo-bT6tabt3X_5_s6zUfxCwEg).
-
 
 {{< img src="images/20231016-sponsors.png" alt="Graphic of the STAC Sprint sponsors list." caption="" >}}
