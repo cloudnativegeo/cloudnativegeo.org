@@ -9,11 +9,9 @@ author_url = "https://twitter.com/Michelle__Roby"
 author_title = "Radiant Earth Developer Advocate"
 +++
 
-# 2023 STAC Sprint Recap
-
 At the end of September, the Spatio-Temporal Asset Catalog (STAC) community members gathered together in Philadelphia (and virtually) to improve STAC, grow the ecosystem of tools around STAC, and discuss other complementary cloud-native geospatial projects. This was the 8th STAC Sprint and the first in-person sprint since 2019. After three days of effort, we made some great strides across the board.
 
-{{< img src="images/20231016-welcome.png" alt="image showing the 8th STAC sprint participants" caption="" >}}
+{{< img src="images/20231016-welcome.png" alt="image showing the 8th STAC sprint participants" caption="Everyone gathered the first morning of the sprint." >}}
 
 Based on the attendees of the sprint and their areas of expertise, we split up into four breakout groups. These groups were:
 
@@ -49,7 +47,7 @@ As for the STAC API Specification, the group focused mainly on discussing severa
 
 For the STAC API Specification, the goals moving forward are to get a release of recent updates to CQL2 released for the Filter extension, advocate for updating in implementations (including a new implementation in stac-serve), and continue to engage with OGC team on the future of CQL2 (including separating functionality into conformance classes that we expect implementers will be able to support).
 
-## STAC Ecosystem (stac-utils)
+## STAC Ecosystem
 
 For the STAC ecosystem group, the majority of the work done was for [PySTAC](https://pystac.readthedocs.io/en/latest/index.html). A lot of work was done around extensions (notable work on the pointcloud extension for a v1.1) and continued development for v1.9.0.
 
