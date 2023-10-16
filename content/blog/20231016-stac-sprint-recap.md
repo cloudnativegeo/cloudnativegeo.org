@@ -5,7 +5,7 @@ tags = [ ""
 ]
 summary = "What all happened during the STAC Sprint in Philadelphia."
 author = "Michelle Roby"
-author_url = "https://beta.source.coop/michelle"
+author_url = "https://twitter.com/Michelle__Roby"
 author_title = "Radiant Earth Developer Advocate"
 +++
 
@@ -13,7 +13,7 @@ author_title = "Radiant Earth Developer Advocate"
 
 At the end of September, Spatio-Temporal Asset Catalog (STAC) community members gathered together in Philadelphia (and virtually) to improve STAC, grow the ecosystem of tools around STAC, and discuss other complementary cloud-native geospatial projects. This was the 8th STAC Sprint and the first in-person sprint since 2019. After 3 days of effort, we made some great strides across the board.
 
-{{< img src="images/20231016-welcome.png" alt="Image of introduction session of the STAC Sprint." caption="" >}}
+<!-- {{< img src="images/20231016-welcome.png" alt="Image of introduction session of the STAC Sprint." caption="" >}} -->
 
 <!-- <p align="middle">
   <img src="images/20231016-welcome.jpeg" width="100" />
@@ -39,7 +39,7 @@ The following sections outline what each group accomplished during the three day
 
 A considerable benefit of the sprint was to get together in person and resolve some of the debates that the community has been having for a while online. Going into the sprint, there were around 10 issues with the label “discussion needed” in the stac-spec GitHub issues. During the sprint, each of these issues was discussed and a solution was determined. You can see the issues that will be completed as a part of the stac-spec 1.1.0 release in the [1.1 Milestone](https://github.com/radiantearth/stac-spec/milestone/30).
 
-One of the most notable solutions made for the STAC Specification was the agreement on the [Bands RFC Discussion](https://github.com/radiantearth/stac-spec/discussions/1213). The agreed-upon solution is to create the new common metadata field `bands` to replace `eo:bands` and `raster:bands` as well as to add the following fields to the common metadata: `data_type`, `nodata`, `statistics`, and `unit`. You can see the pull request for this change at [radiantearth/stac-spec/pull/1254](https://github.com/radiantearth/stac-spec/pull/1254).
+One of the most notable solutions made for the STAC Specification was the agreement on the [Bands Requests for Comments Discussion](https://github.com/radiantearth/stac-spec/discussions/1213). The agreed-upon solution is to create the new common metadata field `bands` to replace `eo:bands` and `raster:bands` as well as to add the following fields to the common metadata: `data_type`, `nodata`, `statistics`, and `unit`. You can see the pull request for this change at [radiantearth/stac-spec/pull/1254](https://github.com/radiantearth/stac-spec/pull/1254).
 
 The STAC community will continue to work towards completing the issues in the 1.1 Milestone before releasing a v1.1.0. If you have any issues with the STAC Spec, it's now the time to bring issues up for 1.1 and extensions!
 
@@ -64,7 +64,7 @@ For the STAC ecosystem group, the majority of the work done was for PySTAC. A lo
 
 Additionally, the group is in the process of developing a new, simpler interface for extensions and an extensions audit to ensure all versions are supported and tested.
 
-As far as future efforts go, the stac-utils folks are following the bands RFC progress (decision discussed above) and have a work-in-progress Pull Request to add support to PySTAC when the RFC is accepted.
+As far as future efforts go, the stac-utils folks are following the bands Request for Comments (RFC) progress (decision discussed above) and have a work-in-progress Pull Request to add support to PySTAC when the RFC is accepted.
 
 If you are interested in joining stac-utils virtual meetups, be sure to join the [STAC Community Google Group](https://groups.google.com/g/stac-community) to receive meeting invitations.
 
