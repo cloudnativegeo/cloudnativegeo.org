@@ -41,7 +41,7 @@ A considerable benefit of the sprint was to get together in person and resolve s
 
 One of the most notable solutions made for the STAC Specification was the agreement on the [Bands Requests for Comments Discussion](https://github.com/radiantearth/stac-spec/discussions/1213). The agreed-upon solution is to create the new common metadata field `bands` to replace `eo:bands` and `raster:bands` as well as to add the following fields to the common metadata: `data_type`, `nodata`, `statistics`, and `unit`. You can see the pull request for this change at [radiantearth/stac-spec/pull/1254](https://github.com/radiantearth/stac-spec/pull/1254).
 
-The STAC community will continue to work towards completing the issues in the 1.1 Milestone before releasing a v1.1.0. If you have any issues with the STAC Spec, it's now the time to bring issues up for 1.1 and extensions!
+The STAC community will continue to work towards completing the issues in the 1.1 Milestone before releasing a v1.1.0. If you have any problems with the STAC Spec, it's now the time to make your voice heard. Submit issues to the respective STAC repository with an in-depth explanation of your problem: [stac-spec](https://github.com/radiantearth/stac-spec/issues), [stac-api-spec](https://github.com/radiantearth/stac-api-spec/issues), and [stac-extensions](https://github.com/orgs/stac-extensions/repositories). 
 
 ### stac-api-spec
 
@@ -92,6 +92,6 @@ If you want to know more about a specific topic from the lightning talks or spec
 
 You can join the STAC Community Google group to be added to the biweekly meeting and receive STAC-related emails: [groups.google.com/g/stac-community](https://groups.google.com/g/stac-community).
 
-if you are interested in being connected to this community, join the [Cloud-Native Geospatial Foundation Slack organization](https://join.slack.com/t/cloudnativegeo/shared_invite/zt-259rmhcyo-bT6tabt3X_5_s6zUfxCwEg).
+If you are interested in being connected to this community, join the [Cloud-Native Geospatial Foundation Slack organization](https://join.slack.com/t/cloudnativegeo/shared_invite/zt-259rmhcyo-bT6tabt3X_5_s6zUfxCwEg).
 
 <!-- {{< img src="images/20231016-sponsors.png" alt="Graphic of the STAC Sprint sponsors list." caption="" >}} -->
