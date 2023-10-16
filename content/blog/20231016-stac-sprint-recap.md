@@ -13,16 +13,7 @@ author_title = "Radiant Earth Developer Advocate"
 
 At the end of September, Spatio-Temporal Asset Catalog (STAC) community members gathered together in Philadelphia (and virtually) to improve STAC, grow the ecosystem of tools around STAC, and discuss other complementary cloud-native geospatial projects. This was the 8th STAC Sprint and the first in-person sprint since 2019. After 3 days of effort, we made some great strides across the board.
 
-<!-- {{< img src="images/20231016-welcome.png" alt="Image of introduction session of the STAC Sprint." caption="" >}} -->
-
-<!-- <p align="middle">
-  <img src="images/20231016-welcome.jpeg" width="100" />
-  <img src="images/20231016-welcome2.jpeg" width="100" /> 
-</p>
-
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![](images/20231016-welcome.jpeg)  |  ![](images/20231016-welcome2.jpeg) -->
+place for images
 
 Based on the attendees of the sprint and their background/areas of expertise, we split up into 4 different groups. These breakout groups were:
 
@@ -94,4 +85,4 @@ You can join the STAC Community Google group to be added to the biweekly meeting
 
 If you are interested in being connected to this community, join the [Cloud-Native Geospatial Foundation Slack organization](https://join.slack.com/t/cloudnativegeo/shared_invite/zt-259rmhcyo-bT6tabt3X_5_s6zUfxCwEg).
 
-<!-- {{< img src="images/20231016-sponsors.png" alt="Graphic of the STAC Sprint sponsors list." caption="" >}} -->
+place for image
