@@ -94,4 +94,4 @@ You can join the STAC Community Google group to be added to the biweekly meeting
 
 if you are interested in being connected to this community, join the [Cloud-Native Geospatial Foundation Slack organization](https://join.slack.com/t/cloudnativegeo/shared_invite/zt-259rmhcyo-bT6tabt3X_5_s6zUfxCwEg).
 
-{{< img src="images/20231016-sponsors.png" alt="Graphic of the STAC Sprint sponsors list." caption="" >}}
+<!-- {{< img src="images/20231016-sponsors.png" alt="Graphic of the STAC Sprint sponsors list." caption="" >}} -->
