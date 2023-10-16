@@ -11,7 +11,7 @@ author_title = "Radiant Earth Developer Advocate"
 
 # 2023 STAC Sprint Recap
 
-At the end of September, the Spatio-Temporal Asset Catalog (STAC) community members gathered together in Philadelphia (and virtually) to improve STAC, grow the ecosystem of tools around STAC, and discuss other complementary cloud-native geospatial projects. This was the 8th STAC Sprint and the first in-person sprint since 2019. After 3 days of effort, we made some great strides across the board.
+At the end of September, the Spatio-Temporal Asset Catalog (STAC) community members gathered together in Philadelphia (and virtually) to improve STAC, grow the ecosystem of tools around STAC, and discuss other complementary cloud-native geospatial projects. This was the 8th STAC Sprint and the first in-person sprint since 2019. After three days of effort, we made some great strides across the board.
 
 {{< img src="images/20231016-welcome.png" alt="image showing the 8th STAC sprint participants" caption="" >}}
 
@@ -81,8 +81,10 @@ In addition to collaborative work efforts, some attendees shared updates on the 
 
 ## Get Involved
 
-If you want to know more about a specific topic from the lightning talks or specifics about any of this work done at the sprint, join the [Cloud-Native Geospatial Foundation Slack organization](https://join.slack.com/t/cloudnativegeo/shared_invite/zt-259rmhcyo-bT6tabt3X_5_s6zUfxCwEg). and/or come to the STAC Community meetups (every other Monday at 11 a.m. EST) to meet many of the STAC Sprint participants and hear more about all the work they are doing related to STAC. You can join the STAC Community Google group to be added to the biweekly meeting and receive STAC-related emails: [groups.google.com/g/stac-community](https://groups.google.com/g/stac-community).
+If you want to know more about a given lightning talk or specifics about any of this work done at the sprint, join the [Cloud-Native Geospatial Foundation Slack organization](https://join.slack.com/t/cloudnativegeo/shared_invite/zt-259rmhcyo-bT6tabt3X_5_s6zUfxCwEg) and/or come to the STAC Community meetups (every other Monday at 11 a.m. EST) to meet many of the STAC Sprint participants and hear more about all the work they are doing related to STAC. You can join the STAC Community Google group to be added to the biweekly meeting and receive STAC-related emails: [groups.google.com/g/stac-community](https://groups.google.com/g/stac-community).
 
 
 
 {{< img src="images/20231016-sponsors.jpg" alt="image showing the 8th STAC sprint sponsors" caption="" >}}
+
+A final thank you to the sponsors that made this sprint possible!
