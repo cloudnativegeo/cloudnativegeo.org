@@ -11,15 +11,15 @@ author_title = "Radiant Earth Developer Advocate"
 
 # 2023 STAC Sprint Recap
 
-At the end of September, Spatio-Temporal Asset Catalog (STAC) community members gathered together in Philadelphia (and virtually) to improve STAC, grow the ecosystem of tools around STAC, and discuss other complementary cloud-native geospatial projects. This was the 8th STAC Sprint and the first in-person sprint since 2019. After 3 days of effort, we made some great strides across the board.
+At the end of September, the Spatio-Temporal Asset Catalog (STAC) community members gathered together in Philadelphia (and virtually) to improve STAC, grow the ecosystem of tools around STAC, and discuss other complementary cloud-native geospatial projects. This was the 8th STAC Sprint and the first in-person sprint since 2019. After 3 days of effort, we made some great strides across the board.
 
 {{< img src="images/20231016-welcome.png" alt="image showing the 8th STAC sprint participants" caption="" >}}
 
-Based on the attendees of the sprint and their background/areas of expertise, we split up into 4 different groups. These breakout groups were:
+Based on the attendees of the sprint and their areas of expertise, we split up into 4 breakout groups. These groups were:
 
 - STAC Specification(s): STAC core specification (stac-spec), STAC API specification (stac-api-spec), and their extensions
 - STAC Ecosystem (stac-utils)
-- Geoparquet
+- STAC-GeoParquet
 - Outreach and Education
 
 The following sections outline what each group accomplished during the three days of the sprint and the next steps for each topic.
@@ -32,20 +32,20 @@ A considerable benefit of the sprint was to get together in person and resolve s
 
 One of the most notable solutions made for the STAC Specification was the agreement on the [Bands Requests for Comments Discussion](https://github.com/radiantearth/stac-spec/discussions/1213). The agreed-upon solution is to create the new common metadata field `bands` to replace `eo:bands` and `raster:bands` as well as to add the following fields to the common metadata: `data_type`, `nodata`, `statistics`, and `unit`. You can see the pull request for this change at [radiantearth/stac-spec/pull/1254](https://github.com/radiantearth/stac-spec/pull/1254).
 
-The STAC community will continue to work towards completing the issues in the 1.1 Milestone before releasing a v1.1.0. If you have any problems with the STAC Spec, it's now the time to make your voice heard. Submit issues to the respective STAC repository with an in-depth explanation of your problem: [stac-spec](https://github.com/radiantearth/stac-spec/issues), [stac-api-spec](https://github.com/radiantearth/stac-api-spec/issues), and [stac-extensions](https://github.com/orgs/stac-extensions/repositories). 
+The STAC community will continue to work towards completing the issues in the 1.1 Milestone before releasing a v1.1.0. If you have any problems with the STAC Spec, it's now the time to make your voice heard. Submit issues to the respective STAC repository with an in-depth explanation of your problem: [stac-spec](https://github.com/radiantearth/stac-spec/issues) for STAC Specification issues and [stac-extensions](https://github.com/orgs/stac-extensions/repositories) for issues with STAC Extensions.
 
 ### stac-api-spec
 
 As for the STAC API Specification, the group focused mainly on discussing several STAC API Extensions. Here are the discussed extensions and their new status:
 
-v1.0.0 released and updated to Stable maturity:
-[Fields Extension](https://github.com/stac-api-extensions/fields/releases/tag/v1.0.0)
-[Sort Extension](https://github.com/stac-api-extensions/sort/releases/tag/v1.0.0)
-[Query Extension](https://github.com/stac-api-extensions/query/releases/tag/v1.0.0)
-Transaction Extension [v1.0.0-rc.3](https://github.com/stac-api-extensions/transaction/releases/tag/v1.0.0-rc.3) release
-waiting on OGC for OAFeat Part 4, possibly 2024
-[Filter Extension](https://github.com/stac-api-extensions/filter) has Pull Requests towards v1.0.0-rc.3 release
-waiting on the CQL2 final from OGC, possibly Q4 2023
+- v1.0.0 released and updated to Stable maturity:
+    - [Fields Extension](https://github.com/stac-api-extensions/fields/releases/tag/v1.0.0)
+    - [Sort Extension](https://github.com/stac-api-extensions/sort/releases/tag/v1.0.0)
+    - [Query Extension](https://github.com/stac-api-extensions/query/releases/tag/v1.0.0)
+- Transaction Extension [v1.0.0-rc.3](https://github.com/stac-api-extensions/transaction/releases/tag/v1.0.0-rc.3) release
+    - waiting on OGC for OAFeat Part 4, possibly 2024
+- [Filter Extension](https://github.com/stac-api-extensions/filter) has Pull Requests towards v1.0.0-rc.3 release
+    - waiting on the CQL2 final from OGC, possibly Q4 2023
 
 For the STAC API Specification, the goals moving forward are to get a release of recent updates to CQL2 released for the Filter extension, advocate for updating in implementations (including a new implementation in stac-serve), and continuing to engage with OGC team on the future of CQL2 (including separating functionality into conformance classes that we expect implementers will be able to support).
 
@@ -67,7 +67,7 @@ There is now a work-in-progress specification for STAC-GeoParquet which you can 
 
 I led a small group discussion around STAC outreach and education. The goal of this group was to identify how we can expand the STAC community to include a more diverse crowd.  
 
-During this sprint, we focused on developing tutorials that target non-Python users. A huge shoutout to [Mike Mahoney](https://www.mm218.dev/) for developing three stellar tutorials that are now on the STAC website and expanding our STAC education into R – [Download data from a STAC API using R, rstac, and GDAL](https://stacspec.org/en/tutorials/1-download-data-using-r/) and [How to Query STAC APIs using rstac and CQL2](https://stacspec.org/en/tutorials/2-using-rstac-and-cql2-to-query-stac-api/) – and one [CLI data download tutorial](https://stacspec.org/en/tutorials/gdal_cli/). If you want to read more about cloud-native tools for non-Pyton users, check out Mike’s blog from a few weeks back: [“Cloud-Native Geospatial If You Don't Speak Snake”](https://cloudnativegeo.org/blog/2023/09/cloud-native-geospatial-if-you-dont-speak-snake/). A few more tutorials from the sprint are still in progress and will be added to the STAC site tutorials section soon.
+During this sprint, we focused on developing tutorials that target non-Python users. A huge shoutout to [Mike Mahoney](https://www.mm218.dev/) for developing three stellar tutorials that are now on the STAC website. These tutorials expand our STAC education into R – [Download data from a STAC API using R, rstac, and GDAL](https://stacspec.org/en/tutorials/1-download-data-using-r/) and [How to Query STAC APIs using rstac and CQL2](https://stacspec.org/en/tutorials/2-using-rstac-and-cql2-to-query-stac-api/) – and Command Line Interface with the [CLI data download tutorial](https://stacspec.org/en/tutorials/gdal_cli/). If you want to read more about cloud-native tools for non-Pyton users, check out Mike’s blog from a few weeks back: [“Cloud-Native Geospatial If You Don't Speak Snake”](https://cloudnativegeo.org/blog/2023/09/cloud-native-geospatial-if-you-dont-speak-snake/). A few more tutorials from the sprint are still in progress and will be added to the STAC site tutorials section soon.
 
 For STAC documentation, a new STAC FAQ page was further developed (first started building this at a STAC working session this fall) and will be added to the site in the coming months.
 
