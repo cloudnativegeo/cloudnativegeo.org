@@ -13,7 +13,7 @@ In March, Jed described the ["Na&iuml;ve Origins of Cloud Optimized GeoTIFF"](ht
 
 COG is an established technology for producing and consuming imagery, but **there's a missing half of geospatial: vector data.** Organizations that work with imagery are wrangling vectors, too: consider building footprints, tasking areas, parcels, agricultural plots, and ML labels. COG's accessibility advantages *ought* to carry over to vector workflows.
 
- Bringing COG's benefits to vector data is a design goal of [PMTiles](https://docs.protomaps.com/pmtiles), a cloud-native format for visualization with tile pyramids. It's meant to be a useful *complement* &ndash; not alternative &ndash; to COG, GeoParquet and FlatGeobuf.
+Bringing COG's benefits to vector data is a design goal of [PMTiles](https://docs.protomaps.com/pmtiles), a cloud-native format for visualization with tile pyramids. It's meant to be a useful *complement* &ndash; not alternative &ndash; to COG, GeoParquet and FlatGeobuf.
 
 ## What makes COG special
 

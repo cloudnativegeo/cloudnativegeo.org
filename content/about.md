@@ -7,7 +7,7 @@ title = "About"
 ## FAQs
 
 ### What is cloud-native geospatial data?
-Cloud-Native data formats are structured to be efficiently retrived from cloud [object storage](https://en.wikipedia.org/wiki/Object_storage) services which are designed to serve large volumes of data using generic RESTful / HTTP data transfer protocols.
+Cloud-Native data formats are structured to be efficiently retrieved from cloud [object storage](https://en.wikipedia.org/wiki/Object_storage) services which are designed to serve large volumes of data using generic RESTful / HTTP data transfer protocols.
 
 Please visit the [Cloud-Optimized Geospatial Formats Guide](https://guide.cloudnativegeo.org) to learn more.
 
