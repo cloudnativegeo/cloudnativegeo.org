@@ -35,6 +35,13 @@ relativeURLs = true
     pageref = "/blog"
     weight = 20
 
+  [[menu.main]]
+    identifier = "guide"
+    name = "guide"
+    title = "guide"
+    url = "https://guide.cloudnativegeo.org"
+    weight = 30
+
 [permalinks]
   blog = "blog/:year/:month/:slug/"
 
