@@ -1,20 +1,20 @@
 +++
-date = "2023-10-20T08:00:00-07:00"
+date = "	"
 title = "Introducing the Cloud-Optimized Geospatial Formats Guide"
 tags = [ ""
 ]
 summary = "Announcing a new community-led guide to help you navigate the expanding universe of cloud-native geospatial technologies."
 +++
 
-TL;DR: We’re excited to introduce the [Cloud-Optimized Geospatial Formats Guide](https://guide.cloudnativegeo.org) to help you navigate the ever-expanding universe of cloud-native geospatial technologies.
+TL;DR: We’re excited to introduce the [Cloud-Optimized Geospatial Formats Guide](https://guide.cloudnativegeo.org) to help you navigate the ever-expanding universe of cloud-native geospatial technologies. Many thanks to [NASA’s Interagency Advanced Concepts and Implementation Team (IMPACT)](https://impact.earthdata.nasa.gov) and [Development Seed](https://developmentseed.org) for their leadership in creating this guide and opening up to the community.
 
 ---
 
 Last week, [NASA announced](https://www.earthdata.nasa.gov/news/laads-daac-data-in-earthdata-cloud?fbclid=IwAR3erSJcWYl4iNVQelc32ls4kYOgHb8YVCIznwjquUcFPEeYBYgYa-2J7uw_aem_Ae5gOJsCo3U8SsdMJ1Y8u-k_7mE8jmDaQ2-_6JhHHUoLCqHabvVEMDKwJNVhP9ohLQo&mibextid=Zxz2cZ) that NASA’s Level-1 and Atmosphere Archive and Distribution System Distributed Active Archive Center (LAADS DAAC) has moved all of its storage to the cloud. [According to a lead on the project](https://www.linkedin.com/posts/splongmore_all-historical-data-from-nasas-laads-daac-activity-7120799801541070848-dUgM/), this represents 5.7 petabytes of data across 73 million data files. What’s more, the project was completed almost a year ahead of schedule. This is just one anecdote of many that shows how quickly a *lot* of geospatial data is quickly moving to the cloud.
 
-This rapid migration to the cloud has created a movement toward "cloud-native" geospatial applications that use increasingly performant open source software written to take advantage of the scalability and performance of cloud infrastructure. We are in the midst of a Cambrian explosion of cloud-native geospatial formats that are scalable, accessible, and flexible enough to be used in a wide array of applications. 
+This rapid migration to the cloud has created a movement toward "cloud-native" geospatial applications that take advantage of the scalability and performance of cloud infrastructure. Fueling these applications are new cloud-optimized geospatial data formats that are scalable, accessible, and flexible enough to be used in a wide array of applications. 
 
-To help you navigate the expanding universe of cloud-native geospatial technologies, we’re excited to introduce the [Cloud-Optimized Geospatial Formats Guide](https://guide.cloudnativegeo.org).
+To help you navigate the expanding universe of cloud-optimized geospatial data formats, we’re excited to introduce the [Cloud-Optimized Geospatial Formats Guide](https://guide.cloudnativegeo.org).
 
 Led by [NASA’s Interagency Advanced Concepts and Implementation Team (IMPACT)](https://impact.earthdata.nasa.gov) and [Development Seed](https://developmentseed.org), the [Cloud-Native Geospatial Foundation](https://cloudnativegeo.org) is hosting this community-powered guide to give newcomers and experts a single place to learn about best practices for working with data in the cloud. This guide is [managed on GitHub](https://github.com/cloudnativegeo/cloud-optimized-geospatial-formats-guide) and [openly-licensed](https://github.com/cloudnativegeo/cloud-optimized-geospatial-formats-guide/blob/main/LICENSE). [We encourage community contributions](https://guide.cloudnativegeo.org/contributing.html) to keep it up-to-date and valuable for all. 
 
