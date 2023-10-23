@@ -1,5 +1,5 @@
 +++
-date = "2023-10-20T16:57:55-07:00"
+date = "2023-10-20T08:00:00-07:00"
 title = "Introducing the Cloud-Optimized Geospatial Formats Guide"
 tags = [ ""
 ]
