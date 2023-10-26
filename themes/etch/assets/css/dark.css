@@ -51,6 +51,11 @@ main#content code {
     background-color: #2f343b;
 }
 
+main#content pre {
+    background-color: #2f343b;
+    border: 1px solid #666;
+}
+
 .showcase-column h3 {
     border-bottom:1px solid #666;
 }

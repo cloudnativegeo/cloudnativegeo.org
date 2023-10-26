@@ -557,6 +557,8 @@ main#content pre {
     margin: 20px 0;
     padding: 1.5rem 1.5rem;
     line-height: 1.4;
+    background-color: #eeeff1;
+    border: 1px solid #ccc;    
 }
 
 main#content pre code {
