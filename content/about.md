@@ -44,14 +44,7 @@ We will work with members of our community to identify success metrics that we c
 
 - Subscribe to [our blog](/blog)
 - Follow us on [Twitter](https://twitter.com/cloudnativegeo) or [Threads](https://threads.net/@cloudnativegeo) at @cloudnativegeo.
+- Join [our Slack](https://join.slack.com/t/cloudnativegeo/shared_invite/zt-235w8flfo-TW5Tpi1sPqQFWeMy~7ROHA)
 - Join our mailing list:
 
 {{<email-signup>}}
-
-
-### How can I help?
-There are three ways you can help right now:
-
-1. Fill out our [Cloud-Native Geospatial Community survey](https://forms.gle/JrkVWE1qKYFL7RCC7)
-2. Send us an email at hello@cloudnativegeo.org if you have specific ideas of how you would like to contribute
-3. Donate to [Radiant Earth](https://radiant.earth/donate/)
