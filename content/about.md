@@ -39,12 +39,3 @@ There are a number of ways to measure adoption of cloud-native geospatial data, 
 - Number of tutorials available for the format
 
 We will work with members of our community to identify success metrics that we can all contribute to.
-
-### How can I learn more?
-
-- Subscribe to [our blog](/blog)
-- Follow us on [Twitter](https://twitter.com/cloudnativegeo) or [Threads](https://threads.net/@cloudnativegeo) at @cloudnativegeo.
-- Join [our Slack](https://join.slack.com/t/cloudnativegeo/shared_invite/zt-235w8flfo-TW5Tpi1sPqQFWeMy~7ROHA)
-- Join our mailing list:
-
-{{<email-signup>}}
