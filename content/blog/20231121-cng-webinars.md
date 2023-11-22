@@ -1,10 +1,10 @@
-
 +++
 date = "2023-11-21T08:00:00-07:00"
 title = "Expanding the Cloud-Native Geospatial Community"
 tags = [ ""
 ]
 summary = "Explore diverse community applications of cloud-native geospatial data in our upcoming regionally-focused webinars. Join us on Dec 5 for insightful use cases from Brazil and on Dec 14 (US), Dec 15 (Pacific) for examples from the Pacific region."
++++
 
 At the [Cloud Native Geospatial Foundation](https://cloudnativegeo.org), we encourage the adoption of cloud-native data architectures that make geospatial data more accessible, faster, and easier to work with. We believe that cloud-native geospatial data is a powerful tool to help us achieve our mission of making [more data more available to more people](https://radiant.earth/blog/2023/02/more-data-more-available-to-more-people/). We seek to create a larger and more diverse community of people who can use geospatial data to solve problems all over the world. 
 
