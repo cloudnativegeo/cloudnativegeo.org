@@ -28,4 +28,4 @@ Researchers who are interested in using cloud-native geospatial technologies for
 Students who are interested in learning about the future of geospatial technology.
 Anyone who is using geospatial data to solve global challenges.
 
-If you have any questions, please contact hello@cloudnativegeo.org
+If you have any questions, please contact hello@cloudnativegeo.org.
