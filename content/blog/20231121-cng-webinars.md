@@ -24,6 +24,7 @@ In the second webinar, moderated by Geospatial Data Scientist, [Wei Ji Leong](ht
 This webinar is scheduled for Dec 14, 2023, at 6 PM EST / Dec 15, 2023, at 10 AM AET | 12 PM NZDT. To attend this webinar, register here: [https://lu.ma/CNG-Pacific](https://lu.ma/CNG-Pacific).
 
 **Who should attend the webinar series?**
+
 The webinar series is open to anyone interested in learning more about cloud-native geospatial, including:
 
 - Geospatial professionals who are looking to adopt cloud-native geospatial technologies in their work.
