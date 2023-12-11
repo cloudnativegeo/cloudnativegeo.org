@@ -38,6 +38,6 @@ We may be able to support travel for attendees, contingent on funding. Stay upda
 
 **Interested in sponsoring this sprint?**
 
-We are seeking additional sponsors to make this event as inclusive and impactful. Sponsors will play a crucial role in two key areas: funding travel scholarships for those facing financial barriers, and contributing to our Cloud-Native Geospatial operations fund.
+We are seeking additional sponsors to make this event as inclusive and impactful. Sponsors will play a crucial role in two key areas: funding travel scholarships for those facing financial barriers, and growing the GeoParquet community.
 
 To learn more about sponsorship opportunities, please see our [sponsorship prospectus](/sponsor-geoparquet-community-day.pdf). 
