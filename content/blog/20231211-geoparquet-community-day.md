@@ -40,4 +40,4 @@ We may be able to support travel for attendees, contingent on funding. Stay upda
 
 We are seeking additional sponsors to make this event as inclusive and impactful. Sponsors will play a crucial role in two key areas: funding travel scholarships for those facing financial barriers, and contributing to our Cloud-Native Geospatial operations fund.
 
-To learn more about sponsorship opportunities, please see our [sponsorship prospectus](themes/etch/static/sponsor-geoparquet-community-day.pdf). 
+To learn more about sponsorship opportunities, please see our [sponsorship prospectus](/sponsor-geoparquet-community-day.pdf). 
