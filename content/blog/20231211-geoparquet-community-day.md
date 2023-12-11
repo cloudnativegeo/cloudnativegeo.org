@@ -18,15 +18,18 @@ GeoParquet integrates spatial data into the Apache Parquet format, unlocking opp
 
 The goal of this event is to introduce GeoParquet and the benefits of its practical applications to more people. Participants will learn from experts about how GeoParquet integrates into the spatial data ecosystem and engage in hands-on experience building an application. 
 
-*What to expect*
-Discussions about sharing geospatial data in tabular formats
-Cloud-native spatial analytics exploration
-Networking opportunities with GeoParquet experts 
+**What to expect**
+
+- Discussions about sharing geospatial data in tabular formats
+- Cloud-native spatial analytics exploration
+- Networking opportunities with GeoParquet experts 
 
 **How to register**
+
 If you are interested in participating, we invite you to register [here](https://lu.ma/GeoParquetSprint). 
 
 **Call for speakers**
+
 Have you used GeoParquet in a project? Here is an opportunity to present a 5-minute lighting talk! [Apply now to become a speaker](https://docs.google.com/forms/d/e/1FAIpQLScws3DImaO36EuNRP5m7SeBhSXoTMm7jQIYNxnKXuR0Jk8aug/viewform?usp=pp_url).
 
 Keep an eye out for potential travel grants - we may be able to support travel for attendees, contingent on funding. Stay updated with our latest announcements by following us on [LinkedIn](https://www.linkedin.com/company/cloudnativegeo) and [Twitter](https://twitter.com/cloudnativegeo). 
