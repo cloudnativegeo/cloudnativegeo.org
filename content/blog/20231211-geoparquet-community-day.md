@@ -6,7 +6,7 @@ tags = [ ""
 summary = "​Join us for GeoParquet Community Day to highlight the usage of spatial data in Parquet, open table formats, and cloud-native spatial analytics."
 +++
 
-Join us on January 30, 2024, in San Francisco for our inaugural [GeoParquet Community Day](https://lu.ma/GeoParquetSprint) to highlight the usage of spatial data in Parquet, open table formats, and cloud-native spatial analytics. We are proud to have [Wherobotics](https://wherobots.com/) as the convening sponsor. 
+Join us on January 30, 2024, in San Francisco for our inaugural [GeoParquet Community Day](https://lu.ma/GeoParquetSprint) to highlight the usage of spatial data in Parquet, open table formats, and cloud-native spatial analytics. We are proud to have [Wherobots](https://wherobots.com/) as the convening sponsor. 
 
 **Why GeoParquet**
 
