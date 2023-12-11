@@ -32,7 +32,9 @@ If you are interested in participating, we invite you to register [here](https:/
 
 Have you used GeoParquet in a project? Here is an opportunity to present a 5-minute lighting talk! [Apply now to become a speaker](https://docs.google.com/forms/d/e/1FAIpQLScws3DImaO36EuNRP5m7SeBhSXoTMm7jQIYNxnKXuR0Jk8aug/viewform?usp=pp_url).
 
-Keep an eye out for potential travel grants - we may be able to support travel for attendees, contingent on funding. Stay updated with our latest announcements by following us on [LinkedIn](https://www.linkedin.com/company/cloudnativegeo) and [Twitter](https://twitter.com/cloudnativegeo). 
+**Keep an eye out for potential travel grants**
+
+We may be able to support travel for attendees, contingent on funding. Stay updated with our latest announcements by following us on [LinkedIn](https://www.linkedin.com/company/cloudnativegeo) and [Twitter](https://twitter.com/cloudnativegeo). 
 
 **Interested in sponsoring this sprint?**
 We are seeking additional sponsors to make this event as inclusive and impactful. Sponsors will play a crucial role in two key areas: funding travel scholarships for those facing financial barriers, and contributing to our Cloud-Native Geospatial operations fund.
