@@ -1,5 +1,5 @@
 +++
-date = "2023-12-11T08:00:00-07:00"
+date = "2023-12-11T07:00:00-07:00"
 title = "Join the GeoParquet Community Day in San Francisco"
 tags = [ ""
 ]
