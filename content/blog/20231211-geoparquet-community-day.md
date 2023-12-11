@@ -37,6 +37,7 @@ Have you used GeoParquet in a project? Here is an opportunity to present a 5-min
 We may be able to support travel for attendees, contingent on funding. Stay updated with our latest announcements by following us on [LinkedIn](https://www.linkedin.com/company/cloudnativegeo) and [Twitter](https://twitter.com/cloudnativegeo). 
 
 **Interested in sponsoring this sprint?**
+
 We are seeking additional sponsors to make this event as inclusive and impactful. Sponsors will play a crucial role in two key areas: funding travel scholarships for those facing financial barriers, and contributing to our Cloud-Native Geospatial operations fund.
 
 To learn more about sponsorship opportunities, please see our [sponsorship prospectus](https://docs.google.com/document/d/17r1YctCkcgSOKTCI_ZAtGwNFBvN2sBTi/edit?usp=sharing&ouid=111502382490784453898&rtpof=true&sd=true). 
