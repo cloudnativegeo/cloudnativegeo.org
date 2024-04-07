@@ -29,7 +29,7 @@ a {
     text-decoration: underline;
 }
 
-a:hover {
+a:hover, a:hover code {
     color: #53B4FF;
     text-decoration: none;
     transition: color .2s ease-in;

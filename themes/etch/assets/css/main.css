@@ -192,7 +192,7 @@ a {
     text-decoration: underline;
 }
 
-header#nav a:hover, main#content a:hover {
+header#nav a:hover, main#content a:hover, a:hover code {
     background: -webkit-linear-gradient(-65deg, #53B4FF 0%, #0B5FBF 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -566,7 +566,7 @@ main#content pre code {
 }
 
 main#content .footnotes {
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
 
 footer {
