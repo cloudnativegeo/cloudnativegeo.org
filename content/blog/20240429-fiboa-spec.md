@@ -4,7 +4,7 @@ title = "fiboa: Core Specification & Extensions"
 tags = [ ""
 ]
 summary = "A summary of our Zarr sprint held at the LEAP NSF Science and Technology Center at Columbia University in New York City in February 2024."
-author = "MChris Holmes"
+author = "Chris Holmes"
 author_url = "https://beta.source.coop/cholmes/"
 author_title = "[Taylor Geospatial Engine](https://tgengine.org/) Industry Fellow"
 +++
@@ -19,11 +19,13 @@ This blog post dives into the heart of fiboa: the core specification and its ext
 The core of fiboa is quite simple: it is a set of definitions for attribute names and values. One clear example is `area`. It’s quite common for geospatial files representing field boundaries to have a column for the area of the field, but it’s often called different things: `area`, `area_ha`, `totalArea`, etc. And even if it’s called the same thing the actual data definition could be different: area could easily be in acres or hectares, or even something else. So what fiboa does is picks a definition; in our case area is in hectares and must be a ‘float’ between 0 and 100,000. Any data that implements fiboa and successfully validates can then be definitively interpreted as being in hectares.
 
 {{< img src="images/20240429-fiboa-spec-image2.png" alt="fiboa Core Spec">}}
-fiboa Core Spec, at [github.com/fiboa/specification/tree/main/core](github.com/fiboa/specification/tree/main/core)
+
+_fiboa Core Spec, at [github.com/fiboa/specification/tree/main/core](github.com/fiboa/specification/tree/main/core)_
 
 fiboa specifies the attributes in a [human-readable form](https://github.com/fiboa/specification/tree/main/core/schema) as shown above, along with a machine-readable [yaml](https://github.com/fiboa/specification/blob/main/core/schema/schema.yaml) file. Then there are folders for [GeoParquet](https://github.com/fiboa/specification/tree/main/geoparquet) and [GeoJSON](https://github.com/fiboa/specification/tree/main/geojson) outputs that contain official examples and specs. This means that there are [validation tools](https://github.com/fiboa/cli) that can take any data in those formats and report whether it properly implements the core fiboa data schema (along with any extensions - more on those soon).
 
 {{< img src="images/20240429-fiboa-spec-image1.png" alt="fiboa Core Spec">}}
+
 _Validation of [Field Boundaries for North Rhine-Westphalia (NRW), Germany](https://beta.source.coop/repositories/fiboa/de-nrw/description/) using the[fiboa CLI](https://github.com/fiboa/cli)_
 
 GeoJSON generally works best for things like API responses or transferring small amounts of data. GeoParquet shines when storing or moving any sizable amount of data since it is a much faster and more compact format. GeoParquet is a newer format and there is not yet universal tool support, but a big benefit is it can be stored on the cloud and clients can easily stream just the bits they need. Major data projects like [Overture Maps](https://overturemaps.org/) are supporting it and the ecosystem is growing fast, so we decided to embrace it as we envision all global fields represented in fiboa, and billions of polygons are much better served by a more modern [cloud-native geospatial format](https://guide.cloudnativegeo.org/). For the [TGE Field Boundary Initiative](https://tgengine.org/innovation-bridge/field-boundary-initiative/), we’re using (Source Cooperative)[https://beta.source.coop] as our primary data infrastructure, and it works great with GeoParquet.
