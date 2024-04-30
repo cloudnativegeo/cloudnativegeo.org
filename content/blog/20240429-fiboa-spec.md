@@ -3,7 +3,7 @@ date = "2024-04-29T01:00:00-01:00"
 title = "fiboa: Core Specification & Extensions"
 tags = [ ""
 ]
-summary = "A summary of our Zarr sprint held at the LEAP NSF Science and Technology Center at Columbia University in New York City in February 2024."
+summary = "An introduction to the fiboa (Field Boundaries for Agriculture) core specification and extensions."
 author = "Chris Holmes"
 author_url = "https://beta.source.coop/cholmes/"
 author_title = "[Taylor Geospatial Engine](https://tgengine.org/) Industry Fellow"
