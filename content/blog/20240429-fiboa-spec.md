@@ -58,7 +58,7 @@ Matthias has built a tutorial on creating a new extension, for anyone interested
 
 ### Initial Extensions
 
-So far we’ve only managed to create [four extensions](https://github.com/fiboa/extensions?tab=readme-ov-file#list-of-extensions), but we aim for many more over the next few months. The one that saw a lot of effort during the workshop was the [AI Ecosystem extension](https://github.com/fiboa/ai-ecosystem-extension).
+So far we’ve only managed to create [four extensions](https://github.com/fiboa/extensions?tab=readme-ov-file#list-of-extensions), but we aim for many more over the next few months. The one that saw a lot of effort during the workshop was the [AI Ecosystem Extension](https://github.com/fiboa/ai-ecosystem-extension).
 
 {{< img src="images/20240429-fiboa-spec-image5.png" alt="fiboa AI ecosystem extension">}}
 
