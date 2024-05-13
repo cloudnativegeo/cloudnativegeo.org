@@ -3,7 +3,7 @@ date = "2024-05-13T11:13:12-07:00"
 title = "Towards Flexible Data Schemas"
 tags = [ ""
 ]
-summary = ""
+summary = "An examination of how to develop extensible shared data schemas to make data more interoperable."
 author = "Chris Holmes"
 author_url = "https://beta.source.coop/cholmes/"
 author_title = "[Taylor Geospatial Engine](https://tgengine.org/) Industry Fellow"
