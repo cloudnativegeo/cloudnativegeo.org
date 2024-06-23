@@ -179,12 +179,13 @@ div#banner {
 }
 
 div#logo {
-    margin: .2em 0 .5em 0;
+    margin: .5em 0 .5em 0;
     display:block;
+    background-size: 20px 30px;
 }
 
 div#logo svg {
-    width:70%;
+    width:50%;
 }
 
 a {
