@@ -1,12 +1,13 @@
-+++
-date = "2024-06-25T12:00:00+02:00"
-title = "Analysis-Ready Data in Practice from a Cloud-Native Perspective"
-tags = ["ARD"]
-summary = "An examination of how to develop a specification for practical analysis-ready data with cloud-native geospatial technologies and best practices in mind."
-author = "Matthias Mohr"
-author_url = "https://mohr.ws"
-author_title = "Technology Fellow, Radiant Earth"
-+++
+---
+date: "2024-06-25T12:00:00+02:00"
+title: Analysis-Ready Data in Practice from a Cloud-Native Perspective
+tags:
+ - ARD
+summary: An examination of how to develop a specification for practical analysis-ready data with cloud-native geospatial technologies and best practices in mind.
+author: Matthias Mohr
+author_url: https://mohr.ws
+author_title: Technology Fellow, Radiant Earth
+---
 
 As Earth observation data becomes more abundant and diverse, the Earth Observation user community has spent considerable effort trying to find a common definition of "Analysis-Ready Data" (ARD). One of the most obvious reasons this is hard is that it relies on the assumption that we can predict what kind of analysis a user wants to perform. Certainly, someone using satellite imagery to analyze evapotranspiration is going to need something very different from someone trying to detect illegal mines.
 
