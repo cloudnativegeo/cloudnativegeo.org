@@ -26,7 +26,8 @@ We need to create best practices that define which STAC extensions should be use
 ## CEOS-ARD
 
 {{< img src="images/20240624-practical-ard.png" alt="CEOS-ARD (analysis-ready data)">}}
-_The list of published CEOS-ARD Product Family Specifications
+
+_The list of published CEOS-ARD Product Family Specifications_
 
 [CEOS-ARD](https://ceos.org/ard/) (formerly known as “CARD4L”) defines "product family specifications" for eight product types which are either categorized as "Optical" or "Radar". CEOS-ARD describes itself as follows:
 
