@@ -1,7 +1,7 @@
 +++
 date = "2024-06-25T00:13:12-07:00"
 title = "Analysis-Ready Data in Practice from a Cloud-Native Perspective"
-tags = [ ""
+tags = [ "ARD"
 ]
 summary = "An overview of our current thinking on Analysis-Ready Data (ARD) based on work we've been doing with NASA, the Committee on Earth Observation Satellites (CEOS) Systems Engineering Office, and others over the past year."
 author = "Matthias Mohr"
@@ -31,7 +31,7 @@ We need to create best practices that define which STAC extensions should be use
 
 > CEOS Analysis Ready Data (CEOS-ARD) are satellite data that have been processed to a minimum set of requirements and organized into a form that allows immediate analysis with a minimum of additional user effort and interoperability both through time and with other datasets.
 
-This is a great resource to start from, especially with regards to the data pre-processing requirements. A lot of smart people from different space agencies have worked on it and concluded on a set of minimum requirements that are accompanied by additional optional requirements. The requirements are currently specified in (mostly tabular) PDF/Word documents, but they are in the process of migrating to a [GitHub and Markdown based process](https://github.com/ceos-org/ceos-ard). Implementors can go through the documents and check to see if they fulfill the requirements. For the synthetic aperture radar (SAR) product family specification, there’s additionally an XML metadata encoding available.
+This is a great resource to start from, especially with regards to the data pre-processing requirements. A lot of smart people from different space agencies have worked on it and concluded on a set of minimum requirements that are accompanied by additional optional requirements. The requirements are currently specified in (mostly tabular) PDF/Word documents, but they are in the process of migrating to a [GitHub and Markdown based process](https://github.com/ceos-org/ceos-ard). Implementers can go through the documents and check to see if they fulfill the requirements. For the synthetic aperture radar (SAR) product family specification, there’s additionally an XML metadata encoding available.
 
 CEOS-ARD is a great foundation, and we have identified several areas where we believe it could be made even better.
 
