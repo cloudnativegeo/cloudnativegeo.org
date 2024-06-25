@@ -33,6 +33,8 @@ We need to create best practices that define which STAC extensions should be use
 
 This is a great resource to start from, especially with regards to the data pre-processing requirements. A lot of smart people from different space agencies have worked on it and concluded on a set of minimum requirements that are accompanied by additional optional requirements. The requirements are currently specified in (mostly tabular) PDF/Word documents, but they are in the process of migrating to a [GitHub and Markdown based process](https://github.com/ceos-org/ceos-ard). Implementers can go through the documents and check to see if they fulfill the requirements. For the synthetic aperture radar (SAR) product family specification, there’s additionally an XML metadata encoding available.
 
+![The list of published CEOS-ARD Product Family Specifications](assets/images/20240624-practical-ard.png)
+
 CEOS-ARD is a great foundation, and we have identified several areas where we believe it could be made even better.
 
 ### Right-sizing the number of CEOS-ARD metadata requirements
