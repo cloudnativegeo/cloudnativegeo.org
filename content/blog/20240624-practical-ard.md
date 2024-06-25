@@ -19,7 +19,7 @@ This blog post is an overview of our current thinking on ARD based on work we've
 
 Some of the challenges of aligning around a definition of ARD has been solved by adoption of the SpatioTemporal Asset Catalogs ([STAC](https://stacspec.org/en)) metadata specification. In an ideal case, STAC metadata allows users to load data easily into a variety of configurations that might suit their needs &ndash; e.g. into a datacube.
 
-STAC was designed to be flexible and has an intentionally small core that can be added to via extensions. Many STAC extensions have been developed, but there is no clear guidance on which extensions could be added to a STAC metadata catalog to create something that would be considered ARD. The best extensions to enable ARD may not even exist yet.
+STAC was designed to be flexible and has an intentionally small core that can be added to via extensions. Many [STAC extensions](https://stac-extensions.github.io/) have been developed, but there is no clear guidance on which extensions could be added to a STAC metadata catalog to create something that would be considered ARD. The best extensions to enable ARD may not even exist yet.
 
 We need to create best practices that define which STAC extensions should be used (or developed) to signal that data should be considered analysis-ready. If we do this, we could use the concept of a STAC "profile" to define which combination of STAC extensions should be used and validated to create ARD data.
 
