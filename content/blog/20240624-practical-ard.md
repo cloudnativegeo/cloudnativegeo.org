@@ -76,7 +76,7 @@ How does all this relate to the ongoing work in the OGC/ISO [ARD Standards Worki
 
 We believe that such a complex and large topic can’t be built top-down, it should be built bottom-up. It needs to evolve over time. Only once it has been iteratively improved, has implementations and some adoption, it should go through standardization.
 
-ISO specifically doesn’t seem to be agile enough for this incremental approach, and I’m not sure about OGC. The emergence of STAC is an example of how a community-led de-facto best practice can emerge and then "graduate" into becoming a de-jure OGC standard.
+ISO specifically doesn’t seem to be agile enough for this incremental approach, and I’m not sure about OGC. The emergence of STAC is an example of how a community-led de-facto best practice can emerge and then "graduate" into becoming a de-jure OGC (community) standard.
 
 We believe that the STAC-based approach for CEOS-ARD described in this post brings a lot to the table, and that any ISO/OGC work on ARD &ndash; however it continues in the next months &ndash; should be based on it. More specifically, we believe that ISO/OGC's approach to ARD should be a superset of CEOS-ARD. If (breaking) changes need to be proposed by the ISO/OGC work, they should be fed back into CEOS-ARD. If we end up with multiple more or less similar ARD specifications, everyone will loose.
 
