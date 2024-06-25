@@ -1,5 +1,5 @@
 +++
-date = "2024-06-24T00:13:12-07:00"
+date = "2024-06-25T00:13:12-07:00"
 title = "Analysis-Ready Data in Practice from a Cloud-Native Perspective"
 tags = [ ""
 ]
