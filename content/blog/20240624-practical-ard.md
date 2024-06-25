@@ -53,7 +53,7 @@ For example, one building block aims to cover all "product metadata" rather than
 
 These building blocks could even match STAC extensions, but that might be difficult in some cases due to different scoping (STAC was primarily designed for search and discovery) and due to the fact that they are cleanly discretized (more on that below).
 
-Another reason to split into smaller building blocks is that it allows smaller groups of experts to more easily work on individual building blocks. Limiting the scope ensures that the work is still manageable and you can get to a result in a reasonable amount of time. I believe we should aspire to follow the best practices of categorization / discretization as defined by [Peter Strobl (JRC)](https://it.linkedin.com/in/peter-strobl-79b7a191):
+Another reason to split into smaller building blocks is that it allows smaller groups of experts to more easily work on individual building blocks. Limiting the scope ensures that the work is still manageable and you can get to a result in a reasonable amount of time. I believe we should aspire to follow the best practices of categorization / discretization as defined by [Peter Strobl (JRC)](https://it.linkedin.com/in/peter-strobl-79b7a191) (the slides are available through the [OGC portal](https://portal.ogc.org/files/?artifact_id=108172)):
 
 > - **assessable**: all characteristics used for distinguishing categories must be identified, and objective/measurable
 > - **unambiguous**: categories mutually exclude each other
