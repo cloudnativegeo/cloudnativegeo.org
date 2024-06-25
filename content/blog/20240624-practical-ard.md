@@ -29,7 +29,7 @@ We need to create best practices that define which STAC extensions should be use
 
 _The list of published CEOS-ARD Product Family Specifications._
 
-[CEOS-ARD](https://ceos.org/ard/) (formerly known as “CARD4L”) defines "product family specifications" for eight product types which are either categorized as "Optical" or "Radar." CEOS-ARD describes itself as follows:
+[CEOS-ARD](https://ceos.org/ard/) (formerly known as “CARD4L”) defines "product family specifications" for eight product types which are either categorized as "Optical" or "Radar". CEOS-ARD describes itself as follows:
 
 > CEOS Analysis Ready Data (CEOS-ARD) are satellite data that have been processed to a minimum set of requirements and organized into a form that allows immediate analysis with a minimum of additional user effort and interoperability both through time and with other datasets.
 
