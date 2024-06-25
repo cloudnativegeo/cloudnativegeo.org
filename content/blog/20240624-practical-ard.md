@@ -17,7 +17,7 @@ This blog post is an overview of our current thinking on ARD based on work we've
  
 ## STAC
 
-Some of the challenges of aligning around a definition of ARD has been solved by adoption of the SpatioTemporal Asset Catalogs ([STAC](https://stacspec.org/en)) metadata specification. In an ideal case, STAC metadata allows users to load data easily into a variety of configurations that might suit their needs &ndash; e.g. into a datacube.
+Some of the challenges of aligning around a definition of ARD has been solved by adoption of the SpatioTemporal Asset Catalogs ([STAC](https://stacspec.org/en)) metadata specification. In an ideal case, STAC metadata allows users to load data easily into a variety of configurations that might suit their needs &ndash; e.g., into a datacube.
 
 STAC was designed to be flexible and has an intentionally small core that can be added to via extensions. Many [STAC extensions](https://stac-extensions.github.io/) have been developed, but there is no clear guidance on which extensions could be added to a STAC metadata catalog to create something that would be considered ARD. The best extensions to enable ARD may not even exist yet.
 
@@ -27,9 +27,9 @@ We need to create best practices that define which STAC extensions should be use
 
 {{< img src="images/20240624-practical-ard.png" alt="CEOS-ARD (analysis-ready data)">}}
 
-_The list of published CEOS-ARD Product Family Specifications_
+_The list of published CEOS-ARD Product Family Specifications._
 
-[CEOS-ARD](https://ceos.org/ard/) (formerly known as “CARD4L”) defines "product family specifications" for eight product types which are either categorized as "Optical" or "Radar". CEOS-ARD describes itself as follows:
+[CEOS-ARD](https://ceos.org/ard/) (formerly known as “CARD4L”) defines "product family specifications" for eight product types which are either categorized as "Optical" or "Radar." CEOS-ARD describes itself as follows:
 
 > CEOS Analysis Ready Data (CEOS-ARD) are satellite data that have been processed to a minimum set of requirements and organized into a form that allows immediate analysis with a minimum of additional user effort and interoperability both through time and with other datasets.
 
@@ -41,7 +41,7 @@ CEOS-ARD is a great foundation, and we have identified several areas where we be
 
 The SAR product family specifications include a large number of requirements that make it difficult to implement. SAR data is inherently complex, so I don’t expect we can change a lot, but there are likely some small tweaks we can propose to CEOS.
 
-For [example](https://github.com/ceos-org/ceos-ard/issues/27), the SAR product family specification includes various file related metadata requirements that mostly apply to RAW data (e.g. header size and the byte order). Is RAW data really analysis-ready if such properties must be known? Usually software should handle that. Building on this, perhaps ARD formats should only be based on formats that are readable by GDAL because that is what most users use. In the geospatial world, GDAL is effectively a de-facto standard at this point, as most users use it directly or use software that uses it under the hood.
+For [example](https://github.com/ceos-org/ceos-ard/issues/27), the SAR product family specification includes various file related metadata requirements that mostly apply to RAW data (e.g., header size and the byte order). Is RAW data really analysis-ready if such properties must be known? Usually software should handle that. Building on this, perhaps ARD formats should only be based on formats that are readable by GDAL because that is what most users use. In the geospatial world, GDAL is effectively a de-facto standard at this point, as most users use it directly or use software that uses it under the hood.
 
 Ultimately, we should aim to make the ARD specification as complex as needed but as simple as possible. We also need to be careful to not have too many optional requirements and instead prioritize requirements that bring the most value to most users.
 
