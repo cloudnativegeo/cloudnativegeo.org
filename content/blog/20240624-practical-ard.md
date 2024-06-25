@@ -66,7 +66,7 @@ Getting the categorization of the building blocks right will be very challenging
 
 ## STAC supports a user-centric and practical approach
 
-Users currently seem to benefit a lot from STAC, as its standardization of metadata brings them one step closer to ARD already. CEOS-ARD has a separate XML-based metadata language, which is not ideal. I believe CEOS-ARD should be expressed in STAC, because it provides the metadata in a form that people already use and is supported by a vibrant software ecosystem.
+Users currently seem to benefit a lot from STAC, as its standardization of metadata brings them one step closer to ARD already. CEOS-ARD has a separate XML-based metadata language, which is not ideal. I believe CEOS-ARD should be expressed in STAC, because it provides the metadata in a form that people already use and is supported by a [vibrant software ecosystem](https://stacindex.org/ecosystem).
 
 ARD will only be adopted if it is supported by a software ecosystem that has users. Any approach to ARD should try to benefit from an existing ecosystem of software and learning resources, which STAC offers. Analysis-ready data and metadata is on it's own not analysis-ready. It always needs software that can actually benefit from the metadata and make the data available to users in a way that they can directly start in their comfort zone. That is usually their domain knowledge and a analysis environment such as Python, R, QGIS, or some other more or less popular application or programming language.
 
