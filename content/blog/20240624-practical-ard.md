@@ -26,14 +26,13 @@ We need to create best practices that define which STAC extensions should be use
 ## CEOS-ARD
 
 {{< img src="images/20240624-practical-ard.png" alt="CEOS-ARD (analysis-ready data)">}}
+_The list of published CEOS-ARD Product Family Specifications
 
 [CEOS-ARD](https://ceos.org/ard/) (formerly known as “CARD4L”) defines "product family specifications" for eight product types which are either categorized as "Optical" or "Radar". CEOS-ARD describes itself as follows:
 
 > CEOS Analysis Ready Data (CEOS-ARD) are satellite data that have been processed to a minimum set of requirements and organized into a form that allows immediate analysis with a minimum of additional user effort and interoperability both through time and with other datasets.
 
 This is a great resource to start from, especially with regards to the data pre-processing requirements. A lot of smart people from different space agencies have worked on it and concluded on a set of minimum requirements that are accompanied by additional optional requirements. The requirements are currently specified in (mostly tabular) PDF/Word documents, but they are in the process of migrating to a [GitHub and Markdown based process](https://github.com/ceos-org/ceos-ard). Implementers can go through the documents and check to see if they fulfill the requirements. For the synthetic aperture radar (SAR) product family specification, there’s additionally an XML metadata encoding available.
-
-![The list of published CEOS-ARD Product Family Specifications](assets/images/20240624-practical-ard.png)
 
 CEOS-ARD is a great foundation, and we have identified several areas where we believe it could be made even better.
 
