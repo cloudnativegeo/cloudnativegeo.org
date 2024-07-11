@@ -1,4 +1,13 @@
-# Embracing Geospatial as a Primary Data Type: A Call to Action for the Data Community
++++
+date = "2024-07-11T00:13:12-07:00"
+title = "Embracing Geospatial as a Primary Data Type: A Call to Action for the Data Community"
+tags = [ "GeoParquet"
+]
+summary = "A call to action to go beyond GeoParquet to bring geospatial data types to the mainstream data world in Arrow, Parquet and Iceberg"
+author = "Chris Holmes & Javier de la Torre"
+author_url = ""
+author_title = ""
++++
 
 *By Chris Holmes and Javier de la Torre*
 
