@@ -9,8 +9,6 @@ author_url = ""
 author_title = ""
 +++
 
-*By Chris Holmes and Javier de la Torre*
-
 <img width="1073" alt="Screenshot 2024-07-12 at 1 59 39 PM" src="https://github.com/user-attachments/assets/b7e6c099-29a3-4560-8dc6-b86fde2b7477">
 
 Over two years ago, the GeoParquet project brought together a diverse group of interests around a clear objective: standardizing how geospatial data is used within Parquet. The initial goal was modest - just ensure that any tool reading or writing spatially located geometries (points, lines and polygons) does so in a consistent and interoperable way. But the ultimate goal of the effort has been to make geospatial a primary data type within the broader data community, thereby breaking the ‘GIS’ data silo and enabling the seamless integration of geospatial data with all other data types. We envision a world where spatial data is simply another column in your dataset, not a special case requiring unique handling.
