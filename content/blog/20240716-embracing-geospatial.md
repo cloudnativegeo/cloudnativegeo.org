@@ -9,6 +9,8 @@ author_url = "https://www.linkedin.com/in/opencholmes" and "https://www.linkedin
 author_title = "Radiant Earth Technical Fellow" and "CARTO Founder and Chief Strategy Officer"
 +++
 
+{{< img src="images/20240716-embracing-geospatial.png" alt="Embracing Geospatial as a Primary Data Type">}}
+
 Over two years ago, the GeoParquet project brought together a diverse group of interests around a clear objective: standardizing how geospatial data is used within Parquet. The initial goal was modest: to ensure that any tool reading or writing spatially located geometries (points, lines and polygons) does so in a consistent and interoperable way. But the ultimate goal of the effort has been to make geospatial a primary data type within the broader data community, thereby breaking the ‘GIS’ data silo and enabling the seamless integration of geospatial data with all other data types. We envision a world where spatial data is simply another column in your dataset, not a special case requiring unique handling. This integration will unlock new insights, reduce the need for specialized tools, and make geospatial information accessible to a broader range of users and innovations.
 Without standardization, the current situation is that geospatial datasets are often non-interoperable. Spatial data might be a column in each system, but moving data between systems requires extensive overhead to transform it properly due to insufficient metadata. Naively adding geospatial types to big data systems often leads to poor performance because the necessary metadata and indexes for effective spatial operations are not considered. This fragmentation and inefficiency highlight the urgent need for standardized approaches.
 
