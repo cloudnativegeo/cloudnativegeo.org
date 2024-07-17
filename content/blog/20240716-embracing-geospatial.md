@@ -1,5 +1,5 @@
 +++
-date = "2024-07-16T00:33:22-07:00"
+date = "2024-07-16T00:00:01-07:00"
 title = "Embracing Geospatial as a Primary Data Type: A Call to Action for the Data Community"
 tags = [ ""
 ]
