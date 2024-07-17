@@ -1,10 +1,10 @@
 +++
-date = "2024-07-16T00:00:01-07:00"
+date = "2024-07-15T00:00:01-07:00"
 title = "Embracing Geospatial as a Primary Data Type: A Call to Action for the Data Community"
 tags = [ ""
 ]
 summary = "Chris Holmes and Javier de la Torre make the case for geospatial data to move from a niche concern requiring specialized tools to a standard data type that can be integrated seamlessly with other data."
-author = "Chris Holmes and "Javier de la Torre"
+author = "Chris Holmes and Javier de la Torre"
 +++
 
 {{< img src="images/20240716-embracing-geospatial.png" alt="Embracing Geospatial as a Primary Data Type">}}
