@@ -4,9 +4,7 @@ title = "Embracing Geospatial as a Primary Data Type: A Call to Action for the D
 tags = [ ""
 ]
 summary = "Chris Holmes and Javier de la Torre make the case for geospatial data to move from a niche concern requiring specialized tools to a standard data type that can be integrated seamlessly with other data."
-author = "Chris Holmes" and "Javier de la Torre"
-author_url = "https://www.linkedin.com/in/opencholmes" and "https://www.linkedin.com/in/jatorre"
-author_title = "Radiant Earth Technical Fellow" and "CARTO Founder and Chief Strategy Officer"
+author = "Chris Holmes and "Javier de la Torre"
 +++
 
 {{< img src="images/20240716-embracing-geospatial.png" alt="Embracing Geospatial as a Primary Data Type">}}
