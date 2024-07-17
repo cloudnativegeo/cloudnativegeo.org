@@ -1,5 +1,5 @@
 +++
-date = "2024-07-15T00:00:01-07:00"
+date = "2024-07-17T00:00:01-01:00"
 title = "Embracing Geospatial as a Primary Data Type: A Call to Action for the Data Community"
 tags = [ ""
 ]
@@ -15,7 +15,7 @@ Without standardization, the current situation is that geospatial datasets are o
 ### Progress and Adoption
 Since its inception, the GeoParquet group has launched versions 1.0 and 1.1, witnessing significant adoption across various tools ([over 20 tools and libraries implement the specification](https://geoparquet.org/#implementations)) and datasets.
 
-{{< img src="images/20240716-geoparquet-tools.png" alt="Software libraries and tools for GeoParquet">}}
+{{< img src="images/20240717-geoparquet-tools.png" alt="Software libraries and tools for GeoParquet">}}
 
 _A few of the organizations that provide software libraries and tools for GeoParquet. Their contributions are building a robust ecosystem for geospatial data management and analysis using GeoParquet._
 
