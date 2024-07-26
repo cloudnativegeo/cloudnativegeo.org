@@ -1,4 +1,4 @@
-# How to make your field boundaries more useful
+# Make your field boundaries more useful with fiboa
 
 In May we discussed the [fiboa ecosystem](https://cloudnativegeo.org/blog/2024/05/fiboa-the-ecosystem/) and mentioned that there is a new converter tool, which can take non-fiboa datasets and help you turn it into fiboa datasets. Back then we had 5 very similar datasets converted. In the meantime, we’ve converted additional datasets and improved the converter tool. Today, we’d like to give an update on the status and show how easy it is for you to make your field boundaries more useful by converting and providing them in a “standardized” format.
 
@@ -25,40 +25,40 @@ Let's look at the most important steps in the conversion process:
      
 - Run filters to remove rows that shall not be in the final data, for example:
 
-     ``````python
+     ```python
      COLUMN_FILTERS = {
          "boundary_type": lambda column: column == "agricultural_field"
      }
-     ``````
+     ```
 
      This keeps only the geometries for those boundaries that are of type `agricultural_field`.
 
 - Add properties (i.e. columns) with additional information, for example:
 
-     ``````python
+     ```python
      ADD_COLUMNS = {
          "determination_method": "auto-imagery"
      }
-     ``````
+     ```
 
      This adds the information that the boundaries were detected by a ML algorithm to the predefined property [`determination_method`](https://github.com/fiboa/specification/tree/main/core#determination-properties).
 
 - Rename and/or remove properties, for example:
   
-     ``````python
+     ```python
      COLUMNS = {
          "fid": "id",
          "geometry": "geometry",
          "area_sqm": "area",
          "custom_property": "custom_property"
      }
-     ``````
+     ```
 
      This is the list of property that you want to keep from the source data (here: `fid`, `geometry` and `area_ha`). The given property will be renamed to `id`, `geometry` and `area`, which are [predefined properties](https://github.com/fiboa/specification/tree/main/core) in fiboa. All other properties in the source data would get removed.
 
 - Add custom properties, for example:
   
-     ``````python
+     ```python
      MISSING_SCHEMAS = {
           "properties": {
                "custom_property": {
@@ -67,7 +67,7 @@ Let's look at the most important steps in the conversion process:
                }
           }
      }
-     ``````
+     ```
      
      This defines that your custom property that is not predefined in fiboa or an extension with the name `custom_property` is of type string and can be any of the uppercase letters A, B, C (or `null`).
      This is probably the most complex task as it requires to define a schema for every custom property that you want to provide in addition to the predefined properties in fiboa or its extensions.
@@ -75,23 +75,23 @@ Let's look at the most important steps in the conversion process:
 
 - Change the data values, for example:
 
-     ``````python
+     ```python
      COLUMN_MIGRATIONS = {
          "area_sqm": lambda column: column / 10000
      }
-     ``````
+     ```
 
      This would convert the values for the property `area_sqm` from square meters to hectares (as the `area` property in fiboa requires the area to be in hectares).
 
 - Create a file with additional metadata (i.e. a [STAC Collection](https://stacspec.org) with description, license, provider information, etc.). That just requires updating some variables, for example:
 
-     ``````python
+     ```python
      ID = "de"
      SHORT_NAME = "Germany"
      TITLE = "Field boundaries for Germany"
      LICENSE = "CC-BY-4.0"
      ...
-     ``````
+     ```
 
 - Finally, write the data to a GeoParquet file.
 
