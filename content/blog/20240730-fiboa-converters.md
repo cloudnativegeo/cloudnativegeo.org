@@ -1,8 +1,8 @@
 # Make your field boundaries more useful with fiboa
 
-In May we discussed the [fiboa ecosystem](https://cloudnativegeo.org/blog/2024/05/fiboa-the-ecosystem/) and mentioned that there is a new converter tool, which can take non-fiboa datasets and help you turn it into fiboa datasets. Back then we had 5 very similar datasets converted. In the meantime, we’ve converted additional datasets and improved the converter tool. Today, we’d like to give an update on the status and show how easy it is for you to make your field boundaries more useful by converting and providing them in a “standardized” format.
+In May we discussed [fiboa](https://cloudnativegeo.org/blog/2024/04/introducing-fiboa/) and the [fiboa ecosystem](https://cloudnativegeo.org/blog/2024/05/fiboa-the-ecosystem/) and mentioned that there is a new converter tool, which can take non-fiboa datasets and help you turn it into fiboa datasets. Back then we had 5 very similar datasets converted. In the meantime, we’ve converted additional datasets and improved the converter tool. Today, we’d like to give an update on the status and show how easy it is for you to make your field boundaries more useful by converting and providing them in a “standardized” format.
 
-Seven persons are currently working on creating more than 40 converters:
+Seven people are currently working on creating more than 40 converters:
 
 - ~20 converters are fully implemented and [easily usable](https://pypi.org/project/fiboa-cli/)
 - ~20 converters are currently in development and [available in a draft version](https://github.com/fiboa/cli/pulls)
@@ -107,7 +107,7 @@ Just replace X with any of the available converters. Use the command `fiboa conv
 
 The `result.parquet` file can then be loaded into any software that can read Parquet files, for example QGIS. It can also be loaded in many programming languages such as Python or R. Loading multiple fiboa-compliant datasets makes it much simpler to work across multiple datasets as many properties are already aligned, so it's analysis-ready and can be used very fast and efficiently.
 
-This makes it very easy to work with massive amounts of field boundary data, even across providers, and work against a standardized interface without the need to manually preprocess the data heavily to be comparable.
+This makes it very easy to work with massive amounts of field boundary data, even across providers, and work against a standardized interface without the need to manually preprocess the data heavily to be comparable. For more details see also the section "Why a farm field boundary data schema?" in our blog post "[Introduction to fiboa](https://cloudnativegeo.org/blog/2024/04/introducing-fiboa/)".
 
 Join us and make your datasets available in a standardized format now!
 We are happy to help if you run into issues, just get in touch via [email](mailto:matthias@mohr.ws) or [GitHub issues or pull requests](https://github.com/fiboa/cli).
