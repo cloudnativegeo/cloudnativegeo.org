@@ -1,6 +1,14 @@
-# Make your field boundaries more useful with fiboa
++++
+date = "2024-08-07T00:00:01-01:00"
+title = "Creating Interoperable Field Boundary Data with the fiboa Converter Tool"
+tags = [ ""
+]
+summary = "An overview of the fiboa converter tool and how it can be used to create interoperable field boundary data."
+author_url = "https://mohr.ws/"
+author_title = "[Radiant Earth](https://radiant.earth/) Technology Fellow"
++++
 
-In May we discussed [fiboa](https://cloudnativegeo.org/blog/2024/04/introducing-fiboa/) and the [fiboa ecosystem](https://cloudnativegeo.org/blog/2024/05/fiboa-the-ecosystem/) and mentioned that there is a new converter tool, which can take non-fiboa datasets and help you turn it into fiboa datasets. Back then we had 5 very similar datasets converted. In the meantime, we’ve converted additional datasets and improved the converter tool. Today, we’d like to give an update on the status and show how easy it is for you to make your field boundaries more useful by converting and providing them in a “standardized” format.
+In May, we discussed Field Boundaries for Agriculture ([fiboa](https://cloudnativegeo.org/blog/2024/04/introducing-fiboa/)) and the [fiboa ecosystem](https://cloudnativegeo.org/blog/2024/05/fiboa-the-ecosystem/) and mentioned that there is a new converter tool, which can take non-fiboa datasets and help you turn it into fiboa datasets. Back then we had 5 very similar datasets converted. In the meantime, we’ve converted additional datasets and improved the converter tool. Today, we’d like to give an update on the status and show how easy it is for you to make your field boundaries more useful by converting and providing them in a “standardized” format.
 
 Seven people are currently working on creating more than 40 converters:
 
