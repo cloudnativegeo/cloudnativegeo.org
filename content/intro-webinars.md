@@ -1,4 +1,4 @@
 +++
 type = "redirect"
-target = "http://47016186.hs-sites.com/women-in-geospatial-webinar-0"
+target = " https://47016186.hs-sites.com/cng-intro-usecases"
 +++
