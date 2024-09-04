@@ -7,6 +7,10 @@ Cloud-Native Geospatial (CNG) provides a platform for a diverse community to exc
 ### Why Join? 
 Joining CNG connects you to an engaged community, impactful events, cutting-edge projects, and an extensive platform and network. As database technology and geospatial tools evolve rapidly, CNG ensures you stay ahead, adding value to both you and your organization.
 
+### Membership Sign up
+
+<link rel="stylesheet" type="text/css" href="https://api.membercenter.net/forms/css/sq-payment-form.css"> <script src="https://js.stripe.com/v3/"></script> <script type="text/javascript" src="https://api.membercenter.net/payments/payment_form.js?id=10015"></script> <div class="sq-payment-form" id="sq-payment-form1"></div>
+
 ### CNG Data Formats
 Cloud-Native data formats are structured to be efficiently retrieved from cloud [object storage](https://en.wikipedia.org/wiki/Object_storage) services which are designed to serve large volumes of data using generic RESTful / HTTP data transfer protocols.
 
