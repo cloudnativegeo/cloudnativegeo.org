@@ -4,13 +4,13 @@ title = "Join the CNG Forum"
 
 Cloud-Native Geospatial (CNG) provides a platform for a diverse community to exchange ideas on improving the accessibility and usability of geospatial data. The organization emphasizes learning from various institutions and perspectives, fostering openness to innovative ideas. CNG is committed to being a trustworthy source of unbiased information on widely utilized technologies. It actively works to expand and diversify its community, engaging both newcomers and senior decision-makers to ensure practical value and inclusivity in geospatial data practices.
 
-#### CNG Data Formats
+### Why Join? 
+Joining CNG connects you to an engaged community, impactful events, cutting-edge projects, and an extensive platform and network. As database technology and geospatial tools evolve rapidly, CNG ensures you stay ahead, adding value to both you and your organization.
+
+### CNG Data Formats
 Cloud-Native data formats are structured to be efficiently retrieved from cloud [object storage](https://en.wikipedia.org/wiki/Object_storage) services which are designed to serve large volumes of data using generic RESTful / HTTP data transfer protocols.
 
 Please visit the [Cloud-Optimized Geospatial Formats Guide](https://guide.cloudnativegeo.org) to learn more.
-
-### Why Join? 
-Joining CNG connects you to an engaged community, impactful events, cutting-edge projects, and an extensive platform and network. As database technology and geospatial tools evolve rapidly, CNG ensures you stay ahead, adding value to both you and your organization.
 
 ### What are the benefits of cloud-native geospatial data?
 1. **It's faster for users.** Cloud-native formats allow people to interact with massive amounts of data by allowing them to stream only the data that they need for their analysis. By relieving the burden of needing to download and store copies of data before starting a project, cloud-native data saves users time and money, lowering the cost of research and and accelerating innovation.
