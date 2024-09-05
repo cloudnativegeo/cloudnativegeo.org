@@ -8,7 +8,7 @@ Cloud-Native Geospatial (CNG) provides a platform for a diverse community to exc
 Joining CNG connects you to an engaged community, impactful events, cutting-edge projects, and an extensive platform and network. As database technology and geospatial tools evolve rapidly, CNG ensures you stay ahead, adding value to both you and your organization.
 
 ### Membership Levels
-{{< img src="images/09042024-membership-levels.jpg"  alt="CNG Forum Membership Levels" caption="" >}}
+{{< img src="images/09042024-membership-levels.png"  alt="CNG Forum Membership Levels" caption="" >}}
 
 ### Membership Sign up
 
