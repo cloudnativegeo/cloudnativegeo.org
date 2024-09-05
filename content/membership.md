@@ -14,6 +14,7 @@ Joining CNG connects you to an engaged community, impactful events, cutting-edge
 
 <link rel="stylesheet" type="text/css" href="https://api.membercenter.net/forms/css/sq-payment-form.css"> <script src="https://js.stripe.com/v3/"></script> <script type="text/javascript" src="https://api.membercenter.net/payments/payment_form.js?id=10015"></script> <div class="sq-payment-form" id="sq-payment-form1"></div>
 
+### Special Situations Membership Waiver Form
 If you are experiencing financial hardship, please [submit your request](https://share.hsforms.com/14y-ZTG4XRvC_T6sBZQVPoQrzpx6) to have your membership fees waived. 
 
 ### Membership Directory
