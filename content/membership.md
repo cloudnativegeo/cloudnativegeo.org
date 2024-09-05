@@ -8,7 +8,11 @@ Cloud-Native Geospatial (CNG) provides a platform for a diverse community to exc
 Joining CNG connects you to an engaged community, impactful events, cutting-edge projects, and an extensive platform and network. As database technology and geospatial tools evolve rapidly, CNG ensures you stay ahead, adding value to both you and your organization.
 
 ### Membership Levels
-
+<style>
+{
+  font-size: 13px
+}
+</style>
 | Membership Level | Annual Fee | Eligibility |
 | :---   |     :---   |   :---  |
 | Professional      | $195    | N/A   |
