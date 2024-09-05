@@ -8,17 +8,19 @@ Cloud-Native Geospatial (CNG) provides a platform for a diverse community to exc
 Joining CNG connects you to an engaged community, impactful events, cutting-edge projects, and an extensive platform and network. As database technology and geospatial tools evolve rapidly, CNG ensures you stay ahead, adding value to both you and your organization.
 
 ### Membership Levels
+
 | Membership Level | Annual Fee | Eligibility |
-| :---        |     :---   |   :---  |
-| Professional      | $195       | N/A   |
-| Student   | $20         | Open to students who are presently enrolled on a full-time basis.  |
-| Scholarship   | $20         | Open to individuals learning via non-conventional programs such as internships, apprentices, online, and other methods. |
+| :---   |     :---   |   :---  |
+| Professional      | $195    | N/A   |
+| Student   | $20   | Open to students who are presently enrolled on a full-time basis.  |
+| Scholarship   | $20   | Open to individuals learning via non-conventional programs such as internships, apprentices, online, and other methods.|
 
 ### Membership Sign up
 
 <link rel="stylesheet" type="text/css" href="https://api.membercenter.net/forms/css/sq-payment-form.css"> <script src="https://js.stripe.com/v3/"></script> <script type="text/javascript" src="https://api.membercenter.net/payments/payment_form.js?id=10015"></script> <div class="sq-payment-form" id="sq-payment-form1"></div>
 
 ### Membership Directory
+
 <script type="text/javascript" src="https://api.membercenter.net/directory/directory-bundle.js?id=10015"></script><div class="mc-directory-wrapper" id="mc-directory-wrapper"></div>
 
 ### CNG Data Formats
