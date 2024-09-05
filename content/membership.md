@@ -17,6 +17,7 @@ Joining CNG connects you to an engaged community, impactful events, cutting-edge
 | Nonprofit |  $20	|  Open to the staff of nonprofits.	|
 | Educational Institutes	| $500 	| 2 facility members and up to 8 student members, tabletop at CNG annual event. |
 | Company Partners 	| $5,000 	| 8 staff memberships,  logo on website, 1 blog post, ad in two newsletters, speakership opportunity at one event, joint webinar, a 10x10 booth at CNG annual event.|
+![Membership levels](https://github.com/user-attachments/assets/0a89f6c1-6743-4c56-ae0f-902f9cc50bfd)
 
 ### Membership Sign up
 
