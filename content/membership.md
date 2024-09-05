@@ -14,11 +14,11 @@ Joining CNG connects you to an engaged community, impactful events, cutting-edge
 
 <link rel="stylesheet" type="text/css" href="https://api.membercenter.net/forms/css/sq-payment-form.css"> <script src="https://js.stripe.com/v3/"></script> <script type="text/javascript" src="https://api.membercenter.net/payments/payment_form.js?id=10015"></script> <div class="sq-payment-form" id="sq-payment-form1"></div>
 
+If you are experiencing financial hardship, please [submit your request](https://share.hsforms.com/14y-ZTG4XRvC_T6sBZQVPoQrzpx6) to have your membership fees waived. 
+
 ### Membership Directory
 
 <script type="text/javascript" src="https://api.membercenter.net/directory/directory-bundle.js?id=10015"></script><div class="mc-directory-wrapper" id="mc-directory-wrapper"></div>
-
-</script> <script type="text/javascript" src="https://api.membercenter.net/directory/directory-bundle.js?id=10015"></script> <div class="mc-directory-wrapper" id="c-directory-wrapper"></div>
 
 ### CNG Data Formats
 Cloud-Native data formats are structured to be efficiently retrieved from cloud [object storage](https://en.wikipedia.org/wiki/Object_storage) services which are designed to serve large volumes of data using generic RESTful / HTTP data transfer protocols.
