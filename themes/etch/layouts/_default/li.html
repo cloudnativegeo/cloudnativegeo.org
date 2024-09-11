@@ -1,5 +1,8 @@
 <li>
-    <time>{{- .Date | time.Format "02 Jan 2006" -}}</time><br>
-    <a href="{{ .RelPermalink }}" class="post-title">{{ .Title }}</a><br>
-    <span class="post-summary">{{ .Summary }}</span> <a class="readmore" href="{{ .RelPermalink }}">Read more&hellip;</a><br>
+  <time>{{- .Date | time.Format "02 Jan 2006" -}}</time><br>
+  <a href="{{ .RelPermalink }}" class="post-title">{{ .Title }}</a><br>
+  {{- if isset .Params "author" -}}
+        <span class="post-byline">By {{if isset .Params "author_url"}}<a href="{{ .Params.author_url }}">{{end}}{{ .Params.author | markdownify }}{{- if isset .Params "author_url" -}}</a>{{- end -}}{{- if isset .Params "author_title" -}}, {{ .Params.author_title | markdownify }}{{- end -}}</span><br>
+        {{- end -}}
+  <span class="post-summary">{{ .Summary }}</span> <a class="readmore" href="{{ .RelPermalink }}">Read more&hellip;</a><br>
 </li>

@@ -12,11 +12,15 @@ div#placeholder {
     width:40%;
 }
 
-div#banner, main#content, main#content h2, main#content h3, footer p, main ul#homepage-blog, main#content ol, main#content ul, ul#posts, #mc_embed_signup {
-    max-width:680px;
+div#banner, main#content, main ul#homepage-blog, ul#posts{
+    max-width:80%;
     margin-left: auto;
     margin-right: auto;
     clear:both;
+}
+
+main#content article {
+    max-width: 70%;
 }
 
 div#banner nav {
@@ -42,7 +46,7 @@ div#logo {
 }
 
 div#logo svg {
-    width:23%;
+    width:13%;
 }
 
 /* index.html styles */
@@ -71,11 +75,22 @@ main #homepage-showcase {
     float: left;
 }
 
-/* single.html styles */
-main#content header#post-header h1 {
-    font-size: 24px;
-    font-size: 2.4rem;
+div.site-description {
+    width:60%;
+    float:left;
 }
+
+div.main-cta {
+    width:30%;
+    margin-left:5%;
+    padding:1em;
+    line-height:1;
+    float:left;
+    border-left: 2px #FFD626 solid;
+    border-bottom: 2px #FFD626 solid;
+}
+
+/* single.html styles */
 
 main#content img {
 /*    max-width: 108%;

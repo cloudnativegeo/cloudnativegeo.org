@@ -1,22 +1,19 @@
 <header id="page-header">
   <div id="banner">
-  <nav>
-    <ul>
+    <nav>
+      <ul>
         {{ $currentPage := . }}
         {{ range .Site.Menus.main.ByWeight -}}
-        <!-- <li class="{{ if and (eq $currentPage.Title "Radiant Earth") ($currentPage.IsMenuCurrent "main" .) }}hide{{ else if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"> -->
-        <!-- <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">   -->
-        <li>
-            {{ .Pre }}{{ if not ($currentPage.IsMenuCurrent "main" .) }}<a href="{{ .URL }}" title="{{ humanize .Title }}">{{ end }}{{- humanize .Name -}}{{ if not ($currentPage.IsMenuCurrent "main" .) }}</a>{{ end }}{{ .Post }}
+        <li {{ if $.HasMenuCurrent .Menu . }}class="current"{{ end }}>
+          {{ .Pre }}{{ if not ($currentPage.IsMenuCurrent "main" .) }}<a href="{{ .URL }}" title="{{ humanize .Title }}">{{ end }}{{- humanize .Name -}}{{ if not ($currentPage.IsMenuCurrent "main" .) }}</a>{{ end }}{{ .Post }}
         </li>
         {{- end }}
-        </ul>
+      </ul>
     </nav>
     <div id="logo">
       {{ if ne .IsHome true }}<a href="{{ .Site.BaseURL }}">{{ end }}
-      {{ partial "logo.html" . }}
+        {{ partial "logo.html" . }}
       {{ if ne .IsHome true }}</a>{{ end }}
     </div>
-    </div>
-    
+  </div>  
 </header>

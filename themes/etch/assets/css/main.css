@@ -1,131 +1,43 @@
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("https://radiant.earth/fonts/BerkeleyMono-Regular.woff2") format("woff2");
+  src: url("/fonts/BerkeleyMono-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("https://radiant.earth/fonts/BerkeleyMono-Bold.woff2") format("woff2");
+  src: url("/fonts/BerkeleyMono-Bold.woff2") format("woff2");
   font-weight: bold;
 }
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("https://radiant.earth/fonts/BerkeleyMono-Italic.woff2") format("woff2");
+  src: url("/fonts/BerkeleyMono-Italic.woff2") format("woff2");
   font-style: italic;
 }
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("https://radiant.earth/fonts/BerkeleyMono-BoldItalic.woff2") format("woff2");
+  src: url("/fonts/BerkeleyMono-BoldItalic.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "IBMPlexSans";
-  src: url("https://radiant.earth/fonts/IBMPlexSans-Regular.ttf") format("truetype");
+  font-family: "iAWriterQuattro";
+  src: url("/fonts/iAWriterQuattroS-Regular.woff2") format("woff2");
 }
 @font-face {
-  font-family: "IBMPlexSans";
-  src: url("https://radiant.earth/fonts/IBMPlexSans-Bold.ttf") format("truetype");
+  font-family: "iAWriterQuattro";
+  src: url("/fonts/iAWriterQuattroS-Bold.woff2") format("woff2");
   font-weight: bold;
 }
 @font-face {
-  font-family: "IBMPlexSans";
-  src: url("https://radiant.earth/fonts/IBMPlexSans-Italic.ttf") format("truetype");
+  font-family: "iAWriterQuattro";
+  src: url("/fonts/iAWriterQuattroS-Italic.woff2") format("woff2");
   font-style: italic;
 }
 @font-face {
-  font-family: "IBMPlexSans";
-  src: url("https://radiant.earth/fonts/IBMPlexSans-BoldItalic.ttf") format("truetype");
+  font-family: "iAWriterQuattro";
+  src: url("/fonts/iAWriterQuattroS-BoldItalic.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
-}
-
-#mc_embed_signup {
-    margin: .5em 0 2em 0;
-    clear:both;
-    overflow:hidden;
-}
-
-#mce-EMAIL,#mc-embedded-subscribe {
-    float:left;
-    font-size: .8em;
-    font-family: "BerkeleyMono", monospace;           
-}
-
-input#mce-EMAIL {
-    width:50%;
-    padding:.4em;
-    box-sizing: border-box;
-    border:1px solid #24292E;
-    border-radius: 4px;
-    margin:0 .5em 0 .1em;
-}
-
-#mc-embedded-subscribe {
-    float:left;
-    font-size: .8em;
-    font-family: "BerkeleyMono", monospace;           
-}
-
-input#mc-embedded-subscribe {
-  appearance: none;
-  background-color: #FAFBFC;
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-  box-sizing: border-box;
-  color: #24292E;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "BerkeleyMono", monospace;
-  font-weight: 500;
-  line-height: 20px;
-  list-style: none;
-  padding: .4em .5em;
-  position: relative;
-  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-  word-wrap: break-word;
-}
-
-input#mc-embedded-subscribe:hover {
-  background-color: #AACBEA;
-  text-decoration: none;
-  transition-duration: 0.1s;
-}
-
-input#mc-embedded-subscribe:disabled {
-  background-color: #FAFBFC;
-  border-color: rgba(27, 31, 35, 0.15);
-  color: #959DA5;
-  cursor: default;
-}
-
-input#mc-embedded-subscribe:active {
-  background-color: #EDEFF2;
-  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
-  transition: none 0s;
-}
-
-input#mc-embedded-subscribe:focus {
-  outline: 1px transparent;
-}
-
-input#mc-embedded-subscribe:before {
-  display: none;
-}
-
-input#mc-embedded-subscribe:-webkit-details-marker {
-  display: none;
-}
-
-div#placeholder {
-    display:block;
-    margin:2em auto;
 }
 
 *, *:before, *:after {
@@ -139,7 +51,7 @@ html {
 body {
     font-size: 16px;
     font-size: 2.3rem;
-    font-family: "IBMPlexSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "iAWriterQuattro", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #2f343b;
     width: 100%;
     margin: 0;
@@ -148,7 +60,11 @@ body {
     overflow-wrap: break-word;
 }
 
-header#page-header, footer {
+header#page-header {
+    margin-bottom:2em;
+}
+
+footer {
     background-color: #eeeff1;
 }
 
@@ -170,9 +86,6 @@ path#hex g#cnglogohex, path#a{
 
 a.readmore {
 }
-a.readmore:hover path.minihex {
-    fill:url(#MinihexGradient);
-}
 
 div#banner {
     padding: 1em 0 .5em 0;
@@ -185,16 +98,16 @@ div#logo {
 }
 
 div#logo svg {
-    width:50%;
+    width:20%;
 }
 
 a {
-    color: #0B5FBF;
+    color: #2126F7;
     text-decoration: underline;
 }
 
 header#nav a:hover, main#content a:hover, a:hover code {
-    background: -webkit-linear-gradient(-65deg, #53B4FF 0%, #0B5FBF 100%);
+    background: -webkit-linear-gradient(-65deg, #53B4FF 0%, #2126F7 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
@@ -211,6 +124,7 @@ div#banner h2 {
 
 div#banner nav {
     float:left;
+    font-family: "BerkeleyMono", monospace;
 }
 
 div#banner nav ul {
@@ -310,6 +224,13 @@ main#content hr {
     background: #666666;
 }
 
+main#content hr.top {
+    height: 0;
+    border: 0;
+    clear:both;
+    margin:0 0 2em 0;
+}
+
 main#content abbr {
     cursor: help;
 }
@@ -319,6 +240,11 @@ main#content ul#posts {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+main#content ul#posts span.post-byline {
+    font-size: 80%;
+    font-style: italic;
 }
 
 main#content ul#posts li {
@@ -381,15 +307,55 @@ main div#homepage-blog {
 }
 
 div.site-description {
+    font-size: 2em;
     font-weight: 600;
-    padding:1em;
-    border-bottom: 1px #CCC solid;
+    text-shadow: 1px 1px 1px #E0DED8;
+    line-height:1;
+    margin-bottom:2em;
+}
+
+span.cta-head {
+    text-transform: uppercase;
+    font-size: 80%;
+    line-height: 2;
+}
+
+main#content div.main-cta h3 {
+    margin:0;
+    padding:0;
+}
+
+span.cta-url {
+    background-color:#FFD626;
+    font-weight: 600;
+    padding:.3em .5em;
 }
 
 table {
-  table-layout: fixed;
   width: 100%;
-  border-collapse: collapse;
+  font-size: 80%;
+}
+
+table tbody {
+    padding-top:1em;
+}
+
+table th {
+    border-bottom: 1px black solid;
+}
+
+table td {
+    padding:.5em 1.5em 1em 0;
+    vertical-align:top;
+}
+
+table td:first-child {
+    width:15%;
+    font-weight: 600;
+}
+table td:last-child {
+    padding:0 0 .5em 0;
+    width:15%;
 }
 
 table td, table th { text-align:end }
@@ -398,8 +364,8 @@ table td:nth-child(1), table th:nth-child(1) {text-align:start}
 /* single.html styles */
 main#content header#post-header h1 {
     display: block;
-    font-size: 23px;
-    font-size: 2.3rem;
+    font-size: 43px;
+    font-size: 4.3rem;
     font-weight: 600;
     line-height: 1.15;
 }

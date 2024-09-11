@@ -8,9 +8,9 @@ pygmentsUseClasses = true
 relativeURLs = true
 
 [params]
-  description = "The Cloud-Native Geospatial Foundation encourages adoption of highly efficient and accessible approaches to working with geospatial data over the Internet."
+  description = "Where geospatial data users create the future together."
   copyright = "Copyright © 2023 Radiant Earth Foundation"
-  dark = "auto"
+  dark = "off"
   highlight = true
 
 [menu]
@@ -33,14 +33,28 @@ relativeURLs = true
     name = "blog"
     title = "blog"
     pageref = "/blog"
+    weight = 15
+
+  [[menu.main]]
+    identifier = "join"
+    name = "join"
+    title = "join CNG"
+    pageref = "/join"
     weight = 20
+
+  [[menu.main]]
+    identifier = "events"
+    name = "events"
+    title = "events"
+    pageref = "/events"
+    weight = 25
 
   [[menu.main]]
     identifier = "guide"
     name = "guide"
     title = "guide"
-    url = "https://guide.cloudnativegeo.org"
-    weight = 30
+    url = "http://guide.cloudnativegeo.org"
+    weight = 40
 
 [permalinks]
   blog = "blog/:year/:month/:slug/"
