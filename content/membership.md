@@ -2,7 +2,29 @@
 title = "Join the CNG Forum"
 +++
 
-### Why join?
+Cloud-Native Geospatial (CNG) provides a platform for a diverse community to exchange ideas on improving the accessibility and usability of geospatial data. The organization emphasizes learning from various institutions and perspectives, fostering openness to innovative ideas. CNG is committed to being a trustworthy source of unbiased information on widely utilized technologies. It actively works to expand and diversify its community, engaging both newcomers and senior decision-makers to ensure practical value and inclusivity in geospatial data practices.
+
+### Why Join? 
+Joining CNG connects you to an engaged community, impactful events, cutting-edge projects, and an extensive platform and network. As database technology and geospatial tools evolve rapidly, CNG ensures you stay ahead, adding value to both you and your organization.
+
+### Membership Levels
+{{< img src="images/09042024-membership-levels.jpg"  alt="CNG Forum Membership Levels" caption="" >}}
+
+### Membership Sign up
+
+<link rel="stylesheet" type="text/css" href="https://api.membercenter.net/forms/css/sq-payment-form.css"> <script src="https://js.stripe.com/v3/"></script> <script type="text/javascript" src="https://api.membercenter.net/payments/payment_form.js?id=10015"></script> <div class="sq-payment-form" id="sq-payment-form1"></div>
+
+### Special Situations Membership Waiver Form
+If you are experiencing financial hardship, please [submit your request](https://share.hsforms.com/14y-ZTG4XRvC_T6sBZQVPoQrzpx6) to have your membership fees waived. 
+
+### Membership Directory
+
+<script type="text/javascript" src="https://api.membercenter.net/directory/directory-bundle.js?id=10015"></script><div class="mc-directory-wrapper" id="mc-directory-wrapper"></div>
+
+
+
+
+### CNG Data Formats
 Cloud-Native data formats are structured to be efficiently retrieved from cloud [object storage](https://en.wikipedia.org/wiki/Object_storage) services which are designed to serve large volumes of data using generic RESTful / HTTP data transfer protocols.
 
 Please visit the [Cloud-Optimized Geospatial Formats Guide](https://guide.cloudnativegeo.org) to learn more.

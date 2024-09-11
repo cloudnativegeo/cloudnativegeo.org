@@ -4,6 +4,7 @@ title = "Creating Interoperable Field Boundary Data with the fiboa Converter Too
 tags = [ ""
 ]
 summary = "An overview of the fiboa converter tool and how it can be used to create interoperable field boundary data."
+author = "Matthias Mohr"
 author_url = "https://mohr.ws/"
 author_title = "[Radiant Earth](https://radiant.earth/) Technology Fellow"
 +++
