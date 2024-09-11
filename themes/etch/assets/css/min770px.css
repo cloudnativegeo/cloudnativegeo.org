@@ -8,8 +8,8 @@ iframe {
     margin:2em 0 0 20%;
 }
 
-div#placeholder {
-    width:40%;
+footer hr {
+    clear:both;
 }
 
 div#banner, main#content, main ul#homepage-blog, ul#posts{
@@ -20,7 +20,7 @@ div#banner, main#content, main ul#homepage-blog, ul#posts{
 }
 
 main#content article {
-    max-width: 70%;
+    max-width: 60%;
 }
 
 div#banner nav {
@@ -46,7 +46,7 @@ div#logo {
 }
 
 div#logo svg {
-    width:13%;
+    width:40%;
 }
 
 /* index.html styles */
@@ -77,15 +77,15 @@ main #homepage-showcase {
 
 div.site-description {
     width:60%;
-    float:left;
 }
 
 div.main-cta {
     width:30%;
     margin-left:5%;
-    padding:1em;
+    padding:.5em 1em 1.5em 1em;
     line-height:1;
-    float:left;
+    float:right;
+    border-top:none;
     border-left: 2px #FFD626 solid;
     border-bottom: 2px #FFD626 solid;
 }

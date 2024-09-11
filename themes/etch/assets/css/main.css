@@ -61,7 +61,7 @@ body {
 }
 
 header#page-header {
-    margin-bottom:2em;
+/*    margin-bottom:2em;*/
 }
 
 footer {
@@ -73,8 +73,16 @@ hr {
     border: 0 none;
     color: #CCC;
     height: 1px;
+}
+
+header hr {
+    background-color: transparent;
+    border: 0 none;
+    color: transparent;
+    height: 0;
     clear:both;
 }
+
 
 iframe {
     margin:2em 0 0 0;
@@ -92,13 +100,12 @@ div#banner {
 }
 
 div#logo {
-    margin: .5em 0 .5em 0;
-    display:block;
+    width:40%;
     background-size: 20px 30px;
 }
 
 div#logo svg {
-    width:20%;
+    width:70%;
 }
 
 a {
@@ -276,7 +283,6 @@ main#content ul#posts li a.post-title:hover svg {
 
 main#content ul#posts li time, a.readmore {
     font-size: 80%;
-    font-family: 'BerkeleyMono', monospace;
     text-transform: uppercase;
 }
 
@@ -312,6 +318,17 @@ div.site-description {
     text-shadow: 1px 1px 1px #E0DED8;
     line-height:1;
     margin-bottom:2em;
+}
+
+div.main-cta {
+    display:block;
+    width:100%;
+    float:right;
+    padding:.5em 1em 1.5em 1em;
+    margin:0 0 1em 0;
+    line-height:1;
+    border-top: 2px #FFD626 solid;    
+    border-bottom: 2px #FFD626 solid;
 }
 
 span.cta-head {

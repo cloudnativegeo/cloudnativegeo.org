@@ -1,6 +1,6 @@
 <div class="main-cta">
 {{- range first 1 (where site.RegularPages "Section" "events") }}
-  <span class=cta-head>Upcoming event:</span>
+  <span class=cta-head>{{ .Params.cta_head }}</span>
   <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
   <p class="cta-when">{{ .Params.when }}</p>
   <span class="cta-url"><a href="{{ .Params.cta_url }}">{{ .Params.cta_text }}</a></span>
