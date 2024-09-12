@@ -1,9 +1,11 @@
 +++
-date = "{{ .Date }}"
-title = ""
-location = ""
-is_main = true
-call_to_action = ""
-registration_url = ""
-summary = ""
+title= ""
+when_date= ""
+when_time= ""
+where= ""
+description= ""
+price= ""
+image_url= ""
+cta_text= ""
+hubspot_url= ""
 +++

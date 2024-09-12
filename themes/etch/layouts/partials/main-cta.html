@@ -1,8 +1,9 @@
 <div class="main-cta">
-{{- range first 1 (where site.RegularPages "Section" "events") }}
+{{- range first 1 (where site.RegularPages "Section" "ctas") }}
   <span class=cta-head>{{ .Params.cta_head }}</span>
-  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  <h3>{{if isset .Params "title_url"}}<a href="{{ .Params.title_url }}">{{end}}{{ .Title }}{{if isset .Params "title_url"}}</a>{{end}}</h3>
   <p class="cta-when">{{ .Params.when }}</p>
-  <span class="cta-url"><a href="{{ .Params.cta_url }}">{{ .Params.cta_text }}</a></span>
+  <span class="cta-url">{{if isset .Params "cta_url"}}<a href="{{ .Params.cta_url }}">{{end}}{{ .Params.cta_text }}{{if isset .Params "cta_url"}}</a>{{end}}</span>
 {{- end }}
 </div>
+

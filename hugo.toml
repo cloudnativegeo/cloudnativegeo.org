@@ -58,6 +58,7 @@ relativeURLs = true
 
 [permalinks]
   blog = "blog/:year/:month/:slug/"
+  events = "events/:slug/"
 
 [markup.goldmark.renderer]
   # Allow HTML in Markdown

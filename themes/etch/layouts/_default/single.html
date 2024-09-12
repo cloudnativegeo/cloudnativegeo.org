@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{- partial "main-cta.html" . -}}
+{{ if ne .Params.hide_cta true }} {{- partial "main-cta.html" . -}} {{ end }}
 <article>
     <header id="post-header">
         <h1>{{ .Title }}</h1>

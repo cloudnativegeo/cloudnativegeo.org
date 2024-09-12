@@ -243,7 +243,7 @@ main#content abbr {
 }
 
 /* index.html styles */
-main#content ul#posts {
+main#content ul#posts, main#content ul#events {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -254,7 +254,7 @@ main#content ul#posts span.post-byline {
     font-style: italic;
 }
 
-main#content ul#posts li {
+main#content ul#posts li, main#content ul#events li {
     margin: 1.5em 0;
     padding: 0;
 }
@@ -267,7 +267,7 @@ main#content ul#posts a:hover {
     text-decoration: underline;
 }
 
-main#content ul#posts li a.post-title {
+main#content ul#posts li a.post-title, main#content ul#events li a.post-title {
     font-weight: 600;
 }
 
@@ -343,6 +343,12 @@ main#content div.main-cta h3 {
 }
 
 span.cta-url {
+    background-color:#FFD626;
+    font-weight: 600;
+    padding:.3em .5em;
+}
+
+span.event-cta a {
     background-color:#FFD626;
     font-weight: 600;
     padding:.3em .5em;
