@@ -1,5 +1,10 @@
 <header id="page-header">
   <div id="banner">
+    <div id="logo">
+      {{ if ne .IsHome true }}<a href="{{ .Site.BaseURL }}">{{ end }}
+        {{ partial "logo.html" . }}
+      {{ if ne .IsHome true }}</a>{{ end }}
+    </div>
     <nav>
       <ul>
         {{ $currentPage := . }}
@@ -10,11 +15,6 @@
         {{- end }}
       </ul>
     </nav>
-    <div id="logo">
-      {{ if ne .IsHome true }}<a href="{{ .Site.BaseURL }}">{{ end }}
-        {{ partial "logo.html" . }}
-      {{ if ne .IsHome true }}</a>{{ end }}
-    </div>
   </div>  
   <hr>
 </header>

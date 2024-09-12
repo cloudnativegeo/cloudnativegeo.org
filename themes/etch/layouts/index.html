@@ -2,6 +2,22 @@
   {{- partial "main-cta.html" . -}}
   {{- partial "description.html" . -}}
   <hr class="top">
+  
+  {{ with .Params.hero }}
+  <div class="home-hero">
+    <span class="hero-headline">
+      {{ .headline |
+        markdownify
+      }}
+    </span>
+    <p>
+      {{ .text |
+        markdownify
+      }}
+    </p>
+    <p><a href="{{ .cta_url }}">{{ .cta_text }}</a></p>
+  {{ end }}
+  </div>
   {{- .Content -}}
   
 

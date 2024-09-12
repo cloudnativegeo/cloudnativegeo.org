@@ -39,6 +39,9 @@ div#banner nav ul li {
     margin: 0 0 0 1em;
 }
 
+header hr {
+    margin-bottom:2em;
+}
 
 div#logo {
     margin: .2em 0 .5em 0;
@@ -60,6 +63,10 @@ main #homepage h2 {
     font-size: 2.5rem;
     padding:1em 0 0 0;
     text-align: center;
+}
+
+div.home-hero {
+    width:60%;
 }
 
 

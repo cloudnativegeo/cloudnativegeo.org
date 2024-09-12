@@ -88,10 +88,6 @@ iframe {
     margin:2em 0 0 0;
 }
 
-path#hex g#cnglogohex, path#a{
-    fill:url(#CNGGradient);
-}
-
 a.readmore {
 }
 
@@ -100,8 +96,9 @@ div#banner {
 }
 
 div#logo {
-    width:40%;
+    width:50%;
     background-size: 20px 30px;
+    float:left;
 }
 
 div#logo svg {
@@ -123,6 +120,21 @@ header#nav a:hover, main#content a:hover, a:hover code {
     transition: background .2s ease-in;
 }
 
+div#banner nav a {
+    text-decoration: none;
+    color: #2126F7;
+    transition: color 0.3s ease, background 0.3s ease;
+    padding: 2px 6px;
+    border-radius: 6px;    
+}
+
+div#banner nav a:hover {
+    color: white;
+    background: #2126F7;
+    border-radius: 6px;
+}
+
+
 div#banner h2 {
     display: inline;
     font-size: 1.8rem;
@@ -130,22 +142,23 @@ div#banner h2 {
 }
 
 div#banner nav {
-    float:left;
     font-family: "BerkeleyMono", monospace;
+    float:right;
+    text-align: right;
+    margin:0 0 0 0;
 }
 
 div#banner nav ul {
     list-style-type: none;
     font-size: .8em;
     font-weight: 600;
-    margin: 0 0 1em 0;
+    margin: 0;
     padding: 0;
     align-self:flex-end;
 }
 
 div#banner nav ul li {
-    display: inline;
-    margin: 0 1em 0 0;
+    margin: 0 0 .5em 0;
 }
 
 div#banner nav ul li:first-child.hide {
@@ -297,14 +310,14 @@ main #homepage-showcase {
     clear:both;
 }
 
-.showcase-column {
-    margin-bottom:3em;
+div.home-hero {
+
 }
 
-.showcase-column h3 {
-    margin:1em 0 0 0;
-    padding-bottom: .5em;
-    border-bottom:1px solid #CCC;
+div.home-hero span.hero-headline{
+    font-size: 130%;
+    font-weight: 600;
+    line-height: .9;
 }
 
 main div#homepage-blog {
@@ -324,7 +337,7 @@ div.main-cta {
     display:block;
     width:100%;
     float:right;
-    padding:.5em 1em 1.5em 1em;
+    padding:.5em 0 1.5em 0;
     margin:0 0 1em 0;
     line-height:1;
     border-top: 2px #FFD626 solid;    
@@ -577,6 +590,29 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/*Connect list styles*/
+div#connect {
+    font-size: 80%;
+}
+
+div#connect h2{
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+div#connect ul{
+    margin:0;
+    padding:0 0 0 1em;
+}
+
+div#connect ul li{
+    padding: 0;
+    margin: 0;
+    list-style-type: "> ";
+}
+
+
+/*Funder styles*/
 ul#funderlogos {
     padding:0;
     margin:0 0 14em 0;
