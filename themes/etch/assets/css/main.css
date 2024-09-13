@@ -704,6 +704,14 @@ a#microsoft {
     height:100%;
 }
 
+a#planet {
+    background-image: url('/img/funders/planet.svg');
+    background-size: 60%;
+    display:block;
+    width:100%;
+    height:100%;
+}
+
 a#tetra_tech {
     background-image: url('/img/funders/tetra-tech.svg');
     background-size: 80%;
