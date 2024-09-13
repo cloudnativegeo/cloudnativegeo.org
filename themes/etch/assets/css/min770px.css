@@ -13,7 +13,8 @@ footer hr {
 }
 
 div#banner, main#content, main ul#homepage-blog, ul#posts{
-    max-width:80%;
+    width:80%;
+    max-width:2000px;
     margin-left: auto;
     margin-right: auto;
     clear:both;
@@ -145,7 +146,7 @@ main#content .board-member {
 }
 
 ul#funderlogos li {
-    height:100px;
+    height:6em;
     width:24%;
     margin: 1em .5%;        
 }
