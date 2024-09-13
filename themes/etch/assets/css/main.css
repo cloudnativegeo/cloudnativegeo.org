@@ -133,16 +133,11 @@ div#banner nav ul {
 
 div#banner nav ul li {
     margin: 0 2px .5em 6px;
-    padding:0;
     display:block;
 }
 
 div#banner nav ul li:first-child.hide {
     display:none;
-}
-
-div#banner nav li {
-    margin:0 0 .5em 0;
 }
 
 div#banner nav li a {
@@ -155,6 +150,10 @@ div#banner nav li a {
 div#banner nav li:hover a {
     background: #2126F7;
     color: white;
+}
+
+div#banner nav ul li:not(:has(a)) {
+    padding: 0 6px;
 }
 
 main {
