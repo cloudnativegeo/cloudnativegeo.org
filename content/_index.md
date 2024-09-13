@@ -1,7 +1,7 @@
 ---
 hero:
   headline: "Our community is *amazing*"
-  text: "The geospatial data community runs the world &ndash; building open planetary-scale datasets, putting satellite imagery on your phone, and mapping millions of data points in your browser. Our mission is to support this group of generous and brilliant people, creating space for them to connect, collaborate, and deepen our understanding of the world through the power of geospatial data."
+  text: "The geospatial data community runs the world &ndash; building open planetary-scale datasets, putting satellite imagery on your phone, and mapping millions of data points right in your browser. Our mission is to support this group of generous and brilliant people, creating space for them to connect, collaborate, and deepen our understanding of the world through the power of geospatial data."
   cta_text: "Learn more about our work"
   cta_url: "/about"
 
