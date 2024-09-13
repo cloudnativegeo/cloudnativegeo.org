@@ -7,7 +7,7 @@ hero:
 
 funders:
   title: "Community-led"
-  description: "Our work is made possible with funding from our community, which includes&hellip;"
+  description: "Our work has been made possible with funding from our community, which includes&hellip;"
   cta_text: "Join the CNG community"
   cta_url: "/join"
   funders_cart:

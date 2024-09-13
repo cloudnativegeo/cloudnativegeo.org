@@ -284,11 +284,16 @@ main #homepage-showcase {
 
 a.home-button, div.event-cta a {
     font-weight: 600;
-    transition: color 0.2s ease, background 0.2s ease;
+    transition: color 0.3s ease, background 0.3s ease;
     border: 1px solid #2126F7;
     border-radius: 6px;
     text-decoration: none;
     padding: 3px 8px;
+}
+
+div.event-cta a {
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0px 2px 0px #999;
 }
 
 a.home-button:after, div.event-cta a:after {
@@ -302,6 +307,7 @@ a.home-button:hover {
 }
 
 div.event-cta a {
+    position:relative;
     font-size:1.4em;
     margin: 2em 0;
     background-color:#FFD626;
@@ -310,9 +316,13 @@ div.event-cta a {
 }
 
 div.event-cta a:hover {
-    background: #2126F7;
-    border: 1px solid #2126F7;    
-    color: #FFD626;
+    box-shadow: 0 4px 2px #BBB;
+    top:-1px;
+}
+
+div.event-cta a:active {
+    box-shadow: 0 1px 0 #888;
+    top:2px;
 }
 
 main#content h3.home-headline {
@@ -596,7 +606,7 @@ ul#funderlogos li {
     list-style-type:none;
     display:block;
     width:32%;
-    height:80px;
+    height:100px;
     margin: 0 .5% 1em 0;    
     text-indent: 100%;
     white-space: nowrap;

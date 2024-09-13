@@ -5,6 +5,6 @@
   <li>Subscribe to <a href="https://share.hsforms.com/1SE7MCWS7RrSsAV3HN2C7TArzpx6">our mailing list</a></li>
   <li>Follow us <a href="https://www.linkedin.com/company/cloudnativegeo/">on LinkedIn</a></li>
   <li>Join discussions <a href="https://cng.discourse.group">on Discourse</a></li>
-  <li><strong><a href="/join">Join CNG</a></strong></li>
+  {{ if ne .Title "Join CNG" }}<li><strong><a href="/join">Join CNG</a></strong></li>{{ end }}
 </ul>
 </div>
