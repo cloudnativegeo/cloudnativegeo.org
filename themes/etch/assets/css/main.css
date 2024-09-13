@@ -233,7 +233,7 @@ main#content #aboutpage small {
 main#content hr {
     height: 1px;
     border: 0;
-    background: #BBB;
+    background: #CCC;
 }
 
 main#content hr.top {
@@ -265,11 +265,6 @@ main#content ul#posts li, main#content ul#events li {
 
 main#content ul#posts li a.post-title, main#content ul#events li a.post-title {
     font-weight: 600;
-}
-
-main#content ul#posts li a.post-title svg {
-    margin-left: .2em;
-    transition: all .1s;    
 }
 
 main#content ul#posts li time, a.readmore {
@@ -402,7 +397,7 @@ main#content header#post-header h1 {
 main#content header#post-header > div {
     display: block;
     font-size: 0.80em;
-    color: #888;
+    margin: 0 0 2em 0;
 }
 
 main#content #toc {
@@ -570,19 +565,19 @@ div.funders hr {
     clear:both;
 }
 
-ul#funderlogos {
+main#content ul#funderlogos {
     width:100%;
     padding:0;
-    margin:0;
-    clear:both;
+    margin:.5em 0 1.5em 0;
+    float:left;
 }
 
 ul#funderlogos li {
     list-style-type:none;
     display:block;
-    width:19%;
+    width:32%;
     height:80px;
-    margin: 1em .5%;    
+    margin: 0 .5% 1em 0;    
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -687,7 +682,7 @@ a#schmidt {
 
 a#vanuatu {
     background-image: url('/img/funders/vanuatu.png');
-    background-size: 60%;
+    background-size: 30%;
     display:block;
     width:100%;
     height:100%;

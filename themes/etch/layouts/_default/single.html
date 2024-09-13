@@ -4,15 +4,15 @@
     <header id="post-header">
         <h1>{{ .Title }}</h1>
         <div class="post-meta">
+        {{- if isset .Params "author" -}}
+        <span class="post-byline">By {{if isset .Params "author_url"}}<a href="{{ .Params.author_url }}">{{end}}{{ .Params.author | markdownify }}{{- if isset .Params "author_url" -}}</a>{{- end -}}{{- if isset .Params "author_title" -}}, {{ .Params.author_title | markdownify }}{{- end -}}</span>
+        {{- end -}}<br>
         {{- if isset .Params "date" -}}
             {{ if eq .Lastmod .Date }}
                 <time>Last updated {{ .Date | time.Format "02 January 2006" }}</time>
             {{ else }}
-                <time>Posted {{ .Lastmod | time.Format "02 January 2006" }}</time>
+                <time>{{ .Lastmod | time.Format "02 January 2006" }}</time>
             {{ end }}
-        {{- end -}}<br>
-        {{- if isset .Params "author" -}}
-        <span class="post-byline">By {{if isset .Params "author_url"}}<a href="{{ .Params.author_url }}">{{end}}{{ .Params.author | markdownify }}{{- if isset .Params "author_url" -}}</a>{{- end -}}{{- if isset .Params "author_title" -}}, {{ .Params.author_title | markdownify }}{{- end -}}</span>
         {{- end -}}
         </div>
     </header>

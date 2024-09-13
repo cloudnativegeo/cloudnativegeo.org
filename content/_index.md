@@ -7,7 +7,7 @@ hero:
 
 funders:
   title: "Community-led"
-  description: "Our work is made possible through support from our community, which includes&hellip;"
+  description: "Our work is made possible with funding from our community, which includes&hellip;"
   cta_text: "Join the CNG community"
   cta_url: "/join"
   funders_cart:
@@ -35,6 +35,14 @@ funders:
     img: "/img/funders/hydrosat.png" 
     url: "https://hydrosat.com"
     id: "hydrosat"
+  - name: "Vanuatu"
+    img: "/img/funders/vanuatu.png" 
+    url: "https://www.gov.vu"
+    id: "vanuatu"
+  - name: "Schmidt Futures"
+    img: "/img/funders/schmidt.png" 
+    url: "https://schmidtfutures.com"
+    id: "schmidt"    
   - name: "Terradue"
     img: "/img/funders/terradue.png"
     url: "https://terradue.com"

@@ -149,6 +149,8 @@ main#content .board-member {
 
 ul#funderlogos li {
     height:100px;
+    width:24%;
+    margin: 1em .5%;        
 }
 
 }
