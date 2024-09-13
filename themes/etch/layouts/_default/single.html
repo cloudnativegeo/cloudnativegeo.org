@@ -6,9 +6,9 @@
         <div class="post-meta">
         {{- if isset .Params "date" -}}
             {{ if eq .Lastmod .Date }}
-                <time>{{ .Date | time.Format (i18n "post.created") }}</time>
+                <time>Last updated {{ .Date | time.Format "02 January 2006" }}</time>
             {{ else }}
-                <time>{{ .Lastmod | time.Format (i18n "post.updated") }}</time>
+                <time>Posted {{ .Lastmod | time.Format "02 January 2006" }}</time>
             {{ end }}
         {{- end -}}<br>
         {{- if isset .Params "author" -}}

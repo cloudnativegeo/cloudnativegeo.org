@@ -5,25 +5,43 @@
   
   {{ with .Params.hero }}
   <div class="home-hero">
-    <span class="hero-headline">
+    <h3 class="home-headline">
       {{ .headline |
         markdownify
       }}
-    </span>
+    </h3>
     <p>
       {{ .text |
         markdownify
       }}
     </p>
-    <p><a href="{{ .cta_url }}">{{ .cta_text }}</a></p>
+    <p><a href="{{ .cta_url }}" class="home-button">{{ .cta_text }}</a></p>
   {{ end }}
   </div>
-  {{- .Content -}}
-  
 
-  <h2>Latest from our blog:</h2>
-  <div id="homepage-blog">
-  {{- partial "homepage-posts.html" . -}}
+  {{ with .Params.blog }}
+    <h3 class="home-headline">{{ .title }}</h3>
+    <div id="homepage-blog">
+      {{- partial "homepage-posts.html" . -}}
+    </div>
+    {{ if .button.enable }}
+    <a href="{{ .button.link | relLangURL }}" class="home-button">{{ .button.label }}</a>
+    {{ end }}
   </div>
-</div>
+  {{ end }}
+   <!-- Funders -->
+  <div class="funders">
+  {{ with .Params.funders }}
+    <h3 class="home-headline">{{ .title }}</h3>
+    <p>{{ .description | markdownify }}</p>
+    <ul id="funderlogos">
+      {{ range .funders_cart }}
+      <li><a href="{{ .url }}" id="{{ .id }}">{{ .name }}</a></li>
+      {{ end }}
+    </ul>
+    <p><a href="{{ .cta_url }}" class="home-button">{{ .cta_text }}</a></p>
+  </div>
+
+  {{ end }}
+  <!-- /Funders -->
 {{ end }}

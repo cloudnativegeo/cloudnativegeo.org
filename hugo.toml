@@ -55,6 +55,8 @@ relativeURLs = true
     title = "guide"
     url = "http://guide.cloudnativegeo.org"
     weight = 40
+    [menu.main.params]
+      external = true
 
 [permalinks]
   blog = "blog/:year/:month/:slug/"

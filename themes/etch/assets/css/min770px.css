@@ -36,7 +36,11 @@ div#banner nav ul {
 
 div#banner nav ul li {
     display: inline;
-    margin: 0 0 0 1em;
+    margin: 0 0 .5em 1em;
+}
+
+div#banner nav ul li:not(:has(a)) {
+    padding: 2px 6px;
 }
 
 header hr {
