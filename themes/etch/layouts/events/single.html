@@ -3,14 +3,15 @@
 <article>
   <header id="post-header">
     <h1>{{ .Title }}</h1>
-    <span class="event-when">{{ .Params.when_date | markdownify }}</span><br>
-    <span class="event-when">{{ .Params.when_time | markdownify }}</span><br>
-    <span class="event-where">{{ .Params.where | markdownify }}</span>
-    
+    <ul class="event-meta">
+      <li class="event-when"><span class="event-meta-tip">Date:</span> {{ .Params.when_date | markdownify }}</li>
+      <li class="event-when"><span class="event-meta-tip">Time:</span> {{ .Params.when_time | markdownify }}</li>
+      <li class="event-where"><span class="event-meta-tip">Where:</span> {{ .Params.where | markdownify }}</li>
+      <li class="event-price"><span class="event-meta-tip">Cost:</span> {{ .Params.price | markdownify }}</li>
+    </ul>
+    <div class="event-cta">{{if isset .Params "cta_url"}}<a href="{{ .Params.cta_url }}">{{end}}{{ .Params.cta_text }}{{if isset .Params "cta_url"}}</a>{{end}}</div>
   </header>
     <p>{{ .Params.description | markdownify }}</p>
-    <p>{{ .Params.price | markdownify }}</p>
-    <span class="event-cta">{{if isset .Params "cta_url"}}<a href="{{ .Params.cta_url }}">{{end}}{{ .Params.cta_text }}{{if isset .Params "cta_url"}}</a>{{end}}</span>
   {{- .Content -}}
 </article>
 {{ end }}

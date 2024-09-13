@@ -141,7 +141,7 @@ div#banner nav ul li:first-child.hide {
 }
 
 div#banner nav li a {
-    padding: 2px 6px;
+    padding: 4px 6px;
     text-decoration: none;
     transition: color 0.2s ease, background 0.2s ease;
     border-radius: 6px;
@@ -266,7 +266,7 @@ main#content ul#posts li a.post-title, main#content ul#events li a.post-title {
     font-weight: 600;
 }
 
-main#content ul#posts li time, a.readmore {
+main#content ul#posts li time, a.readmore, span.event-meta-tip {
     font-size: 80%;
     text-transform: uppercase;
 }
@@ -282,22 +282,37 @@ main #homepage-showcase {
     clear:both;
 }
 
-a.home-button {
+a.home-button, div.event-cta a {
     font-weight: 600;
     transition: color 0.2s ease, background 0.2s ease;
+    border: 1px solid #2126F7;
     border-radius: 6px;
     text-decoration: none;
     padding: 3px 8px;
-    margin:0 0 2em -8px;
 }
 
-a.home-button:after {
+a.home-button:after, div.event-cta a:after {
   content: " →";
 }
 
 a.home-button:hover {
     background: #2126F7;
+    border: 1px solid white;    
     color: white;
+}
+
+div.event-cta a {
+    font-size:1.4em;
+    margin: 2em 0;
+    background-color:#FFD626;
+    border: 1px solid #FFD626;
+      
+}
+
+div.event-cta a:hover {
+    background: #2126F7;
+    border: 1px solid #2126F7;    
+    color: #FFD626;
 }
 
 main#content h3.home-headline {
@@ -313,11 +328,11 @@ main div#homepage-blog {
 }
 
 div.site-description {
-    font-size: 2em;
+    font-size: 2.8em;
     font-weight: 600;
     text-shadow: 1px 1px 1px #E0DED8;
     line-height:1;
-    margin-bottom:2em;
+    margin-bottom:.5em;
 }
 
 div.main-cta {
@@ -343,12 +358,6 @@ main#content div.main-cta h3 {
 }
 
 span.cta-url {
-    background-color:#FFD626;
-    font-weight: 600;
-    padding:.3em .5em;
-}
-
-span.event-cta a {
     background-color:#FFD626;
     font-weight: 600;
     padding:.3em .5em;
@@ -557,6 +566,18 @@ div#connect ul li{
     list-style-type: "> ";
 }
 
+/* events/index.html styles */
+
+main#content ul.event-meta {
+    padding:0;
+    margin:0 0 1em 0;
+}
+
+ul.event-meta li {
+    list-style-type: none;
+    margin:.5em 0;
+    padding:0;
+}
 
 /*Funder styles*/
 

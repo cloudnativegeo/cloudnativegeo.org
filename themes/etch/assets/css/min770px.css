@@ -39,10 +39,6 @@ div#banner nav ul li {
     margin: 0 0 .5em 1em;
 }
 
-div#banner nav ul li:not(:has(a)) {
-    padding: 2px 6px;
-}
-
 header hr {
     margin-bottom:2em;
 }
@@ -50,10 +46,11 @@ header hr {
 div#logo {
     margin: .2em 0 .5em 0;
     display:block;
+    width:30%;
 }
 
 div#logo svg {
-    width:40%;
+    width:60%;
 }
 
 /* index.html styles */
