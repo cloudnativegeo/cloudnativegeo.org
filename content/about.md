@@ -1,6 +1,6 @@
-+++
-title = "About"
-+++
+---
+title: "About"
+---
 
 ## Our mission
 To collaborate with geospatial data practitioners to create events, content, and educational opportunities that make geospatial data easier to access and use.
@@ -9,11 +9,27 @@ To collaborate with geospatial data practitioners to create events, content, and
 Our vision is a world where geospatial data is continually made more accessible, usable, and beneficial – empowering communities everywhere to make data-informed decisions.
 
 ## How we work
-We organize development sprints, webinars, and conferences. 
+
+### We organize events
+We organize events for our community, including development sprints, webinars, and conferences. 
 
 We are currently gathering our first editorial board who will be responsible for guiding our agenda and identifying gaps in documentation, educational materials, and other areas where we can invest to improve accessibility and usage of geospatial data.
 
 If you want to organize an event with us, [go here](/new-events).
+
+### We maintain online collaborative spaces
+Slack and Discourse
+
+### Fiscal sponsorship
+Through Radiant Earth, we have offered fiscal sponsorship to projects started by our community members in the past. This is something we hope to do more of in the future. If you're interested in having Radiant Earth serve as a fiscal sponsor for a project, please write to hello@radiant.earth.
+
+## How we don't work
+
+### We're not a standards organization
+While we have gladly helped our community develop new methods of sharing and storing data (like STAC, Cloud-Optimized GeoTIFFs, Geoparquet, and Zarr), we do not seek to create standards. Our good friends at OGC are better at that. We hope to help our community find new best practices for working with geospatial data in the future, but we do not define standards.
+
+### We don't create or maintain code or standards ourselves
+Our community is able to manage their own projects on their own. We can sometimes help get projects started, but expect most projects started by our community to be managed by community members. We may act as a maintainer of last resort for projects that need a home.
 
 ## Our values
 These values guide our work as the stewards of the CNG Forum.

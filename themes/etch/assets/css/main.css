@@ -210,6 +210,7 @@ main#content article li ul li {
 
 main#content article ul li {
     margin-bottom: .5em;
+    list-style-type: "-     ";
 } 
 
 main#content #aboutpage p {
@@ -583,7 +584,7 @@ main#content ul.event-meta {
     margin:0 0 1em 0;
 }
 
-ul.event-meta li {
+main#content ul.event-meta li {
     list-style-type: none;
     margin:.5em 0;
     padding:0;

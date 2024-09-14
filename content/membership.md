@@ -1,6 +1,6 @@
-+++
-title = "Join the CNG Forum"
-+++
+---
+title: "Join the CNG Forum"
+---
 
 Cloud-Native Geospatial (CNG) provides a platform for a diverse community to exchange ideas on improving the accessibility and usability of geospatial data. The organization emphasizes learning from various institutions and perspectives, fostering openness to innovative ideas. CNG is committed to being a trustworthy source of unbiased information on widely utilized technologies. It actively works to expand and diversify its community, engaging both newcomers and senior decision-makers to ensure practical value and inclusivity in geospatial data practices.
 

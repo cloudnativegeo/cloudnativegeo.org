@@ -1,7 +1,7 @@
-+++
-date = "{{ .Date }}"
-title = ""
-tags = [ ""
+---
+date: "{{ .Date }}"
+title: ""
+tags: [ ""
 ]
-summary = ""
-+++
+summary: ""
+---
