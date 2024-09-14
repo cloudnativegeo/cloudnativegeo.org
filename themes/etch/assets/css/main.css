@@ -606,7 +606,7 @@ ul#funderlogos li {
     list-style-type:none;
     display:block;
     width:32%;
-    height:4em;
+    aspect-ratio: 2 / 1; 
     margin: 0 .5% 1em 0;    
     text-indent: 100%;
     white-space: nowrap;
