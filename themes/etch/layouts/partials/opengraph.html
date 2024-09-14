@@ -51,11 +51,11 @@
   {{ $boldFont := resources.Get "/fonts/iAWriterQuattroS-Bold.ttf"}}
   {{ $mediumFont := resources.Get "/fonts/iAWriterQuattroS-Bold.ttf"}}
   {{ $img := $base.Filter (images.Text .Page.Title (dict
-    "color" "#000000"
-    "size" 50
+    "color" "#2126F7"
+    "size" 60
     "linespacing" 2
-    "x" 80
-    "y" 300
+    "x" 70
+    "y" 70
     "font" $boldFont
   ))}} 
   {{ $img = resources.Copy (path.Join .Page.RelPermalink "img/og.png") $img }}
