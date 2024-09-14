@@ -2,12 +2,49 @@
 title = "About"
 +++
 
-## FAQs
+## Our mission
+To collaborate with geospatial data practitioners to create events, content, and educational opportunities that make geospatial data easier to access and use.
 
-### What is cloud-native geospatial data?
-Cloud-Native data formats are structured to be efficiently retrieved from cloud [object storage](https://en.wikipedia.org/wiki/Object_storage) services which are designed to serve large volumes of data using generic RESTful / HTTP data transfer protocols.
+## Our vision
+Our vision is a world where geospatial data is continually made more accessible, usable, and beneficial – empowering communities everywhere to make data-informed decisions.
 
-Please visit the [Cloud-Optimized Geospatial Formats Guide](https://guide.cloudnativegeo.org) to learn more.
+## How we work
+We organize development sprints, webinars, and conferences. 
+
+We are currently gathering our first editorial board who will be responsible for guiding our agenda and identifying gaps in documentation, educational materials, and other areas where we can invest to improve accessibility and usage of geospatial data.
+
+If you want to organize an event with us, [go here](/new-events).
+
+## Our values
+These values guide our work as the stewards of the CNG Forum.
+
+### Shared understanding
+As an initiative of [Radiant Earth](https://radiant.earth), we share our parent organizations' mission to increase shared understanding of our world through community-led initiatives that make data easier to access and use. The CNG Forum is one of these initiatives. To enable shared understanding, we must create inclusive opportunities where anyone can learn and contribute. 
+
+### Speak through our community members
+We don’t have the answers – our community does. Our job is to create a platform for leaders (and emerging leaders) within our community.
+
+### Seek diversity of institutions
+The CNG Forum deliberately convenes community members from a diverse set of global organizations including government agencies, academic institutions, international organizations, nonprofits, commercial enterprises, and startups. While we all work with geospatial data, we benefit from learning from peers who have different perspectives, priorities, constraints, and opportunities.
+
+### Always learning
+We create opportunities for our community members to continually learn from one another as technology advances. Be open to new ideas and be wary of dogmas. 
+
+### Follow and share data about our community
+We look for data that can help our community understand technologies that work and are practically useful. It is not our job to promote certain technologies over others, but we should be a trustworthy source of data about which technologies are being widely used and rapidly adopted.
+
+### Go out
+Our community is continually at risk of being too insular and we need to work deliberately to make sure we’re creating a larger and more diverse community of geospatial data practitioners. We need to go out and help bring new people into the fold, particularly people from different backgrounds and levels of experience.
+
+### Go up
+We also need to go up to executives and their advisors to help them understand why they should adopt approaches developed by our community. Engaging with senior decision-makers helps keep us honest and gives us feedback to understand if our community is producing real practical value.
+
+## What does cloud-native mean?
+It can mean a lot of things. We know that object storage is the future, but we've found that it's not helpful to get bogged down in semantics. The main point is that it's getting easier to work with very large scale geospatial data on the Internet. We want to accelerate this trend and also ensure that more people know about these new efficient methods and can benefit from them.
+
+## Who we are
+
+
 
 ### What are the benefits of cloud-native geospatial data?
 1. **It's faster for users.** Cloud-native formats allow people to interact with massive amounts of data by allowing them to stream only the data that they need for their analysis. By relieving the burden of needing to download and store copies of data before starting a project, cloud-native data saves users time and money, lowering the cost of research and and accelerating innovation.
