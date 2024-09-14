@@ -21,6 +21,10 @@
       <hr>
     <p>Our blog is open source. You can <a href="https://github.com/cloudnativegeo/cloudnativegeo.org/blob/main/content/blog/{{ .File.LogicalName }}">suggest edits on GitHub</a>.</p>
     {{end}}
+    {{ if isset .Params "prs_open" }}
+      <hr>
+    <p>We welcome feedback on this page. You can <a href="https://github.com/cloudnativegeo/cloudnativegeo.org/blob/main/content/blog/{{ .File.LogicalName }}">suggest edits on GitHub</a>.</p>
+    {{end}}
 
 </article>
 {{ end }}
