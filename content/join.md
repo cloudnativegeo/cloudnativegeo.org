@@ -26,7 +26,7 @@ For organizations:
 | Level    | Benefits | Annual Fee |
 | :-------- | :------- | -------: |
 | Educational institutions | Individual memberships for 2 faculty and up to 8 students, tabletop at CNG annual event | $500 |
-| Commercial enterprises | Individual memberships for 8 staff, logo on website, 1 blog post, ad in two newsletters, speaking opportunity at one event, joint webinar, and a booth at CNG annual event. | $5,000 |
+| Commercial enterprises | Individual memberships for 8 staff, logo on website, 1 branded blog post, ad in two newsletters. Choice of speaking opportunity at one event, joint webinar, or a booth at CNG annual event. | $5,000 |
 
 Membership fees are effectively donations to [Radiant Earth's](https://radiant.earth/) general fund. If you would like to support our work without becoming a CNG member, you can [donate to Radiant Earth](https://radiant.earth/donate/) and mention CNG in your donation comment.
 
