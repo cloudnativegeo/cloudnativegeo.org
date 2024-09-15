@@ -12,7 +12,7 @@ footer hr {
     clear:both;
 }
 
-div#banner, main#content, main ul#homepage-blog, ul#posts{
+div#banner, main#content, main ul#homepage-blog, ul#posts, footer p{
     width:80%;
     max-width: 1800px;
     margin-left: auto;

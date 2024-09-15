@@ -2,10 +2,12 @@
 title: "Join CNG"
 ---
 
-As an initiative of the nonprofit [Radiant Earth](https://radiant.earth), we are community-led and vendor neutral. Your membership allows us to create space for geospatial data practitioners from government agencies, academic institutions, international organizations, nonprofits, commercial enterprises, and startups around the world to collaborate and maximize the potential of geospatial data. 
+As an initiative of the nonprofit [Radiant Earth](https://radiant.earth), we are community-led and vendor-neutral. Your membership allows us to convene geospatial data practitioners from government agencies, academic institutions, international organizations, nonprofits, commercial enterprises, and startups around the world to collaborate and maximize the potential of geospatial data.
 
 ### Why Join? 
 Joining CNG connects you to a supportive community of data practicioners, grants access to our members-only Slack, gives you discounts on events, and provides opportunities to work on the projects that are transforming the geospatial sector.
+
+Membership fees contribute to our operational costs, subsidize the creation of free content, and allow us to offer scholarships to engage economically disadvantaged communities.
 
 ### Membership Levels
 
@@ -25,6 +27,8 @@ For organizations:
 | :-------- | :------- | -------: |
 | Educational institutions | Individual memberships for 2 faculty and up to 8 students, tabletop at CNG annual event | $500 |
 | Commercial enterprises | Individual memberships for 8 staff, logo on website, 1 blog post, ad in two newsletters, speaking opportunity at one event, joint webinar, and a booth at CNG annual event. | $5,000 |
+
+Membership fees are effectively donations to [Radiant Earth's](https://radiant.earth/) general fund. If you would like to support our work without becoming a CNG member, you can [donate to Radiant Earth](https://radiant.earth/donate/) and mention CNG in your donation comment.
 
 ### Membership Sign up
 
