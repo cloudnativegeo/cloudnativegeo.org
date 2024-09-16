@@ -26,7 +26,7 @@ We will continue to **create as much free content as possible** and put it on th
 
 We are launching a [**paid membership program**](/join) to directly raise funds from our community. This initiative will enable us to create free content that can engage a broader group of geospatial data users. Membership is designed to be affordable, accessible, and truly beneficial to our members. Membership tiers, their costs, and benefits are available at [cloudnativegeo.org/join](https://cloudnativegeo.org/join).
 
-We have started an **open Discourse (https://cng.discourse.group) forum** to ensure that community discussions are available on the open Internet.
+We have started an [**open Discourse forum**](https://cng.discourse.group) to ensure that community discussions are available on the open Internet.
 
 We are **organizing our own conferences**. A virtual conference will be held on November 13 this year and an in-person conference is planned for May 2025 somewhere in the US. We believe there's a gap in the market for events of this type. Our goal is to make these conferences profitable, enabling us to offer subsidies or scholarships to welcome new members into our community. Look for opportunities to sponsor and exhibit at these events.
 
