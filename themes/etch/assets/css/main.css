@@ -204,26 +204,14 @@ main#content article p, main#content article li {
     line-height: 1.7;
 }
 
-main#content article li ul li {
-    font-size: 100%;
+main#content article ul {
+    margin:.5em 0 1em 0;
 } 
 
 main#content article ul li {
-    margin-bottom: .5em;
-    list-style-type: "-     ";
+    list-style-type: "- ";
+    margin-bottom:.5em;
 } 
-
-main#content #aboutpage p {
-    float:left;
-}
-
-main#content #aboutpage h3 {
-    clear:both;
-}
-
-main#content #aboutpage h2 {
-    text-align: center;
-}
 
 main#content #aboutpage small {
     display:block;

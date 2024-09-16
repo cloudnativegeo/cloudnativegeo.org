@@ -1,5 +1,6 @@
 ---
 title: "About CNG"
+slug: "about"
 ---
 
 The Cloud-Native Geospatial Forum (CNG) exists to unlock the potential of geospatial data through adoption of commoditized cloud technologies and open collaboration on data formats – an approach that can be described as *cloud-native*.
@@ -14,32 +15,15 @@ By making geospatial data easier to access and use, we seek to create a world wh
 
 ## What we do
 
-### We organize events
-We organize events for our community, including development sprints, webinars, and conferences. 
-
-We are gathering our first volunteer editorial board who will be responsible for guiding our agenda and identifying gaps in documentation, educational materials, and other areas where we can invest to improve accessibility and usage of geospatial data.
-
-If you want to organize an event with us, please write to hello@cloudnativegeo.org. 
-
-### We maintain online spaces and communication channels
-We manage several spaces and communication channels to enable collaboration and share updates from our community:
-- [an open Discourse server](https://cng.discourse.group)
-- a members-only Slack workspace
-- The [CNG Blog](/blog)
-- The [CNG Newsletter](/https://share.hsforms.com/1SE7MCWS7RrSsAV3HN2C7TArzpx6)
-- [LinkedIn](https://www.linkedin.com/company/cloudnativegeo/)
-- [ X](https://x.com/cloudnativegeo)
-
-### Fiscal sponsorship
-Our parent organization, [Radiant Earth](https://radiant.earth), can provide fiscal sponsorship to receive grants for projects led by our community to make data easier to access and use. If you're interested in having Radiant Earth serve as a fiscal sponsor for a project, please write to hello@radiant.earth.
+- **We organize events**  for our community, including development sprints, webinars, and conferences. If you want to organize an event with us, please write to hello@cloudnativegeo.org. 
+- **We convene an editorial board** (to be announced) to guide our agenda and identify gaps in documentation, educational materials, and other areas where we can invest to improve accessibility and usage of geospatial data.
+- **We maintain online spaces and communication channels** to enable collaboration and share updates from our community. Connect with the CNG community through [Discourse](https://cng.discourse.group), the [CNG Blog](/blog), the [CNG Newsletter](/https://share.hsforms.com/1SE7MCWS7RrSsAV3HN2C7TArzpx6), [LinkedIn](https://www.linkedin.com/company/cloudnativegeo/), and [X](https://x.com/cloudnativegeo)
+- **We provide fiscal sponosrship** through our parent organization, [Radiant Earth](https://radiant.earth). If you're interested in having Radiant Earth serve as a fiscal sponsor for a project to make data easier to access and use, please write to hello@radiant.earth.
 
 ## What we don't do
 
-### We're not a standards organization
-While we have helped our community develop new methods of sharing and storing data (like [Spatiotemporal Asset Catalogs (STAC)](http://stacspec.org), [Cloud-Optimized GeoTIFFs](https://www.cogeo.org), [Geoparquet](https://geoparquet.org), and [Zarr](https://github.com/zarr-developers/geozarr-spec)), we do not create standards. We recommend working with the [Open Geospatial Consortium (OGC)](https://www.ogc.org) on standards development. We anticipate that our community will find new best practices for working with geospatial data in the future, some of which may become OGC standards.
-
-### We don't create or maintain code or standards ourselves
-Our community is able to manage their own projects. We may sometimes help get projects started, but expect most projects to be managed by community members. We may act as a maintainer of last resort for projects that need a home.
+- **We're not a standards organization.** While we have helped our community develop new methods of sharing and storing data (like [Spatiotemporal Asset Catalogs (STAC)](http://stacspec.org), [Cloud-Optimized GeoTIFFs](https://www.cogeo.org), [Geoparquet](https://geoparquet.org), and [Zarr](https://github.com/zarr-developers/geozarr-spec)), we do not create standards. We recommend working with the [Open Geospatial Consortium (OGC)](https://www.ogc.org) on standards development. We anticipate that our community will find new best practices for working with geospatial data in the future, some of which may become OGC standards.
+- **We don't create or maintain code or standards ourselves.** Our community is able to manage their own projects. We may sometimes help get projects started, but expect most projects to be managed by community members. We may act as a maintainer of last resort for projects that need a home.
 
 ## How we measure success
 We measure success in terms of the size of our engaged community. If we have a continually growing and engaged community, we know we're on the right track. We deliberately seek to bring people into our community from economically disadvantaged communities. 
@@ -54,26 +38,13 @@ CNG is an initiative of [Radiant Earth](https://radiant.earth) and is governed b
 ## Our values
 These values guide our work as the stewards of the CNG Forum.
 
-### Shared understanding
-As an initiative of [Radiant Earth](https://radiant.earth), we share our parent organization's mission to increase shared understanding of our world through community-led initiatives that make data easier to access and use. To enable shared understanding, we must create inclusive opportunities where anyone can learn and contribute. 
-
-### Speak through our community members
-We don’t have the answers. Our community does. Our job is to create space for our community can find answers together and to provide opportunities for new leaders to emerge.
-
-### Seek diversity of institutions
-The CNG Forum deliberately convenes community members from a diverse set of global organizations including government agencies, academic institutions, international organizations, nonprofits, commercial enterprises, and startups. While we all work with geospatial data, we benefit from learning from peers who have different perspectives, priorities, and constraints.
-
-### Always learning
-We create opportunities for our community members to continually learn from one another as technology advances. Be open to new ideas and be wary of dogmas. 
-
-### Follow and share data about our community
-We look for data that can help our community understand technologies that work and are practically useful. It is not our job to promote certain technologies over others, but we should be a trustworthy source of data about which technologies are being widely used and rapidly adopted.
-
-### Go out
-Our community is continually at risk of being too insular and we need to work deliberately to make sure we’re creating a larger and more diverse community of geospatial data practitioners. We need to go out and help bring new people into the fold, particularly people from different backgrounds and levels of experience.
-
-### Go up
-We also need to go up to executives and their advisors to help them understand why they should adopt approaches developed by our community. Engaging with senior decision-makers helps keep us honest and gives us feedback to understand if our community is producing real practical value.
+- **Shared understanding.** As an initiative of [Radiant Earth](https://radiant.earth), we share our parent organization's mission to increase shared understanding of our world through community-led initiatives that make data easier to access and use. To enable shared understanding, we must create inclusive opportunities where anyone can learn and contribute. 
+- **Speak through our community members.** We don’t have the answers. Our community does. Our job is to create space for our community can find answers together and to provide opportunities for new leaders to emerge.
+- **Seek diversity of institutions.** The CNG Forum deliberately convenes community members from a diverse set of global organizations including government agencies, academic institutions, international organizations, nonprofits, commercial enterprises, and startups. While we all work with geospatial data, we benefit from learning from peers who have different perspectives, priorities, and constraints.
+- **Always learning.** We create opportunities for our community members to continually learn from one another as technology advances. Be open to new ideas and be wary of dogmas. 
+- **Follow and share data about our community.** We look for data that can help our community understand technologies that work and are practically useful. It is not our job to promote certain technologies over others, but we should be a trustworthy source of data about which technologies are being widely used and rapidly adopted.
+- **Go out.** Our community is continually at risk of being too insular and we need to work deliberately to make sure we’re creating a larger and more diverse community of geospatial data practitioners. We need to go out and help bring new people into the fold, particularly people from different backgrounds and levels of experience.
+- **Go up.** We also need to go up to executives and their advisors to help them understand why they should adopt approaches developed by our community. Engaging with senior decision-makers helps keep us honest and gives us feedback to understand if our community is producing real practical value.
 
 ---
 
