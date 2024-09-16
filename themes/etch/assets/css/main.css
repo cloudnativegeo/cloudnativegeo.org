@@ -271,7 +271,7 @@ main #homepage-showcase {
     clear:both;
 }
 
-a.home-button, div.event-cta a {
+a.home-button, div.event-cta a, div.main-cta-url a {
     font-size:80%;
     text-transform: uppercase;
     font-weight: 600;
@@ -282,12 +282,12 @@ a.home-button, div.event-cta a {
     padding: 3px 8px;
 }
 
-div.event-cta a {
+div.event-cta a, div.main-cta-url a {
     transition: box-shadow 0.2s ease;
     box-shadow: 0px 2px 1px #999;
 }
 
-a.home-button:after, div.event-cta a:after {
+a.home-button:after, div.event-cta a:after, div.main-cta-url a {
   content: " →";
 }
 
@@ -297,7 +297,8 @@ a.home-button:hover {
     color: white;
 }
 
-div.event-cta a {
+div.event-cta a, div.main-cta-url a {
+    white-space: nowrap;
     position:relative;
     font-size:1.2em;
     margin: 2em 0;
@@ -306,12 +307,12 @@ div.event-cta a {
 
 }
 
-div.event-cta a:hover {
+div.event-cta a:hover, div.main-cta-url a:hover {
     box-shadow: 0 2px 2px #BBB;
     top:-1px;
 }
 
-div.event-cta a:active {
+div.event-cta a:active, div.main-cta-url a:active {
     box-shadow: 0 1px 0 #888;
     top:1px;
 }

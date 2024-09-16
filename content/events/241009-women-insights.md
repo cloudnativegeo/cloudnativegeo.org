@@ -9,4 +9,5 @@ price: "Free"
 image_url: ""
 cta_text: "Reserve your spot"
 cta_url: "https://47016186.hs-sites.com/women-in-geospatial-webinar"
+hide_cta: true
 ---
