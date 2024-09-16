@@ -15,8 +15,8 @@ For individuals:
 
 | Level    | Eligibility | Annual Fee |
 | :-------- | :------- | -------: |
-| Professional | Open to all | $195 |
-| Nonprofit | Open to staff of nonprofits | $20 |
+| Professional | Open to all. | $195 |
+| Nonprofit | Open to staff of nonprofits. | $20 |
 | Student | Open to students who are currently enrolled on a full-time basis. | $20 |
 | Scholarship | Open to individuals learning via non-conventional programs such as internships, apprentices, online, and other methods. | $20 |
 | Special situations | [Fill out this form](https://share.hsforms.com/14y-ZTG4XRvC_T6sBZQVPoQrzpx6) to request waived membership fees due to financial hardship. | Fee waived |
@@ -25,8 +25,8 @@ For organizations:
 
 | Level    | Benefits | Annual Fee |
 | :-------- | :------- | -------: |
-| Educational institutions | Individual memberships for 2 faculty and up to 8 students, tabletop at CNG annual event | $500 |
-| Commercial enterprises | Individual memberships for 8 staff, logo on website, 1 branded blog post, ad in two newsletters. Choice of speaking opportunity at one event, joint webinar, or a booth at CNG annual event. | $5,000 |
+| Educational institutions | Individual memberships for 2 faculty and up to 8 students, tabletop at CNG annual in-person event. | $500 |
+| Commercial enterprises | Individual memberships for 8 staff, logo on website, 1 branded blog post, and ad in two newsletters. Choice of speaking opportunity at one event, joint webinar, or a booth at CNG annual in-person event. | $5,000 |
 
 Membership fees are effectively donations to [Radiant Earth's](https://radiant.earth/) general fund. If you would like to support our work without becoming a CNG member, you can [donate to Radiant Earth](https://radiant.earth/donate/) and mention CNG in your donation comment.
 

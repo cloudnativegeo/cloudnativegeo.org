@@ -22,7 +22,7 @@ By making geospatial data easier to access and use, we seek to create a world wh
 
 ## What we don't do
 
-- **We're not a standards organization.** While we have helped our community develop new methods of sharing and storing data (like [Spatiotemporal Asset Catalogs (STAC)](http://stacspec.org), [Cloud-Optimized GeoTIFFs](https://www.cogeo.org), [Geoparquet](https://geoparquet.org), and [Zarr](https://github.com/zarr-developers/geozarr-spec)), we do not create standards. We recommend working with the [Open Geospatial Consortium (OGC)](https://www.ogc.org) on standards development. We anticipate that our community will find new best practices for working with geospatial data in the future, some of which may become OGC standards.
+- **We're not a standards organization.** While we have helped our community develop new methods of sharing and storing data (like [SpatioTemporal Asset Catalogs (STAC)](http://stacspec.org), [Cloud-Optimized GeoTIFFs (COGs)](https://www.cogeo.org), [GeoParquet](https://geoparquet.org), and [Zarr](https://github.com/zarr-developers/geozarr-spec)), we do not create standards. We recommend working with the [Open Geospatial Consortium (OGC)](https://www.ogc.org) on standards development. We anticipate that our community will find new best practices for working with geospatial data in the future, some of which may become OGC standards.
 - **We don't create or maintain code or standards ourselves.** Our community is able to manage their own projects. We may sometimes help get projects started, but expect most projects to be managed by community members. We may act as a maintainer of last resort for projects that need a home.
 
 ## How we measure success
