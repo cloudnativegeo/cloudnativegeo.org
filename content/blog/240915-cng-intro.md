@@ -34,7 +34,7 @@ We are assembling an **editorial board**. We have learned there's no easy defini
 
 (As an aside, the difficulty of defining "cloud-native" is part of the reason why we'll usually refer to ourselves as *CNG*. The other reason is because *Cloud-Native Geospatial Forum* is simply too much of a mouthful.) 
 
-As before, [Radiant Earth](https://radiant.earth) can provide fiscal sponsorship for initiatives important to our community, as we did with STAC. We will continue to collaborate with the [Open Geospatial Consortium](https://org.org) and any other standards bodies to identify emerging patterns and best practices that are candidates for standardization.
+As before, [Radiant Earth](https://radiant.earth) can provide **fiscal sponsorship** for initiatives important to our community, as we did with STAC. We will continue to collaborate with the [Open Geospatial Consortium](https://org.org) and any other standards bodies to identify emerging patterns and best practices that are candidates for standardization.
 
 There's much more we want to do (such as creating a job board, running regular surveys of our community, and formalizing our process of organizing development sprints) but the activities listed here are where we're going to start. 
 
