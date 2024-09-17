@@ -1,7 +1,7 @@
 ---
 title: "Introducing CNG"
 date: 2024-09-17T06:28:38-04:00
-summary: "We're changing the name of the Cloud-Native Geospatial Foundation to the Cloud-Native Geospatial *Forum* and we're announcing a new approach to grow the community of people working to make geospatial data easier to access and use."
+summary: "We're changing the name of the Cloud-Native Geospatial Foundation to the Cloud-Native Geospatial *Forum* and announcing a new approach to grow the community of people working to make geospatial data easier to access and use."
 author: "Jed Sundwall"
 author_title: "Executive Director, Radiant Earth"
 ---
