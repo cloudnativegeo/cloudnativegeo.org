@@ -17,7 +17,7 @@ By making geospatial data easier to access and use, we seek to create a world wh
 
 - **We organize events**  for our community, including development sprints, webinars, and conferences. If you want to organize an event with us, please write to hello@cloudnativegeo.org. 
 - **We convene an editorial board** (to be announced) to guide our agenda and identify gaps in documentation, educational materials, and other areas where we can invest to improve accessibility and usage of geospatial data.
-- **We maintain online spaces and communication channels** to enable collaboration and share updates from our community. Connect with the CNG community through [Discourse](https://cng.discourse.group), the [CNG Blog](/blog), the [CNG Newsletter](/https://share.hsforms.com/1SE7MCWS7RrSsAV3HN2C7TArzpx6), [LinkedIn](https://www.linkedin.com/company/cloudnativegeo/), and [X](https://x.com/cloudnativegeo)
+- **We maintain online spaces and communication channels** to enable collaboration and share updates from our community. Connect with the CNG community through [Discourse](https://cng.discourse.group), the [CNG Blog](/blog), the [CNG Newsletter](/https://share.hsforms.com/1SE7MCWS7RrSsAV3HN2C7TArzpx6), and [LinkedIn](https://www.linkedin.com/company/cloudnativegeo/).
 - **We provide fiscal sponosrship** through our parent organization, [Radiant Earth](https://radiant.earth). If you're interested in having Radiant Earth serve as a fiscal sponsor for a project to make data easier to access and use, please write to hello@radiant.earth.
 
 ## What we don't do
