@@ -5,7 +5,7 @@ when_date: "13 November 2024"
 when_time: "10:00am-6:00pm EDT"
 where: "Virtual"
 description: "CNG Virtual Conference 2024 will bring together leaders in cloud-native geospatial to share and discuss the latest advancements and emerging trends in geospatial technology. Join us and get a peek into the future of our community."
-price: "[CNG members](/join) can attend at no cost. Non-member fees and sponsorship opportunities will be shared here soon."
+price: "[CNG members](/join) can attend at no cost.  $75 for non-members and $45 for non-member students."
 images:
   - /img/2411-virtual-conf-24-og.png
 cta_text: "Get tickets"
