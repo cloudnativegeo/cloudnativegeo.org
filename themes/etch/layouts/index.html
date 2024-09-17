@@ -1,9 +1,47 @@
 {{ define "main" }}
+  {{- partial "main-cta.html" . -}}
   {{- partial "description.html" . -}}
-  {{- .Content -}}
-  <h2>Latest updates:</h2>
-  <div id="homepage-blog">
-  {{- partial "homepage-posts.html" . -}}
+  <hr class="top">
+  
+  {{ with .Params.hero }}
+  <div class="home-hero">
+    <h3 class="home-headline">
+      {{ .headline |
+        markdownify
+      }}
+    </h3>
+    <p>
+      {{ .text |
+        markdownify
+      }}
+    </p>
+    <p><a href="{{ .cta_url }}" class="home-button">{{ .cta_text }}</a></p>
+  {{ end }}
   </div>
-</div>
+
+  {{ with .Params.blog }}
+    <h3 class="home-headline">{{ .title }}</h3>
+    <div id="homepage-blog">
+      {{- partial "homepage-posts.html" . -}}
+    </div>
+    {{ if .button.enable }}
+    <a href="{{ .button.link | relLangURL }}" class="home-button">{{ .button.label }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+   <!-- Funders -->
+  <div class="funders">
+  {{ with .Params.funders }}
+    <h3 class="home-headline">{{ .title }}</h3>
+    <p>{{ .description | markdownify }}</p>
+    <ul id="funderlogos">
+      {{ range .funders_cart | shuffle }}
+      <li><a href="{{ .url }}" id="{{ .id }}">{{ .name }}</a></li>
+      {{ end }}
+    </ul>
+    <p><a href="{{ .cta_url }}" class="home-button">{{ .cta_text }}</a></p>
+  </div>
+  {{ end }}
+  <!-- /Funders -->
 {{ end }}

@@ -8,15 +8,20 @@ iframe {
     margin:2em 0 0 20%;
 }
 
-div#placeholder {
-    width:40%;
+footer hr {
+    clear:both;
 }
 
-div#banner, main#content, main#content h2, main#content h3, footer p, main ul#homepage-blog, main#content ol, main#content ul, ul#posts, #mc_embed_signup {
-    max-width:680px;
+div#banner, main#content, main ul#homepage-blog, ul#posts, footer p{
+    width:80%;
+    max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
     clear:both;
+}
+
+main#content article {
+    max-width: 60%;
 }
 
 div#banner nav {
@@ -32,17 +37,21 @@ div#banner nav ul {
 
 div#banner nav ul li {
     display: inline;
-    margin: 0 0 0 1em;
+    margin: 0 0 .5em 1em;
 }
 
+header hr {
+    margin-bottom:2em;
+}
 
 div#logo {
     margin: .2em 0 .5em 0;
     display:block;
+    width:30%;
 }
 
 div#logo svg {
-    width:23%;
+    width:60%;
 }
 
 /* index.html styles */
@@ -58,6 +67,10 @@ main #homepage h2 {
     text-align: center;
 }
 
+div.home-hero {
+    width:60%;
+}
+
 
 main #homepage-showcase {
     max-width: 80%;
@@ -71,11 +84,22 @@ main #homepage-showcase {
     float: left;
 }
 
-/* single.html styles */
-main#content header#post-header h1 {
-    font-size: 24px;
-    font-size: 2.4rem;
+div.site-description {
+    width:60%;
 }
+
+div.main-cta {
+    width:30%;
+    margin-left:5%;
+    padding:.5em 1em 1.5em 1em;
+    line-height:1;
+    float:right;
+    border-top:none;
+    border-left: 2px #FFD626 solid;
+    border-bottom: 2px #FFD626 solid;
+}
+
+/* single.html styles */
 
 main#content img {
 /*    max-width: 108%;
@@ -122,7 +146,9 @@ main#content .board-member {
 }
 
 ul#funderlogos li {
-    height:100px;
+    width:24%;
+    aspect-ratio: 2 / 1;
+    margin: 1em .5%;        
 }
 
 }

@@ -1,0 +1,5 @@
+<ul id="events">
+{{ range where .Site.RegularPages "Section" .Section }}
+    {{ .Render "li" }}
+{{- end }}
+</ul>

@@ -1,41 +1,53 @@
-+++
-title = "About"
-+++
+---
+title: "About CNG"
+slug: "about"
+---
 
-{{<description>}}
+The Cloud-Native Geospatial Forum (CNG) exists to unlock the potential of geospatial data through adoption of commoditized cloud technologies and open collaboration on data formats – an approach that can be described as *cloud-native*.
 
-## FAQs
+Cloud-native approaches to working with geospatial data offer faster, more cost-effective access to geospatial data by enabling users to access data at any scale using HTTPS. For data providers, cloud-native approaches reduce maintenance burdens by taking advantage of commoditized, scalable, and durable cloud object storage infrastructure and APIs. These advantages combine to enable the development of web-based tools and open-source software that make geospatial data easier to access than ever before.
 
-### What is cloud-native geospatial data?
-Cloud-Native data formats are structured to be efficiently retrieved from cloud [object storage](https://en.wikipedia.org/wiki/Object_storage) services which are designed to serve large volumes of data using generic RESTful / HTTP data transfer protocols.
+## Our mission
+To collaborate with geospatial data practitioners to create vendor-neutral events, content, and educational opportunities that make geospatial data easier to access and use.
 
-Please visit the [Cloud-Optimized Geospatial Formats Guide](https://guide.cloudnativegeo.org) to learn more.
+## Our vision
+By making geospatial data easier to access and use, we seek to create a world where geospatial data is continually made more accessible, usable, and beneficial – empowering communities everywhere to make data-informed decisions. 
 
-### What are the benefits of cloud-native geospatial data?
-1. **It's faster for users.** Cloud-native formats allow people to interact with massive amounts of data by allowing them to stream only the data that they need for their analysis. By relieving the burden of needing to download and store copies of data before starting a project, cloud-native data saves users time and money, lowering the cost of research and and accelerating innovation.
-2. **It's easier to maintain for data providers.** Cloud-native formats take advantage of the performance, scalability, and durability of generic cloud object storage services. This allows data providers to make data available without needing to run and maintain their own servers, databases, or proprietary APIs. 
-3. **It's easy to build tools on top of it.** Because cloud-native formats allow efficient access to data over HTTP, they enable the creation of new web-based tools that can interact with large volumes of remotely stored data. For example, the availability of data in Cloud-Optimized GeoTIFFs has led to the creation of a [wide array of new open source tools and software libraries](https://www.cogeo.org/#implementations). This increased diversity of open source and browser-based tools that can work with data is necessary to increase the size and diversity of the Earth science community.
-4. **It scales.** For users who want to perform large-scale analysis, cloud-native data allows researchers to deploy scalable and parallelizable computing resources that are colocated with the data. This can lead to dramatic reductions in time required to perform analysis. For example, [USGS processed Landsat Collection 2](https://www.usgs.gov/news/eros-releases-collection-2-boosting-cloud-access-accuracy-value-landsat-archive) in the cloud 18 times faster than when they processed Landsat Collection 1, which did not use a cloud-native approach.
+## What we do
 
-### What are the benefits of cloud object storage?
-Competition within the public cloud sector has reliably led to reduction in object storage costs, continual improvement in performance, and a commodification of services. These trends combine to make public cloud object storage the best available technology to expand access to planetary-scale volumes of data for the foreseeable future.
+- **We organize events**  for our community, including development sprints, webinars, and conferences. If you want to organize an event with us, please write to hello@cloudnativegeo.org. 
+- **We convene an editorial board** (to be announced) to guide our agenda and identify gaps in documentation, educational materials, and other areas where we can invest to improve accessibility and usage of geospatial data.
+- **We maintain online spaces and communication channels** to enable collaboration and share updates from our community. Connect with the CNG community through [Discourse](https://cng.discourse.group), the [CNG Blog](/blog), the [CNG Newsletter](/https://share.hsforms.com/1SE7MCWS7RrSsAV3HN2C7TArzpx6), and [LinkedIn](https://www.linkedin.com/company/cloudnativegeo/).
+- **We provide fiscal sponosrship** through our parent organization, [Radiant Earth](https://radiant.earth). If you're interested in having Radiant Earth serve as a fiscal sponsor for a project to make data easier to access and use, please write to hello@radiant.earth.
 
-### How do you encourage adoption of cloud-native geospatial data?
-We carry out a variety of activities, including:
+## What we don't do
 
-- Development sprints
-- Paid fellowships for software developers
-- Sponsored feature development
-- Creation and hosting of documentation and tutorials
-- Creation and provision of open source tools and utilities
-- Engagement with other community stakeholders such as the [Open Geospatial Consortium](https://ogc.org)
+- **We're not a standards organization.** While we have helped our community develop new methods of sharing and storing data (like [SpatioTemporal Asset Catalogs (STAC)](http://stacspec.org), [Cloud-Optimized GeoTIFFs (COGs)](https://www.cogeo.org), [GeoParquet](https://geoparquet.org), and [Zarr](https://github.com/zarr-developers/geozarr-spec)), we do not create standards. We recommend working with the [Open Geospatial Consortium (OGC)](https://www.ogc.org) on standards development. We anticipate that our community will find new best practices for working with geospatial data in the future, some of which may become OGC standards.
+- **We don't create or maintain code or standards ourselves.** Our community is able to manage their own projects. We may sometimes help get projects started, but expect most projects to be managed by community members. We may act as a maintainer of last resort for projects that need a home.
 
-### How do you measure success?
-There are a number of ways to measure adoption of cloud-native geospatial data, including:
+## How we measure success
+We measure success in terms of the size of our engaged community. If we have a continually growing and engaged community, we know we're on the right track. We deliberately seek to bring people into our community from economically disadvantaged communities. 
 
-- Volume of data hosted in cloud-native formats
-- Number of software and tools that use the format
-- Number of contributors to open source tools
-- Number of tutorials available for the format
+## How we do it
+We are funded through grants, event fees, and through our [membership program](/join).
 
-We will work with members of our community to identify success metrics that we can all contribute to.
+CNG content is produced by community members with guidance from our editorial board. 
+
+CNG is an initiative of [Radiant Earth](https://radiant.earth) and is governed by the Radiant Earth board of directors.
+
+## Our values
+These values guide our work as the stewards of the CNG Forum.
+
+- **Shared understanding.** As an initiative of [Radiant Earth](https://radiant.earth), we share our parent organization's mission to increase shared understanding of our world through community-led initiatives that make data easier to access and use. To enable shared understanding, we must create inclusive opportunities where anyone can learn and contribute. 
+- **Speak through our community members.** We don’t have the answers. Our community does. Our job is to create space for our community can find answers together and to provide opportunities for new leaders to emerge.
+- **Seek diversity of institutions.** The CNG Forum deliberately convenes community members from a diverse set of global organizations including government agencies, academic institutions, international organizations, nonprofits, commercial enterprises, and startups. While we all work with geospatial data, we benefit from learning from peers who have different perspectives, priorities, and constraints.
+- **Always learning.** We create opportunities for our community members to continually learn from one another as technology advances. Be open to new ideas and be wary of dogmas. 
+- **Follow and share data about our community.** We look for data that can help our community understand technologies that work and are practically useful. It is not our job to promote certain technologies over others, but we should be a trustworthy source of data about which technologies are being widely used and rapidly adopted.
+- **Go out.** Our community is continually at risk of being too insular and we need to work deliberately to make sure we’re creating a larger and more diverse community of geospatial data practitioners. We need to go out and help bring new people into the fold, particularly people from different backgrounds and levels of experience.
+- **Go up.** We also need to go up to executives and their advisors to help them understand why they should adopt approaches developed by our community. Engaging with senior decision-makers helps keep us honest and gives us feedback to understand if our community is producing real practical value.
+
+---
+
+If you want to support our work, please consider becoming a [CNG Member](/join). 
+
+{{% join-button %}}
