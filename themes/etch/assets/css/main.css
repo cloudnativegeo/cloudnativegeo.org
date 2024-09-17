@@ -287,7 +287,7 @@ div.event-cta a, div.main-cta-url a {
     box-shadow: 0px 2px 1px #999;
 }
 
-a.home-button:after, div.event-cta a:after, div.main-cta-url a {
+a.home-button:after, div.event-cta a:after, div.main-cta-url a:after {
   content: " →";
 }
 
@@ -308,7 +308,7 @@ div.event-cta a, div.main-cta-url a {
 }
 
 div.event-cta a:hover, div.main-cta-url a:hover {
-    box-shadow: 0 2px 2px #BBB;
+    box-shadow: 0 2px 4px #999;
     top:-1px;
 }
 
@@ -359,10 +359,8 @@ main#content div.main-cta h3 {
     padding:0;
 }
 
-span.cta-url {
-    background-color:#FFD626;
-    font-weight: 600;
-    padding:.3em .5em;
+div.main-cta-url {
+    margin:1em 0 0 0;
 }
 
 table {
