@@ -33,3 +33,5 @@ Membership fees are effectively donations to [Radiant Earth's](https://radiant.e
 ### Membership Sign up
 
 <link rel="stylesheet" type="text/css" href="https://api.membercenter.net/forms/css/sq-payment-form.css"> <script src="https://js.stripe.com/v3/"></script> <script type="text/javascript" src="https://api.membercenter.net/payments/payment_form.js?id=10015"></script> <div class="sq-payment-form" id="sq-payment-form1"></div>
+
+If you are unable to pay by credit card, please write to us at hello@cloudnativegeo.org.

@@ -1,14 +1,11 @@
 ---
-<<<<<<< HEAD
-=======
 title: "CNG"
->>>>>>> main
+
 hero:
   headline: "Our community is *amazing*."
   text: "The geospatial data community runs the world. We're talking about the people creating open planetary-scale datasets, putting satellite imagery on your phone, and figuring out how to map millions of data points right in your browser. Our mission is to support this group of generous and brilliant innovators, creating space for them to connect, collaborate, and deepen our understanding of the world through the power of geospatial data."
   cta_text: "Learn more about our work"
   cta_url: "/about"
-
 funders:
   title: "Community-led"
   description: "Our work has been made possible with funding from our community, which includes&hellip;"
@@ -64,8 +61,6 @@ funders:
     url: "https://developmentseed.org"
     id: "devseed"
     img: "/img/funders/devseed.svg"
-
-
 blog:
   title: "Latest from our blog"
   button:
