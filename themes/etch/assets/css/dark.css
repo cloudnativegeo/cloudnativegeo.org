@@ -2,22 +2,21 @@
 @media (prefers-color-scheme: dark) {
 {{ end -}}
 html {
-    scrollbar-color: #6c6c6c #2e2e2e;
 }
 
 body {
-    color: #CCC;
-    background: #383e46;
+    color: #F6F5F4;
+    background: #000000;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-header#page-header, footer {
+footer {
     background-color: #2f343b;
 }
 
 header hr {
-    background-color: #666;
+    background-color: transparent;
     border: 0 none;
     color: #666;
     height: 1px;
@@ -25,12 +24,12 @@ header hr {
 }
 
 a {
-    color: #AACBEA;
+    color: #2126F7;
     text-decoration: underline;
 }
 
 a:hover, a:hover code {
-    color: #53B4FF;
+    color: #2126F7;
     text-decoration: none;
     transition: color .2s ease-in;
 }
@@ -40,7 +39,7 @@ h1#logo a, h1#logo {
 }
 
 main#content p {
-    color: #ccc;
+    color: #FFF;
 }
 
 main#content hr {
@@ -65,15 +64,15 @@ main#content #toc h4 {
 }
 
 main#content ul#posts small {
-    color: #CCC;
+    color: #FFF;
 }
 
 header#banner nav ul li.active a{
-    color: #CCC;
+    color: #FFF;
 }
 
 header#banner nav ul li.active a:hover{
-    color: #CCC;
+    color: #FFF;
 }
 
 main#content header#post-header div {
@@ -81,7 +80,7 @@ main#content header#post-header div {
 }
 
 footer#footer {
-    color: #CCC;
+    color: #FFF;
 }
 
 ul#funderlogos li {

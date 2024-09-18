@@ -1,5 +1,5 @@
 baseURL = "https://cloudnativegeo.org"
-title = "Cloud-Native Geospatial Foundation"
+title = "CNG"
 theme = "etch"
 languageCode = "en-US"
 enableInlineShortcodes = true
@@ -9,7 +9,7 @@ relativeURLs = true
 
 [params]
   description = "Where geospatial data users create the future together."
-  copyright = "Copyright © 2023 Radiant Earth Foundation"
+  copyright = "Copyright © 2023 Radiant Earth"
   dark = "off"
   highlight = true
 
