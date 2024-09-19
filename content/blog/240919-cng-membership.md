@@ -2,8 +2,8 @@
 title: "Join the CNG Membership Program"
 date: 2024-09-19T01:00:38-04:00
 summary: "We’re excited to announce the Cloud-Native Geospatial Forum (CNG) membership program. We have changed our name, but not our commitment to making geospatial data easier to access and use."
-author: "Jed Sundwall"
-author_title: "Executive Director, Radiant Earth" 
+author: "Louisa Nakanuku-Diggs"
+author_title: "Director of Operations, Radiant Earth" 
 ---
 
 We’re excited to announce the Cloud-Native Geospatial Forum (CNG) membership program. We have [changed our name, but not our commitment to making geospatial data easier to access and use](https://cloudnativegeo.org/blog/2024/09/introducing-cng/).
