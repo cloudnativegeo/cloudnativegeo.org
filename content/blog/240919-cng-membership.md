@@ -18,11 +18,11 @@ The membership program was created in this spirit.
 
 CNG membership supports a community that is at the forefront of geospatial innovation. Members benefit from:
 
-- Free or discounted events: Enjoy discounted rates on [CNG-hosted conferences](https://events.zoom.us/ev/Asg4hCYlKUnIia-OW9lpF8c8ne9P66sjzrLdMbvkXGguK3Z9ih_C~AkQ62ZVQEjbIM4hWpTU4BE37MveEIDNQKPFqeMZsg8Dm93CJvYqQhFKDUg?lmt=1726533984000) and workshops, including our upcoming CNG Virtual Conference (free for members!)
-- Members Slack workspace: Join our members-only Slack for real-time discussions, idea sharing, and problem-solving with fellow geospatial data users.
-- Mentorship opportunities: Become a mentor or mentee, connect with members who can offer guidance or support in your professional journey or help new community members find ways to grow and learn.
-- Exclusive networking events: Receive invitations to members-only networking events, where you can meet and collaborate with leaders and peers across the geospatial sector.
-- Community recognition: Earn a member badge in our open [Discourse](https://cng.discourse.group/) forum to show your membership status and commitment to making geospatial data easier to access and use.
+- **Free or discounted events**: Enjoy discounted rates on [CNG-hosted conferences](https://events.zoom.us/ev/Asg4hCYlKUnIia-OW9lpF8c8ne9P66sjzrLdMbvkXGguK3Z9ih_C~AkQ62ZVQEjbIM4hWpTU4BE37MveEIDNQKPFqeMZsg8Dm93CJvYqQhFKDUg?lmt=1726533984000) and workshops, including our upcoming CNG Virtual Conference (free for members!)
+- **Members Slack workspace**: Join our members-only Slack for real-time discussions, idea sharing, and problem-solving with fellow geospatial data users.
+- **Mentorship opportunities**: Become a mentor or mentee, connect with members who can offer guidance or support in your professional journey or help new community members find ways to grow and learn.
+- **Exclusive networking events**: Receive invitations to members-only networking events, where you can meet and collaborate with leaders and peers across the geospatial sector.
+- **Community recognition**: Earn a member badge in our open [Discourse](https://cng.discourse.group/) forum to show your membership status and commitment to making geospatial data easier to access and use.
 
 Over time, we hope to provide more benefits to CNG members.
 
