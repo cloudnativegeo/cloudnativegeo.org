@@ -530,8 +530,9 @@ main#content pre code {
     padding: 0;
 }
 
-main#content .footnotes {
-    font-size: 1.2em;
+
+main#content .footnotes ol li p {
+    font-size: 1em;
 }
 
 footer {
