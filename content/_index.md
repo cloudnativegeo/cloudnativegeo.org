@@ -1,5 +1,5 @@
 ---
-title: "CNG"
+title: "Cloud-Native Geospatial Forum - CNG"
 
 hero:
   headline: "Our community is *amazing*."
