@@ -1,6 +1,8 @@
+{{ if ne .Params.passed true }}
 <li>
   <span class="event-date">{{ .Params.when_date | markdownify }}</span><br>
   <a href="{{ .RelPermalink }}" class="post-title">{{ .Title }}</a><br>
   {{- if isset .Params "when" -}}
   {{- end -}}
 </li>
+{{ end }}

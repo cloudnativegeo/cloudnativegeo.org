@@ -11,4 +11,5 @@ description: "In this webinar, moderated by [Dalton Lunga](https://www.linkedin.
 price: "Free"
 image_url: ""
 hide_cta: true
+passed: true
 ---
