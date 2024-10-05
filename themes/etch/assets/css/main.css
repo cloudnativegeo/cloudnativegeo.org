@@ -652,6 +652,14 @@ a#terradue {
     height:100%;
 }
 
+a#splunk {
+    background-image: url('/img/funders/splunk.png');
+    background-size: 70%;
+    display:block;
+    width:100%;
+    height:100%;
+}
+
 a#devseed {
     background-image: url('/img/funders/devseed.svg');
     background-size: 70%;
