@@ -18,7 +18,7 @@ CNG is an initiative of [Radiant Earth](https://radiant.earth), a registered 501
 
 We convene an editorial board from our community to define our agenda and identify gaps in documentation, educational materials, and other areas where we can invest to improve accessibility and usage of geospatial data. 
 
-## Current editorial board
+## Our editorial board
 
 {{< editorial-board >}}
 
