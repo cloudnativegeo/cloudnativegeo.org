@@ -33,11 +33,7 @@ We convene an editorial board from our community to define our agenda and help u
 - **We don't create or maintain code or standards ourselves.** Our community is able to manage their own projects. We may sometimes help get projects started, but expect most projects to be managed by community members. We may act as a maintainer of last resort for projects that need a home.
 
 ## How we measure success
-<<<<<<< HEAD
-We measure success in terms of the size of our engaged community. If we have a continually growing and engaged community, we know we're on the right track. We deliberately seek to bring people into our community from economically disadvantaged communities. 
-=======
 We measure success in terms of the size of our engaged community. If we have a continually growing and engaged community, we know we're on the right track. We deliberately seek to include people from economically disadvantaged communities. 
->>>>>>> main
 
 ## How we do it
 We are funded through grants, event fees, and through our [membership program](/join).

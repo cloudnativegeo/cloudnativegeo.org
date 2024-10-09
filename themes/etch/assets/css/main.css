@@ -499,7 +499,7 @@ main#content div.editorial-board-member {
 }
 
 main#content .editorial-board-member figure {
-    width:20%;
+    width:40%;
     float:left;
     display:inline;
     margin:0;
@@ -520,7 +520,7 @@ main#content .editorial-board-member img {
 }
 
 div.board-name-title {
-    width:80%;
+    width:60%;
     display:inline;
     float:left;    
 }
