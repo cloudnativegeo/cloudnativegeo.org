@@ -16,7 +16,7 @@ By making geospatial data easier to access and use, we seek to create a world wh
 ## Who we are
 CNG is an initiative of [Radiant Earth](https://radiant.earth), a registered 501(c)(3) nonprofit organization. All administrative tasks and operations are carried out by Radiant Earth staff and contractors.
 
-We convene an editorial board from our community to define our agenda and identify gaps in documentation, educational materials, and other areas where we can invest to improve accessibility and usage of geospatial data. 
+We convene an editorial board from our community to define our agenda and help us identify opportunities to support documentation, educational materials, and other ways to improve accessibility and usage of geospatial data. 
 
 ## Our editorial board
 
