@@ -75,7 +75,7 @@ hr {
     height: 1px;
 }
 
-header hr {
+header hr, main#content div.editorial-board-block hr {
     background-color: transparent;
     border: 0 none;
     color: transparent;
@@ -468,8 +468,7 @@ main#content figure.teampic {
     margin: 1em auto 0 auto;
 }
 
-main#content figure.teampic img{
-    border-radius:50%;
+main#content figure.editorial-board img{
     max-width:100%;
 }
 
@@ -485,13 +484,45 @@ main#content .team-description {
     margin:1em 0;
 }
 
-main#content .board-member {
-    width:50%;
+div.editorial-board-block {
+    width:100%;
+    display:block;
+    clear:both;
+}
+
+main#content div.editorial-board-member {
+    font-size: 80%;
+    width:100%;
     display: block;
-    padding:0 2%;
-    margin: 0 auto 2em auto;
-    float: left;
-    height:19em;
+    clear:both;
+    padding-top: 1em;
+}
+
+main#content .editorial-board-member figure {
+    width:20%;
+    float:left;
+    display:inline;
+    margin:0;
+    padding-right:1em;
+}
+
+.duotone-overlay {
+    position: absolute;
+    background-color: #008080;
+    mix-blend-mode: color;
+    width: 20%;
+    height: auto;
+}
+
+
+main#content .editorial-board-member img {
+    filter: grayscale(100%) contrast(108%);    
+}
+
+div.board-name-title {
+    width:80%;
+    display:inline;
+    float:left;    
 }
 
 main#content blockquote {
@@ -581,7 +612,7 @@ main#content ul.event-meta li {
 
 /*Funder styles*/
 
-div.funders hr {
+div.funders {
     clear:both;
 }
 
