@@ -1,5 +1,5 @@
 ---
-title: "CNG"
+title: "Cloud-Native Geospatial Forum - CNG"
 
 hero:
   headline: "Our community is *amazing*."
@@ -40,9 +40,9 @@ funders:
     url: "https://schmidtfutures.com"
     id: "schmidt"    
     img: "/img/funders/schmidt.svg"
-  - name: "Terradue"
-    url: "https://terradue.com"
-    id: "terradue"
+  - name: "Splunk"
+    url: "https://splunk.com"
+    id: "splunk"
     img: "/img/funders/terradue.svg"
   - name: "Sparkgeo"
     url: "https://sparkgeo.com"
