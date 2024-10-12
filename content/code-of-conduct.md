@@ -2,6 +2,7 @@
 title: "Code of Conduct"
 date: 2024-09-13T22:31:32-04:00
 prs_open: true
+hide_cta: true
 ---
 
 ## Introduction
