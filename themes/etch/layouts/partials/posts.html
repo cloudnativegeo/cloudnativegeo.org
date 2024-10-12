@@ -1,5 +1,4 @@
 <ul id="posts">
-{{- range where site.RegularPages "Type" "in" site.Params.mainSections }}
-    {{ .Render "li" }}
-{{- end }}
+    {{ range where .Site.RegularPages "Section" .Section }} {{ .Render "li" }}
+    {{- end }}
 </ul>
