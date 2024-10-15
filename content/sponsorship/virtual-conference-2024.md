@@ -5,9 +5,9 @@ slug: "virtual-conference-2024"
 hide_cta: true
 ---
 
-The Cloud-Native Geospatial Forum (CNG) is pleased to announce our 2024 CNG Virtual Conference designed for professionals, innovators, and enthusiasts in the cloud-native geospatial space. We invite you to join us as a sponsor and help make this inaugural conference a success.
+The Cloud-Native Geospatial Forum (CNG) is pleased to announce our [2024 CNG Virtual Conference](https://cloudnativegeo.org/events/virtual-conference-2024/) designed for professionals, innovators, and enthusiasts in the cloud-native geospatial space. We invite you to join us as a sponsor and help make this inaugural conference a success.
 
-About the event: CNG Virtual Conference 2024 will take place on November 13th, 2024. The event aims to bring together geospatial data users from diverse sectors to share insights into the latest advancements and trends in geospatial technology. Through a series of presentations, technical demonstrations, and interactive sessions, the conference will:
+**About the event:** CNG Virtual Conference 2024 will take place on November 13th, 2024. The event aims to bring together geospatial data users from diverse sectors to share insights into the latest advancements and trends in geospatial technology. Through a series of presentations, technical demonstrations, and interactive sessions, the conference will:
 
 - Provide a high-level introduction to cloud-native geospatial technology,
 - Deep dive into how these formats are implemented in real-world practice, and
@@ -24,13 +24,8 @@ We offer flexible sponsorship packages that provide high visibility across the e
 | :-------- | :-------: | :------: | :------: |
 | CNG Commercial Membership (valued at $5,000)* | ✔️ | ✖️ | ✖️ |
 | Logo added on CNG Website | ✔️ | ✖️ | ✖️ |
-| Sponsor name and logo | ✔️ | ✔️ | ✔️ |
-| Sponsor description | ✔️ | ✔️  | ✔️ |
 | Social media mentions | ✔️ | ✔️  | ✔️ |
-| Analytics & reporting | ✔️ | ✔️  | ✔️ |
-| Privacy Policy | ✔️ | ✔️  | ✔️ |
-| Expo supported | ✔️ | ✔️  | ✔️ |
-| Expo booth size | Large | Medium | Small |
+| Virtual expo booth size | Large | Medium | Small |
 | Eligible booth spaces | Up to 4 | Up to 2 | 1 |
 | Sponsor representatives | Up to 8 | Up to 4 | Up to 2 |
 | Sponsored sessions | ✔️ | ✔️  | ✖️ |
@@ -39,7 +34,7 @@ We offer flexible sponsorship packages that provide high visibility across the e
 | Sponsor images | Up to 5 | Up to 3 | ✖️ |
 | Downloadable pdfs | Up to 5 | Up to 5 | ✖️ |
 
-* Note that the Platinum Sponsorship ($5,000) includes CNG Commercial Membership benefits valued at $5,000 and includes:
+\*Note that the Platinum Sponsorship ($5,000) includes CNG Commercial Membership benefits valued at $5,000 and includes:
 - Individual memberships for 8 staff members
 - Logo on CNG website
 - One branded blog post on the CNG website
