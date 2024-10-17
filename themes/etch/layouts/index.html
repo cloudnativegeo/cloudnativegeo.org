@@ -2,7 +2,7 @@
   {{- partial "main-cta.html" . -}}
   {{- partial "description.html" . -}}
   <hr class="top">
-  
+
   {{ with .Params.hero }}
   <div class="home-hero">
     <h3 class="home-headline">
@@ -40,6 +40,7 @@
       <li><a href="{{ .url }}" id="{{ .id }}">{{ .name }}</a></li>
       {{ end }}
     </ul>
+    <p><small>{{ .disclaimer | markdownify }}</small></p>
     <p><a href="{{ .cta_url }}" class="home-button">{{ .cta_text }}</a></p>
   </div>
   {{ end }}

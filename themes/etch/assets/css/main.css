@@ -747,6 +747,14 @@ a#element84 {
   height: 100%;
 }
 
+a#fused {
+  background-image: url("/img/funders/fused.svg");
+  background-size: 80%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 a#sparkgeo {
   background-image: url("/img/funders/sparkgeo.svg");
   background-size: 60%;
@@ -758,6 +766,22 @@ a#sparkgeo {
 a#omidyar {
   background-image: url("/img/funders/omidyar.png");
   background-size: 80%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#twente {
+  background-image: url("/img/funders/twente.png");
+  background-size: 80%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#boettiger {
+  background-image: url("/img/funders/boettiger.svg");
+  background-size: 70%;
   display: block;
   width: 100%;
   height: 100%;

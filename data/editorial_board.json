@@ -2,7 +2,7 @@
   {
     "name": "Ryan Abernathy",
     "title": "CEO",
-    "affiliation": "Earthmover",   
+    "affiliation": "Earthmover",
     "pic": "/editorial-board/ryan-abernathy.jpg"
   },
   {
@@ -10,13 +10,13 @@
     "title": "Geographer-at-large",
     "affiliation": "Freelance",
     "pic": "/editorial-board/dana-bauer.jpg"
-  },  
+  },
   {
     "name": "Matt Forrest",
     "title": "Director of Customer Engineering & Product Led Growth",
     "affiliation": "Wherobots",
     "pic": "/editorial-board/matt-forest.jpg"
-  },  
+  },
   {
     "name": "Matthew Hanson",
     "title": "Director of Aerospace",
@@ -26,7 +26,7 @@
   {
     "name": "Chris Holmes",
     "title": "Product Architect",
-    "affiliation": "Planet",   
+    "affiliation": "Planet",
     "pic": "/editorial-board/cholmes.jpg"
   },
   {
@@ -44,25 +44,25 @@
   {
     "name": "Dr. Brianna R. Pagán",
     "title": "Deputy Manager",
-    "affiliation": "NASA Goddard Earth Sciences Data and Information Services Center (GES DISC)",
+    "affiliation": "NASA Goddard Earth Sciences Data and Information Services Center",
     "pic": "/editorial-board/brianna-pagan.jpg"
   },
   {
-   "name": "Amy Rose",
-   "title": "Technical Director",
-   "affiliation": "Overture Maps Foundation",
-   "pic": "/editorial-board/amy-rose.jpg"
+    "name": "Amy Rose",
+    "title": "Technical Director",
+    "affiliation": "Overture Maps Foundation",
+    "pic": "/editorial-board/amy-rose.jpg"
   },
   {
-   "name": "Qiusheng Wu",
-   "title": "Associate Professor and Director of Graduate Studies",
-   "affiliation": "Deptartment of Geography and Sustainability at the University of Tennessee, Knoxville",
-   "pic": "/editorial-board/qiusheng-wu.jpg"
+    "name": "Qiusheng Wu",
+    "title": "Associate Professor and Director of Graduate Studies",
+    "affiliation": "Deptartment of Geography and Sustainability at the University of Tennessee, Knoxville",
+    "pic": "/editorial-board/qiusheng-wu.jpg"
   },
   {
-   "name": "Zhuangfang NaNa Yi",
-   "title": "Principal Machine Learning Scientist",
-   "affiliation": "Regrow",
-   "pic": "/editorial-board/nana-yi.jpg"
+    "name": "Zhuangfang NaNa Yi",
+    "title": "Principal Machine Learning Scientist",
+    "affiliation": "Regrow",
+    "pic": "/editorial-board/nana-yi.jpg"
   }
 ]
