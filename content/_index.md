@@ -1,6 +1,5 @@
 ---
 title: "Cloud-Native Geospatial Forum - CNG"
-
 hero:
   headline: "Our community is *amazing*."
   text: "The geospatial data community runs the world. We're talking about the people creating open planetary-scale datasets, putting satellite imagery on your phone, and figuring out how to map millions of data points right in your browser. Our mission is to support this group of generous and brilliant innovators, creating space for them to connect, collaborate, and deepen our understanding of the world through the power of geospatial data."
@@ -9,6 +8,7 @@ hero:
 funders:
   title: "Community-led"
   description: "Our work has been made possible with funding from our community, which includes&hellip;"
+  disclaimer: "These logos are arranged randomly and change every time we update this website."
   cta_text: "Join the CNG community"
   cta_url: "/join"
   funders_cart:
@@ -16,29 +16,29 @@ funders:
     url: "https://www.climate.columbia.edu"
     id: "columbia"
     img: "/img/funders/columbia.svg"
-  - name: "Amazon Web Services"
-    url: "https://aws.amazon.com"
-    id: "aws"
-    img: "/img/funders/aws.svg"
   - name: "NASA"
     url: "https://www.nasa.gov"
     id: "nasa"
     img: "/img/funders/nasa.png"
-  - name: "Microsoft"
-    url: "https://microsoft.com"
-    id: "microsoft"
-    img: "/img/funders/microsoft.svg"
-  - name: "Hydrosat"
-    url: "https://hydrosat.com"
-    id: "hydrosat"
-    img: "/img/funders/hydrosat.png"
+  - name: "University of Twente"
+    url: "https://www.itc.nl/about-itc/centres-of-expertise/big-geodata/"
+    id: "twente"
+    img: "/img/funders/twente.png"
+  - name: Boettiger Group at UC Berkeley"
+    url: "https://www.carlboettiger.info"
+    id: "boettiger"
+    img: "/img/funders/boettiger.svg"
+  - name: "Fused"
+    url: "https://fused.io"
+    id: "fused"
+    img: "/img/funders/fused.svg"
   - name: "Element 84"
     url: "https://element84.com"
     id: "element84"
     img: "/img/funders/element84.png"
   - name: "Schmidt Futures"
     url: "https://schmidtfutures.com"
-    id: "schmidt"    
+    id: "schmidt"
     img: "/img/funders/schmidt.svg"
   - name: "Splunk"
     url: "https://splunk.com"
@@ -67,5 +67,4 @@ blog:
     enable: true
     label: "More from our blog"
     link: "/blog"
-
 ---

@@ -136,15 +136,6 @@ main#content .team-description {
     margin:0 0 10% 4%;
 }
 
-main#content .board-member {
-    width:33%;
-    display: block;
-    padding:0 2%;
-    margin: 0 auto 2em auto;
-    float: left;
-    height:16em;
-}
-
 ul#funderlogos li {
     width:24%;
     aspect-ratio: 2 / 1;
