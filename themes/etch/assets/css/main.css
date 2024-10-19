@@ -512,6 +512,7 @@ main#content figure.teampic {
 
 main#content figure.editorial-board img {
   max-width: 100%;
+  min-width: 100%;
 }
 
 main#content .team-name-title {
