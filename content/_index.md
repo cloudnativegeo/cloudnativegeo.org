@@ -13,7 +13,7 @@ funders:
   cta_url: "/join"
   funders_cart:
   - name: "Earthmover"
-    url: "https://earthmover.com"
+    url: "https://earthmover.io"
     id: "earthmover"
   - name: "NASA"
     url: "https://www.nasa.gov"
