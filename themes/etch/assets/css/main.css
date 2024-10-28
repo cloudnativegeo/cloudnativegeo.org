@@ -726,7 +726,7 @@ a#terradue {
 
 a#splunk {
   background-image: url("/img/funders/splunk.png");
-  background-size: 70%;
+  background-size: 60%;
   display: block;
   width: 100%;
   height: 100%;
@@ -774,7 +774,7 @@ a#omidyar {
 
 a#twente {
   background-image: url("/img/funders/twente.png");
-  background-size: 80%;
+  background-size: 60%;
   display: block;
   width: 100%;
   height: 100%;
@@ -798,7 +798,7 @@ a#bmgf {
 
 a#tge {
   background-image: url("/img/funders/tge.svg");
-  background-size: 80%;
+  background-size: 70%;
   display: block;
   width: 100%;
   height: 100%;
@@ -863,6 +863,22 @@ a#tetra_tech {
 a#lacuna {
   background-image: url("/img/funders/lacuna.png");
   background-size: 90%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#wherobots {
+  background-image: url("/img/funders/wherobots.svg");
+  background-size: 70%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#earthmover {
+  background-image: url("/img/funders/earthmover.svg");
+  background-size: 70%;
   display: block;
   width: 100%;
   height: 100%;
