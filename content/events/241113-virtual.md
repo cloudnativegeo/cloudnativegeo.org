@@ -15,5 +15,3 @@ cta_url: "https://events.zoom.us/ev/Asg4hCYlKUnIia-OW9lpF8c8ne9P66sjzrLdMbvkXGgu
 hide_cta: true
 ---
 {{< virtual-keynotes >}}
-
-
