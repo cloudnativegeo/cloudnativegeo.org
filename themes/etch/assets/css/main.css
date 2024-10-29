@@ -96,6 +96,15 @@ main#content div.editorial-board-block hr {
   clear: both;
 }
 
+header hr,
+main#content div.virtual-keynotes-block hr {
+  background-color: transparent;
+  border: 0 none;
+  color: transparent;
+  height: 0;
+  clear: both;
+}
+
 iframe {
   margin: 2em 0 0 0;
 }
@@ -515,6 +524,11 @@ main#content figure.editorial-board img {
   min-width: 100%;
 }
 
+main#content figure.keynotes img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
 main#content .team-name-title {
   text-align: center;
   max-width: 50%;
@@ -549,6 +563,28 @@ main#content .editorial-board-member figure {
   padding-right: 1em;
 }
 
+div.virtual-keynotes-block {
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+main#content div.keynote-speaker {
+  font-size: 80%;
+  width: 100%;
+  display: block;
+  clear: both;
+  padding-top: 1em;
+}
+
+main#content .keynote-speaker figure {
+  width: 40%;
+  float: left;
+  display: inline;
+  margin: 0;
+  padding-right: 1em;
+}
+
 .duotone-overlay {
   position: absolute;
   background-color: #008080;
@@ -561,7 +597,17 @@ main#content .editorial-board-member img {
   filter: grayscale(100%) contrast(108%);
 }
 
+main#content .keynote-speaker img {
+  filter: grayscale(100%) contrast(108%);
+}
+
 div.board-name-title {
+  width: 60%;
+  display: inline;
+  float: left;
+}
+
+div.keynote-description {
   width: 60%;
   display: inline;
   float: left;
