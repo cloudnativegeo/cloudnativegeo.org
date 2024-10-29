@@ -10,7 +10,7 @@ description: "CNG Virtual Conference 2024 will bring together leaders in cloud-n
 price: "[CNG members](/join) can attend at no cost.  $75 for non-members and $45 for non-member students."
 images:
   - /img/2411-virtual-conf-24-og.png
-cta_text: "Get tickets"
+cta_text: "See schedule & Get tickets"
 cta_url: "https://events.zoom.us/ev/Asg4hCYlKUnIia-OW9lpF8c8ne9P66sjzrLdMbvkXGguK3Z9ih_C~AkQ62ZVQEjbIM4hWpTU4BE37MveEIDNQKPFqeMZsg8Dm93CJvYqQhFKDUg?lmt=1726533984000"
 hide_cta: true
 ---
