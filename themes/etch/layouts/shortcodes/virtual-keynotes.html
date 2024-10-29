@@ -1,0 +1,17 @@
+<div class="virtual-keynotes-block">
+    {{ range .Site.Data.virtual_keynotes }}
+    <div class="keynote-speaker">
+      <figure class="keynotes">
+        <img src="/img/{{ .pic }}" alt="{{ .talk }}" />
+      </figure>
+      <div class="keynote-description">
+        <h1>{{ .session }}</h1><br>
+        <strong>Keynote Speaker: {{ .name }}</strong><br>
+        <medium>
+            {{ .talk }}<br>
+        </medium>
+      </div>
+    </div>
+    {{ end }}
+    <hr>
+    </div>

@@ -1,0 +1,23 @@
+[
+    {
+      "session": "Session 1: Foundations of Cloud-Native Geospatial",
+      "talk": "Cloud-Native Will Break the GIS Data Silo",
+      "name": "Javier De La Torre",
+      "affiliation": "Carto",
+      "pic": "javier-de-la-torre.jpg"
+    },
+    {
+      "session": "Session 2: CNG Technology Deep Dive and Live Demos",
+      "talk": "Key Technology Advances and Standards Developed",
+      "name": "Qiusheng Wu",
+      "affiliation": "Deptartment of Geography and Sustainability at the University of Tennessee, Knoxville",
+      "pic": "/editorial-board/qiusheng-wu.jpg"
+    },
+    {
+        "session": "Session 3: The future of CNG, the importance of community, and how those intersect",
+        "talk": "The Power of Community in CNG",
+        "name": "Dr. Brianna R. Pagán",
+        "affiliation": "NASA Goddard Earth Sciences Data and Information Services Center",
+        "pic": "/editorial-board/brianna-pagan.jpg"
+      }
+  ]
