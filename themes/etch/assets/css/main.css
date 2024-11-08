@@ -788,7 +788,7 @@ a#devseed {
 
 a#element84 {
   background-image: url("/img/funders/element84.png");
-  background-size: 70%;
+  background-size: 60%;
   display: block;
   width: 100%;
   height: 100%;
@@ -804,7 +804,7 @@ a#fused {
 
 a#sparkgeo {
   background-image: url("/img/funders/sparkgeo.svg");
-  background-size: 60%;
+  background-size: 50%;
   display: block;
   width: 100%;
   height: 100%;
@@ -828,7 +828,7 @@ a#twente {
 
 a#boettiger {
   background-image: url("/img/funders/boettiger.svg");
-  background-size: 70%;
+  background-size: 60%;
   display: block;
   width: 100%;
   height: 100%;
@@ -925,6 +925,22 @@ a#wherobots {
 a#earthmover {
   background-image: url("/img/funders/earthmover.svg");
   background-size: 70%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#tgi {
+  background-image: url("/img/funders/tgi.svg");
+  background-size: 40%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#google {
+  background-image: url("/img/funders/google.svg");
+  background-size: 56%;
   display: block;
   width: 100%;
   height: 100%;
