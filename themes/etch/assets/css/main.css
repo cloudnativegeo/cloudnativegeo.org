@@ -363,6 +363,10 @@ div.main-cta-url a:active {
   top: 1px;
 }
 
+div.hbspt-form {
+  margin:0;
+}
+
 main#content h3.home-headline {
   font-size: 130%;
   font-weight: 600;

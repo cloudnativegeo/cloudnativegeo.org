@@ -4,10 +4,6 @@ body {
     line-height: 1.5;
 }
 
-iframe {
-    margin:2em 0 0 20%;
-}
-
 footer hr {
     clear:both;
 }
@@ -139,7 +135,7 @@ main#content .team-description {
 ul#funderlogos li {
     width:24%;
     aspect-ratio: 2 / 1;
-    margin: 1em .5%;        
+    margin: 1em .5%;
 }
 
 }
