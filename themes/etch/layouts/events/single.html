@@ -4,7 +4,7 @@
   <header id="post-header">
     <h1>{{ .Title }}</h1>
     {{if isset .Params "images"}}
-      {{ range .images  }}
+      {{ range first 1 | .images  }}
     {{ end }}
     <ul class="event-meta">
       <li class="event-when"><span class="event-meta-tip">Date:</span> {{ .Params.when_date | markdownify }}</li>
