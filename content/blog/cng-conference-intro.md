@@ -10,10 +10,10 @@ The CNG Conference 2025 brings together the cloud-native geospatial community to
 
 The event will include keynote speeches, panel discussions, hands-on workshops, networking opportunities, and showcases of open-source projects, all designed to enhance attendees' skills and knowledge. Participants will explore the newest developments in cloud-native geospatial technology, data accessibility, and practical applications
 
-*Save the date:* April 30 - May 2, 2025
+**Save the date:** April 30 - May 2, 2025
 
-*Where?* Snowbird, Utah - a short drive from Salt Lake City
+**Where?** Snowbird, Utah - a short drive from Salt Lake City
 
-*Interested?* Let us know if you want to attend by completing a short [form](https://cloudnativegeo.org/events/cng-conference-2025). 
+**Interested?** Let us know if you want to attend by completing a short [form](https://cloudnativegeo.org/events/cng-conference-2025). 
 
-*Sponsorships:* We are developing sponsorship packages. If you are interested, email us at hello@cloudnativegeo.org. 
+**Sponsorships:** We are developing sponsorship packages. If you are interested, email us at hello@cloudnativegeo.org 
