@@ -3,7 +3,7 @@ date: "2024-11-19T1:00:01-04:00"
 title: "Introducing the Cloud-Native Geo Conference 2025"
 tags: [ ""
 ]
-summary: "Join the geospatial community at the CNG Conference 2025 in Snowbird, Utah, to explore cloud-native geospatial advancements and collaborate on making geospatial data more accessible!."
+summary: "Join the geospatial community at the CNG Conference 2025 in Snowbird, Utah, to explore cloud-native geospatial advancements and collaborate on making geospatial data more accessible."
 ---
 
 The CNG Conference 2025 brings together the cloud-native geospatial community to exchange knowledge and explore the latest advancements and trends in geospatial data. Set against the beautiful backdrop of Snowbird, Utah, this inaugural event will support efforts to enhance geospatial data accessibility. Participants will present their work throughout the three-day conference and share forward-looking insights. 
