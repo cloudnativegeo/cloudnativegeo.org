@@ -1,5 +1,5 @@
 ---
-date: "2024-10-19T1:00:01-04:00"
+date: "2024-11-19T1:00:01-04:00"
 title: "Introducing the Cloud-Native Geo Conference 2025"
 tags: [ ""
 ]
