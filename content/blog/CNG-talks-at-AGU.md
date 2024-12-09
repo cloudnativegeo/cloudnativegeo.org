@@ -13,7 +13,7 @@ The [AGU Fall Meeting 2024](https://www.agu.org/annual-meeting), the largest gat
 
 ### Wednesday Dec 11
 
-**VirtualiZarr: Create Virtual Zarr Stores Using Xarray Syntax:** This paper presents VirtualiZarr, a tool that allows accessing old file formats (like netCDF) as if they were stored in cloud-optimized formats (like Zarr). The authors will demonstrate using the Worthy Ocean Alkalinity Enhancement Efficiency Map dataset, which consists of ~40TB of data spread across ~500,000 netCDF files. Presented by Thomas Nicholas from Worthy, LLC.
+**VirtualiZarr - Create Virtual Zarr Stores Using Xarray Syntax:** This paper presents VirtualiZarr, a tool that allows accessing old file formats (like netCDF) as if they were stored in cloud-optimized formats (like Zarr). The authors will demonstrate using the Worthy Ocean Alkalinity Enhancement Efficiency Map dataset, which consists of ~40TB of data spread across ~500,000 netCDF files. Presented by Thomas Nicholas from Worthy, LLC.
  [Learn more.](https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1725217)
 
 **Supporting Open Science with the CF Metadata Conventions for NetCDF:** This talk highlights the Climate and Forecast (CF) conventions, a critical standard for sharing and processing Earth science data in netCDF format and in Zarr/GeoZarr. Presented by Ethan Davis from NSF Unidata. [Learn more.](https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1771431)
