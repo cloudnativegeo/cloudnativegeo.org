@@ -9,7 +9,7 @@ The [AGU Fall Meeting 2024](https://www.agu.org/annual-meeting), the largest gat
 
 ### Monday Dec 9
 
-**Dynamic Tiling for Earth Data Visualization:** This talk explores dynamic tiling, a method for generating map tiles on-the-fly, allowing for real-time modifications and eliminating the need for constant updates. Presented by . [Learn more](https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1624796).
+**Dynamic Tiling for Earth Data Visualization:** This talk explores dynamic tiling, a method for generating map tiles on-the-fly, allowing for real-time modifications and eliminating the need for constant updates. Presented by Aimee Barciauskas from Development Seed. [Learn more](https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1624796).
 
 ### Wednesday Dec 11
 
