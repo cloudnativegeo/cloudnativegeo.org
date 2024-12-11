@@ -5,8 +5,10 @@ tags: [ ""
 ]
 images:
   - /img/20241209-kylebarron.png
-summary: "Kyle Barron, cloud engineer at Development Seed, builds open source tools and infrastructure that process and visualize geospatial data."
+summary: "Kyle Barron, Cloud Engineer at Development Seed, builds open source tools and infrastructure that process and visualize geospatial data."
 ---
+{{< img src="img/20241209-kylebarron.png" alt="Kyle Barron" caption="Kyle Barron, Cloud Engineer at Development Seed." >}}
+
 ### You’ve spent years figuring out how to visualize large geospatial datasets in web browsers. Can you tell us a bit about your background and what initially drew you to this area?
 
 I have a bit of a nontraditional background; I have virtually no official training in geography or computer science. In college, I was interested in urban and environmental economics, trying to understand how policies shape cities and the environment. I planned to pursue a PhD in economics and after college worked for a health economics professor at MIT for two years. 
