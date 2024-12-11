@@ -4,10 +4,10 @@ title: "Interview with Kyle Barron on GeoArrow and GeoParquet, and the Future of
 tags: [ ""
 ]
 images:
-  - /img/20241209-kylebarron.png
+  - /images/20241209-kylebarron.png
 summary: "Kyle Barron, Cloud Engineer at Development Seed, builds open source tools and infrastructure that process and visualize geospatial data."
 ---
-{{< img src="img/20241209-kylebarron.png" alt="Kyle Barron" caption="Kyle Barron, Cloud Engineer at Development Seed." >}}
+{{< img src="images/20241209-kylebarron.png" alt="Kyle Barron" caption="Kyle Barron, Cloud Engineer at Development Seed." >}}
 
 ### You’ve spent years figuring out how to visualize large geospatial datasets in web browsers. Can you tell us a bit about your background and what initially drew you to this area?
 
