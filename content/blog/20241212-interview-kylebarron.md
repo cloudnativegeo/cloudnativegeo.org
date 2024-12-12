@@ -1,5 +1,5 @@
 ---
-date: "2024-12-10T1:00:01-04:00"
+date: "2024-12-11T1:00:01-04:00"
 title: "Interview with Kyle Barron on GeoArrow and GeoParquet, and the Future of Geospatial Data Analysis "
 tags: [ ""
 ]
