@@ -1,6 +1,6 @@
 ---
 title: "CNG In-Person Conference 2025"
-date: 2025-04-30T10:47:39-04:00
+date: 2024-11-30T10:47:39-04:00
 slug: "ut-conference-2025"
 hide_cta: true
 ---
@@ -11,7 +11,7 @@ The Cloud-Native Geospatial Forum (CNG) will host the [CNG Conference 2025](http
 
 ## Event Goals
 
-- **Exchange Knowledge**: Explore the latest advancements and trends in geospatial data and share forward-looking insights. 
+- **Exchange Knowledge**: Explore the latest advancements and trends in geospatial data and share forward-looking insights.
 - **Community growth**: Expand the geospatial data community by reaching new practitioners and introducing them to cloud-native geospatial approaches, while supporting experienced professionals in broadening their expertise and connections.
 - **Career development**: Empower practitioners with career-building skills focused on open-source geospatial formats, cloud-native applications, and practical use cases.
 - **Career development**: Empower practitioners with career-building skills focused on open-source geospatial formats, cloud-native applications, and practical use cases.
@@ -23,10 +23,10 @@ The Cloud-Native Geospatial Forum (CNG) will host the [CNG Conference 2025](http
 - **Career development**: Empower practitioners with career-building skills focused on open-source geospatial formats, cloud-native applications, and practical use cases.
 **Keynote presentations and panel discussions**: Leading voices from across industries will share insights on emerging trends, breakthrough technologies, and impactful applications.
 - **Career development**: Empower practitioners with career-building skills focused on open-source geospatial formats, cloud-native applications, and practical use cases.
-- **Hands-on workshops**: Practical, skill-building sessions will provide training on various cloud-native geospatial formats and technologies. 
+- **Hands-on workshops**: Practical, skill-building sessions will provide training on various cloud-native geospatial formats and technologies.
 - **Networking opportunities**: Dedicated networking events and small group discussions will facilitate connections across sectors.
-- **Open-source project spotlights**:  Showcases of innovative projects that highlight real-world, scalable applications of open-source geospatial technology. 
-- **Cloud-native geospatial datasets**: Showcases of datasets that push the boundaries of geospatial analysis.  
+- **Open-source project spotlights**:  Showcases of innovative projects that highlight real-world, scalable applications of open-source geospatial technology.
+- **Cloud-native geospatial datasets**: Showcases of datasets that push the boundaries of geospatial analysis.
 
 ## Audience Profile
 
@@ -42,7 +42,7 @@ The CNG Conference 2025 will draw a diverse, cross-sector audience to create an 
 
 ### Base Sponsorship
 
-Sponsorship for the CNG Conference 2025 requires a base sponsorship of $5,000. This sponsorship also either gains you a CNG Commercial Membership or resets the clock on your existing commercial membership. 
+Sponsorship for the CNG Conference 2025 requires a base sponsorship of $5,000. This sponsorship also either gains you a CNG Commercial Membership or resets the clock on your existing commercial membership.
 
 Base sponsorship includes:
 -  Your organization's logo in promotional material (virtual and physical)
@@ -61,7 +61,7 @@ Base sponsorship includes:
 | Item    | Cost | Description |
 | :-------- | :------- | -------: |
 | Gala & Awards Ceremony | $35,000 | Held on the second night of the conference (May 1). The “[Sponsor Name] Gala” will be included in all event materials. Includes branded signage. A word from our gala sponsor will be held during the reception event. This add-on includes 4 event registration tickets for your team members and 4 tickets to the gala.|
-| Welcome Reception | $30,000 | Held on night 1 of the conference (April 30). The “[Sponsor Name] Welcome Reception” will be included in all event materials. Includes branded signage. A word from our reception sponsor will be held during the reception event. This add-on includes 4 event registration tickets. 
+| Welcome Reception | $30,000 | Held on night 1 of the conference (April 30). The “[Sponsor Name] Welcome Reception” will be included in all event materials. Includes branded signage. A word from our reception sponsor will be held during the reception event. This add-on includes 4 event registration tickets.
 | Breakfasts & Breaks Day 1 | $8,000 | “Breakfast (Provided by [Sponsor Name])” and “Break (Provided by [Sponsor Name])” will be included in all event materials. Includes branded signage. A word from our breakfast sponsor on Day 1. This add-on includes 1 event registration ticket.
 | Breakfasts & Breaks Day 2 | $8,000 | “Breakfast (Provided by [Sponsor Name])” and “Break (Provided by [Sponsor Name])”  will be included in all event materials. Includes branded signage. A word from our breakfast sponsor on Day 2. This add-on includes 1 event registration ticket. |
 | Lunch Day 1 | $10,000 | “Lunch (Provided by [Sponsor Name])” will be included in all event materials. Includes branded signage. Includes branded signage.  A word from our lunch sponsor on Day 1. This add-on includes 1 event registration ticket. |
