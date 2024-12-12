@@ -40,16 +40,27 @@ The CNG Conference 2025 will draw a diverse, cross-sector audience to create an 
 
 ## Become a Sponsor
 
+### Base Sponsorship
+
 Sponsorship for the CNG Conference 2025 requires a base sponsorship of $5,000. This sponsorship also either gains you a CNG Commercial Membership or resets the clock on your existing commercial membership. 
 
-Base sponsorship includes your organization's logo in promotional material (virtual and physical), social media mentions, and all the benefits of a CNG Commercial Membership (Individual memberships for 8 staff members, logo added on CNG website, one branded blog post on the CNG website, ad placement in two newsletters that are distributed to over 10,000 subscribers, and a choice of speaking opportunity at one CNG event or a joint webinar).
+Base sponsorship includes:
+-  Your organization's logo in promotional material (virtual and physical)
+- Social media mentions
+- Sponsor designation on name badge
+- CNG Commercial Membership (valued at $5,000) or membership renewal
+    - Individual memberships for 8 staff members
+    - Logo added on CNG Website
+    - One branded blog post on the CNG website
+    - Ad placement in two newsletters that are distributed to over 10,000 subscribers
+    - Choice of speaking opportunity at one event or a joint webinar
 
 
-## Sponsorship Add-ons
+### Sponsorship Add-ons
 
 | Item    | Cost | Description |
 | :-------- | :------- | -------: |
-| Gala & Awards Ceremony | $35,000 | Held on night 2 of the conference (May 1). The “[Sponsor Name] Gala” will be included in all event materials. Includes branded signage. A word from our gala sponsor will be held during the reception event. This add-on includes 4 event registration tickets for your team members and 4 tickets to the gala.|
+| Gala & Awards Ceremony | $35,000 | Held on the second night of the conference (May 1). The “[Sponsor Name] Gala” will be included in all event materials. Includes branded signage. A word from our gala sponsor will be held during the reception event. This add-on includes 4 event registration tickets for your team members and 4 tickets to the gala.|
 | Welcome Reception | $30,000 | Held on night 1 of the conference (April 30). The “[Sponsor Name] Welcome Reception” will be included in all event materials. Includes branded signage. A word from our reception sponsor will be held during the reception event. This add-on includes 4 event registration tickets. 
 | Breakfasts & Breaks Day 1 | $8,000 | “Breakfast (Provided by [Sponsor Name])” and “Break (Provided by [Sponsor Name])” will be included in all event materials. Includes branded signage. A word from our breakfast sponsor on Day 1. This add-on includes 1 event registration ticket.
 | Breakfasts & Breaks Day 2 | $8,000 | “Breakfast (Provided by [Sponsor Name])” and “Break (Provided by [Sponsor Name])”  will be included in all event materials. Includes branded signage. A word from our breakfast sponsor on Day 2. This add-on includes 1 event registration ticket. |
