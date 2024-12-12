@@ -17,19 +17,6 @@
         {{ else }}
         <time>{{ .Lastmod | time.Format "02 January 2006" }}</time>
         {{ end }} {{- end -}}
-
-        {{ with .Params.past_events }}
-        <div>
-            <p><a href="{{ .cta_url }}" class="home-button">{{ .cta_text }}</a></p>
-            {{ end }}
-        </div>
     </div>
-  
-
 </header>
-
-
 {{- partial "events.html" . -}} {{ end }}
-
-
-
