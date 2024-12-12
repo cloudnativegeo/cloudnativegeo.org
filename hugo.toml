@@ -42,12 +42,12 @@ relativeURLs = true
     pageref = "/join"
     weight = 20
 
-  [[menu.main]]
-    identifier = "events"
-    name = "events"
-    title = "events"
-    pageref = "/events"
-    weight = 25
+  # [[menu.main]]
+  #   identifier = "events"
+  #   name = "events"
+  #   title = "events"
+  #   pageref = "/events"
+  #   weight = 25
 
   [[menu.main]]
     identifier = "guide"
