@@ -4,7 +4,7 @@ title: "Sponsorship Call: CNG Conference 2025"
 tags: [ ""
 ]
 images:
-summary: "Don’t miss this opportunity to make your mark in the cloud-native geospatial community"
+summary: "Don’t miss this opportunity to make your mark in the cloud-native geospatial community."
 ---
 
 As you create your 2025 budgets, we invite you to join us as a sponsor at [CNG Conference 2025](http://localhost:1313/events/cng-conference-2025/) in Snowbird, Utah from April 30 to May 2, 2025. Sponsorship amplifies your organization’s visibility and aligns you with the innovators and leaders driving the future of geospatial data.

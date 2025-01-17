@@ -30,7 +30,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
     {{- partial "opengraph.html" . -}}
-    {{- partial "gtag.html" . -}}
     <link rel="canonical" href="{{ .Permalink }}" />
     <title>{{ .Title }}{{if not .IsHome}} | {{ .Site.Title }} {{end}}</title>
 </head>
