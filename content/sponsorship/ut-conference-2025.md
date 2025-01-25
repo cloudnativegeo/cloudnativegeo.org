@@ -40,34 +40,34 @@ The CNG Conference 2025 will draw a diverse, cross-sector audience to create an 
 
 ## Become a Sponsor
 
-### Base Sponsorship
+To become a sponsor of the CNG Conference 2025, you must be an existing CNG Commercial Member or register for this membership. We value being in community with our collaborators and want to consistently support those organizations that are supporting making this event happen. By being a CNG Commercial Member, your sponsorship benefit extends past this one event. CNG Commercial Membership price is $5,000 per year.
 
-Sponsorship for the CNG Conference 2025 requires a base sponsorship of $5,000. This sponsorship also either gains you a CNG Commercial Membership or resets the clock on your existing commercial membership.
+CNG Commerical Membership includes:
 
-Base sponsorship includes:
--  Your organization's logo in promotional material (virtual and physical)
+- Individual CNG memberships for 8 staff members
+- Logo added on CNG Website
+- One branded blog post on the CNG website
+- Ad placement in two newsletters that are distributed to over 10,000 subscribers
+- Choice of speaking opportunity at one event or a joint webinar (availability at CNG Conference 2025 may not be guaranteed as we fill the agenda)
+
+Sponsorship of any of the following sponsorship options also comes with the following benefits:
+
+- Your organization's logo in promotional material (virtual and physical)
 - Social media mentions
 - Sponsor designation on name badge
-- CNG Commercial Membership (valued at $5,000) or membership renewal
-    - Individual memberships for 8 staff members
-    - Logo added on CNG Website
-    - One branded blog post on the CNG website
-    - Ad placement in two newsletters that are distributed to over 10,000 subscribers
-    - Choice of speaking opportunity at one event or a joint webinar
 
+**Sponsorship Options**
 
-### Sponsorship Add-ons
-
-| Item    | Cost | Description |
-| :-------- | :------- | -------: |
-| Gala & Awards Ceremony | $35,000 | Held on the second night of the conference (May 1). The “[Sponsor Name] Gala” will be included in all event materials. Includes branded signage. A word from our gala sponsor will be held during the reception event. This add-on includes 4 event registration tickets for your team members and 4 tickets to the gala.|
-| Welcome Reception | $30,000 | Held on night 1 of the conference (April 30). The “[Sponsor Name] Welcome Reception” will be included in all event materials. Includes branded signage. A word from our reception sponsor will be held during the reception event. This add-on includes 4 event registration tickets.
-| Breakfasts & Breaks Day 1 | $8,000 | “Breakfast (Provided by [Sponsor Name])” and “Break (Provided by [Sponsor Name])” will be included in all event materials. Includes branded signage. A word from our breakfast sponsor on Day 1. This add-on includes 1 event registration ticket.
-| Breakfasts & Breaks Day 2 | $8,000 | “Breakfast (Provided by [Sponsor Name])” and “Break (Provided by [Sponsor Name])”  will be included in all event materials. Includes branded signage. A word from our breakfast sponsor on Day 2. This add-on includes 1 event registration ticket. |
-| Lunch Day 1 | $10,000 | “Lunch (Provided by [Sponsor Name])” will be included in all event materials. Includes branded signage. Includes branded signage.  A word from our lunch sponsor on Day 1. This add-on includes 1 event registration ticket. |
-| Lunch Day 2 | $10,000 | “Lunch (Provided by [Sponsor Name])” will be included in all event materials. Includes branded signage. Includes branded signage.  A word from our lunch sponsor on Day 2. This add-on includes 1 event registration ticket. |
-| Conference Lanyards | $8,000 | Have your logo prominently displayed on all attendee lanyards.|
-| Workshop (5 slots available) | $7,000 | The ability to run a 2-3 hour workshop during the conference event. You have full decision making around what this workshop would look like. This add-on includes 1 event registration ticket.|
+| Item    | Description | Cost |
+| :-- | :-- | --: |
+| Gala & Awards Ceremony | Held on the second night of the conference (May 1). The “[Sponsor Name] Gala” will be included in all event materials. Includes branded signage. A word from our gala sponsor will be held during the reception event. This add-on includes 4 event registration tickets for your team members and 4 tickets to the gala.| $35,000 |
+| Welcome Reception | Held on night 1 of the conference (April 30). The “[Sponsor Name] Welcome Reception” will be included in all event materials. Includes branded signage. A word from our reception sponsor will be held during the reception event. This add-on includes 4 event registration tickets. | $30,000 |
+| Breakfasts & Breaks Day 1 | “Breakfast (Provided by [Sponsor Name])” and “Break (Provided by [Sponsor Name])” will be included in all event materials. Includes branded signage. A word from our breakfast sponsor on Day 1. This add-on includes 1 event registration ticket. | $8,000 |
+| Breakfasts & Breaks Day 2 | “Breakfast (Provided by [Sponsor Name])” and “Break (Provided by [Sponsor Name])”  will be included in all event materials. Includes branded signage. A word from our breakfast sponsor on Day 2. This add-on includes 1 event registration ticket. | $8,000 |
+| Lunch Day 1 | “Lunch (Provided by [Sponsor Name])” will be included in all event materials. Includes branded signage. Includes branded signage.  A word from our lunch sponsor on Day 1. This add-on includes 1 event registration ticket. | $10,000 |
+| Lunch Day 2 | “Lunch (Provided by [Sponsor Name])” will be included in all event materials. Includes branded signage. Includes branded signage.  A word from our lunch sponsor on Day 2. This add-on includes 1 event registration ticket. | $10,000 |
+| Conference Lanyards | Have your logo prominently displayed on all attendee lanyards.| $8,000 |
+| Workshop (5 slots available) | The ability to run a 1-3 hour workshop during the conference event. You have full decision-making around how this workshop will look. This add-on includes 1 event registration ticket.| $7,000 |
 
 ## Community Sponsorship
 
