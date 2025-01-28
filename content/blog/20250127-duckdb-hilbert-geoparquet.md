@@ -1,6 +1,6 @@
 ---
 title: "Using DuckDB’s Hilbert Function with GeoParquet"
-date: 2025-01-28T01:00:38-04:00
+date: 2025-01-27T01:00:38-04:00
 summary: "DuckDB's functionality has continued to expand, and as of version 1.1 it reads and writes GeoParquet natively, as long as you have the spatial extension installed."
 author: "[Chris Holmes](https://beta.source.coop/cholmes)"
 author_title: "Product Architect, Planet" 
