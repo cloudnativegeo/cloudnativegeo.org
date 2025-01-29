@@ -24,7 +24,8 @@ DuckDB’s GeoParquet writer always includes the new [bounding box column](https
 
 I recently got [help on the DuckDB Spatial discussions](https://github.com/duckdb/duckdb-spatial/discussions/419) for how to properly do this, so wanted to write that up for everyone. I’ve been processing Planet metadata that gets served from Planet’s [Data API](https://developers.planet.com/docs/apis/data/), working to try to make a [STAC-GeoParquet](https://github.com/stac-utils/stac-geoparquet/blob/main/spec/stac-geoparquet-spec.md) version of it. The data is ordered by time, so when you load the full dataset it just fills in everywhere.
 
-{{< img src="images/20250127-duckdb-map1.gif" alt="STAC GeoParquet" caption="The data is ordered by time, so when you load the full dataset it just fills in everywhere." >}}
+
+{{< img src="images/20250127-duckdb-map1.gif" >}}
 
 I had a false start with the Hilbert curve function, which resulted in a cool pattern of loading the data.
 
