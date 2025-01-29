@@ -1,7 +1,7 @@
 ---
 title: "Sharing some tools for working with GeoParquet"
 date: 2025-01-28T01:00:38-04:00
-summary: "DuckDB's functionality has continued to expand, and as of version 1.1 it reads and writes GeoParquet natively, as long as you have the spatial extension installed."
+summary: "A collection of GeoParquet tools to simplify common tasks in DuckDB."
 author: "[Chris Holmes](https://beta.source.coop/cholmes)"
 author_title: "Product Architect, Planet" 
 ---
