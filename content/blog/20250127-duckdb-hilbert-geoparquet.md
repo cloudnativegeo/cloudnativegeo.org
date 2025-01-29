@@ -71,7 +71,7 @@ You would have to save that call’s output somewhere — if you’re writing co
         )
     );`
 
-    You can use that to create the table, or to directly write the data out.
+You can use that to create the table, or to directly write the data out.
 
 I hope this post helps others, and soon gets into the LLM’s. A big thanks to Max for all his amazing work on the spatial extension, and helping me figure out how to get the Hilbert curve working!
 
