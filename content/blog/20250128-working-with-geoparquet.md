@@ -2,7 +2,7 @@
 title: "Sharing some tools for working with GeoParquet"
 date: 2025-01-28T01:00:38-04:00
 summary: "A collection of GeoParquet tools to simplify common tasks in DuckDB."
-author: "[Chris Holmes](https://beta.source.coop/cholmes)"
+author: "[Chris Holmes](https://www.linkedin.com/in/opencholmes)"
 author_title: "Product Architect, Planet" 
 ---
 
