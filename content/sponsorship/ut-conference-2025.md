@@ -1,6 +1,6 @@
 ---
 title: "CNG In-Person Conference 2025"
-date: 2025-04-30T10:47:39-04:00
+date: 2024-11-30T10:47:39-04:00
 slug: "ut-conference-2025"
 hide_cta: true
 ---
@@ -11,7 +11,7 @@ The Cloud-Native Geospatial Forum (CNG) will host the [CNG Conference 2025](http
 
 ## Event Goals
 
-- **Exchange Knowledge**: Explore the latest advancements and trends in geospatial data and share forward-looking insights. 
+- **Exchange Knowledge**: Explore the latest advancements and trends in geospatial data and share forward-looking insights.
 - **Community growth**: Expand the geospatial data community by reaching new practitioners and introducing them to cloud-native geospatial approaches, while supporting experienced professionals in broadening their expertise and connections.
 - **Career development**: Empower practitioners with career-building skills focused on open-source geospatial formats, cloud-native applications, and practical use cases.
 - **Career development**: Empower practitioners with career-building skills focused on open-source geospatial formats, cloud-native applications, and practical use cases.
@@ -23,10 +23,10 @@ The Cloud-Native Geospatial Forum (CNG) will host the [CNG Conference 2025](http
 - **Career development**: Empower practitioners with career-building skills focused on open-source geospatial formats, cloud-native applications, and practical use cases.
 **Keynote presentations and panel discussions**: Leading voices from across industries will share insights on emerging trends, breakthrough technologies, and impactful applications.
 - **Career development**: Empower practitioners with career-building skills focused on open-source geospatial formats, cloud-native applications, and practical use cases.
-- **Hands-on workshops**: Practical, skill-building sessions will provide training on various cloud-native geospatial formats and technologies. 
+- **Hands-on workshops**: Practical, skill-building sessions will provide training on various cloud-native geospatial formats and technologies.
 - **Networking opportunities**: Dedicated networking events and small group discussions will facilitate connections across sectors.
-- **Open-source project spotlights**:  Showcases of innovative projects that highlight real-world, scalable applications of open-source geospatial technology. 
-- **Cloud-native geospatial datasets**: Showcases of datasets that push the boundaries of geospatial analysis.  
+- **Open-source project spotlights**:  Showcases of innovative projects that highlight real-world, scalable applications of open-source geospatial technology.
+- **Cloud-native geospatial datasets**: Showcases of datasets that push the boundaries of geospatial analysis.
 
 ## Audience Profile
 
