@@ -22,7 +22,7 @@ There’s a great line-up of speakers, with more coming. And if you want to give
 
 I’m excited about how this event will build momentum for the CNG Forum. It’s a consolidation of this movement into a bit more of a formal structure, with a great mission:
 
-{{< img src="images/20250210-CNG-movement3.png">}}
+{{< img src="images/20250210-CNG-movement2.png">}}
 
 The vision is to make geospatial data easier to access to use, and to grow the resources being invested to make that happen. It’s all under the Radiant Earth non-profit (501(c)3), which means that all revenue from membership and the conference (after covering costs) goes back into strengthening the community, bringing people together more, and fulfilling the vision.
 
