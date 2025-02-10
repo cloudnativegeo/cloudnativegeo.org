@@ -1,6 +1,6 @@
 ---
 title: "You, yes you, can help the Cloud Native Geospatial Movement!"
-date: 2025-02-09T01:00:38-04:00
+date: 2025-02-10T01:00:38-04:00
 summary: "CNG Editorial Board member Chris Holmes shares why he's so excited about CNG Conference 2025."
 author: "[Chris Holmes](https://www.linkedin.com/in/opencholmes)"
 author_title: "Product Architect, Planet & CNG Editorial Board Member" 
