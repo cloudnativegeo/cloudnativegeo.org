@@ -1,6 +1,6 @@
 ---
 title: "You, yes you, can help the Cloud Native Geospatial Movement!"
-date: 2025-02-05T01:00:38-04:00
+date: 2025-02-09T01:00:38-04:00
 summary: "The cloud-native geospatial movement has changed how we access, share, and analyze spatial data—but its growth depends on the community behind it. If you've benefited from these innovations, here's your chance to give back while having an awesome experience."
 author: "[Chris Holmes](https://www.linkedin.com/in/opencholmes)"
 author_title: "Product Architect, Planet" 
