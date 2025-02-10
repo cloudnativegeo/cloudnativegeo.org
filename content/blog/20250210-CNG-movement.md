@@ -1,9 +1,9 @@
 ---
 title: "You, yes you, can help the Cloud Native Geospatial Movement!"
 date: 2025-02-09T01:00:38-04:00
-summary: "The cloud-native geospatial movement has changed how we access, share, and analyze spatial data—but its growth depends on the community behind it. If you've benefited from these innovations, here's your chance to give back while having an awesome experience."
+summary: "CNG Editorial Board member Chris Holmes shares why he's so excited about CNG Conference 2025."
 author: "[Chris Holmes](https://www.linkedin.com/in/opencholmes)"
-author_title: "Product Architect, Planet" 
+author_title: "Product Architect, Planet & CNG Editorial Board Member" 
 ---
 
 Have you benefitted from Cloud-Optimized GeoTIFF’s? SpatioTemporal Asset Catalogs? Zarr, COPC or GeoParquet? Not just the formats, but the whole ecosystem of tools and data around it? Well I’d like to present you with an incredibly easy opportunity to ‘pay it forward’ and help build and expand the movement. And all you have to do is attend a conference! One that should be a totally awesome experience, the [first in-person CNG Conference](https://2025-ut.cloudnativegeo.org), from April 30th to May 2nd.
