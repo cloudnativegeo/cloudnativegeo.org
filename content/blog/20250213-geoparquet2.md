@@ -42,7 +42,7 @@ While native support represents the future of geospatial data storage, adoption 
     
 ## What’s Next for the Spec?
 
-While achieving native geometric type support is a significant milestone, our work isn't finished. Our immediate focus areas include:
+While achieving native geospatial type support is a significant milestone, our work isn't finished. Our immediate focus areas include:
 
 -   Developing best practices for GeoParquet 2.0 implementation
     
