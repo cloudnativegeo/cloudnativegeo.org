@@ -4,7 +4,7 @@ title = "Geoparquet 2.0: Going Native"
 tags = [ ""
 ]
 summary = "GeoParquet 2.0 introduces native GEOMETRY and GEOGRAPHY support in Parquet and Iceberg, marking a major milestone in geospatial data integration and interoperability."  
-author = "Chris Holmes, Joris Van den Bossche, Jacob Wasserman, Jia Yu, Kyle Barron, Tim Schaub, Javier de la Torre"  
+author = "Chris Holmes, Joris Van den Bossche, Jacob Wasserman, Jia Yu, Kyle Barron, Dewey Dunnington, Tim Schaub, Javier de la Torre"  
 +++
 
 {{< img src="images/20250213-parquet_iceberg_new_geo_data_types.png" alt="New geo data types in Parquet and Iceberg">}}
