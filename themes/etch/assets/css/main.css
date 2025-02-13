@@ -229,8 +229,7 @@ main#content p {
   margin: 16px 0;
 }
 
-main#content article p,
-main#content article li {
+main#content article p {
   font-size: 0.8em;
   line-height: 1.7;
 }
