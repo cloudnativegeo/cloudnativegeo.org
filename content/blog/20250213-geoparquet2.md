@@ -30,7 +30,7 @@ The GeoParquet initiative has always aimed to make geospatial data "boringly int
     
 - GeoParquet 2.0: Regular Parquet files utilizing native GEOMETRY and GEOGRAPHY data types
 
-Recommendations for Implementation
+## Recommendations for Implementation
 
 While native support represents the future of geospatial data storage, adoption will take time. We recommend:
 
