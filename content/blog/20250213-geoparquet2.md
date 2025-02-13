@@ -12,9 +12,9 @@ author = "Chris Holmes, Joris Van den Bossche, Jacob Wasserman, Jia Yu, Kyle Bar
 
 Seven months ago, we issued [A Call to Action for the Data Community](https://cloudnativegeo.org/blog/2024/07/embracing-geospatial-as-a-primary-data-type-a-call-to-action-for-the-data-community/) to break down geospatial data silos and make GIS a core part of analytics. Today, we're thrilled to announce two major developments that bring this vision closer to reality:
 
--   The Parquet specification has [officially adopted](https://github.com/apache/parquet-format/blob/94b9d631aef332c78b8f1482fb032743a9c3c407/Geospatial.md?plain=1#L27) geospatial guidance, enabling native storage of GEOMETRY and GEOGRAPHY types
+- The Parquet specification has [officially adopted](https://github.com/apache/parquet-format/blob/94b9d631aef332c78b8f1482fb032743a9c3c407/Geospatial.md?plain=1#L27) geospatial guidance, enabling native storage of GEOMETRY and GEOGRAPHY types
 
--   Iceberg 3 now includes GEOMETRY and GEOGRAPHY as part of its [official specification](https://github.com/apache/iceberg/blob/main/format/spec.md)  
+- Iceberg 3 now includes GEOMETRY and GEOGRAPHY as part of its [official specification](https://github.com/apache/iceberg/blob/main/format/spec.md)  
 
 Now both Parquet and Iceberg support columns of type GEOMETRY or GEOGRAPHY just like INT32, INT64, FLOAT32, etc. columns! Yay! This is a landmark achievement for geospatial data! 🎉
   
@@ -26,31 +26,31 @@ First, a heartfelt thank you to everyone who contributed to this effort—engine
 
 The GeoParquet initiative has always aimed to make geospatial data "boringly interoperable." With Parquet and Iceberg now supporting geometry types natively, GeoParquet is entering its next phase.
 
--   GeoParquet 1.0/1.1: Parquet files with additional metadata to "label" geometries/geographies
+- GeoParquet 1.0/1.1: Parquet files with additional metadata to "label" geometries/geographies
     
--   GeoParquet 2.0: Regular Parquet files utilizing native GEOMETRY and GEOGRAPHY data types
+- GeoParquet 2.0: Regular Parquet files utilizing native GEOMETRY and GEOGRAPHY data types
 
 Recommendations for Implementation
 
 While native support represents the future of geospatial data storage, adoption will take time. We recommend:
 
--   Continuing with GeoParquet 1.1 for production systems until tools fully support Parquet's native geospatial types. A few pioneer implementations have started.  
+- Continuing with GeoParquet 1.1 for production systems until tools fully support Parquet's native geospatial types. A few pioneer implementations have started.  
       
--   Planning for eventual migration to GeoParquet 2.0  
+- Planning for eventual migration to GeoParquet 2.0  
       
--   Following our upcoming migration guides and best practices and some discussions on exact differences between versions. In an ideal world we would make Geoparquet 2.0 files also be compatible with 1.1 and 1.0, stay tuned for that.
+- Following our upcoming migration guides and best practices and some discussions on exact differences between versions. In an ideal world we would make Geoparquet 2.0 files also be compatible with 1.1 and 1.0, stay tuned for that.
     
 ## What’s Next for the Spec?
 
 While achieving native geospatial type support is a significant milestone, our work isn't finished. Our immediate focus areas include:
 
--   Developing best practices for GeoParquet 2.0 implementation
+- Developing best practices for GeoParquet 2.0 implementation
     
--   Creating clear transition guidelines from previous versions
+- Creating clear transition guidelines from previous versions
     
--   Establishing standards for CRS handling and performance optimization
+- Establishing standards for CRS handling and performance optimization
     
--   Continuing outreach and advocacy for widespread adoption
+- Continuing outreach and advocacy for widespread adoption
     
 # Beyond Vector Data
 
