@@ -5,6 +5,7 @@ summary: "CNG Editorial Board member Chris Holmes shares why he's so excited abo
 author: "[Chris Holmes](https://www.linkedin.com/in/opencholmes)"
 author_title: "Product Architect, Planet & CNG Editorial Board Member" 
 ---
+*This blog post was first published on [Chris's personal blog](https://cholmes.medium.com/you-yes-you-can-help-the-cloud-native-geospatial-movement-d2b58e40804d) on February 9, 2025 and is being cross posted here.*
 
 Have you benefitted from Cloud-Optimized GeoTIFF’s? SpatioTemporal Asset Catalogs? Zarr, COPC or GeoParquet? Not just the formats, but the whole ecosystem of tools and data around it? Well I’d like to present you with an incredibly easy opportunity to ‘pay it forward’ and help build and expand the movement. And all you have to do is attend a conference! One that should be a totally awesome experience, the [first in-person CNG Conference](https://2025-ut.cloudnativegeo.org), from April 30th to May 2nd.
 
