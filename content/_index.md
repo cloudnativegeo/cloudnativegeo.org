@@ -51,15 +51,17 @@ funders:
   - name: "Amazon Web Services"
     url: "https://aws.amazon.com"
     id: "aws"
-  - name: "Schmidt Futures"
-    url: "https://www.schmidtfutures.org"
-    id: "schmidt"
-  - name: "Element 84"
-    url: "https://www.element84.com"
-    id: "element84"
-  - name: "Sparkgeo"
-    url: "https://sparkgeo.com"
-    id: "sparkgeo"
+  - name: "Yale Center for Geospatial Solutions"
+    url: "https://geospatial.yale.edu"
+    id: "yale-geospatial"
+  - name: "Clark Center for Geospatial Analytics"
+    url: "https://www.clarku.edu/centers/geospatial-analytics/"
+    id: "clark-cga"
+  - name: "Humanitarian OpenStreetMap Team"
+    url: "https://www.hotosm.org"
+    id: "hotosm"
+
+
 blog:
   title: "Latest from our blog"
   button:

@@ -773,6 +773,22 @@ a#terradue {
   height: 100%;
 }
 
+a#clark-cga {
+  background-image: url("/img/funders/clark-cga.svg");
+  background-size: 70%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#hotosm {
+  background-image: url("/img/funders/hotosm.svg");
+  background-size: 40%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 a#splunk {
   background-image: url("/img/funders/splunk.png");
   background-size: 60%;
@@ -944,6 +960,14 @@ a#tgi {
 a#google {
   background-image: url("/img/funders/google.svg");
   background-size: 56%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#yale-geospatial {
+  background-image: url("/img/funders/yale-geospatial.svg");
+  background-size: 76%;
   display: block;
   width: 100%;
   height: 100%;
