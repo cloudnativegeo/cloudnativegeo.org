@@ -773,9 +773,17 @@ a#terradue {
   height: 100%;
 }
 
+a#ncics {
+  background-image: url("/img/funders/ncics.svg");
+  background-size: 70%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 a#clark-cga {
   background-image: url("/img/funders/clark-cga.svg");
-  background-size: 70%;
+  background-size: 60%;
   display: block;
   width: 100%;
   height: 100%;

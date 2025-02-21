@@ -42,9 +42,6 @@ funders:
   - name: "Taylor Geospatial Engine"
     url: "https://tgengine.org"
     id: "tge"
-  - name: "Planet"
-    url: "https://planet.com"
-    id: "planet"
   - name: "Development Seed"
     url: "https://developmentseed.org"
     id: "devseed"
@@ -60,7 +57,9 @@ funders:
   - name: "Humanitarian OpenStreetMap Team"
     url: "https://www.hotosm.org"
     id: "hotosm"
-
+  - name: "North Carolina Institute for Climate Studies"
+    url: "https://www.ncics.org"
+    id: "ncics"
 
 blog:
   title: "Latest from our blog"
