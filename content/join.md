@@ -16,6 +16,7 @@ For individuals:
 | Level    | Eligibility | Annual Fee |
 | :-------- | :------- | -------: |
 | Professional | Open to all. | $195 |
+| Startup | Open to individuals employed at companies less than 2 years old and with fewer than 3 employees | $99 |
 | Nonprofit | Open to staff of nonprofits. | $20 |
 | Student | Open to students who are currently enrolled on a full-time basis. | $20 |
 | Scholarship | Open to individuals learning via non-conventional programs such as internships, apprentices, online, and other methods. | $20 |
