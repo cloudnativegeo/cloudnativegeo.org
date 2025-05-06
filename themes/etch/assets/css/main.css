@@ -733,9 +733,13 @@ ul#funderlogos li a {
   transition: none !important;
 }
 
+/* ul#funderlogos li a:hover {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(94%) saturate(7485%) hue-rotate(246deg) brightness(92%) contrast(112%);
+} */
+
 a#nasa {
-  background-image: url("/img/funders/nasa.png");
-  background-size: 60%;
+  background-image: url("/img/funders/nasa.svg");
+  background-size: 50%;
   display: block;
   width: 100%;
   height: 100%;
