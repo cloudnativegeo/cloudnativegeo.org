@@ -6,8 +6,10 @@
     <ul class="event-meta">
       <li class="event-when"><span class="event-meta-tip">Date:</span> {{ .Params.when_date | markdownify }}</li>
       {{if isset .Params "time"}}<li class="event-when"><span class="event-meta-tip">Time:</span> {{ .Params.when_time | markdownify }}</li>{{ end }}
-      <li class="event-where"><span class="event-meta-tip">Where:</span> {{ .Params.where | markdownify }}</li>
-      <li class="event-price"><span class="event-meta-tip">Cost:</span> {{ .Params.price | markdownify }}</li>
+      {{ if not .Params.passed }}
+        <li class="event-where"><span class="event-meta-tip">Where:</span> {{ .Params.where | markdownify }}</li>
+        <li class="event-price"><span class="event-meta-tip">Cost:</span> {{ .Params.price | markdownify }}</li>
+      {{ end }}
     </ul>
     <div class="event-cta">{{if isset .Params "cta_url"}}<a href="{{ .Params.cta_url }}">{{end}}{{ .Params.cta_text }}{{if isset .Params "cta_url"}}</a>{{end}}</div>
   </header>

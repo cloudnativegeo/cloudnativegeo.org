@@ -1,3 +1,3 @@
 ---
-title: "Upcoming CNG Events"
+title: "CNG Events"
 ---

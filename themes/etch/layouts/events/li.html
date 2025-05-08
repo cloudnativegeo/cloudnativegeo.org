@@ -1,6 +1,10 @@
-{{ if ne .Params.passed true }}
 <li>
-    <span class="event-date">{{ .Params.when_date | markdownify }}</span><br />
+    {{ if not .Params.passed }}
+        <span class="event-date">{{ .Params.when_date | markdownify }}</span><br />
+    {{ end }}
     <a href="{{ .RelPermalink }}" class="post-title">{{ .Title }}</a><br />
+    {{ if not .Params.passed }}
+        {{ if .Params.where }}<span class="event-where">{{ .Params.where | markdownify }}</span><br />{{ end }}
+        {{ if .Params.price }}<span class="event-price">{{ .Params.price | markdownify }}</span><br />{{ end }}
+    {{ end }}
 </li>
-{{ end }}

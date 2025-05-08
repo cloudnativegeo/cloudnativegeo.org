@@ -19,4 +19,23 @@
         {{ end }} {{- end -}}
     </div>
 </header>
-{{- partial "events.html" . -}} {{ end }}
+
+<h2>Upcoming Events</h2>
+<ul id="events">
+    {{ range where .Pages "Section" "events" }}
+        {{ if not .Params.passed }}
+            {{ .Render "li" }}
+        {{ end }}
+    {{ end }}
+</ul>
+
+<h2>Past Events</h2>
+<ul id="events">
+    {{ range where .Pages "Section" "events" }}
+        {{ if .Params.passed }}
+            {{ .Render "li" }}
+        {{ end }}
+    {{ end }}
+</ul>
+
+{{ end }}
