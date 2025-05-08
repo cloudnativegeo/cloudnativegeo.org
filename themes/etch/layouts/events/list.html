@@ -22,13 +22,19 @@
 
 <h2>Upcoming Events</h2>
 <ul id="events">
+    {{ $hasUpcoming := false }}
     {{ range where .Pages "Section" "events" }}
         {{ if not .Params.passed }}
+            {{ $hasUpcoming = true }}
             {{ .Render "li" }}
         {{ end }}
     {{ end }}
 </ul>
+{{ if not $hasUpcoming }}
+    <p>No upcoming events planned. To be updated about new events, subscribe to <a href="https://share.hsforms.com/1SE7MCWS7RrSsAV3HN2C7TArzpx6">our newsletter</a> and consider <a href="/join">joining CNG</a>.</p>
+{{ end }}
 
+<hr>
 <h2>Past Events</h2>
 <ul id="events">
     {{ range where .Pages "Section" "events" }}
