@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/badges",
+      "destination": "/blog/2025/05/introducing-cng-badges-beta/",
+      "permanent": true
+    }
+  ]
+} 
