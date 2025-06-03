@@ -230,13 +230,26 @@ main#content p {
 }
 
 main#content article p {
-  font-size: 0.8em;
+  font-size: 1.84rem;
   line-height: 1.7;
 }
 
-main#content article ul {
+main#content article ul,
+main#content article ol {
   margin: 0.5em 0 1em 0;
+  font-size: 1.84rem;
+}
+
+main#content article ul {
   padding: 0 0 0 1em;
+}
+
+main#content article ol {
+  padding: 0 0 0 2em;
+}
+
+main#content article ol {
+  padding: 0 0 0 2em; /* More padding to accommodate numbers outside */
 }
 
 main#content article ul li {
@@ -297,8 +310,8 @@ span.event-meta-tip {
 }
 
 main#content ul#posts small {
-  font-size: 0.8em;
-  color: #66666;
+  font-size: 1.84rem;
+  color: #666666;
 }
 
 main #homepage-showcase {
@@ -540,7 +553,7 @@ main#content .team-name-title {
 }
 
 main#content .team-description {
-  font-size: 90%;
+  font-size: 1.84rem;
   margin: 1em 0;
 }
 
@@ -551,7 +564,7 @@ div.editorial-board-block {
 }
 
 main#content div.editorial-board-member {
-  font-size: 80%;
+  font-size: 1.84rem;
   width: 100%;
   display: block;
   clear: both;
@@ -573,7 +586,7 @@ div.virtual-keynotes-block {
 }
 
 main#content div.keynote-speaker {
-  font-size: 80%;
+  font-size: 1.84rem;
   width: 100%;
   display: block;
   clear: both;
