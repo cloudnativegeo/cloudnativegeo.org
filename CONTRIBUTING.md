@@ -6,16 +6,17 @@ We welcome contributions of blog posts to this site using the following editoria
 **Evergreen topics** - We are always open to content about new ways of using geospatial data, case studies that include data that show the benefits of using cloud-native approaches, technical tutorials, open-source tools, best practices in geospatial data management, and cases that help data users share, access, and work with geospatial data more effectively.   
 
 **Current priorities** - This year, we are also interested in blog posts that address the following common community challenges that we’ve identified:  
-  - Education and workforce development  
-  - Ways to simplify data licensing to accelerate data usage  
-  - Creating better shared data resources  
-  - Government partnerships  
-  - Funding models  
-  - Marketing  
+
+- Education and workforce development  
+- Ways to simplify data licensing to accelerate data usage  
+- Creating better shared data resources  
+- Ways to improve government partnerships  
+- Sustainable funding models for collaborative projects
+- Marketing to communicate the value of cloud-native approaches
 
 **Tone** - Collaborative and community-centric. Always try to find ways to include ways that readers can engage and contribute to your topic.  
 
-**Length** - 700-1500 words, depending on the complexity of the topic.  
+**Length** - 700-1,500 words, depending on the complexity of the topic.  
 
 **Visuals** - We encourage visuals such as relevant diagrams, screenshots, or code snippets where appropriate to make the content more visually engaging. We will not include decorative imagery or stock photography.  
 
@@ -48,16 +49,16 @@ The board’s role is to advise you to ensure it aligns with our goals of access
 Based on feedback, revise your draft and resubmit it to your reviewer. You may need to repeat this step until your content is ready.
 
 6. **Submit a pull request**  
-- Do this by creating a branch / forking the repository and editing your own fork.  
+- Forking this repository and edit your own fork.  
 - Markdown content for the blog belongs in the `/content/blog/` section of the repository.
 - The file should be named `YYMMDD-name-of-desired-blog-url.md`  
 - Any photos for the blog should be located at “assets/images” and use the naming convention `YYMMDD-name-of-photo`
 - Once you are ready to submit your blog, create a pull request at [https://github.com/cloudnativegeo/cloudnativegeo.org/pulls](https://github.com/cloudnativegeo/cloudnativegeo.org/pulls)   
     
-7. **Additional required materials**
+7. **Additional biographical materials**
 - **Short bio:** Provide a brief bio, ~200 characters. Include relevant professional background, areas of expertise, and any affiliations that would help introduce you to the community.  
 - **Headshot:** Submit a clear, professional headshot. Minimum size should be 500x500 pixels.  
 - **Social handles (optional):** Include links to your LinkedIn or GitHub profile you’d like to be featured alongside your post.  
     
 8. **Final approval and publishing**  
-- Once the PR is approved, your blog will be published on the CNG blog.
+Once the PR is approved, your blog will be published on the CNG blog.
