@@ -29,11 +29,11 @@ Create an issue in GitHub using the “Blog Post Proposal for Writers” issue t
 
 2. **Board discussion / voting**   
 Get approval from the Board — at least two CNG Board members must approve the proposal. Board members may vote as follows by commenting on the GitHub issue:  
-- +1 indicates strong support and a willingness to help implement the proposal.  
-- +0 indicates mild support, but has no effect.  
-- 0 indicates no opinion and has no effect.  
-- -0 indicates mild disagreement, but has no effect.  
-- -1 indicates opposition and acts as a veto; however, the voter must provide clear reasoning and suggest alternate solutions.  
+- `+1` indicates strong support and a willingness to help implement the proposal.  
+- `+0` indicates mild support, but has no effect.  
+- `0` indicates no opinion and has no effect.  
+- `-0` indicates mild disagreement, but has no effect.  
+- `-1` indicates opposition and acts as a veto; however, the voter must provide clear reasoning and suggest alternate solutions.  
 
 Two +1’s will mark the blog proposal as accepted. 
 
