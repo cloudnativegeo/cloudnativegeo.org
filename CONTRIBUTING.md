@@ -49,7 +49,7 @@ The board’s role is to advise you to ensure it aligns with our goals of access
 Based on feedback, revise your draft and resubmit it to your reviewer. You may need to repeat this step until your content is ready.
 
 6. **Submit a pull request**  
-- Forking this repository and edit your own fork.  
+- Fork this repository and add your blog post to your own fork.
 - Markdown content for the blog belongs in the `/content/blog/` section of the repository.
 - The file should be named `YYMMDD-name-of-desired-blog-url.md`  
 - Any photos for the blog should be located at “assets/images” and use the naming convention `YYMMDD-name-of-photo`
