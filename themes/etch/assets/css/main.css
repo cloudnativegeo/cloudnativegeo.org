@@ -979,7 +979,7 @@ a#earthmover {
 
 a#tgi {
   background-image: url("/img/funders/tgi.svg");
-  background-size: 40%;
+  background-size: 36%;
   display: block;
   width: 100%;
   height: 100%;
@@ -996,6 +996,70 @@ a#google {
 a#yale-geospatial {
   background-image: url("/img/funders/yale-geospatial.svg");
   background-size: 76%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#vliz {
+  background-image: url("/img/funders/vliz.svg");
+  background-size: 36%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#esri {
+  background-image: url("/img/funders/esri.svg");
+  background-size: 60%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#schmidt-ocean {
+  background-image: url("/img/funders/schmidt-ocean.svg");
+  background-size: 60%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#sparkgeo {
+  background-image: url("/img/funders/sparkgeo.svg");
+  background-size: 50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#omf {
+  background-image: url("/img/funders/omf.svg");
+  background-size: 40%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#linz {
+  background-image: url("/img/funders/linz.svg");
+  background-size: 66%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#safe {
+  background-image: url("/img/funders/safe.svg");
+  background-size: 40%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a#ai2 {
+  background-image: url("/img/funders/ai2.svg");
+  background-size: 50%;
   display: block;
   width: 100%;
   height: 100%;
