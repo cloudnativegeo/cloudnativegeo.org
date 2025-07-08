@@ -38,8 +38,5 @@ Do you have any drafts, resources, inspiration, or graphics to include with your
 If you have graphics, please upload them directly to this issue or link to them. -->
 sion-makers, educators) -->
 
-## Draft Timeline
-<!-- When do you expect to have a draft ready for review? -->
-
 ## Anything else to share?
 <!-- Links to any existing drafts, resources, or inspiration for the post -->
