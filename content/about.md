@@ -13,6 +13,11 @@ To collaborate with geospatial data practitioners to create vendor-neutral event
 ## Our vision
 By making geospatial data easier to access and use, we seek to create a world where geospatial data is continually made more accessible, usable, and beneficial – empowering communities everywhere to make data-informed decisions.
 
+## What we do
+- **We organize events** for our community, including development sprints, webinars, and conferences. If you want to organize an event with us, please write to hello@cloudnativegeo.org.
+- **We maintain online spaces and communication channels** to enable collaboration and share updates from our community. Connect with the CNG community through [Discourse](https://cng.discourse.group), the [CNG Blog](/blog), the [CNG Newsletter](/https://share.hsforms.com/1SE7MCWS7RrSsAV3HN2C7TArzpx6), and [LinkedIn](https://www.linkedin.com/company/cloudnativegeo/).
+- **We provide fiscal sponosrship** through our parent organization, [Radiant Earth](https://radiant.earth). If you're interested in having Radiant Earth serve as a fiscal sponsor for a project to make data easier to access and use, please write to hello@radiant.earth.
+
 ## Who we are
 CNG is an initiative of [Radiant Earth](https://radiant.earth), a registered 501(c)(3) nonprofit organization. All administrative tasks and operations are carried out by Radiant Earth staff and contractors.
 
@@ -20,11 +25,6 @@ CNG is an initiative of [Radiant Earth](https://radiant.earth), a registered 501
 We convene an editorial board from our community to define our agenda and help us identify opportunities to support documentation, educational materials, and other ways to improve accessibility and usage of geospatial data.
 
 {{< editorial-board >}}
-
-## What we do
-- **We organize events**  for our community, including development sprints, webinars, and conferences. If you want to organize an event with us, please write to hello@cloudnativegeo.org.
-- **We maintain online spaces and communication channels** to enable collaboration and share updates from our community. Connect with the CNG community through [Discourse](https://cng.discourse.group), the [CNG Blog](/blog), the [CNG Newsletter](/https://share.hsforms.com/1SE7MCWS7RrSsAV3HN2C7TArzpx6), and [LinkedIn](https://www.linkedin.com/company/cloudnativegeo/).
-- **We provide fiscal sponosrship** through our parent organization, [Radiant Earth](https://radiant.earth). If you're interested in having Radiant Earth serve as a fiscal sponsor for a project to make data easier to access and use, please write to hello@radiant.earth.
 
 ## What we don't do
 - **We're not a standards organization.** While we have helped our community develop new methods of sharing and storing data (like [SpatioTemporal Asset Catalogs (STAC)](http://stacspec.org), [Cloud-Optimized GeoTIFFs (COGs)](https://www.cogeo.org), [GeoParquet](https://geoparquet.org), and [Zarr](https://github.com/zarr-developers/geozarr-spec)), we do not create standards. We recommend working with the [Open Geospatial Consortium (OGC)](https://www.ogc.org) on standards development. We anticipate that our community will find new best practices for working with geospatial data in the future, some of which may become OGC standards.
