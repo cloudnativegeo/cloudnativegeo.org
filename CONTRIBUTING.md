@@ -39,20 +39,22 @@ We welcome contributions of blog posts to this site using the following editoria
    Two +1's will mark the blog proposal as accepted.
 
 3. **Write blog post**
-   Write your blog post in a Google Doc.
 
-4. **Seeking board review**
-   After writing, share the Google Doc with the CNG Editorial Board via email: [editorial-board@cloudnativegeo.org](mailto:editorial-board@cloudnativegeo.org). You'll need to request feedback from at least one Editorial Board reviewer.
+   Write your blog post. You can either:
+   - Directly submit a PR for your blog at https://github.com/cloudnativegeo/cloudnativegeo.org/pulls.
+   - Write it in a Google Doc if you anticipate needing a lot of feedback. 
 
-   The board's role is to advise you to ensure it aligns with our community goals. Once your reviewer has approved the post, you can publish it by submitting a pull request.
+5. **Seeking board review / submit a pull request**
+   - After writing, if you went the Google Doc route, share your Google Doc with the CNG Editorial Board via email: editorial-board@cloudnativegeo.org 
+   - If you are directly submitting the PR, add the board members who approved your blog post submission as reviewers.
 
-5. **Submit a pull request**
-   - Fork this repository and add your post to your own fork.
-   - Markdown content for the blog belongs in the `/content/blog/` section of the repository.
-   - The file should be named `YYMMDD-blog-title.md`.
-   - Any photos for the blog should be located at `assets/images` and use the naming convention `YYMMDD-name-of-photo`.
-   - Include your name, affiliation, and a short bio (about 200 characters). You can also include links to your GitHub or LinkedIn profile.
-   - Once you are ready to submit your blog, create a pull request at [https://github.com/cloudnativegeo/cloudnativegeo.org/pulls](https://github.com/cloudnativegeo/cloudnativegeo.org/pulls).
+Whether you submit your PR immediately or after receiving feedback on the Google Doc version of your blog post, here is the process for submitting the PR: 
+   - Create a pull request at [https://github.com/cloudnativegeo/cloudnativegeo.org/pulls](https://github.com/cloudnativegeo/cloudnativegeo.org/pulls).
+   - Do this by creating a branch / forking the repository and editing your own fork.
+   - Markdown content for the blog belongs in the ‎content/blog/ section of the repository.
+   - The file should be named “YYMMDD-name-of-desired-blog-url.md”
+   - Any photos for the blog should be located at “assets/images” and use the naming convention “YYMMDD-name-of-photo”
+ 
 
 6. **Final approval and publishing**
    Once the PR is approved, your post will be published on the CNG blog.
