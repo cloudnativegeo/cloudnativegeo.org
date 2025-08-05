@@ -444,12 +444,10 @@ table td {
 }
 
 table td:first-child {
-  width: 15%;
   font-weight: 600;
 }
 table td:last-child {
   padding: 0.5em 0;
-  width: 15%;
 }
 
 table td,

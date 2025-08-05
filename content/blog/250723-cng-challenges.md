@@ -1,10 +1,12 @@
 ---
-date: "2025-07-23T22:34:14-07:00"
+date: "2025-07-24T00:34:14-07:00"
 title: "Challenges for the CNG Community - 2025"
 tags: [ ""
 ]
 summary: "Challenges to work on to help the Cloud-Native Geospatial community thrive."
 ---
+
+{{< img src="images/250724-cng-running-together.jpg" alt="A group of people running at CNG Conference 2025" title="Running together at CNG Conference 2025" >}}
 
 On the last day of [CNG Conference](https://cloudnativegeo.org/blog/2025/06/recapping-cng-conference-2025-cloud-native-geospatial-irl/), we held a facilitated discussion to identify what our community needs to thrive.
 
