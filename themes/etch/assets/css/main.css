@@ -503,6 +503,16 @@ main#content figure img {
   margin: 0 auto;
 }
 
+main#content figure.small-image {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+main#content figure.small-image img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 main#content figure figcaption {
   font-size: 0.7em;
   font-style: normal;
