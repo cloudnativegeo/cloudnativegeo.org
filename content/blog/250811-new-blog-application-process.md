@@ -1,5 +1,5 @@
 ---
-date: 2025-08-10T01:00:38-04:00
+date: 2025-08-11T01:00:38-04:00
 title: "A New Process to Publish on the CNG Blog"
 tags: [ ""
 ]
