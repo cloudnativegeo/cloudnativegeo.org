@@ -6,7 +6,7 @@ tags: [ ""
 summary: "An overview of an updated CNG blog submission process, including what we’re looking for and how to propose, write, and publish your post."
 ---
 
-CNG is the place where geospatial data users create the future together. To make the share of knowledge betwee nthose data users even smoother, we’ve refined our process for getting blog posts onto cloudnativegeo.org. Whether you want to share a deep-dive technical tutorial, highlight lessons learned from a recent project, or explore ways to strengthen our community, this updated approach makes it simple to propose, write, and publish.
+CNG is the place where geospatial data users create the future together. To make the share of knowledge between those data users even smoother, we’ve refined our process for getting blog posts onto cloudnativegeo.org. Whether you want to share a deep-dive technical tutorial, highlight lessons learned from a recent project, or explore ways to strengthen our community, this updated approach makes it simple to propose, write, and publish.
 
 The following information can also be found at [CONTRIBUTING.md](https://github.com/cloudnativegeo/cloudnativegeo.org/blob/main/CONTRIBUTING.md).
 
@@ -14,7 +14,7 @@ The following information can also be found at [CONTRIBUTING.md](https://github.
 
 **Evergreen topics** - We are always open to content about new ways of using geospatial data, case studies that show the benefits of using cloud-native approaches, technical tutorials, open-source tools, best practices in geospatial data management, and tools that help data users share, access, and work with geospatial data more effectively.
 
-**Current priorities** - This year, we are also interested in blog posts that address the following common community challenges that we've identified:
+**Current priorities** - This year, we are also interested in blog posts that address the following common community challenges that [we've identified](https://cloudnativegeo.org/blog/2025/07/challenges-for-the-cng-community-2025/):
 
 - Education and workforce development
 - Ways to simplify data licensing to accelerate data usage
@@ -27,9 +27,9 @@ The following information can also be found at [CONTRIBUTING.md](https://github.
 
 **Length** - 700-1,500 words, depending on the complexity of the topic.
 
-**Visuals** - We encourage visuals such as relevant diagrams, screenshots, or code snippets where appropriate to make the content more visually engaging. We will not include decorative imagery or stock photography.
+**Visuals** - We encourage visuals such as relevant diagrams, screenshots, or code snippets where appropriate to make the content more visually engaging. We avoid decorative or stock imagery and content that pitches products without providing clear value to the community.
 
-**Avoid** - Pitching products or approaches without showing clear value to the community and ways that they can contribute to it. Note that CNG Commercial Members are eligible to publish one branded blog post per year, and they should still follow the spirit of these guidelines.
+Note that CNG Commercial Members are eligible to publish one branded blog post per year, and they should still follow the spirit of these guidelines.
 
 ## Blog submission process
 
@@ -64,7 +64,7 @@ Whether you submit your PR immediately or after receiving feedback on the Google
    - The file should be named “YYMMDD-name-of-desired-blog-url.md”
    - Any photos for the blog should be located at “assets/images” and use the naming convention “YYMMDD-name-of-photo”
 
-1. **Final approval and publishing**
+6. **Final approval and publishing**
    Once the PR is approved, your post will be published on the CNG blog.
 
 ----
