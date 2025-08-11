@@ -64,7 +64,7 @@ Whether you submit your PR immediately or after receiving feedback on the Google
    - The file should be named “YYMMDD-name-of-desired-blog-url.md”
    - Any photos for the blog should be located at “assets/images” and use the naming convention “YYMMDD-name-of-photo”
 
-6. **Final approval and publishing**
+5. **Final approval and publishing**
    Once the PR is approved, your post will be published on the CNG blog.
 
 ----
