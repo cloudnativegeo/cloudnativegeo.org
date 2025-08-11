@@ -6,13 +6,9 @@ tags: [ ""
 summary: "An overview of an updated CNG blog submission process, including what we’re looking for and how to propose, write, and publish your post."
 ---
 
-Sharing knowledge is at the heart of the Cloud Native Geospatial community. To make contributing even smoother, we’ve refined our process for getting blog posts onto cloudnativegeo.org. Whether you want to share a deep-dive technical tutorial, highlight lessons learned from a recent project, or explore ways to strengthen our community, this updated approach makes it simple to propose, write, and publish.
+CNG is the place where geospatial data users create the future together. To make the share of knowledge betwee nthose data users even smoother, we’ve refined our process for getting blog posts onto cloudnativegeo.org. Whether you want to share a deep-dive technical tutorial, highlight lessons learned from a recent project, or explore ways to strengthen our community, this updated approach makes it simple to propose, write, and publish.
 
 The following information can also be found at [CONTRIBUTING.md](https://github.com/cloudnativegeo/cloudnativegeo.org/blob/main/CONTRIBUTING.md).
-
-# Contributing to the CNG Website
-
-We welcome contributions of blog posts to this site using the following editorial guidelines.
 
 ## What we're looking for
 
@@ -53,22 +49,22 @@ We welcome contributions of blog posts to this site using the following editoria
 3. **Write blog post**
 
    Write your blog post. You can either:
-   - Directly submit a PR for your blog at https://github.com/cloudnativegeo/cloudnativegeo.org/pulls.
+   - Directly submit a PR for your blog at [github.com/cloudnativegeo/cloudnativegeo.org/pulls](https://github.com/cloudnativegeo/cloudnativegeo.org/pulls).
    - Write it in a Google Doc if you anticipate needing a lot of feedback. 
 
-5. **Seeking board review / submit a pull request**
-   - After writing, if you went the Google Doc route, share your Google Doc with the CNG Editorial Board via email: editorial-board@cloudnativegeo.org 
+4. **Seeking board review / submit a pull request**
+   - After writing, if you went the Google Doc route, share your Google Doc with the CNG Editorial Board via email: editorial-board@cloudnativegeo.org.
    - If you are directly submitting the PR, add the board members who approved your blog post submission as reviewers.
 
-Whether you submit your PR immediately or after receiving feedback on the Google Doc version of your blog post, here is the process for submitting the PR: 
+Whether you submit your PR immediately or after receiving feedback on the Google Doc version of your blog post, here is the process for submitting the PR:
+
    - Create a pull request at [https://github.com/cloudnativegeo/cloudnativegeo.org/pulls](https://github.com/cloudnativegeo/cloudnativegeo.org/pulls).
    - Do this by creating a branch / forking the repository and editing your own fork.
-   - Markdown content for the blog belongs in the ‎content/blog/ section of the repository.
+   - Markdown content for the blog belongs in the [content/blog/](https://github.com/cloudnativegeo/cloudnativegeo.org/tree/main/content/blog) section of the repository.
    - The file should be named “YYMMDD-name-of-desired-blog-url.md”
    - Any photos for the blog should be located at “assets/images” and use the naming convention “YYMMDD-name-of-photo”
- 
 
-6. **Final approval and publishing**
+1. **Final approval and publishing**
    Once the PR is approved, your post will be published on the CNG blog.
 
 ----
