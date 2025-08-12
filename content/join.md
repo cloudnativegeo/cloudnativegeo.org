@@ -7,7 +7,8 @@ As an initiative of the nonprofit [Radiant Earth](https://radiant.earth), we are
 ### Why Join?
 Joining CNG connects you to a supportive community of data practitioners, grants access to our members-only Slack, gives you discounts on events, and provides opportunities to work on the projects that are transforming the geospatial sector.
 
-Membership fees contribute to our operational costs, subsidize the creation of free content, and allow us to offer scholarships to engage economically disadvantaged communities.
+### Why Should I Pay?
+Membership fees ensure that our members are all committed to creating a healthy community, contributing to our operational costs, subsidizing the creation of free content, and allowing us to offer scholarships to those who can't afford to pay.
 
 ### Membership Levels
 
