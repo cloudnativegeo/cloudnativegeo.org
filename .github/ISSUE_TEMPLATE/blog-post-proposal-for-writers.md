@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+@cloudnativegeo/cng-editorial-board will review this submission.
+
 ## Blog Post Title
 <!-- Suggest a working title for your blog post -->
 
