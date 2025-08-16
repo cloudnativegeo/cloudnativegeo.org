@@ -30,7 +30,7 @@ to understand possible increases in air conditioner usage. Say we have daily
 maximum temperature data stored in cloud object storage and chunked into pieces
 covering the entire state of California for a given day.
 
-Our access pattern is misaligned\! We only want to see data for Chico, other
+Our access pattern is misaligned! We only want to see data for Chico, other
 areas are not under our jurisdiction, so we have no need to download data for
 the rest of the state. But we cannot get only the data we want given the way
 this dataset is chunked. We want a small part of many large chunks, meaning we
@@ -210,27 +210,34 @@ This is a missing piece of global data infrastructure. The goal is to create a
 compelling specification that all cloud providers can and will implement,
 making data access better for everyone.
 
-## An example
+## From Chico to California: an detailed example
 
-Allow a demonstration of what this would look like with a hypothetical dataset
-in object storage accessed via an S3-compatible API vs CCRP. Let’s consider a 1
-km nominal resolution gridded weather dataset, and we’re again interested in
-temperature data, except now we do want data covering all of California. Our
-query extent is therefore roughly the longitude range `-125°` to `-115°` and
-the latitude range `32°` to `42°` for the month of January 2025, or a 10° x 10°
-x 31 day slice of this dataset.
+Let’s go back to our hypothetical weather dataset and assume we’ve made the
+chunks smaller than the whole state of California to better align to our Chico
+user’s query. How exactly does increasing alignment for a small query affect
+our ability to query at a larger scale? We can work through a detailed example
+to better understand what has to happen when querying cloud-native data formats
+through an object store API, how chunk size affects HTTP requests, and to see
+how CCRP allows for more efficient queries.
 
-To request this data, the first thing we need to do is to map our query range
+We need to better define our weather dataset and query for this example. A
+realistic weather dataset might be gridded with a 1 km nominal resolution.
+We’re again interested in temperature data, but now we have a larger-scale
+query covering the whole state of California, roughly the longitude range -125°
+to -115° and the latitude range 32° to 42° for the month of January 2025, or
+roughly a 10° x 10° x 31 day slice.
+
+To request this slice, the first thing we need to do is to map our query range
 into the dataset indices. In this case, let’s say our dataset grid has the
 dimension labels `x`, `y`, and `time`, and is indexed in degrees east from the
-antimeridian (ranging `0-360`), degrees north from the south pole (ranging
-`0-180`), and in seconds since an epoch starting midnight January 1, 2024,
+antimeridian (ranging 0-360), degrees north from the south pole (ranging
+0-180), and in seconds since an epoch starting midnight January 1, 2024,
 respectively.
 
 To calculate our `x` index slice range, we need to determine how many degrees
-east our `-125°` to `-115°`are, which we can do by adding both values to
-`180°`, giving us the slice `[55:65]` (in Python notation). The `y` slice is
-similar, but found by adding our values to `90°`, so we get `[122:132]`. The
+east our -125° to -115° are, which we can do by adding both values to
+180°, giving us the slice `[55:65]` (in Python notation). The `y` slice is
+similar, but found by adding our values to 90°, so we get `[122:132]`. The
 `time` dimension is a little tricker; for brevity we’ll skip ahead and say the
 slice we get there is `[31_622_400:34_300_800]`.
 
@@ -248,9 +255,9 @@ client to the CCRP API.
 If this dataset is divided into 1° x 1° x 86,400 second (1 day) chunks in an
 object store as an unsharded Zarr (read: each chunk is a separate object),
 then, given our slice ranges above, we end up needing to retrieve 10 x 10 x 31
-\= 3,100 chunks, each requiring an individual HTTP request. If the chunks were
+= 3,100 chunks, each requiring an individual HTTP request. If the chunks were
 smaller to accommodate more granular access, say 0.25° x 0.25° x 6 hours, then
-we end up having to make (4 x 4 x 4\) x (10 x 10 x 31\) \= 198,400 requests\!
+we end up having to make (4 x 4 x 4) x (10 x 10 x 31) = 198,400 requests!
 
 With CCRP, we can make one HTTP request to get all chunks, regardless of the
 chunk size:
