@@ -214,24 +214,28 @@ making data access better for everyone.
 
 Let’s go back to our hypothetical weather dataset and assume we’ve made the
 chunks smaller than the whole state of California to better align to our Chico
-user’s query. How exactly does increasing alignment for a small query affect
-our ability to query at a larger scale? We can work through a detailed example
-to better understand what has to happen when querying cloud-native data formats
-through an object store API, how chunk size affects HTTP requests, and to see
-how CCRP allows for more efficient queries.
+user’s query. Now that the city of Chico has proven their analysis method at
+the small scale, the state of California wants to repeat the analysis at the
+larger statewide scale.
 
-We need to better define our weather dataset and query for this example. A
-realistic weather dataset might be gridded with a 1 km nominal resolution.
-We’re again interested in temperature data, but now we have a larger-scale
-query covering the whole state of California, roughly the longitude range -125°
-to -115° and the latitude range 32° to 42° for the month of January 2025, or
-roughly a 10° x 10° x 31 day slice.
+How exactly does increasing alignment for a small query affect our ability to
+query at a larger scale? We can work through a detailed example to better
+understand what has to happen when querying cloud-native data formats through
+an object store API, how chunk size affects HTTP requests, and to see how CCRP
+allows for more efficient queries.
+
+We need to better define our weather dataset for this example. A realistic
+weather dataset might be gridded with a 1 km nominal resolution. We’re again
+interested in temperature data, but now we have a larger-scale query covering
+the whole state of California, roughly the longitude range -125° to -115°
+and the latitude range 32° to 42° from January 1, 2010 to January 1, 2020,
+or roughly a 10° x 10° x 3652 day slice.
 
 To request this slice, the first thing we need to do is to map our query range
 into the dataset indices. In this case, let’s say our dataset grid has the
 dimension labels `x`, `y`, and `time`, and is indexed in degrees east from the
 antimeridian (ranging 0-360), degrees north from the south pole (ranging
-0-180), and in seconds since an epoch starting midnight January 1, 2024,
+0-180), and in seconds since an epoch starting midnight January 1, 2000,
 respectively.
 
 To calculate our `x` index slice range, we need to determine how many degrees
@@ -239,7 +243,7 @@ east our -125° to -115° are, which we can do by adding both values to
 180°, giving us the slice `[55:65]` (in Python notation). The `y` slice is
 similar, but found by adding our values to 90°, so we get `[122:132]`. The
 `time` dimension is a little tricker; for brevity we’ll skip ahead and say the
-slice we get there is `[31_622_400:34_300_800]`.
+slice we get there is `[315_619_200:631_152_000]`.
 
 Note that these slice calculations happen today under the covers when using
 Xarray or GDAL or whatever. No matter the tooling, when requesting chunks from
@@ -252,20 +256,24 @@ take the extra steps to resolve the specific chunks covered by an index slice
 and request each of them; responsibility to handle that concern moves from the
 client to the CCRP API.
 
-If this dataset is divided into 1° x 1° x 86,400 second (1 day) chunks in an
-object store as an unsharded Zarr (read: each chunk is a separate object),
-then, given our slice ranges above, we end up needing to retrieve 10 x 10 x 31
-= 3,100 chunks, each requiring an individual HTTP request. If the chunks were
-smaller to accommodate more granular access, say 0.25° x 0.25° x 6 hours, then
-we end up having to make (4 x 4 x 4) x (10 x 10 x 31) = 198,400 requests!
+If this dataset is divided into 1° x 1° x 1 day chunks in an object store as an
+unsharded Zarr (read: each chunk is a separate object), then, given our slice
+ranges above, we end up needing to retrieve 10 x 10 x 3652 = 365,200 chunks,
+each requiring an individual HTTP request. If the chunks were smaller to
+accommodate even more granular access, say 0.25° x 0.25° x 6 hours, then we end
+up having to make (4 x 4 x 4) x (10 x 10 x 3652) \= 23,372,800 requests!
+Assuming a rather optimistic time-to-first-byte of only 15 ms (running compute
+in region alongside the data, for example), we’d end up with almost 10 hours of
+time spent in the download process not transferring any bytes just because we
+have to make individual requests for each chunk.
 
 With CCRP, we can make one HTTP request to get all chunks, regardless of the
 chunk size:
 
 ```plaintext
 GET https://ccrp.example.com/datasets/weather/data
-    ?time[gte]=31622400
-    &time[lt]=34300800
+    ?time[gte]=315619200
+    &time[lt]=631152000
     &lon[gte]=55
     &lon[lt]=65
     &lat[gte]=122
@@ -273,9 +281,11 @@ GET https://ccrp.example.com/datasets/weather/data
     &variable=temperature
 ```
 
-CCRP also has support for cases where users want or need more control over the
-download process. For example, progressive downloads to facilitate retries and
-parallel download streams for large amounts of data are both supported.
+Admittedly, this request is for a whole lot of data, and it is unlikely a user
+would want to download all this with only one download stream. CCRP, as it is
+proposed, also has support for cases where users want or need more control over
+the download process, including progressive downloads to facilitate retries and
+parallel download streams for large amounts of data, as this case.
 
 ### What could this look like with better tooling?
 
@@ -290,7 +300,7 @@ ds = xr.open_dataset(
     engine='zarr',
 )
 array = ds['temperature'].sel(
-    time=slice('2025-01-01', '2025-02-01'),
+    time=slice('2010-01-01', '2020-01-01'),
     lat=slice(122, 132),
     lon=slice(55, 65)
 ).values  # to realize the values into an array, the
@@ -301,7 +311,7 @@ Xarray and the lower-level tooling hides from the user that accessing the
 `values` attribute of the temperature array has to make a separate request for
 every chunk, as we’ve discussed.
 
-How would this same operation look using CCRP?
+How could this same operation look using CCRP?
 
 ```py
 # Tomorrow - same interface, just using CCRP
@@ -310,7 +320,7 @@ ds = xr.open_dataset(
     engine='zarr',
 )
 array = ds['temperature'].sel(
-    time=slice('2025-01-01', '2025-02-01'),
+    time=slice('2020-01-01', '2020-02-01'),
     lat=slice(122, 132),
     lon=slice(55, 65)
 ).values  # the underlying tooling makes only one request
