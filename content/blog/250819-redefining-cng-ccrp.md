@@ -212,11 +212,11 @@ making data access better for everyone.
 
 ## From Chico to California: an detailed example
 
-Let’s go back to our hypothetical weather dataset and assume we’ve made the
-chunks smaller than the whole state of California to better align to our Chico
-user’s query. Now that the city of Chico has proven their analysis method at
-the small scale, the state of California wants to repeat the analysis at the
-larger statewide scale.
+To illustrate how this solution scales, let’s go back to our hypothetical
+weather dataset and assume we’ve made the chunks smaller than the whole state
+of California to better align to our Chico user’s query. Now that the city of
+Chico has proven their analysis method at the small scale, the state of
+California wants to repeat the analysis at the larger statewide scale.
 
 How exactly does increasing alignment for a small query affect our ability to
 query at a larger scale? We can work through a detailed example to better
@@ -225,11 +225,11 @@ an object store API, how chunk size affects HTTP requests, and to see how CCRP
 allows for more efficient queries.
 
 We need to better define our weather dataset for this example. A realistic
-weather dataset might be gridded with a 1 km nominal resolution. We’re again
-interested in temperature data, but now we have a larger-scale query covering
-the whole state of California, roughly the longitude range -125° to -115°
-and the latitude range 32° to 42° from January 1, 2010 to January 1, 2020,
-or roughly a 10° x 10° x 3652 day slice.
+weather dataset might be gridded with a 1 km nominal resolution. We’re still
+interested in temperature data, but now we have a larger query covering the
+whole state of California, roughly the longitude range -125° to -115° and the
+latitude range 32° to 42° from January 1, 2010 to January 1, 2020, or roughly a
+10° x 10° x 3652 day slice.
 
 To request this slice, the first thing we need to do is to map our query range
 into the dataset indices. In this case, let’s say our dataset grid has the
