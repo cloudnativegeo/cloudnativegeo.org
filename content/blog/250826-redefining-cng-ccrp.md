@@ -1,5 +1,5 @@
 ---
-date: 2025-08-19T12:00:00-00:00
+date: 2025-08-26T12:00:00-00:00
 title: "Redefining cloud native with the Coalesced Chunk Retrieval Protocol"
 tags: [ ""
 ]
@@ -10,7 +10,7 @@ one idea born of this thinking, aiming to help make CNG more
 efficient and easier for both data consumers and producers."
 ---
 
-{{< img src="images/250819-ccrp_logo.svg" alt="The CCRP Logo">}}
+{{< img src="images/250826-ccrp_logo.svg" alt="The CCRP Logo">}}
 
 In our ongoing series on geospatial raster data formats, Julia Signell and I
 are exploring the finer points of array data storage. Throughout our research
@@ -164,18 +164,29 @@ Other solutions have proposed similar advantages. Things like
 [OPeNDAP](https://www.opendap.org), [OGC EDR](https://ogcapi.ogc.org/edr/), and
 [TileDB](https://www.tiledb.com) come to mind, but CCRP is different.
 
+**It decouples the logical data model from the physical layout.**
+
+The object model is an erroneous abstraction for many large chunked datasets.
+Modern cloud native formats store datasets across multiple objects. Objects are
+inherently one-dimensional byte streams; linearization of multidimensional data
+into objects means that the data layout cannot preserve all possible spatial
+proximity. Fulfilling logical queries often requires mapping the query to
+multiple disjoint byte ranges within an object’s one-dimensional byte stream
+and to byte ranges within multiple objects.
+
+With CCRP, clients can request data in a way that makes sense for their
+analysis, e.g., "give me this time series". They don’t have to concern
+themselves with how a data provider physically organizes data within or across
+files/objects, e.g., “I want these bytes from this object, and those bytes from
+that object…”. The API translates requests into an optimal plan for fetching
+the requested chunks, unencumbered by the erroneous object abstraction in the
+middle.
+
 **It's a lightweight “byte broker”, not a compute engine.**
 
 The API's only job is to find whole chunks and forward their bytes. It doesn't
 decompress, filter, or process the data -- it operates on chunks alone. This
 makes it fast, scalable, and simple.
-
-**It decouples the logical data model from the physical layout.**
-
-Users can request data in a way that makes sense for their analysis (e.g.,
-"give me this time series"). The API translates this into an optimal fetch plan
-for how the data is *actually* stored (array data from Zarr chunks, tabular
-data from partitioned Parquet files, etc.).
 
 **It should be a native cloud primitive.**
 
@@ -183,7 +194,7 @@ This isn't just a proxy in front of an object store -- though the reference
 implementation will likely be something to this effect. For maximum
 performance, this should be a parallel, first-class interface into the cloud
 provider's internal block store, just like the S3 API is today, to eliminate
-extra network hops and get around the inadequate (for this use-case) object
+extra network hops and get around the erroneous object
 model.
 
 Think about AWS's recent [S3 Express One
@@ -252,9 +263,9 @@ this operation is not a requirement added by CCRP -- and we’d still leverage
 existing implementations to handle this operation and to separate users from
 these low-level concerns -- we just show it here to make the example CCRP
 request below more understandable. With CCRP, clients would no longer have to
-take the extra steps to resolve the specific chunks covered by an index slice
-and request each of them; responsibility to handle that concern moves from the
-client to the CCRP API.
+take the extra steps to resolve the specific chunk byte ranges covered by an
+index slice and request each of them; responsibility to handle that concern
+moves from the client to the CCRP API.
 
 If this dataset is divided into 1° x 1° x 1 day chunks in an object store as an
 unsharded Zarr (read: each chunk is a separate object), then, given our slice
@@ -393,7 +404,9 @@ Perhaps you hate the name: great\! I’d love to understand any and all concerns
 or, better, to know what you’d propose instead.
 
 So take a look at [the documentation and
-specification](https://ccrp-dev.github.io/ccrp). The [github
+specification](https://ccrp-dev.github.io/ccrp). The [FAQs
+page](https://ccrp-dev.github.io/ccrp/docs/faqs) might answer any questions
+that were not adequately addressed here. The [github
 repo](https://github.com/ccrp-dev/ccrp) is a great place to open issues, ask
 questions, or propose edits via PRs. We also have [a short
 form](https://docs.google.com/forms/d/e/1FAIpQLSdV--Hl86XwBhMDSfNDBXDST4ZEBrZSXQ7hfuIl28NJWVOZag/viewform?usp=dialog)
