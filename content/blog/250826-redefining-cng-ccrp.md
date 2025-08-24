@@ -45,11 +45,11 @@ layer: making that stored data actually accessible at the speed of analysis,
 not the speed of HTTP requests.
 
 To that end, I want to introduce a new idea I’m calling the [Coalesced Chunk
-Retrieval Protocol (CCRP)](https://ccrp-dev.github.io/ccrp) as a potential new
-definition of “cloud native” for chunked data. Chunked file formats on local
-storage once provided an effective abstraction preventing users from having to
-think about details of data storage and layout, and CCRP aims to get that
-abstraction back in the cloud, for both raster and tabular data.
+Retrieval Protocol (CCRP)](https://ccrp.dev) as a potential new definition of
+“cloud native” for chunked data. Chunked file formats on local storage once
+provided an effective abstraction preventing users from having to think about
+details of data storage and layout, and CCRP aims to get that abstraction back
+in the cloud, for both raster and tabular data.
 
 But this post isn’t just me offering up an idea wholesale. This is an
 invitation to the community to collaborate on building cloud native better.
@@ -345,7 +345,7 @@ users.
 
 ## What happens next
 
-I've drafted an [initial CCRP specification](https://ccrp-dev.github.io/ccrp/)
+I've drafted an [initial CCRP specification](https://ccrp.dev)
 that defines:
 
 * A RESTful API for listing, fetching metadata for, and querying datasets
@@ -385,7 +385,8 @@ number of stakeholders.
 
 Again, **the [tyranny of the
 chunk](https://element84.com/software-engineering/chunks-and-chunkability-tyranny-of-the-chunk/)
-doesn't have to be permanent.** CCRP is an effort to fight the tyrrany of the chunk.
+doesn't have to be permanent.** CCRP is an effort to fight the tyrrany of the
+chunk.
 
 Ideally this work is owned and driven forward by the community, not just me.
 I’m just trying to kickstart it with some examples of what I’ve been thinking.
@@ -403,10 +404,9 @@ take. Or maybe you think this idea is flawed and can never work: awesome\!
 Perhaps you hate the name: great\! I’d love to understand any and all concerns,
 or, better, to know what you’d propose instead.
 
-So take a look at [the documentation and
-specification](https://ccrp-dev.github.io/ccrp). The [FAQs
-page](https://ccrp-dev.github.io/ccrp/docs/faqs) might answer any questions
-that were not adequately addressed here. The [github
+So take a look at the documentation and OpenAPI specification on [the ccrp.dev
+site](https://ccrp.dev). The [FAQs page](https://ccrp.dev/docs/faqs) might
+answer any questions that were not adequately addressed here. The [github
 repo](https://github.com/ccrp-dev/ccrp) is a great place to open issues, ask
 questions, or propose edits via PRs. We also have [a short
 form](https://docs.google.com/forms/d/e/1FAIpQLSdV--Hl86XwBhMDSfNDBXDST4ZEBrZSXQ7hfuIl28NJWVOZag/viewform?usp=dialog)
