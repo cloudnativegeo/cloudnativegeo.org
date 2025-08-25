@@ -1,8 +1,8 @@
 ---
 date: 2025-08-26T12:00:00-00:00
 title: "Redefining cloud native with the Coalesced Chunk Retrieval Protocol"
-tags: [ ""
-]
+author: "[Jarrett Keifer](https://www.linkedin.com/in/jarrettkeifer)"
+author_title: "Senior Geospatial Software Engineer, Element 84"
 summary: "What happens if we question current assumptions around CNG
 and imagine what it could be if we were to redefine it with new
 technologies? The Coalesced Chunk Retrieval Protocol (CCRP) is
@@ -12,23 +12,24 @@ efficient and easier for both data consumers and producers."
 
 {{< img src="images/250826-ccrp_logo.svg" alt="The CCRP Logo">}}
 
-In our ongoing series on geospatial raster data formats, Julia Signell and I
-are exploring the finer points of array data storage. Throughout our research
-we’ve found that chunking -- breaking a large dataset down into smaller pieces
-for individual storage and retrieval -- is universally relevant regardless of
-data format. Chunking, as we’ve seen, is an absolutely necessary strategy
-for making large datasets usable, [but in the cloud era it has become
-something
+In our ongoing series on geospatial raster data formats, [Julia
+Signell](https://www.linkedin.com/in/jsignell/) and I have been exploring the
+finer points of array data storage. Throughout our research we’ve found that
+chunking -- breaking a large dataset down into smaller pieces for individual
+storage and retrieval -- is universally relevant regardless of data format.
+Chunking, as we’ve seen, is an absolutely necessary strategy for making large
+datasets usable, [but in the cloud era it has become something
 tyrannical](https://element84.com/software-engineering/chunks-and-chunkability-tyranny-of-the-chunk/),
 making data access efficiency strictly tied to chunk alignment.
 
 Diverge from an access pattern aligning with the dataset’s chunking scheme and
 compounding inefficiencies will cripple data access at scale. Pretend, for
-example, we are an official in Chico, California who wants to examine changes
-in monthly average maximum temperatures in the city over the years 2010 to 2020
-to understand possible increases in air conditioner usage. Say we have daily
-maximum temperature data stored in cloud object storage and chunked into pieces
-covering the entire state of California for a given day.
+example, we are an official in Chico, a city in the central valley of
+California near the foothills of the Sierra Nevada, who wants to examine
+changes in monthly average maximum temperatures in the city over the years 2010
+to 2020 to understand possible increases in air conditioner usage. Say we have
+daily maximum temperature data stored in cloud object storage and chunked into
+pieces covering the entire state of California for a given day.
 
 Our access pattern is misaligned! We only want to see data for Chico, other
 areas are not under our jurisdiction, so we have no need to download data for
@@ -277,6 +278,14 @@ Assuming a rather optimistic time-to-first-byte of only 15 ms (running compute
 in region alongside the data, for example), we’d end up with almost 10 hours of
 time spent in the download process not transferring any bytes just because we
 have to make individual requests for each chunk.
+
+Parallelism can definitely help here -- if we make ten requests at a time then
+theoretically we would only end up waiting an hour for request overhead. Except
+parallelism just masks the problem: the inefficiency is still there, the server
+still must spend time servicing every individual request, and parallelism
+forces a lot of complexity onto the client. Moreover, that the inefficiency
+remains limits the ability of data providers to use even smaller chunks to
+further mitigate the effects of query misalignment.
 
 With CCRP, we can make one HTTP request to get all chunks, regardless of the
 chunk size:
