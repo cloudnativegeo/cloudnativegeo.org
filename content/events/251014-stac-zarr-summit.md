@@ -8,10 +8,15 @@ description: "We're excited to announce the STAC Community Sprint focused on STA
 Key Focus Areas:
 
 - STAC specification improvements for Zarr stores navigation
+
 - STAC collection, items, and assets recommendations for Zarr stores
+
 - Link Templates Extension applications
+
 - Virtual Zarr integration with STAC
+
 - GeoZarr implementation challenges
+
 - EOPF-specific use cases
 
 See the plan at https://github.com/radiantearth/community-sprints/tree/main/14102025-esrin-rome-italy   
