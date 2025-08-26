@@ -15,10 +15,15 @@ Thursday - Friday - Zarr adopter summit.
 We encourage folks using or evaluating Zarr to join us for adopter days on October 16-17. We anticipate an intimate gathering where you can benefit from:  
 
 - Direct roundtable discussions with implementers across Python, JavaScript, C++, and Rust
+  
 - Hands-on guidance for Virtual Zarr and cloud-native data access
+  
 - Migration support for organizations considering Zarr v3 adoption
+  
 - Direct input into the tools being built
+  
 - Cross-collaborations with participants from the STAC sprint
+  
 "
 price: "By application only"
 image_url: ""
