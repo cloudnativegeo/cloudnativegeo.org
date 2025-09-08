@@ -27,13 +27,8 @@ We encourage folks using or evaluating Zarr to join us for adopter days on Octob
 "
 price: "By application only"
 image_url: ""
-<<<<<<< HEAD
 cta_text: "See event details"
 cta_url: "https://zarr.dev/zarr-summit-2025/"
-=======
-cta_text: "Apply Here"
-cta_url: "https://luma.com/5277wsze"
->>>>>>> main
 hide_cta: true
 passed: false
 ---
