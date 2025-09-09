@@ -237,12 +237,12 @@ an object store API, how chunk size affects HTTP requests, and to see how CCRP
 allows for more efficient queries.
 
 We need to better define our weather dataset for this example. A realistic
-weather dataset might be gridded at 0.01° resolution (a 1 km nominal
-resolution as measured near the equator). We’re still interested in temperature
-data, but now we have a larger query covering the whole state of California,
-roughly the longitude range -125° to -115° and the latitude range 32° to 42°
-from January 1, 2010 to January 1, 2020, or roughly a 10° x 10° x 3652 day
-slice.
+weather dataset might be gridded at 0.01° resolution (a 1 km nominal resolution
+as measured near the equator), with samples every hour. We’re still interested
+in temperature data, but now we have a larger query covering the whole state of
+California, roughly the longitude range -125° to -115° and the latitude range
+32° to 42° from January 1, 2010 to January 1, 2020, or roughly a 10° x 10° x
+3652 day slice.
 
 To request this slice, the first thing we need to do is to map our query range
 into the dataset indices. In this case, let’s say our dataset grid has the
@@ -252,11 +252,14 @@ antimeridian (ranging 0-360), degrees north from the south pole (ranging
 respectively.
 
 To calculate our `x` index slice range, we need to determine how many degrees
-east our -125° to -115° are, which we can do by adding both values to
-180°, giving us the slice `[55:65]` (in Python notation). The `y` slice is
-similar, but found by adding our values to 90°, so we get `[122:132]`. The
-`time` dimension is a little tricker; for brevity we’ll skip ahead and say the
-slice we get there is `[315_619_200:631_152_000]`.
+east -125° to -115° is, which we can do by adding both values to 180°, giving
+us the slice `[55:65]` (in Python notation). We have to scale this to our grid
+though, which has 100 pixels per degree, so we end up with a `x` index slice of
+[5_500:6_500]. The `y` slice is similar, but found by adding our values to 90°
+and again scaling by 100, so there we get `[12_200:13_200]`. The `time`
+dimension is a little tricker; for brevity we’ll skip ahead and say that slice
+is `[87_672:175_320]` (this is a slice from 87,672 to 175,320 hours since our
+January 1, 2000 epoch).
 
 Note that these slice calculations happen today under the covers when using
 Xarray or GDAL or whatever. No matter the tooling, when requesting chunks from
@@ -298,12 +301,12 @@ request:
 
 ```plaintext
 GET https://ccrp.example.com/datasets/weather/data
-    ?time[gte]=315619200
-    &time[lt]=631152000
-    &lon[gte]=55
-    &lon[lt]=65
-    &lat[gte]=122
-    &lat[lt]=132
+    ?time[gte]=87672
+    &time[lt]=175320
+    &lon[gte]=5_500
+    &lon[lt]=6_500
+    &lat[gte]=12_200
+    &lat[lt]=13_200
     &variable=temperature
 ```
 
