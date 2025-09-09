@@ -287,8 +287,13 @@ forces a lot of complexity onto the client. Moreover, that the inefficiency
 remains limits the ability of data providers to use even smaller chunks to
 further mitigate the effects of query misalignment.
 
-With CCRP, we can make one HTTP request to get all chunks, regardless of the
-chunk size:
+With CCRP we can make one HTTP request to get all chunks, regardless of the
+chunk size. Though chunk size does impose one important constraint: because
+CCRP doesn't support any means of rechunking, we do have to ensure our query
+slices align to chunk boundaries. In this case, our query area and time aligns
+to both the aforementioned 1° x 1° x 1 day and  0.25° x 0.25° x 6 hours chunk
+grids, so we can use the same slices we initially calculated to make a CCRP
+request:
 
 ```plaintext
 GET https://ccrp.example.com/datasets/weather/data
