@@ -237,11 +237,12 @@ an object store API, how chunk size affects HTTP requests, and to see how CCRP
 allows for more efficient queries.
 
 We need to better define our weather dataset for this example. A realistic
-weather dataset might be gridded with a 1 km nominal resolution. We’re still
-interested in temperature data, but now we have a larger query covering the
-whole state of California, roughly the longitude range -125° to -115° and the
-latitude range 32° to 42° from January 1, 2010 to January 1, 2020, or roughly a
-10° x 10° x 3652 day slice.
+weather dataset might be gridded at 0.01° resolution (a 1 km nominal
+resolution as measured near the equator). We’re still interested in temperature
+data, but now we have a larger query covering the whole state of California,
+roughly the longitude range -125° to -115° and the latitude range 32° to 42°
+from January 1, 2010 to January 1, 2020, or roughly a 10° x 10° x 3652 day
+slice.
 
 To request this slice, the first thing we need to do is to map our query range
 into the dataset indices. In this case, let’s say our dataset grid has the
