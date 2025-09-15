@@ -4,7 +4,7 @@
 {{ if in (.Get "src") "http" }}
 <img src="{{$src}}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
 {{ else }}
-{{ if in (.Get "src") ".gif" }}
+{{ if or (in (.Get "src") ".gif") (in (.Get "src") ".svg") }}
 <figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
     {{- if .Get "link" -}}
         <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
