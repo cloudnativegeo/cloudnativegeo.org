@@ -1,5 +1,5 @@
 ---
-weight: 4
+weight: 2
 title: "Zarr Development & Adopter Summit"
 when_date: "13-17 October, 2025"
 where: "Rome, Italy"

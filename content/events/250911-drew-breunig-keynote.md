@@ -1,5 +1,5 @@
 ---
-weight: 4
+weight: 1
 title: "Making Place as Easy as Time with Drew Breunig"
 when_date: "11 September, 2025"
 when_time: "9 AM PT | 12 PM ET"
@@ -12,8 +12,8 @@ In this webinar, Drew will draw on historical examples of successful standardiza
 Whether you work with geospatial tools every day or are just getting started, this talk is designed to make you think about the role of place in data."
 price: "Free"
 image_url: ""
-cta_text: "Reserve your spot"
-cta_url: "https://us06web.zoom.us/webinar/register/WN_eJk19PWASZubkjqNNUuK_A"
+cta_text: "View the recording"
+cta_url: "https://youtu.be/stiYfBB0KC8?feature=shared"
 hide_cta: true
-passed: false
+passed: true
 ---
