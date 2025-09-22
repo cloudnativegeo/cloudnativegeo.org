@@ -1,5 +1,5 @@
 ---
-weight: 4
+weight: 3
 title: "STAC Community Sprint 2025"
 when_date: "14-16 October, 2025"
 where: "Frascati, Italy"
