@@ -1,5 +1,5 @@
 ---
-date: 2025-08-26T12:00:00-00:00
+date: 2025-09-23T12:00:00-00:00
 title: "Redefining cloud native with the Coalesced Chunk Retrieval Protocol"
 author: "[Jarrett Keifer](https://www.linkedin.com/in/jarrettkeifer)"
 author_title: "Senior Geospatial Software Engineer, Element 84"
@@ -10,7 +10,7 @@ one idea born of this thinking, aiming to help make CNG more
 efficient and easier for both data consumers and producers."
 ---
 
-{{< img src="images/250826-ccrp_logo.svg" alt="The CCRP Logo">}}
+{{< img src="images/250923-ccrp_logo.svg" alt="The CCRP Logo">}}
 
 In our ongoing series on geospatial raster data formats, [Julia
 Signell](https://www.linkedin.com/in/jsignell/) and I have been exploring the
