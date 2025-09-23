@@ -1,5 +1,5 @@
 ---
-date: 2025-09-23T08:00:00-00:00
+date: 2025-09-22T08:00:00-00:00
 title: "Redefining cloud native with the Coalesced Chunk Retrieval Protocol"
 author: "[Jarrett Keifer](https://www.linkedin.com/in/jarrettkeifer)"
 author_title: "Senior Geospatial Software Engineer, Element 84"
