@@ -14,31 +14,30 @@ efficient and easier for both data consumers and producers."
 
 In our ongoing series on geospatial raster data formats, [Julia
 Signell](https://www.linkedin.com/in/jsignell/) and I have been exploring the
-finer points of array data storage. Throughout our research we’ve found that
+finer points of array data storage. Throughout our research, we’ve found that
 chunking -- breaking a large dataset down into smaller pieces for individual
 storage and retrieval -- is universally relevant regardless of data format.
 Chunking, as we’ve seen, is an absolutely necessary strategy for making large
-datasets usable, [but in the cloud era it has become something
+datasets usable, [but in the cloud era, it has become something
 tyrannical](https://element84.com/software-engineering/chunks-and-chunkability-tyranny-of-the-chunk/),
 making data access efficiency strictly tied to chunk alignment.
 
-Diverge from an access pattern aligning with the dataset’s chunking scheme and
+Diverging from an access pattern aligning with the dataset’s chunking scheme and
 compounding inefficiencies will cripple data access at scale. Pretend, for
 example, we are an official in Chico, a city in the central valley of
 California near the foothills of the Sierra Nevada, who wants to examine
 changes in monthly average maximum temperatures in the city over the years 2010
 to 2020 to understand possible increases in air conditioner usage. Say we have
-daily maximum temperature data stored in cloud object storage and chunked into
+daily maximum temperature data stored in cloud object storage, chunked into
 pieces covering the entire state of California for a given day.
 
-Our access pattern is misaligned! We only want to see data for Chico, other
+Our access pattern is misaligned! We only want to see data for Chico; other
 areas are not under our jurisdiction, so we have no need to download data for
-the rest of the state. But we cannot get only the data we want given the way
+the rest of the state. But we cannot get only the data we want, given the way
 this dataset is chunked. We want a small part of many large chunks, meaning we
 have to make many requests for lots of unwanted data, which is inefficient.
 
-The cloud has given us the ability to store petabytes cheaply, but we’ve lost
-our ability to access that data efficiently without considering chunking,
+The cloud has given us the ability to store petabytes of data cheaply, but we’ve lost our ability to access that data efficiently without considering chunking,
 access patterns, and how to mitigate misalignment. But this tyranny of the
 chunk doesn't have to be permanent. We've solved hard problems before; object
 storage itself was once revolutionary. I believe it is time to solve the next
@@ -58,7 +57,7 @@ This is a chance to work together on making the ecosystem stronger and to
 reconsider what cloud native really means. If you work with large chunked
 datasets, I want to hear from you. If you're building data infrastructure, I
 want your technical feedback. Or, if you have other ideas entirely, let’s hear
-them\! We don’t have to just accept the status quo, we have the chance to
+them\! We don’t have to just accept the status quo; we have the chance to
 define the future of cloud native geospatial by what we build together today.
 
 ## The irony of "cloud native"
@@ -68,7 +67,7 @@ optimized for access via an object store API, like S3's. But here's the thing:
 S3 was designed for web assets, not scientific data. Cloud object storage is
 great for storing huge datasets, but it's terrible for reading many small
 pieces at once. In the worst case, the object model requires each chunk of a
-dataset be read via a separate HTTP request. A data scientist wanting a
+dataset to be read via a separate HTTP request. A data scientist wanting a
 specific slice of a large dataset might need 10,000 data chunks, leading to
 10,000 separate, high-latency HTTP GET requests from their laptop.
 
@@ -76,7 +75,7 @@ This forces data producers to choose between two sub-optimal options: use huge
 chunks that cannot provide granular data access, or small chunks that force
 users into a query pattern dominated by time spent requesting data instead of
 receiving it. As a result, chunk sizes have grown in the cloud, but this means
-that misaligned access can incur significant overhead pushing and extracting
+that misaligned access can incur significant overhead, pushing and extracting
 bytes that aren’t wanted.
 
 Not infrequently, what results is an absurd situation. Savvy users end up
@@ -99,7 +98,7 @@ multiple data chunks from cloud storage at once, eliminating the network
 latency that cripples big data analysis. It builds on existing patterns like
 HTTP and REST, and aims to feel immediately familiar.
 
-With CCRP, a client makes one single, batch request specifying all the chunks
+With CCRP, a client makes one single batch request specifying all the chunks
 they need using some combination of dimensional filtering and coordinate
 slicing (like in xarray when [selecting variables from a
 dataset](https://docs.xarray.dev/en/stable/user-guide/data-structures.html#dataset-contents)
@@ -127,7 +126,7 @@ everything they need, and they get it all back in one round trip.
 
 CCRP does for data chunks what GraphQL does for web resources. It replaces
 potentially thousands of slow, chatty requests with a single, efficient one. It
-offloads chunk byte range calculation from the client side, and allows for read
+offloads chunk byte range calculation from the client side and allows for read
 coalescing where it would otherwise be impossible. Doing so allows data to be
 chunked into smaller pieces to facilitate more granular access, mitigating the
 penalty of misaligned access patterns.
@@ -135,18 +134,18 @@ penalty of misaligned access patterns.
 In our original example of wanting temperature data for Chico,
 California, we saw how a query with a small area and large time range was
 misaligned to the chunking of the target dataset. To address this misalignment, we
-could optimize the chunking for our use-case by breaking up the chunks into
-smaller areas and aggregating them across longer periods of time. Thus we could
-query for our small area and large time range with less requests and less
+could optimize the chunking for our use case by breaking up the chunks into
+smaller areas and aggregating them across longer periods of time. Thus, we could
+query for our small area and large time range with fewer requests and less
 unwanted data.
 
-Except then we’d compromise efficiency for users that want to get temperatures
+Except then we’d compromise efficiency for users who want to get temperatures
 for all of California on only a given day.
 
-To balance both needs we have to make our chunks small, both spatially and
+To balance both needs, we have to make our chunks small, both spatially and
 temporally. Small chunks increase access pattern alignment by reducing the
 amount of unwanted data we have to download for any given request. But small
-chunks with the current object storage access model forces users to make even
+chunks with the current object storage access model force users to make even
 more HTTP requests to retrieve what they need, which can become untenably
 inefficient when performing queries at scale. CCRP, by performing read
 coalescing server-side, allows clients to read a vast range of chunks with a
@@ -201,7 +200,7 @@ model.
 Think about AWS's recent [S3 Express One
 Zone](https://aws.amazon.com/s3/storage-classes/express-one-zone/) or their new
 [S3 Tables](https://aws.amazon.com/s3/features/tables/) and [S3
-Vector](https://aws.amazon.com/blogs/aws/introducing-amazon-s3-vectors-first-cloud-storage-with-native-vector-support-at-scale/)
+Vector](https://aws.amazon.com/blogs/aws/introducing-amazon-s3-vectors-first-cloud storage-with-native-vector-support-at-scale/)
 stores. Cloud providers are recognizing that different data patterns need
 different interfaces. CCRP is proposing the same for chunked raster and tabular
 data.
@@ -222,18 +221,18 @@ This is a missing piece of global data infrastructure. The goal is to create a
 compelling specification that all cloud providers can and will implement,
 making data access better for everyone.
 
-## From Chico to California: an detailed example
+## From Chico to California: a detailed example
 
 To illustrate how this solution scales, let’s go back to our hypothetical
 weather dataset and assume we’ve made the chunks smaller than the whole state
-of California to better align to our Chico user’s query. Now that the city of
-Chico has proven their analysis method at the small scale, the state of
+of California to better align with our Chico user’s query. Now that the city of
+Chico has proven its analysis method at the small scale, the state of
 California wants to repeat the analysis at the larger statewide scale.
 
 How exactly does increasing alignment for a small query affect our ability to
 query at a larger scale? We can work through a detailed example to better
-understand what has to happen when querying cloud-native data formats through
-an object store API, how chunk size affects HTTP requests, and to see how CCRP
+understand what has to happen when querying cloud native data formats through
+an object store API, how chunk size affects HTTP requests, and see how CCRP
 allows for more efficient queries.
 
 We need to better define our weather dataset for this example. A realistic
@@ -241,8 +240,8 @@ weather dataset might be gridded at 0.01° resolution (a 1 km nominal resolution
 as measured near the equator), with samples every hour. We’re still interested
 in temperature data, but now we have a larger query covering the whole state of
 California, roughly the longitude range -125° to -115° and the latitude range
-32° to 42° from January 1, 2010 to January 1, 2020, or roughly a 10° x 10° x
-3652 day slice.
+32° to 42° from January 1, 2010, to January 1, 2020, or roughly a 10° x 10° x
+3652-day slice.
 
 To request this slice, the first thing we need to do is to map our query range
 into the dataset indices. In this case, let’s say our dataset grid has the
@@ -253,11 +252,11 @@ respectively.
 
 To calculate our `x` index slice range, we need to determine how many degrees
 east -125° to -115° is, which we can do by adding both values to 180°, giving
-us the slice `[55:65]` (in Python notation). We have to scale this to our grid
-though, which has 100 pixels per degree, so we end up with a `x` index slice of
+us the slice `[55:65]` (in Python notation). We have to scale this to our grid,
+though, which has 100 pixels per degree, so we end up with an `x` index slice of
 [5_500:6_500]. The `y` slice is similar, but found by adding our values to 90°
 and again scaling by 100, so there we get `[12_200:13_200]`. The `time`
-dimension is a little tricker; for brevity we’ll skip ahead and say that slice
+dimension is a little trickier; for brevity, we’ll skip ahead and say that slice
 is `[87_672:175_320]` (this is a slice from 87,672 to 175,320 hours since our
 January 1, 2000 epoch).
 
@@ -280,18 +279,18 @@ accommodate even more granular access, say 0.25° x 0.25° x 6 hours, then we en
 up having to make (4 x 4 x 4) x (10 x 10 x 3652) \= 23,372,800 requests!
 Assuming a rather optimistic time-to-first-byte of only 15 ms (running compute
 in region alongside the data, for example), we’d end up with almost 10 hours of
-time spent in the download process not transferring any bytes just because we
+time spent in the download process. not transferring any bytes just because we
 have to make individual requests for each chunk.
 
-Parallelism can definitely help here -- if we make ten requests at a time then
+Parallelism can definitely help here -- if we make ten requests at a time, then
 theoretically we would only end up waiting an hour for request overhead. Except
 parallelism just masks the problem: the inefficiency is still there, the server
 still must spend time servicing every individual request, and parallelism
-forces a lot of complexity onto the client. Moreover, that the inefficiency
-remains limits the ability of data providers to use even smaller chunks to
+forces a lot of complexity onto the client. Moreover, the inefficiency
+remains limiting the ability of data providers to use even smaller chunks to
 further mitigate the effects of query misalignment.
 
-With CCRP we can make one HTTP request to get all chunks, regardless of the
+With CCRP, we can make one HTTP request to get all chunks, regardless of the
 chunk size. Though chunk size does impose one important constraint: because
 CCRP intentionally omits any means of rechunking, we do have to ensure our
 query slices align to chunk boundaries. In this case, our query area and time
@@ -314,11 +313,11 @@ Admittedly, this request is for a whole lot of data, and it is unlikely a user
 would want to download all this with only one download stream. CCRP, as it is
 proposed, also has support for cases where users want or need more control over
 the download process, including progressive downloads to facilitate retries and
-parallel download streams for large amounts of data, as this case.
+parallel download streams for large amounts of data, as in this case.
 
 ### What could this look like with better tooling?
 
-With current tooling the original S3 request might look like this:
+With current tooling, the original S3 request might look like this:
 
 ```py
 import xarray as xr
@@ -336,7 +335,7 @@ array = ds['temperature'].sel(
           # tooling has to make a request for every chunk
 ```
 
-Xarray and the lower-level tooling hides from the user that accessing the
+Xarray and the lower-level tooling hide from the user that accessing the
 `values` attribute of the temperature array has to make a separate request for
 every chunk, as we’ve discussed.
 
@@ -406,14 +405,14 @@ chunk](https://element84.com/software-engineering/chunks-and-chunkability-tyrann
 doesn't have to be permanent.** CCRP is an effort to fight the tyrrany of the
 chunk.
 
-Ideally this work is owned and driven forward by the community, not just me.
+Ideally, this work is owned and driven forward by the community, not just me.
 I’m just trying to kickstart it with some examples of what I’ve been thinking.
-Everything is on the table, it’s all up for discussion. The spec certainly has
+Everything is on the table; it’s all up for discussion. The spec certainly has
 gaps, problems, and areas needing refinement. The examples are made up,
 admittedly not great, and need to be revised with real values for both raster
 and tabular datasets.  Actual proof-of-concept implementations are definitely
 needed to better identify what works and what doesn’t, and to allow those
-learnings to feedback into and inform the spec.
+learnings to feed back into and inform the spec.
 
 So again, if you work with large chunked datasets, I want to hear from you. If
 you're building data infrastructure, I want your technical feedback. If you
@@ -424,17 +423,17 @@ or, better, to know what you’d propose instead.
 
 So take a look at the documentation and OpenAPI specification on [the ccrp.dev
 site](https://ccrp.dev). The [FAQs page](https://ccrp.dev/docs/faqs) might
-answer any questions that were not adequately addressed here. The [github
+answer any questions that were not adequately addressed here. The [GitHub
 repo](https://github.com/ccrp-dev/ccrp) is a great place to open issues, ask
 questions, or propose edits via PRs. We also have [a short
 form](https://docs.google.com/forms/d/e/1FAIpQLSdV--Hl86XwBhMDSfNDBXDST4ZEBrZSXQ7hfuIl28NJWVOZag/viewform?usp=dialog)
-we ask anyone interested in getting involved or staying up to date to fill out.
-With enough interest we can make this a true community project, form a working
+that we ask anyone interested in getting involved or staying up to date to fill out.
+With enough interest, we can make this a true community project, form a working
 group, and even organize a sprint.
 
 The future of cloud native can be whatever we want to make it. I believe the
 object storage model is merely a local maximum for cloud native. Instead of
-getting stuck here I want us to consider how to keep going up. CCRP is my idea
+getting stuck here, I want us to consider how to keep going up. CCRP is my idea
 to address the problems I’ve been seeing, but I don’t think it is the only
 answer, nor do I think the object storage model is the only local maximum. I
 suspect there are others; what’s yours?
@@ -446,7 +445,7 @@ suspect there are others; what’s yours?
 This is already something of a community project with the number of people I’ve
 talked to about this and who have graciously given the time and energy to
 listen and provide feedback, to read and revise, or to generally just nod along
-and help me realize I needed to do better communicating this idea. I’m sure I
+and help me realize I needed to do better at communicating this idea. I’m sure I
 am missing some people, but in no particular order:
 
 * Julia Signell
@@ -460,5 +459,5 @@ am missing some people, but in no particular order:
 * Seth Fitzsimmons
 * The CNG Forum editorial board
 
-Also thanks to [Element 84](https://element84.com) for supporting this work to
+Also, thanks to [Element 84](https://element84.com) for supporting this work to
 date.
