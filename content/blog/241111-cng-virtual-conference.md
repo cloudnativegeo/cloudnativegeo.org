@@ -28,7 +28,7 @@ We will begin the day with foundational topics, including a keynote from Javier 
 ### Section 2: Technology Deep Dive and Live Demos
 The second session takes a closer look at the technical side of cloud-native formats with live demonstrations. Dr. Qiusheng Wu’s keynote will explore the transformative role of cloud-native technologies in modern GIS curricula, followed by demos from experts showcasing cloud-native geo solutions like VirtualiZarr, PMTiles, GeoParquet, and Icechunk. 
 ### Section 3: The Future of Cloud-Native Geospatial
-The conference wraps up with a forward-looking session on the power of community in cloud-native geospatial. Dr. Brianna Rita Pagán’s keynote will address the importance of a strong CNG community, and Dana Bauer will lead a discussion on building and sustaining this community over time.
+The conference wraps up with a forward-looking session on the power of community in cloud-native geospatial. Dr. Brianna Rita (Pagán) Corremonte's keynote will address the importance of a strong CNG community, and Dana Bauer will lead a discussion on building and sustaining this community over time.
 
 ## Register Today!
 Don't miss out on the opportunity to connect, learn, and contribute to the future of geospatial technology. Secure your spot today and be part of the growing cloud-native geospatial community. Explore the agenda and purchase tickets [here](https://events.zoom.us/ev/Asg4hCYlKUnIia-OW9lpF8c8ne9P66sjzrLdMbvkXGguK3Z9ih_C~AkQ62ZVQEjbIM4hWpTU4BE37MveEIDNQKPFqeMZsg8Dm93CJvYqQhFKDUg?lmt=1726533984000).

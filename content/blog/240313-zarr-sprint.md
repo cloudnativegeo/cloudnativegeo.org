@@ -42,7 +42,7 @@ In the Zarr pyramids breakout group, [Thomas Maschler](https://github.com/thomas
 
 ### GeoZarr Specification 
 
-Throughout the sprint, the GeoZarr focus group, led by [Brianna Pagán](https://www.briannapagan.com), worked on examining the interoperability of GeoZarr and different existing tooling and store support. You can see the table [here](https://github.com/zarr-developers/geozarr-spec/blob/main/geozarr-interop-table.md).
+Throughout the sprint, the GeoZarr focus group, led by [Brianna (Pagán) Corremonte](https://www.briannapagan.com), worked on examining the interoperability of GeoZarr and different existing tooling and store support. You can see the table [here](https://github.com/zarr-developers/geozarr-spec/blob/main/geozarr-interop-table.md).
 
 One of the biggest realizations was that ArcGIS has a lot of existing support for Zarr, which is really exciting news! For other tools, there is still work to be done, especially for GeoTIFF-like data being stored in Zarr, which translates to updates needed within the GeoZarr specification. For example, there are functionality issues tied to support or lack thereof for specific compression algorithms. The GeoZarr Steering Working Group is working on providing a list of supported compressions for commonly used tools. There is also work to be done on specifying the organizational structure of GeoZarr and understanding where requirements from CF diverge from the Zarr data model. For this, we are focusing efforts on involving folks with CF expertise to guide these conversations. 
 
