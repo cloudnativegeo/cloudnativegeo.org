@@ -13,6 +13,17 @@
     </ul>
     <div class="event-cta">{{if isset .Params "cta_url"}}<a href="{{ .Params.cta_url }}">{{end}}{{ .Params.cta_text }}{{if isset .Params "cta_url"}}</a>{{end}}</div>
   </header>
+  
+  {{ if .Params.images }}
+    <div class="event-images">
+      {{ range .Params.images }}
+        {{ $image := resources.Get . }}
+        {{ if $image }}
+          <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}" class="event-hero-image" />
+        {{ end }}
+      {{ end }}
+    </div>
+  {{ end }}
     <p>{{ .Params.description | markdownify }}</p>
   {{- .Content -}}
 
