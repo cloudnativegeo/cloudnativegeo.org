@@ -42,8 +42,8 @@
 {{ end }}{{ end }}
 {{- end }}
 
-{{/* Generate opengraph image */}}
-{{- if .IsPage -}}
+{{/* Generate opengraph image only if no specific image is defined in front matter */}}
+{{- if and .IsPage (not .Params.images) -}}
   {{ $base := resources.Get "og_base.png" }}
   {{ $boldFont := resources.Get "/fonts/iAWriterQuattroS-Bold.ttf"}}
   {{ $mediumFont := resources.Get "/fonts/iAWriterQuattroS-Bold.ttf"}}
@@ -65,4 +65,12 @@
   <meta name="twitter:title" content="{{ .Title }}" />
   <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
   <meta name="twitter:image" content="{{$img.Permalink}}" />
+{{ else if .IsPage }}
+  <!-- Twitter metadata (used by other websites as well) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
+  {{- with $.Params.images -}}
+  {{- range first 1 . }}<meta name="twitter:image" content="{{ . | absURL }}" />{{ end -}}
+  {{- end -}}
 {{ end }}
