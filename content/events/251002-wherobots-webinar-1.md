@@ -12,5 +12,5 @@ image_url: ""
 cta_text: "Reserve your spot"
 cta_url: "https://us06web.zoom.us/webinar/register/WN_RfA2JMSmQVKodhor7EbcoA"
 hide_cta: true
-passed: false
+passed: true
 ---
