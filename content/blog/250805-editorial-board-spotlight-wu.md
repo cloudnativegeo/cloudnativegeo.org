@@ -8,7 +8,7 @@ images:
 summary: "Editorial Board Spotlight series features a different board member sharing their perspectives on geospatial trends and tools, what’s capturing their attention through reading or their current work, and the challenges they believe our community should focus on."
 ---
 
-{{< img src="images/qiusheng-wu.jpg" alt="Qiusheng Wu" caption="Qiusheng Wu, Associate Professor and Director of Graduate Studies in the Department of Geography and Sustainability at the University of Tennessee, Knoxville." class="small-image" >}}
+<img src="/img/editorial-board/qiusheng-wu.jpg" alt="Qiusheng Wu" style="width: 200px; height: auto; float: right; margin: 0 0 20px 20px;">
 
 Each month, we’re highlighting the community leaders who volunteer their expertise to guide CNG’s direction. Our Editorial Board Spotlight series features a different board member sharing their perspectives on geospatial trends and tools, what’s capturing their attention through reading or their current work, and the challenges they believe our community should focus on.
 
