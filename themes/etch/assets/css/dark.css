@@ -37,6 +37,11 @@ a:hover, a:hover code {
 /* Logo styling for dark mode */
 .cng-logo {
     fill: #FFF !important;
+    transition: fill 0.2s ease;
+}
+
+a:hover .cng-logo {
+    fill: #2126f7 !important;
 }
 
 h1#logo a, h1#logo {
@@ -128,6 +133,36 @@ div.main-cta-url a:hover {
 /* Text shadow adjustment for dark mode */
 div.site-description {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Payment form styling */
+.sq-payment-form,
+.sq-payment-form * {
+    color: #e8e8e8 !important;
+}
+
+.sq-payment-form input,
+.sq-payment-form select,
+.sq-payment-form textarea {
+    background-color: #2f343b !important;
+    border-color: #666 !important;
+    color: #e8e8e8 !important;
+}
+
+.sq-payment-form label {
+    color: #e8e8e8 !important;
+}
+
+.sq-payment-form button,
+.sq-payment-form input[type="submit"] {
+    background-color: #2126f7 !important;
+    color: white !important;
+    border: 1px solid #2126f7 !important;
+}
+
+.sq-payment-form button:hover,
+.sq-payment-form input[type="submit"]:hover {
+    background-color: #3a3ef8 !important;
 }
 
 {{- if not (eq .Site.Params.dark "on") -}}
