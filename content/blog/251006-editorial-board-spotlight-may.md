@@ -12,7 +12,7 @@ summary: "Editorial Board Spotlight series features a different board member sha
 
 Stephanie May is a geographic technologist and cartographer based in Seattle, Washington. In addition to being a founding member of CNG’s Editorial Board, she serves on the board of the [MapLibre Organization](https://maplibre.org/about/), an open source ecosystem for webmapping, and is the Principal of Liminal Maps.
 
-## 1.What geospatial trend or tool excites you right now?
+## 1. What geospatial trend or tool excites you right now?
 
 I’m energized by how much easier it has gotten to build, host, and embed cloud-enabled web maps. A few technologies stand out: [PMTiles](https://docs.protomaps.com/pmtiles/) allow for serverless hosting from anywhere that supports HTTP range requests, which means you can build a map in a GitHub repo and host it via GitHub Pages, or for larger projects shift to a cloud storage bucket. Pair with [Protomaps](https://docs.protomaps.com/) for a full map solution: extract a region in PMTiles format paired with a stylesheet and all the other assets you need to embed a map in your project site or app via [MapLibre](https://maplibre.org/), or customize it in a huge variety of ways, such as mixing in other sources (e.g. OpenStreetMap US just released [hosted layers for trails, contours, hillshades](https://openstreetmap.us/news/2025/09/tileservice-general-availability/)). If you want to go deeper, you can build your own map tiles with [Planetiler](https://github.com/onthegomap/planetiler), understand and modify the stylesheet with [Maputnik](https://maputnik.github.io/), or even build and host your own aesthetic from top to bottom with a custom or branded style and icons.
 

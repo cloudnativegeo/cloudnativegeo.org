@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+{{- partial "head.html" . -}}
+<body>
+  {{- partial "header.html" . -}}
+  <main id="content">
+    {{- block "main" . }}{{- end }}
+    {{- partial "connect.html" . -}}
+  </main>
+  {{- partial "footer.html" . -}}
+  
+  {{- /* Speculation Rules API for instant navigation in modern browsers */ -}}
+  {{ if .IsHome }}
+  <script type="speculationrules">
+  {
+    "prerender": [
+      {
+        "source": "list",
+        "urls": ["/about/", "/blog/", "/join/"]
+      }
+    ],
+    "prefetch": [
+      {
+        "source": "document",
+        "where": {
+          "href_matches": "/*"
+        },
+        "eagerness": "moderate"
+      }
+    ]
+  }
+  </script>
+  {{ end }}
+  
+  {{- /* Smart hover prefetch for all browsers */ -}}
+  <script src="/js/prefetch.js" defer></script>
+  
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
