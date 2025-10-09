@@ -10,7 +10,7 @@ relativeURLs = true
 [params]
   description = "Where geospatial data users create the future together."
   copyright = "Copyright © 2024 Radiant Earth"
-  dark = "off"
+  dark = "auto"
   highlight = true
 
 [menu]
