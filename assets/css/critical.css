@@ -108,6 +108,7 @@ div#banner nav li a {
   text-decoration: none;
   border-radius: 6px;
   color: var(--color-text);
+  transition: color 0.2s ease, background 0.2s ease;
 }
 
 /* Current page styling - when nav item has no link */
