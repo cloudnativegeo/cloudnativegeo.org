@@ -10,7 +10,7 @@ Yesterday I read [Sylvain Lesage](https://rednegra.net/)’s post [Parquet with 
 
 The only thing that I think is ‘off’ in the post is the timeline that says GeoParquet 1.1 was ‘published three months after the introduction of `GEOMETRY` and `GEOGRAPHY` in Parquet’. GeoParquet 1.1 was June 19th of 2024, while the geospatial types landed in Parquet core in March of 2025.
 
-{{< img src="images/251008-geoparquet-types1.webp">}}
+{{< img src="images/251008-geoparquet-types1.png">}}
 
 The original [PARQUET-2471](https://github.com/apache/parquet-format/pull/240) discussion started about 1 month before the 1.1.0 release. And the main topic for the core GeoParquet group members after the 1.1.0 release was to help ensure that Parquet and Iceberg geospatial types would be compatible and work well for the geospatial world. The core GeoParquet people were all quite happy to see this — our goal was always to bring Geo to Parquet, and having it as a core type is really the end state we were working towards.
 
@@ -28,6 +28,6 @@ Unfortunately we’ve been quite slow to actually get a spec out the door. I’v
 
 But overall [the post](https://rednegra.net/blog/20250925-parquet-with-geometry-type-is-not-geoparquet) got most everything right, and our hope is to be able to provide clearer guidance in a GeoParquet 2.0 spec so that they are completely compatible and eventually it can just Parquet. Note that GDAL/OGR does have the ability to read/write Parquet geo types in version 3.12, and our hope is that when we have GeoParquet 2.0 it’ll make sense to have it write those by default.
 
-{{< img src="images/251008-geoparquet-types2.webp">}}
+{{< img src="images/251008-geoparquet-types2.png">}}
 
 Hopefully 2026 will be the year where we really start to see major datasets use Parquet GEOMETRY and GEOGRAPHY types. I believe most all the core Parquet libraries now support it, so the next step is really driving the geospatial libraries to start to not only use it, but to also write it by default. And the hope is that a GeoParquet 2.0 will help make that clear, and eventually all libraries will support the Parquet way so that GeoParquet metadata won’t even be necessary.
