@@ -36,6 +36,11 @@
     --color-border: #666;
     --color-border-dark: #666;
   }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 /* Reset and base styles */

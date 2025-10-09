@@ -57,14 +57,7 @@
 }
 
 /* Base styles already in critical.css */
-
-/* Dark mode font smoothing */
-@media (prefers-color-scheme: dark) {
-  body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-}
+/* Dark mode font smoothing also in critical.css */
 
 footer {
   background-color: var(--color-bg-footer);
