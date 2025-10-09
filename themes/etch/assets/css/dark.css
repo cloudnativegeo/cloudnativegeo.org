@@ -165,6 +165,16 @@ div.site-description {
     background-color: #3a3ef8 !important;
 }
 
+/* Table styling for dark mode */
+table th {
+    border-bottom: 1px solid #666 !important;
+}
+
+table td,
+table th {
+    color: #e8e8e8 !important;
+}
+
 {{- if not (eq .Site.Params.dark "on") -}}
 }
 {{- end -}}
