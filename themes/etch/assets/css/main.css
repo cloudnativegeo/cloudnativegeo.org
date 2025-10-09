@@ -65,6 +65,7 @@ body {
     "Segoe UI Emoji",
     "Segoe UI Symbol";
   color: #2f343b;
+  background-color: #EFEBEA;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -77,7 +78,7 @@ header#page-header {
 }
 
 footer {
-  background-color: #eeeff1;
+  background-color: #e8e4e3;
 }
 
 hr {
@@ -754,7 +755,12 @@ ul#funderlogos li a {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  transition: none !important;
+  transition: opacity 0.2s ease;
+  opacity: 0.9;
+}
+
+ul#funderlogos li a:hover {
+  opacity: 1;
 }
 
 /* ul#funderlogos li a:hover {
