@@ -6,13 +6,11 @@ author_title: "Planet Fellow, Open & VP Product/Strategy/Partnerships & CNG Edit
 summary: "This post makes the case for how the GeoParquet spec is preparing to phase out its own geometric format in favor of full Parquet compatibility."
 ---
 
-{{< img src="images/251008-geoparquet-types1.webp">}}
-
 Yesterday I read [Sylvain Lesage](https://rednegra.net/)’s post [Parquet with GEOMETRY type is not GeoParquet](https://rednegra.net/blog/20250925-parquet-with-geometry-type-is-not-geoparquet/) and started writing a reply for Linkedin but it ended up a bit too long to just be a comment, so I thought I’d just post it here as a blog. Overall it’s a great write-up and I appreciate that Sylvain took the time to share his understandings, and that he’s been diving deep to be able to support the geospatial + Parquet ecosystem. And most all of it is right on, but I wanted to provide some more context, and one tweak.
 
 The only thing that I think is ‘off’ in the post is the timeline that says GeoParquet 1.1 was ‘published three months after the introduction of `GEOMETRY` and `GEOGRAPHY` in Parquet’. GeoParquet 1.1 was June 19th of 2024, while the geospatial types landed in Parquet core in March of 2025.
 
-{{< img src="images/250923-ccrp_logo.svg" alt="The CCRP Logo">}}
+{{< img src="images/251008-geoparquet-types1.webp">}}
 
 The original [PARQUET-2471](https://github.com/apache/parquet-format/pull/240) discussion started about 1 month before the 1.1.0 release. And the main topic for the core GeoParquet group members after the 1.1.0 release was to help ensure that Parquet and Iceberg geospatial types would be compatible and work well for the geospatial world. The core GeoParquet people were all quite happy to see this — our goal was always to bring Geo to Parquet, and having it as a core type is really the end state we were working towards.
 
