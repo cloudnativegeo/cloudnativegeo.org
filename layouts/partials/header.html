@@ -1,0 +1,18 @@
+<header id="page-header">
+  <div id="banner">
+    <div id="logo">
+      {{ if ne .IsHome true }}<a href="{{ .Site.BaseURL }}">{{ end }}
+        {{ partial "logo.html" . }}
+      {{ if ne .IsHome true }}</a>{{ end }}
+    </div>
+    <nav>
+      <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main.ByWeight -}}
+        <li>{{ .Pre }}{{ if not ($currentPage.IsMenuCurrent "main" .) }}<a href="{{ .URL }}" title="{{ humanize .Title }}" {{ if eq .Params.external true }}target="_blank"{{ end }}>{{ end }}{{- humanize .Name -}}{{ if eq .Params.external true }} &#8599;{{ end }}{{ if not ($currentPage.IsMenuCurrent "main" .) }}</a>{{ end }}{{ .Post }}</li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>  
+  <hr>
+</header>

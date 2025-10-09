@@ -1,6 +1,5 @@
 baseURL = "https://cloudnativegeo.org"
 title = "Cloud-Native Geospatial Forum - CNG"
-theme = "etch"
 languageCode = "en-US"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
