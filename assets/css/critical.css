@@ -4,12 +4,17 @@
 @font-face {
   font-family: "BerkeleyMono";
   src: url("/fonts/BerkeleyMono-Regular.woff2") format("woff2");
-  font-display: optional;
+  font-display: swap;
+  size-adjust: 100%;
+  ascent-override: 100%;
+  descent-override: 20%;
+  line-gap-override: 0%;
 }
 @font-face {
   font-family: "iAWriterQuattro";
   src: url("/fonts/iAWriterQuattroS-Regular.woff2") format("woff2");
-  font-display: optional;
+  font-display: swap;
+  size-adjust: 100%;
 }
 
 /* CSS Custom Properties */
@@ -79,7 +84,7 @@ div#logo {
 }
 
 div#banner nav {
-  font-family: "BerkeleyMono", monospace;
+  font-family: "BerkeleyMono", "Courier New", Courier, monospace;
   float: right;
   text-align: right;
   margin: 0;
