@@ -72,5 +72,7 @@ relativeURLs = true
     ordered = true
 
 [imaging]
-  # Disable image processing to speed up builds
-  disableHugoDefaults = true
+  # Use cached images and don't reprocess unless source changes
+  disableHugoDefaults = false
+  quality = 80
+  anchor = "Smart"
