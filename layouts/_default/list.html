@@ -1,5 +1,6 @@
 {{ define "main" }}
 	<h1>{{ .Title }}</h1>
+	{{- if or (isset .Params "author") (isset .Params "date") -}}
 	<div class="post-meta">
         {{- if isset .Params "author" -}}
         <span class="post-byline">By {{if isset .Params "author_url"}}<a href="{{ .Params.author_url }}">{{end}}{{ .Params.author | markdownify }}{{- if isset .Params "author_url" -}}</a>{{- end -}}{{- if isset .Params "author_title" -}}, {{ .Params.author_title | markdownify }}{{- end -}}</span>
@@ -12,6 +13,7 @@
             {{ end }}
         {{- end -}}
         </div>
+	{{- end -}}
 	
 	{{- /* Show posts for current year (2025) */ -}}
 	{{- $currentYear := "2025" -}}
@@ -60,7 +62,7 @@
 	{{- else -}}
 		{{- /* Show links to other years (year archive pages only) */ -}}
 		{{- $currentYear := .File.Dir | replaceRE "blog/([0-9]+)/" "$1" -}}
-		{{- $allYears := slice "2025" "2024" "2023" -}}
+		{{- $allYears := slice "2024" "2023" -}}
 		{{- $otherYears := slice -}}
 		{{- range $allYears -}}
 			{{- if ne . $currentYear -}}
