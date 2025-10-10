@@ -122,35 +122,36 @@ div#banner nav ul {
 }
 
 div#banner nav ul li {
-  margin: 0 2px 0.5em 6px;
   display: block;
 }
 
-div#banner nav li a {
+/* Standardized nav item styling - all states have same dimensions */
+div#banner nav li a,
+div#banner nav ul li:not(:has(a)) {
   padding: 4px 6px;
   text-decoration: none;
   border-radius: 6px;
-  color: var(--color-text);
-  transition: color 0.2s ease, background 0.2s ease;
   display: inline-block;
   line-height: 1;
   vertical-align: baseline;
+  margin: 0 2px 0.5em 6px;
+  transition: color 0.2s ease, background 0.2s ease;
 }
 
-/* Current page styling - when nav item has no link */
+/* Default nav link state */
+div#banner nav li a {
+  color: var(--color-text);
+  background: transparent;
+}
+
+/* Current page nav item (no link) */
 div#banner nav ul li:not(:has(a)) {
   background: var(--color-text);
   color: var(--color-bg);
   font-weight: 700;
-  padding: 4px 6px;
-  border-radius: 6px;
-  display: inline-block;
-  line-height: 1;
-  vertical-align: baseline;
-  margin: 0 2px 0.5em 6px; /* Match the margin of regular nav items */
 }
 
-/* Navigation hover states */
+/* Hover state */
 div#banner nav li:hover a {
   background: #2126f7;
   color: white;
@@ -958,6 +959,11 @@ a#ai2 { background-image: url("/img/funders/ai2.svg"); background-size: 50%; }
 
   div#banner nav ul li {
     display: inline;
+  }
+  
+  /* Reset margin for nav items on desktop - they handle their own spacing */
+  div#banner nav li a,
+  div#banner nav ul li:not(:has(a)) {
     margin: 0 0 .5em 1em;
   }
 
