@@ -73,3 +73,4 @@ relativeURLs = true
   disableHugoDefaults = false
   quality = 80
   anchor = "Smart"
+  resampleFilter = "Lanczos"

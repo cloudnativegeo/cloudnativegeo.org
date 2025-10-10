@@ -34,34 +34,87 @@
 
 /* CSS Custom Properties */
 :root {
+  /* Text colors */
   --color-text: #2f343b;
   --color-text-secondary: #394548;
   --color-text-muted: #666666;
+  --color-text-dark: #3d3d3d;
+  
+  /* Background colors */
   --color-bg: #EFEBEA;
   --color-bg-footer: #e8e4e3;
   --color-bg-code: #eeeff1;
+  
+  /* Link colors */
   --color-link: #2126f7;
   --color-link-hover: #3a3ef8;
+  
+  /* Brand color for UI elements (logo, nav, buttons) */
+  --color-brand-hover: #2126f7;
+  
+  /* Accent colors */
   --color-accent: #ffd626;
+  --color-accent-transparent-light: rgba(255, 214, 38, 0.15);
+  --color-accent-transparent-hover: rgba(255, 214, 38, 0.25);
+  
+  /* Border colors */
   --color-border: #ccc;
   --color-border-dark: #b1b1b1;
+  
+  /* Special colors */
+  --color-white: #ffffff;
+  --color-duotone: #008080;
+  
+  /* Shadow colors */
+  --color-shadow-light: #999;
+  --color-shadow-medium: #888;
+  --shadow-box: 0px 2px 1px var(--color-shadow-light);
+  --shadow-box-hover: 0 2px 4px var(--color-shadow-light);
+  --shadow-box-active: 0 1px 0 var(--color-shadow-medium);
+  
+  /* Text shadows */
   --text-shadow: 1px 1px 1px #e0ded8;
+  
+  /* Filters */
   --funder-logo-filter: none;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: #e8e8e8;
-    --color-text-secondary: #e8e8e8;
-    --color-text-muted: #b8b8b8;
-    --color-bg: #1a1a1a;
-    --color-bg-footer: #2f343b;
-    --color-bg-code: #2f343b;
-    --color-link: #6B9FFF;
-    --color-link-hover: #8BB4FF;
-    --color-border: #666;
-    --color-border-dark: #666;
+    /* Text colors - much lighter for proper contrast */
+    --color-text: #e3e6eb;
+    --color-text-secondary: #d5dae3;
+    --color-text-muted: #a8b0c0;
+    --color-text-dark: #d5dae3;
+    
+    /* Background colors - subtle blue tint, more muted than Solarized */
+    --color-bg: #1d232b;
+    --color-bg-footer: #14191f;
+    --color-bg-code: #21272f;
+    
+    /* Link colors - cyan-leaning for better contrast with blue-tinted bg */
+    --color-link: #60b5ff;
+    --color-link-hover: #7dc7ff;
+    
+    /* Brand color for UI elements (logo, nav, buttons) - same in both modes */
+    --color-brand-hover: #2126f7;
+    
+    /* Accent colors - keeping original yellow */
+    --color-accent: #ffd626;
+    --color-accent-transparent-light: rgba(255, 214, 38, 0.15);
+    --color-accent-transparent-hover: rgba(255, 214, 38, 0.25);
+    
+    /* Border colors - lighter for visibility */
+    --color-border: #2d3542;
+    --color-border-dark: #3d4654;
+    
+    /* Special colors */
+    --color-white: #ffffff;
+    
+    /* Text shadows */
     --text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    
+    /* Filters */
     --funder-logo-filter: brightness(0) invert(1);
   }
 
@@ -153,8 +206,8 @@ div#banner nav ul li:not(:has(a)) {
 
 /* Hover state */
 div#banner nav li:hover a {
-  background: #2126f7;
-  color: white;
+  background: var(--color-brand-hover);
+  color: var(--color-white);
 }
 
 a {
@@ -173,12 +226,12 @@ a:hover {
   }
 
   .cng-logo {
-    fill: #FFF !important;
+    fill: var(--color-white) !important;
     transition: fill 0.2s ease;
   }
 
   a:hover .cng-logo {
-    fill: #2126f7 !important;
+    fill: var(--color-brand-hover) !important;
   }
 }
 
@@ -413,7 +466,7 @@ div.main-cta-url a {
 div.event-cta a,
 div.main-cta-url a {
   transition: box-shadow 0.2s ease;
-  box-shadow: 0px 2px 1px #999;
+  box-shadow: var(--shadow-box);
 }
 
 a.home-button:after,
@@ -423,9 +476,9 @@ div.main-cta-url a:after {
 }
 
 a.home-button:hover {
-  background: #2126f7;
-  border: 1px solid #2126f7;
-  color: white;
+  background: var(--color-brand-hover);
+  border: 1px solid var(--color-brand-hover);
+  color: var(--color-white);
 }
 
 div.event-cta a,
@@ -441,26 +494,26 @@ div.main-cta-url a {
 @media (prefers-color-scheme: dark) {
   div.event-cta a,
   div.main-cta-url a {
-    background-color: rgba(255, 214, 38, 0.15);
+    background-color: var(--color-accent-transparent-light);
     border: 1px solid var(--color-accent);
     color: var(--color-text);
   }
   
   div.event-cta a:hover,
   div.main-cta-url a:hover {
-    background-color: rgba(255, 214, 38, 0.25);
+    background-color: var(--color-accent-transparent-hover);
   }
 }
 
 div.event-cta a:hover,
 div.main-cta-url a:hover {
-  box-shadow: 0 2px 4px #999;
+  box-shadow: var(--shadow-box-hover);
   top: -1px;
 }
 
 div.event-cta a:active,
 div.main-cta-url a:active {
-  box-shadow: 0 1px 0 #888;
+  box-shadow: var(--shadow-box-active);
   top: 1px;
 }
 
@@ -588,13 +641,13 @@ main#content #toc {
 
 main#content #toc h4 {
   font-size: 1.06em;
-  color: #3d3d3d;
+  color: var(--color-text-dark);
   margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {
   main#content #toc h4 {
-    color: #d4d4d4;
+    color: var(--color-text-dark);
   }
 }
 
@@ -631,7 +684,7 @@ main#content figure figcaption {
   text-align: center;
   margin-top: 8px;
   padding: 0 10px;
-  color: #666;
+  color: var(--color-text-muted);
 }
 
 main#content figure figcaption h4 {
@@ -724,7 +777,7 @@ main#content .keynote-speaker figure {
 
 .duotone-overlay {
   position: absolute;
-  background-color: #008080;
+  background-color: var(--color-duotone);
   mix-blend-mode: color;
   width: 20%;
   height: auto;
@@ -882,44 +935,44 @@ ul#funderlogos li a:hover {
 }
 
 /* Individual funder logo images and sizes - consolidated */
-a#nasa { background-image: url("/img/funders/nasa.svg"); background-size: 50%; }
-a#aws { background-image: url("/img/funders/aws.svg"); background-size: 40%; }
-a#columbia { background-image: url("/img/funders/columbia.svg"); background-size: 90%; }
-a#hydrosat { background-image: url("/img/funders/hydrosat.png"); background-size: 70%; }
-a#terradue { background-image: url("/img/funders/terradue.svg"); background-size: 70%; }
-a#ncics { background-image: url("/img/funders/ncics.svg"); background-size: 70%; }
-a#clark-cga { background-image: url("/img/funders/clark-cga.svg"); background-size: 60%; }
-a#hotosm { background-image: url("/img/funders/hotosm.svg"); background-size: 40%; }
-a#splunk { background-image: url("/img/funders/splunk.png"); background-size: 60%; }
-a#devseed { background-image: url("/img/funders/devseed.svg"); background-size: 70%; }
-a#element84 { background-image: url("/img/funders/element84.png"); background-size: 60%; }
-a#fused { background-image: url("/img/funders/fused.svg"); background-size: 80%; }
-a#sparkgeo { background-image: url("/img/funders/sparkgeo.svg"); background-size: 50%; }
-a#omidyar { background-image: url("/img/funders/omidyar.png"); background-size: 80%; }
-a#twente { background-image: url("/img/funders/twente.png"); background-size: 66%; }
-a#boettiger { background-image: url("/img/funders/boettiger.svg"); background-size: 60%; }
-a#bmgf { background-image: url("/img/funders/bmgf.svg"); background-size: 80%; }
-a#tge { background-image: url("/img/funders/tge.svg"); background-size: 70%; }
-a#giz { background-image: url("/img/funders/giz.svg"); background-size: 70%; }
-a#mcgovern { background-image: url("/img/funders/mcgovern.png"); background-size: 90%; }
-a#schmidt { background-image: url("/img/funders/schmidt.svg"); background-size: 70%; }
-a#vanuatu { background-image: url("/img/funders/vanuatu.png"); background-size: 30%; }
-a#microsoft { background-image: url("/img/funders/microsoft.svg"); background-size: 80%; }
-a#planet { background-image: url("/img/funders/planet.svg"); background-size: 60%; }
-a#tetra_tech { background-image: url("/img/funders/tetra-tech.svg"); background-size: 80%; }
-a#lacuna { background-image: url("/img/funders/lacuna.png"); background-size: 90%; }
-a#wherobots { background-image: url("/img/funders/wherobots.svg"); background-size: 70%; }
-a#earthmover { background-image: url("/img/funders/earthmover.svg"); background-size: 70%; }
-a#tgi { background-image: url("/img/funders/tgi.svg"); background-size: 36%; }
-a#google { background-image: url("/img/funders/google.svg"); background-size: 56%; }
-a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); background-size: 76%; }
-a#vliz { background-image: url("/img/funders/vliz.svg"); background-size: 36%; }
-a#esri { background-image: url("/img/funders/esri.svg"); background-size: 60%; }
-a#schmidt-ocean { background-image: url("/img/funders/schmidt-ocean.svg"); background-size: 60%; }
-a#omf { background-image: url("/img/funders/omf.svg"); background-size: 40%; }
-a#linz { background-image: url("/img/funders/linz.svg"); background-size: 66%; }
-a#safe { background-image: url("/img/funders/safe.svg"); background-size: 40%; }
 a#ai2 { background-image: url("/img/funders/ai2.svg"); background-size: 50%; }
+a#aws { background-image: url("/img/funders/aws.svg"); background-size: 40%; }
+a#bmgf { background-image: url("/img/funders/bmgf.svg"); background-size: 80%; }
+a#boettiger { background-image: url("/img/funders/boettiger.svg"); background-size: 60%; }
+a#clark-cga { background-image: url("/img/funders/clark-cga.svg"); background-size: 60%; }
+a#columbia { background-image: url("/img/funders/columbia.svg"); background-size: 90%; }
+a#devseed { background-image: url("/img/funders/devseed.svg"); background-size: 70%; }
+a#earthmover { background-image: url("/img/funders/earthmover.svg"); background-size: 70%; }
+a#element84 { background-image: url("/img/funders/element84.svg"); background-size: 60%; }
+a#esri { background-image: url("/img/funders/esri.svg"); background-size: 60%; }
+a#fused { background-image: url("/img/funders/fused.svg"); background-size: 80%; }
+a#giz { background-image: url("/img/funders/giz.svg"); background-size: 70%; }
+a#google { background-image: url("/img/funders/google.svg"); background-size: 56%; }
+a#hotosm { background-image: url("/img/funders/hotosm.svg"); background-size: 40%; }
+a#hydrosat { background-image: url("/img/funders/hydrosat.svg"); background-size: 70%; }
+a#lacuna { background-image: url("/img/funders/lacuna.svg"); background-size: 90%; }
+a#linz { background-image: url("/img/funders/linz.svg"); background-size: 66%; }
+a#mcgovern { background-image: url("/img/funders/mcgovern.svg"); background-size: 90%; }
+a#microsoft { background-image: url("/img/funders/microsoft.svg"); background-size: 80%; }
+a#nasa { background-image: url("/img/funders/nasa.svg"); background-size: 50%; }
+a#ncics { background-image: url("/img/funders/ncics.svg"); background-size: 70%; }
+a#omf { background-image: url("/img/funders/omf.svg"); background-size: 40%; }
+a#omidyar { background-image: url("/img/funders/omidyar.svg"); background-size: 80%; }
+a#planet { background-image: url("/img/funders/planet.svg"); background-size: 60%; }
+a#safe { background-image: url("/img/funders/safe.svg"); background-size: 40%; }
+a#schmidt { background-image: url("/img/funders/schmidt.svg"); background-size: 70%; }
+a#schmidt-ocean { background-image: url("/img/funders/schmidt-ocean.svg"); background-size: 60%; }
+a#sparkgeo { background-image: url("/img/funders/sparkgeo.svg"); background-size: 50%; }
+a#splunk { background-image: url("/img/funders/splunk.svg"); background-size: 60%; }
+a#terradue { background-image: url("/img/funders/terradue.svg"); background-size: 70%; }
+a#tetra_tech { background-image: url("/img/funders/tetra-tech.svg"); background-size: 80%; }
+a#tge { background-image: url("/img/funders/tge.svg"); background-size: 70%; }
+a#tgi { background-image: url("/img/funders/tgi.svg"); background-size: 36%; }
+a#twente { background-image: url("/img/funders/twente.png"); background-size: 66%; }
+a#vanuatu { background-image: url("/img/funders/vanuatu.svg"); background-size: 30%; }
+a#vliz { background-image: url("/img/funders/vliz.svg"); background-size: 36%; }
+a#wherobots { background-image: url("/img/funders/wherobots.svg"); background-size: 70%; }
+a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); background-size: 76%; }
 
 /* Desktop responsive styles */
 @media (min-width: 770px) {
@@ -1019,8 +1072,8 @@ a#ai2 { background-image: url("/img/funders/ai2.svg"); background-size: 50%; }
     line-height: 1;
     float: right;
     border-top: none;
-    border-left: 2px #FFD626 solid;
-    border-bottom: 2px #FFD626 solid;
+    border-left: 2px var(--color-accent) solid;
+    border-bottom: 2px var(--color-accent) solid;
   }
 
   main#content figure {
@@ -1063,12 +1116,12 @@ a#ai2 { background-image: url("/img/funders/ai2.svg"); background-size: 50%; }
 /* Dark mode specific overrides */
 @media (prefers-color-scheme: dark) {
   .cng-logo {
-    fill: #FFF;
+    fill: var(--color-white);
     transition: fill 0.2s ease;
   }
 
   a:hover .cng-logo {
-    fill: #2126f7;
+    fill: var(--color-brand-hover);
   }
 
   h1#logo a,
@@ -1077,7 +1130,7 @@ a#ai2 { background-image: url("/img/funders/ai2.svg"); background-size: 50%; }
   }
 
   div.site-description {
-    color: #FFF;
+    color: var(--color-white);
   }
 
   .sq-payment-form,
@@ -1100,7 +1153,7 @@ a#ai2 { background-image: url("/img/funders/ai2.svg"); background-size: 50%; }
   .sq-payment-form button,
   .sq-payment-form input[type="submit"] {
     background-color: var(--color-link);
-    color: white;
+    color: var(--color-white);
     border: 1px solid var(--color-link);
   }
 
