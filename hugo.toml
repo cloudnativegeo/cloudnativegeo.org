@@ -6,9 +6,6 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 relativeURLs = true
 
-[pagination]
-  pageSize = 10
-
 [params]
   description = "Where geospatial data users create the future together."
   copyright = "Copyright © 2024 Radiant Earth"

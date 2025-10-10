@@ -12,5 +12,43 @@
             {{ end }}
         {{- end -}}
         </div>
-	{{- partial "posts.html" . -}}
+	
+	{{- /* Show posts for current year (2025) */ -}}
+	{{- $currentYear := "2025" -}}
+	{{- $currentYearPages := where .Site.RegularPages "Section" "blog" -}}
+	{{- $currentYearPages = where $currentYearPages "File.Dir" (printf "blog/%s/" $currentYear) -}}
+	
+	{{- if $currentYearPages -}}
+		<h2>{{ $currentYear }} Posts</h2>
+		<ul id="posts">
+			{{ range $currentYearPages }} {{ .Render "li" }}
+			{{- end }}
+		</ul>
+	{{- end -}}
+	
+	{{- /* Show archive links for previous years */ -}}
+	{{- $archiveYears := slice "2024" "2023" -}}
+	{{- $hasArchives := false -}}
+	{{- range $archiveYears -}}
+		{{- $year := . -}}
+		{{- $yearPages := where $.Site.RegularPages "Section" "blog" -}}
+		{{- $yearPages = where $yearPages "File.Dir" (printf "blog/%s/" $year) -}}
+		{{- if $yearPages -}}
+			{{- $hasArchives = true -}}
+		{{- end -}}
+	{{- end -}}
+	
+	{{- if $hasArchives -}}
+		<h2>Archives</h2>
+		<ul>
+			{{- range $archiveYears -}}
+				{{- $year := . -}}
+				{{- $yearPages := where $.Site.RegularPages "Section" "blog" -}}
+				{{- $yearPages = where $yearPages "File.Dir" (printf "blog/%s/" $year) -}}
+				{{- if $yearPages -}}
+					<li><a href="/blog/{{ $year }}/">{{ $year }} ({{ len $yearPages }} posts)</a></li>
+				{{- end -}}
+			{{- end -}}
+		</ul>
+	{{- end -}}
 {{ end }}

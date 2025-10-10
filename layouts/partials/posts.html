@@ -1,5 +1,4 @@
 <ul id="posts">
-    {{ range .Paginator.Pages }} {{ .Render "li" }}
+    {{ range where .Site.RegularPages "Section" .Section }} {{ .Render "li" }}
     {{- end }}
 </ul>
-{{ template "_internal/pagination.html" . }}
