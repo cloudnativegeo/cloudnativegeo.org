@@ -1,8 +1,11 @@
 {{ define "main" }}
 <header id="post-header">
     <h1>{{ .Title }}</h1>
+    {{- $hasAuthor := isset .Params "author" -}}
+    {{- $hasDate := isset .Params "date" -}}
+    {{- if or $hasAuthor $hasDate -}}
     <div class="post-meta">
-        {{- if isset .Params "author" -}}
+        {{- if $hasAuthor -}}
         <span class="post-byline"
             >By {{if isset .Params "author_url"}}<a
                 href="{{ .Params.author_url }}"
@@ -11,13 +14,15 @@
             >{{- end -}}{{- if isset .Params "author_title" -}}, {{
             .Params.author_title | markdownify }}{{- end -}}</span
         >
-        {{- end -}}<br />
-        {{- if isset .Params "date" -}} {{ if eq .Lastmod .Date }}
+        {{- end -}}
+        {{- if and $hasAuthor $hasDate -}}<br />{{- end -}}
+        {{- if $hasDate -}} {{ if eq .Lastmod .Date }}
         <time>Last updated {{ .Date | time.Format "02 January 2006" }}</time>
         {{ else }}
         <time>{{ .Lastmod | time.Format "02 January 2006" }}</time>
         {{ end }} {{- end -}}
     </div>
+    {{- end -}}
 </header>
 
 <h2>Upcoming Events</h2>
