@@ -59,7 +59,39 @@
 			</ul>
 		{{- end -}}
 	{{- else -}}
-		{{- /* Show link back to main blog page (year archive pages only) */ -}}
-		<p><a href="/blog/">← Back to all blog posts</a></p>
+		{{- /* Show links to other years (year archive pages only) */ -}}
+		{{- $currentYear := .File.Dir | replaceRE "blog/([0-9]+)/" "$1" -}}
+		{{- $allYears := slice "2025" "2024" "2023" -}}
+		{{- $otherYears := slice -}}
+		{{- range $allYears -}}
+			{{- if ne . $currentYear -}}
+				{{- $otherYears = $otherYears | append . -}}
+			{{- end -}}
+		{{- end -}}
+		
+		{{- $hasOtherYears := false -}}
+		{{- range $otherYears -}}
+			{{- $year := . -}}
+			{{- $yearPages := where $.Site.RegularPages "Section" "blog" -}}
+			{{- $yearPages = where $yearPages "File.Dir" (printf "blog/%s/" $year) -}}
+			{{- if $yearPages -}}
+				{{- $hasOtherYears = true -}}
+			{{- end -}}
+		{{- end -}}
+		
+		{{- if $hasOtherYears -}}
+			<h2>Other Years</h2>
+			<ul>
+				<li><a href="/blog/">All Posts</a></li>
+				{{- range $otherYears -}}
+					{{- $year := . -}}
+					{{- $yearPages := where $.Site.RegularPages "Section" "blog" -}}
+					{{- $yearPages = where $yearPages "File.Dir" (printf "blog/%s/" $year) -}}
+					{{- if $yearPages -}}
+						<li><a href="/blog/{{ $year }}/">{{ $year }} ({{ len $yearPages }} posts)</a></li>
+					{{- end -}}
+				{{- end -}}
+			</ul>
+		{{- end -}}
 	{{- end -}}
 {{ end }}

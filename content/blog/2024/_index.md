@@ -1,3 +1,3 @@
 ---
-title: "2024 Archives"
+title: "2024 Blog Archives"
 ---

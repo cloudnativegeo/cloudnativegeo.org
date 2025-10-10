@@ -99,6 +99,7 @@ header#page-header {
 
 div#banner {
   padding: 1em 0 0.5em 0;
+  overflow: hidden; /* Clear floats */
 }
 
 div#logo {
@@ -194,6 +195,7 @@ header#page-header hr {
   color: transparent;
   height: 0;
   clear: both;
+  margin: 0;
 }
 
 /* Main content container */
