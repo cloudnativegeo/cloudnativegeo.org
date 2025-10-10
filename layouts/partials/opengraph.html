@@ -17,8 +17,8 @@
   {{- with $.Site.Params.images }}<meta property="og:image" content="{{ index . 0 | absURL }}"/>{{ end -}}
   {{- end -}}
 {{- else -}}
-  {{- /* For non-blog pages, use home_og.webp by default */}}
-  <meta property="og:image" content="{{ "home_og.webp" | absURL }}"/>
+  {{- /* For non-blog pages, use home_og.jpg by default */}}
+  <meta property="og:image" content="{{ "home_og.jpg" | absURL }}"/>
 {{- end -}}
 {{- end -}}
 
