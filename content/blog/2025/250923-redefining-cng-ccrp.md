@@ -200,8 +200,7 @@ model.
 Think about AWS's recent [S3 Express One
 Zone](https://aws.amazon.com/s3/storage-classes/express-one-zone/) or their new
 [S3 Tables](https://aws.amazon.com/s3/features/tables/) and [S3
-Vector](https://aws.amazon.com/blogs/aws/introducing-amazon-s3-vectors-first-cloud storage-with-native-vector-support-at-scale/)
-stores. Cloud providers are recognizing that different data patterns need
+Vector](https://aws.amazon.com/blogs/aws/introducing-amazon-s3-vectors-first-cloud-storage-with-native-vector-support-at-scale/) stores. Cloud providers are recognizing that different data patterns need
 different interfaces. CCRP is proposing the same for chunked raster and tabular
 data.
 
