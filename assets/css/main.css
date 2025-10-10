@@ -1,52 +1,35 @@
 /* Font declarations */
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-Regular.woff2") format("woff2");
-  font-display: block;
-}
-@font-face {
-  font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-display: block;
-}
-@font-face {
-  font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-Italic.woff2") format("woff2");
-  font-style: italic;
-  font-display: block;
-}
-@font-face {
-  font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-BoldItalic.woff2") format("woff2");
-  font-weight: bold;
-  font-style: italic;
-  font-display: block;
+  src: url("/fonts/BerkeleyMonoVariable-Regular.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "iAWriterQuattro";
   src: url("/fonts/iAWriterQuattroS-Regular.woff2") format("woff2");
-  font-display: block;
+  font-display: swap;
 }
 @font-face {
   font-family: "iAWriterQuattro";
   src: url("/fonts/iAWriterQuattroS-Bold.woff2") format("woff2");
   font-weight: bold;
-  font-display: block;
+  font-display: swap;
 }
 @font-face {
   font-family: "iAWriterQuattro";
   src: url("/fonts/iAWriterQuattroS-Italic.woff2") format("woff2");
   font-style: italic;
-  font-display: block;
+  font-display: swap;
 }
 @font-face {
   font-family: "iAWriterQuattro";
   src: url("/fonts/iAWriterQuattroS-BoldItalic.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
-  font-display: block;
+  font-display: swap;
 }
 
 /* CSS Custom Properties */
@@ -149,6 +132,9 @@ div#banner nav li a {
   border-radius: 6px;
   color: var(--color-text);
   transition: color 0.2s ease, background 0.2s ease;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: baseline;
 }
 
 /* Current page styling - when nav item has no link */
@@ -158,6 +144,9 @@ div#banner nav ul li:not(:has(a)) {
   font-weight: 700;
   padding: 4px 6px;
   border-radius: 6px;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: baseline;
 }
 
 /* Navigation hover states */
@@ -865,10 +854,13 @@ ul#funderlogos li {
   float: left;
 }
 
+/* Base styles for all funder logos */
 ul#funderlogos li a {
+  display: block;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
+  background-position: center;
   transition: opacity 0.2s ease;
   opacity: 0.9;
 }
@@ -887,309 +879,45 @@ ul#funderlogos li a:hover {
   }
 }
 
-a#nasa {
-  background-image: url("/img/funders/nasa.svg");
-  background-size: 50%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#aws {
-  background-image: url("/img/funders/aws.svg");
-  background-size: 40%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#columbia {
-  background-image: url("/img/funders/columbia.svg");
-  background-size: 90%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#hydrosat {
-  background-image: url("/img/funders/hydrosat.png");
-  background-size: 70%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#terradue {
-  background-image: url("/img/funders/terradue.svg");
-  background-size: 70%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#ncics {
-  background-image: url("/img/funders/ncics.svg");
-  background-size: 70%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#clark-cga {
-  background-image: url("/img/funders/clark-cga.svg");
-  background-size: 60%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#hotosm {
-  background-image: url("/img/funders/hotosm.svg");
-  background-size: 40%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#splunk {
-  background-image: url("/img/funders/splunk.png");
-  background-size: 60%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#devseed {
-  background-image: url("/img/funders/devseed.svg");
-  background-size: 70%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#element84 {
-  background-image: url("/img/funders/element84.png");
-  background-size: 60%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#fused {
-  background-image: url("/img/funders/fused.svg");
-  background-size: 80%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#sparkgeo {
-  background-image: url("/img/funders/sparkgeo.svg");
-  background-size: 50%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#omidyar {
-  background-image: url("/img/funders/omidyar.png");
-  background-size: 80%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#twente {
-  background-image: url("/img/funders/twente.png");
-  background-size: 66%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#boettiger {
-  background-image: url("/img/funders/boettiger.svg");
-  background-size: 60%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#bmgf {
-  background-image: url("/img/funders/bmgf.svg");
-  background-size: 80%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#tge {
-  background-image: url("/img/funders/tge.svg");
-  background-size: 70%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#giz {
-  background-image: url("/img/funders/giz.svg");
-  background-size: 70%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#mcgovern {
-  background-image: url("/img/funders/mcgovern.png");
-  background-size: 90%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#schmidt {
-  background-image: url("/img/funders/schmidt.svg");
-  background-size: 70%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#vanuatu {
-  background-image: url("/img/funders/vanuatu.png");
-  background-size: 30%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#microsoft {
-  background-image: url("/img/funders/microsoft.svg");
-  background-size: 80%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#planet {
-  background-image: url("/img/funders/planet.svg");
-  background-size: 60%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#tetra_tech {
-  background-image: url("/img/funders/tetra-tech.svg");
-  background-size: 80%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#lacuna {
-  background-image: url("/img/funders/lacuna.png");
-  background-size: 90%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#wherobots {
-  background-image: url("/img/funders/wherobots.svg");
-  background-size: 70%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#earthmover {
-  background-image: url("/img/funders/earthmover.svg");
-  background-size: 70%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#tgi {
-  background-image: url("/img/funders/tgi.svg");
-  background-size: 36%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#google {
-  background-image: url("/img/funders/google.svg");
-  background-size: 56%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#yale-geospatial {
-  background-image: url("/img/funders/yale-geospatial.svg");
-  background-size: 76%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#vliz {
-  background-image: url("/img/funders/vliz.svg");
-  background-size: 36%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#esri {
-  background-image: url("/img/funders/esri.svg");
-  background-size: 60%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#schmidt-ocean {
-  background-image: url("/img/funders/schmidt-ocean.svg");
-  background-size: 60%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#omf {
-  background-image: url("/img/funders/omf.svg");
-  background-size: 40%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#linz {
-  background-image: url("/img/funders/linz.svg");
-  background-size: 66%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#safe {
-  background-image: url("/img/funders/safe.svg");
-  background-size: 40%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-a#ai2 {
-  background-image: url("/img/funders/ai2.svg");
-  background-size: 50%;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+/* Individual funder logo images and sizes - consolidated */
+a#nasa { background-image: url("/img/funders/nasa.svg"); background-size: 50%; }
+a#aws { background-image: url("/img/funders/aws.svg"); background-size: 40%; }
+a#columbia { background-image: url("/img/funders/columbia.svg"); background-size: 90%; }
+a#hydrosat { background-image: url("/img/funders/hydrosat.png"); background-size: 70%; }
+a#terradue { background-image: url("/img/funders/terradue.svg"); background-size: 70%; }
+a#ncics { background-image: url("/img/funders/ncics.svg"); background-size: 70%; }
+a#clark-cga { background-image: url("/img/funders/clark-cga.svg"); background-size: 60%; }
+a#hotosm { background-image: url("/img/funders/hotosm.svg"); background-size: 40%; }
+a#splunk { background-image: url("/img/funders/splunk.png"); background-size: 60%; }
+a#devseed { background-image: url("/img/funders/devseed.svg"); background-size: 70%; }
+a#element84 { background-image: url("/img/funders/element84.png"); background-size: 60%; }
+a#fused { background-image: url("/img/funders/fused.svg"); background-size: 80%; }
+a#sparkgeo { background-image: url("/img/funders/sparkgeo.svg"); background-size: 50%; }
+a#omidyar { background-image: url("/img/funders/omidyar.png"); background-size: 80%; }
+a#twente { background-image: url("/img/funders/twente.png"); background-size: 66%; }
+a#boettiger { background-image: url("/img/funders/boettiger.svg"); background-size: 60%; }
+a#bmgf { background-image: url("/img/funders/bmgf.svg"); background-size: 80%; }
+a#tge { background-image: url("/img/funders/tge.svg"); background-size: 70%; }
+a#giz { background-image: url("/img/funders/giz.svg"); background-size: 70%; }
+a#mcgovern { background-image: url("/img/funders/mcgovern.png"); background-size: 90%; }
+a#schmidt { background-image: url("/img/funders/schmidt.svg"); background-size: 70%; }
+a#vanuatu { background-image: url("/img/funders/vanuatu.png"); background-size: 30%; }
+a#microsoft { background-image: url("/img/funders/microsoft.svg"); background-size: 80%; }
+a#planet { background-image: url("/img/funders/planet.svg"); background-size: 60%; }
+a#tetra_tech { background-image: url("/img/funders/tetra-tech.svg"); background-size: 80%; }
+a#lacuna { background-image: url("/img/funders/lacuna.png"); background-size: 90%; }
+a#wherobots { background-image: url("/img/funders/wherobots.svg"); background-size: 70%; }
+a#earthmover { background-image: url("/img/funders/earthmover.svg"); background-size: 70%; }
+a#tgi { background-image: url("/img/funders/tgi.svg"); background-size: 36%; }
+a#google { background-image: url("/img/funders/google.svg"); background-size: 56%; }
+a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); background-size: 76%; }
+a#vliz { background-image: url("/img/funders/vliz.svg"); background-size: 36%; }
+a#esri { background-image: url("/img/funders/esri.svg"); background-size: 60%; }
+a#schmidt-ocean { background-image: url("/img/funders/schmidt-ocean.svg"); background-size: 60%; }
+a#omf { background-image: url("/img/funders/omf.svg"); background-size: 40%; }
+a#linz { background-image: url("/img/funders/linz.svg"); background-size: 66%; }
+a#safe { background-image: url("/img/funders/safe.svg"); background-size: 40%; }
+a#ai2 { background-image: url("/img/funders/ai2.svg"); background-size: 50%; }
 
 /* Desktop responsive styles */
 @media (min-width: 770px) {

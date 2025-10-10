@@ -8,7 +8,7 @@
     
     {{- /* Preload critical fonts */ -}}
     <link rel="preload" href="/fonts/iAWriterQuattroS-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/BerkeleyMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/BerkeleyMonoVariable-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     
     {{- /* Prefetch likely next pages for instant navigation */ -}}
     {{ if .IsHome }}
@@ -24,14 +24,15 @@
     <link rel="prefetch" href="/blog/">
     {{ end }}
     
-    {{- /* Single CSS file - simple and no jitter */ -}}
-    {{ $resources := slice -}}
-    {{ $resources = $resources | append (resources.Get "css/main.css") -}}
-    {{ if .Site.Params.highlight -}}
-        {{ $resources = $resources | append (resources.Get "css/syntax.css") -}}
+    {{- /* Main CSS file */ -}}
+    {{ $mainCSS := resources.Get "css/main.css" | minify }}
+    <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}">
+    
+    {{- /* Syntax highlighting CSS - only load on blog posts or pages with highlight: true */ -}}
+    {{ if or .Params.highlight (eq .Section "blog") -}}
+        {{ $syntaxCSS := resources.Get "css/syntax.css" | minify }}
+        <link rel="stylesheet" href="{{ $syntaxCSS.RelPermalink }}">
     {{ end -}}
-    {{ $css := $resources | resources.Concat "css/style.css" | minify }}
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
     
     {{- /* Favicons and app icons */ -}}
     <link rel="icon" href="/favicon.ico" sizes="any">
