@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Earthmover",
+    "url": "https://earthmover.io",
+    "id": "earthmover",
+    "logo_size": "70%"
+  },
+  {
+    "name": "NASA",
+    "url": "https://www.nasa.gov",
+    "id": "nasa",
+    "logo_size": "50%"
+  },
+  {
+    "name": "University of Twente",
+    "url": "https://www.itc.nl/about-itc/centres-of-expertise/big-geodata/",
+    "id": "twente",
+    "logo_size": "66%"
+  },
+  {
+    "name": "Boettiger Group at UC Berkeley",
+    "url": "https://www.carlboettiger.info",
+    "id": "boettiger",
+    "logo_size": "60%"
+  },
+  {
+    "name": "Fused",
+    "url": "https://fused.io",
+    "id": "fused",
+    "logo_size": "80%"
+  },
+  {
+    "name": "Google",
+    "url": "https://google.com",
+    "id": "google",
+    "logo_size": "56%"
+  },
+  {
+    "name": "Taylor Geospatial Institute",
+    "url": "https://taylorgeospatial.org",
+    "id": "tgi",
+    "logo_size": "36%"
+  },
+  {
+    "name": "Splunk",
+    "url": "https://splunk.com",
+    "id": "splunk",
+    "logo_size": "60%"
+  },
+  {
+    "name": "Wherobots",
+    "url": "https://wherobots.com",
+    "id": "wherobots",
+    "logo_size": "70%"
+  },
+  {
+    "name": "Taylor Geospatial Engine",
+    "url": "https://tgengine.org",
+    "id": "tge",
+    "logo_size": "70%"
+  },
+  {
+    "name": "Development Seed",
+    "url": "https://developmentseed.org",
+    "id": "devseed",
+    "logo_size": "70%"
+  },
+  {
+    "name": "Amazon Web Services",
+    "url": "https://aws.amazon.com",
+    "id": "aws",
+    "logo_size": "40%"
+  },
+  {
+    "name": "Yale Center for Geospatial Solutions",
+    "url": "https://geospatial.yale.edu",
+    "id": "yale-geospatial",
+    "logo_size": "76%"
+  },
+  {
+    "name": "Clark Center for Geospatial Analytics",
+    "url": "https://www.clarku.edu/centers/geospatial-analytics/",
+    "id": "clark-cga",
+    "logo_size": "60%"
+  },
+  {
+    "name": "Humanitarian OpenStreetMap Team",
+    "url": "https://www.hotosm.org",
+    "id": "hotosm",
+    "logo_size": "40%"
+  },
+  {
+    "name": "North Carolina Institute for Climate Studies",
+    "url": "https://www.ncics.org",
+    "id": "ncics",
+    "logo_size": "70%"
+  },
+  {
+    "name": "Flanders Marine Institute (VLIZ)",
+    "url": "https://www.vliz.be/en",
+    "id": "vliz",
+    "logo_size": "36%"
+  },
+  {
+    "name": "Esri",
+    "url": "https://esri.com",
+    "id": "esri",
+    "logo_size": "60%"
+  },
+  {
+    "name": "Schmidt Ocean Institute",
+    "url": "https://schmidtocean.org",
+    "id": "schmidt-ocean",
+    "logo_size": "60%"
+  },
+  {
+    "name": "Sparkgeo",
+    "url": "https://sparkgeo.com",
+    "id": "sparkgeo",
+    "logo_size": "50%"
+  },
+  {
+    "name": "Overture Maps Foundation",
+    "url": "https://overturemaps.org",
+    "id": "omf",
+    "logo_size": "40%"
+  },
+  {
+    "name": "Toitū Te Whenua Land Information New Zealand",
+    "url": "https://www.linz.govt.nz",
+    "id": "linz",
+    "logo_size": "66%"
+  },
+  {
+    "name": "Safe Software",
+    "url": "https://www.safe.com",
+    "id": "safe",
+    "logo_size": "40%"
+  },
+  {
+    "name": "Allen Institute for AI",
+    "url": "https://allenai.org",
+    "id": "ai2",
+    "logo_size": "50%"
+  }
+]

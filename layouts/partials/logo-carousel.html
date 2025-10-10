@@ -1,0 +1,50 @@
+{{- $members := .Site.Data.members -}}
+<section class="logo-carousel" aria-label="Community member logos">
+  <div class="logo-carousel-container">
+    <!-- Row 1: Large logos, slow animation -->
+    <div class="logo-carousel-row logo-carousel-row-large" aria-hidden="true">
+      <div class="logo-carousel-track">
+        {{- range $members -}}
+        <div class="logo-carousel-item logo-carousel-item-large">
+          <a href="{{ .url }}" class="logo-carousel-link" id="{{ .id }}-carousel-large" 
+             aria-label="Visit {{ .name }} website">
+            <span class="sr-only">{{ .name }}</span>
+          </a>
+        </div>
+        {{- end -}}
+        <!-- Duplicate set for seamless loop -->
+        {{- range $members -}}
+        <div class="logo-carousel-item logo-carousel-item-large">
+          <a href="{{ .url }}" class="logo-carousel-link" id="{{ .id }}-carousel-large-dup" 
+             aria-label="Visit {{ .name }} website">
+            <span class="sr-only">{{ .name }}</span>
+          </a>
+        </div>
+        {{- end -}}
+      </div>
+    </div>
+
+    <!-- Row 2: Smaller logos, medium animation -->
+    <div class="logo-carousel-row logo-carousel-row-small" aria-hidden="true">
+      <div class="logo-carousel-track">
+        {{- range $members -}}
+        <div class="logo-carousel-item logo-carousel-item-small">
+          <a href="{{ .url }}" class="logo-carousel-link" id="{{ .id }}-carousel-small" 
+             aria-label="Visit {{ .name }} website">
+            <span class="sr-only">{{ .name }}</span>
+          </a>
+        </div>
+        {{- end -}}
+        <!-- Duplicate set for seamless loop -->
+        {{- range $members -}}
+        <div class="logo-carousel-item logo-carousel-item-small">
+          <a href="{{ .url }}" class="logo-carousel-link" id="{{ .id }}-carousel-small-dup" 
+             aria-label="Visit {{ .name }} website">
+            <span class="sr-only">{{ .name }}</span>
+          </a>
+        </div>
+        {{- end -}}
+      </div>
+    </div>
+  </div>
+</section>

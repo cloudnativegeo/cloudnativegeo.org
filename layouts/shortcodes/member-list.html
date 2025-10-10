@@ -1,0 +1,13 @@
+{{- $members := .Site.Data.members -}}
+{{- $sortedMembers := sort $members "name" -}}
+<div class="member-list">
+  <ul class="member-list-list" aria-label="Community members">
+    {{- range $sortedMembers -}}
+    <li class="member-list-item">
+      <a href="{{ .url }}" class="member-list-link">
+        {{ .name }}
+      </a>
+    </li>
+    {{- end -}}
+  </ul>
+</div>
