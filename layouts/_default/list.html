@@ -26,29 +26,40 @@
 		</ul>
 	{{- end -}}
 	
-	{{- /* Show archive links for previous years */ -}}
-	{{- $archiveYears := slice "2024" "2023" -}}
-	{{- $hasArchives := false -}}
-	{{- range $archiveYears -}}
-		{{- $year := . -}}
-		{{- $yearPages := where $.Site.RegularPages "Section" "blog" -}}
-		{{- $yearPages = where $yearPages "File.Dir" (printf "blog/%s/" $year) -}}
-		{{- if $yearPages -}}
-			{{- $hasArchives = true -}}
-		{{- end -}}
+	{{- /* Determine if this is a year archive page or main blog page */ -}}
+	{{- $isYearArchive := false -}}
+	{{- if .File.Dir -}}
+		{{- $isYearArchive = ne .File.Dir "blog/" -}}
 	{{- end -}}
 	
-	{{- if $hasArchives -}}
-		<h2>Archives</h2>
-		<ul>
-			{{- range $archiveYears -}}
-				{{- $year := . -}}
-				{{- $yearPages := where $.Site.RegularPages "Section" "blog" -}}
-				{{- $yearPages = where $yearPages "File.Dir" (printf "blog/%s/" $year) -}}
-				{{- if $yearPages -}}
-					<li><a href="/blog/{{ $year }}/">{{ $year }} ({{ len $yearPages }} posts)</a></li>
-				{{- end -}}
+	{{- if not $isYearArchive -}}
+		{{- /* Show archive links for previous years (main blog page only) */ -}}
+		{{- $archiveYears := slice "2024" "2023" -}}
+		{{- $hasArchives := false -}}
+		{{- range $archiveYears -}}
+			{{- $year := . -}}
+			{{- $yearPages := where $.Site.RegularPages "Section" "blog" -}}
+			{{- $yearPages = where $yearPages "File.Dir" (printf "blog/%s/" $year) -}}
+			{{- if $yearPages -}}
+				{{- $hasArchives = true -}}
 			{{- end -}}
-		</ul>
+		{{- end -}}
+		
+		{{- if $hasArchives -}}
+			<h2>Archives</h2>
+			<ul>
+				{{- range $archiveYears -}}
+					{{- $year := . -}}
+					{{- $yearPages := where $.Site.RegularPages "Section" "blog" -}}
+					{{- $yearPages = where $yearPages "File.Dir" (printf "blog/%s/" $year) -}}
+					{{- if $yearPages -}}
+						<li><a href="/blog/{{ $year }}/">{{ $year }} ({{ len $yearPages }} posts)</a></li>
+					{{- end -}}
+				{{- end -}}
+			</ul>
+		{{- end -}}
+	{{- else -}}
+		{{- /* Show link back to main blog page (year archive pages only) */ -}}
+		<p><a href="/blog/">← Back to all blog posts</a></p>
 	{{- end -}}
 {{ end }}
