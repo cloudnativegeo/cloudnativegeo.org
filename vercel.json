@@ -1,5 +1,5 @@
 {
-  "buildCommand": "hugo -D --gc --ignoreCache",
+  "buildCommand": "hugo -D --gc",
   "redirects": [
     {
       "source": "/badges",
