@@ -70,3 +70,7 @@ relativeURLs = true
 
   [markup.tableOfContents]
     ordered = true
+
+[imaging]
+  # Disable image processing to speed up builds
+  disableHugoDefaults = true
