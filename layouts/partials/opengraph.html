@@ -6,13 +6,19 @@
 {{- with $.Params.images -}}
 {{- range first 6 . }}<meta property="og:image" content="{{ . | absURL }}" />{{ end -}}
 {{- else -}}
-{{- $images := $.Resources.ByType "image" -}}
-{{- $featured := $images.GetMatch "*feature*" -}}
-{{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
-{{- with $featured -}}
-<meta property="og:image" content="{{ $featured.Permalink }}"/>
+{{- if eq .Section "blog" -}}
+  {{- /* For blog posts, use page resources or site default */}}
+  {{- $images := $.Resources.ByType "image" -}}
+  {{- $featured := $images.GetMatch "*feature*" -}}
+  {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+  {{- with $featured -}}
+  <meta property="og:image" content="{{ $featured.Permalink }}"/>
+  {{- else -}}
+  {{- with $.Site.Params.images }}<meta property="og:image" content="{{ index . 0 | absURL }}"/>{{ end -}}
+  {{- end -}}
 {{- else -}}
-{{- with $.Site.Params.images }}<meta property="og:image" content="{{ index . 0 | absURL }}"/>{{ end -}}
+  {{- /* For non-blog pages, use home_og.webp by default */}}
+  <meta property="og:image" content="{{ "home_og.webp" | absURL }}"/>
 {{- end -}}
 {{- end -}}
 
@@ -42,11 +48,10 @@
 {{ end }}{{ end }}
 {{- end }}
 
-{{/* Generate opengraph image only if no specific image is defined in front matter */}}
-{{- if and .IsPage (not .Params.images) -}}
+{{/* Generate opengraph image only if no specific image is defined in front matter and it's a blog post */}}
+{{- if and .IsPage (not .Params.images) (eq .Section "blog") -}}
   {{ $base := resources.Get "og_base.png" }}
   {{ $boldFont := resources.Get "/fonts/iAWriterQuattroS-Bold.ttf"}}
-  {{ $mediumFont := resources.Get "/fonts/iAWriterQuattroS-Bold.ttf"}}
   {{ $img := $base.Filter (images.Text .Page.Title (dict
     "color" "#FFFFFF"
     "size" 80
@@ -59,18 +64,7 @@
   <meta property="og:image" content="{{$img.Permalink}}">
   <meta property="og:image:width" content="{{$img.Width}}" />
   <meta property="og:image:height" content="{{$img.Height}}" />
+{{- end -}}
 
-  <!-- Twitter metadata (used by other websites as well) -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{{ .Title }}" />
-  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
-  <meta name="twitter:image" content="{{$img.Permalink}}" />
-{{ else if .IsPage }}
-  <!-- Twitter metadata (used by other websites as well) -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{{ .Title }}" />
-  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
-  {{- with $.Params.images -}}
-  {{- range first 1 . }}<meta name="twitter:image" content="{{ . | absURL }}" />{{ end -}}
-  {{- end -}}
-{{ end }}
+{{/* Twitter card type - Twitter will use og: tags for title, description, and image */}}
+<meta name="twitter:card" content="summary_large_image" />
