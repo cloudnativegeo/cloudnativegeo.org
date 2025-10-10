@@ -147,6 +147,7 @@ div#banner nav ul li:not(:has(a)) {
   display: inline-block;
   line-height: 1;
   vertical-align: baseline;
+  margin: 0 2px 0.5em 6px; /* Match the margin of regular nav items */
 }
 
 /* Navigation hover states */
