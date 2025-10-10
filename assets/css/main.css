@@ -141,9 +141,53 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.6; /* Base line-height for all text */
   overflow-wrap: break-word;
 }
+
+/* Reset line-height for specific elements that need different spacing */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2; /* Tighter for headings */
+}
+
+nav, nav a, .nav-item {
+  line-height: 1; /* Tight for navigation */
+}
+
+/* Spacing utilities - comprehensive set for common patterns */
+.m-0 { margin: 0; }
+.p-0 { padding: 0; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.my-1 { margin-top: 1em; margin-bottom: 1em; }
+.my-2 { margin-top: 2em; margin-bottom: 2em; }
+.my-3 { margin-top: 3em; margin-bottom: 3em; }
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 1em; }
+.mb-2 { margin-bottom: 2em; }
+.mt-1 { margin-top: 1em; }
+.mt-2 { margin-top: 2em; }
+.px-1 { padding-left: 1em; padding-right: 1em; }
+.py-1 { padding-top: 1em; padding-bottom: 1em; }
+.py-2 { padding-top: 2em; padding-bottom: 2em; }
+
+/* Typography scale - consistent font sizes */
+.text-xs { font-size: 0.75rem; }
+.text-sm { font-size: 0.875rem; }
+.text-base { font-size: 1rem; }
+.text-lg { font-size: 1.125rem; }
+.text-xl { font-size: 1.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.text-4xl { font-size: 2.25rem; }
+.text-5xl { font-size: 3rem; }
+
+/* Display utilities - common display values */
+.block { display: block; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+.flex { display: flex; }
+.grid { display: grid; }
+.hidden { display: none; }
 
 /* Header and navigation */
 header#page-header {
@@ -185,7 +229,6 @@ div#banner nav ul li:not(:has(a)) {
   text-decoration: none;
   border-radius: 6px;
   display: inline-block;
-  line-height: 1;
   vertical-align: baseline;
   margin: 0 2px 0.5em 6px;
   transition: color 0.2s ease, background 0.2s ease;
@@ -220,20 +263,6 @@ a:hover {
   color: var(--color-link-hover);
 }
 
-@media (prefers-color-scheme: dark) {
-  a:hover code {
-    color: var(--color-link-hover);
-  }
-
-  .cng-logo {
-    fill: var(--color-white) !important;
-    transition: fill 0.2s ease;
-  }
-
-  a:hover .cng-logo {
-    fill: var(--color-brand-hover) !important;
-  }
-}
 
 /* HR styling */
 hr {
@@ -253,7 +282,7 @@ header#page-header hr {
 
 /* Main content container */
 main#content {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 div#banner,
@@ -264,8 +293,9 @@ main#content {
 
 footer {
   background-color: var(--color-bg-footer);
-  padding: 0.2em 0 0.3em 0;
+  padding: .6em 0 1.6em 0;
 }
+
 
 footer p {
   font-size: 18px;
@@ -312,6 +342,7 @@ div#banner nav li a {
 
 main {
   margin-bottom: 2em;
+  padding-bottom: 2em;
 }
 
 div#banner,
@@ -322,10 +353,6 @@ footer p,
 main ul#homepage-blog,
 main#content ol,
 main#content ul,
-#mc_embed_signup {
-  margin-left: 1em;
-  margin-right: 1em;
-}
 
 main#content h1,
 main#content h2,
@@ -334,7 +361,6 @@ main#content h4,
 main#content h5,
 main#content h6 {
   margin-bottom: 0;
-  line-height: 1.15;
 }
 
 main#content h2 {
@@ -363,7 +389,6 @@ main#content p {
 
 main#content article p {
   font-size: 1.84rem;
-  line-height: 1.7;
 }
 
 main#content article ul,
@@ -387,7 +412,6 @@ main#content article ul li {
 
 main#content #aboutpage small {
   display: block;
-  line-height: 120%;
 }
 
 main#content hr {
@@ -491,19 +515,6 @@ div.main-cta-url a {
   border: 1px solid var(--color-accent);
 }
 
-@media (prefers-color-scheme: dark) {
-  div.event-cta a,
-  div.main-cta-url a {
-    background-color: var(--color-accent-transparent-light);
-    border: 1px solid var(--color-accent);
-    color: var(--color-text);
-  }
-  
-  div.event-cta a:hover,
-  div.main-cta-url a:hover {
-    background-color: var(--color-accent-transparent-hover);
-  }
-}
 
 div.event-cta a:hover,
 div.main-cta-url a:hover {
@@ -524,7 +535,6 @@ div.hbspt-form {
 main#content h3.home-headline {
   font-size: 130%;
   font-weight: 600;
-  line-height: 0.9;
   margin-top: 2em;
 }
 
@@ -544,10 +554,8 @@ div.site-description {
 div.main-cta {
   display: block;
   width: 100%;
-  float: right;
   padding: 0.5em 0 1.5em 0;
   margin: 0 0 1em 0;
-  line-height: 1;
   border-top: 2px var(--color-accent) solid;
   border-bottom: 2px var(--color-accent) solid;
 }
@@ -555,7 +563,6 @@ div.main-cta {
 span.cta-head {
   text-transform: uppercase;
   font-size: 80%;
-  line-height: 2;
 }
 
 main#content div.main-cta h3 {
@@ -603,12 +610,6 @@ table th:nth-child(1) {
   text-align: start;
 }
 
-@media (prefers-color-scheme: dark) {
-  table td,
-  table th {
-    color: var(--color-text);
-  }
-}
 
 /* single.html styles */
 main#content header#post-header h1 {
@@ -616,7 +617,6 @@ main#content header#post-header h1 {
   font-size: 43px;
   font-size: 4.3rem;
   font-weight: 600;
-  line-height: 1.15;
 }
 
 main#content header#post-header > div {
@@ -625,16 +625,10 @@ main#content header#post-header > div {
   margin: 0 0 2em 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  main#content header#post-header div {
-    color: var(--color-text-muted);
-  }
-}
 
 main#content #toc {
   border: 1px solid var(--color-border-dark);
   border-radius: 1px;
-  line-height: 26px;
   margin: 16px 0;
   padding: 9px 14px;
 }
@@ -645,11 +639,6 @@ main#content #toc h4 {
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  main#content #toc h4 {
-    color: var(--color-text-dark);
-  }
-}
 
 main#content img {
   max-width: 100%;
@@ -680,7 +669,6 @@ main#content figure figcaption {
   font-size: 0.7em;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.4;
   text-align: center;
   margin-top: 8px;
   padding: 0 10px;
@@ -747,8 +735,7 @@ main#content div.editorial-board-member {
 
 main#content .editorial-board-member figure {
   width: 40%;
-  float: left;
-  display: inline;
+  display: inline-block;
   margin: 0;
   padding-right: 1em;
 }
@@ -769,8 +756,7 @@ main#content div.keynote-speaker {
 
 main#content .keynote-speaker figure {
   width: 40%;
-  float: left;
-  display: inline;
+  display: inline-block;
   margin: 0;
   padding-right: 1em;
 }
@@ -833,12 +819,6 @@ main#content pre {
   border: 1px solid var(--color-border);
 }
 
-@media (prefers-color-scheme: dark) {
-  main#content code,
-  main#content pre {
-    background-color: var(--color-bg-code);
-  }
-}
 
 main#content pre code {
   padding: 0;
@@ -851,13 +831,11 @@ main#content .footnotes ol li p {
 /* Connect list styles */
 div#connect {
   font-size: 80%;
-  clear: both;
   margin-top: 1em;
 }
 
 div#connect h3 {
   text-transform: uppercase;
-  line-height: 2;
 }
 
 div#connect ul {
@@ -924,15 +902,6 @@ ul#funderlogos li a:hover {
   opacity: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-  ul#funderlogos li {
-    background-color: transparent;
-  }
-  
-  ul#funderlogos li a {
-    filter: var(--funder-logo-filter);
-  }
-}
 
 /* Individual funder logo images and sizes - consolidated */
 a#ai2 { background-image: url("/img/funders/ai2.svg"); background-size: 50%; }
@@ -974,11 +943,72 @@ a#vliz { background-image: url("/img/funders/vliz.svg"); background-size: 36%; }
 a#wherobots { background-image: url("/img/funders/wherobots.svg"); background-size: 70%; }
 a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); background-size: 76%; }
 
+/* Dark mode overrides - consolidated */
+@media (prefers-color-scheme: dark) {
+  /* Code and inline elements */
+  a:hover code {
+    color: var(--color-link-hover);
+  }
+
+  /* Event and CTA buttons */
+  div.event-cta a,
+  div.main-cta-url a {
+    background-color: var(--color-accent-transparent-light);
+    border: 1px solid var(--color-accent);
+    color: var(--color-text);
+  }
+  
+  div.event-cta a:hover,
+  div.main-cta-url a:hover {
+    background-color: var(--color-accent-transparent-hover);
+  }
+
+  /* Tables */
+  table td,
+  table th {
+    color: var(--color-text);
+  }
+
+  /* Post header metadata */
+  main#content header#post-header div {
+    color: var(--color-text-muted);
+  }
+
+  /* TOC styling */
+  main#content #toc h4 {
+    color: var(--color-text-dark);
+  }
+
+  /* Code blocks */
+  main#content code,
+  main#content pre {
+    background-color: var(--color-bg-code);
+  }
+
+  /* Funder logos */
+  ul#funderlogos li {
+    background-color: transparent;
+  }
+  
+  ul#funderlogos li a {
+    filter: var(--funder-logo-filter);
+  }
+
+  /* Logo fill */
+  .cng-logo {
+    fill: var(--color-white) !important;
+    transition: fill 0.2s ease;
+  }
+
+  a:hover .cng-logo {
+    fill: var(--color-brand-hover) !important;
+  }
+}
+
 /* Desktop responsive styles */
 @media (min-width: 770px) {
   body {
     width: 100%;
-    line-height: 1.5;
   }
 
   footer hr {
@@ -989,7 +1019,7 @@ a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); b
   main#content, 
   main ul#homepage-blog, 
   ul#posts, 
-  footer p {
+  footer p, #connect {
     width: 80%;
     max-width: 1800px;
     margin-left: auto;
@@ -1058,18 +1088,17 @@ a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); b
     width: 33.33%;
     margin: 0;
     padding: 0 1em;
-    float: left;
   }
 
   div.site-description {
     width: 60%;
+    float: left;
   }
 
   div.main-cta {
     width: 30%;
     margin-left: 5%;
     padding: .5em 1em 1.5em 1em;
-    line-height: 1;
     float: right;
     border-top: none;
     border-left: 2px var(--color-accent) solid;
@@ -1093,14 +1122,12 @@ a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); b
   main#content .team-name-title {
     text-align: center;
     max-width: 30%;
-    float: left;
     display: block;
     clear: both;
   }
 
   main#content .team-description {
     max-width: 66%;
-    float: left;
     display: block;
     font-size: 90%;
     margin: 0 0 10% 4%;
