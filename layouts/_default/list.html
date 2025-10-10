@@ -19,7 +19,6 @@
 	{{- $currentYearPages = where $currentYearPages "File.Dir" (printf "blog/%s/" $currentYear) -}}
 	
 	{{- if $currentYearPages -}}
-		<h2>{{ $currentYear }} Posts</h2>
 		<ul id="posts">
 			{{ range $currentYearPages }} {{ .Render "li" }}
 			{{- end }}
@@ -82,7 +81,7 @@
 		{{- if $hasOtherYears -}}
 			<h2>Other Years</h2>
 			<ul>
-				<li><a href="/blog/">All Posts</a></li>
+				<li><a href="/blog/">Most recent posts</a></li>
 				{{- range $otherYears -}}
 					{{- $year := . -}}
 					{{- $yearPages := where $.Site.RegularPages "Section" "blog" -}}
