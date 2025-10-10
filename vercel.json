@@ -1,5 +1,8 @@
 {
   "buildCommand": "hugo -D --gc",
+  "env": {
+    "HUGO_VERSION": "0.143.1"
+  },
   "redirects": [
     {
       "source": "/badges",
