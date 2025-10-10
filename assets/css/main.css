@@ -903,6 +903,11 @@ ul#funderlogos li a:hover {
   opacity: 1;
 }
 
+/* Sponsor logos inline section */
+.sponsor-logos img {
+  height: 48px;
+}
+
 
 /* Individual funder logo images and sizes - consolidated */
 a#ai2 { background-image: url("/img/funders/ai2.svg"); background-size: 50%; }
@@ -1439,6 +1444,11 @@ a#yale-geospatial-carousel-small, a#yale-geospatial-carousel-small-dup { backgro
   }
 
   .logo-carousel-link {
+    filter: var(--funder-logo-filter);
+  }
+
+  /* Sponsor logos in content (dark mode inversion) */
+  .sponsor-logos img {
     filter: var(--funder-logo-filter);
   }
 }
