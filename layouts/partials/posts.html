@@ -1,4 +1,4 @@
 <ul id="posts">
-    {{ range where .Site.RegularPages "Section" .Section }} {{ .Render "li" }}
+    {{ range first 10 (where .Site.RegularPages "Section" .Section) }} {{ .Render "li" }}
     {{- end }}
 </ul>
