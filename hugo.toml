@@ -61,9 +61,7 @@ relativeURLs = true
   blog = "blog/:year/:month/:slug/"
   events = "events/:slug/"
 
-[paginate]
-  path = "page/"
-  pageSize = 10
+paginate = 10
 
 [markup.goldmark.renderer]
   # Allow HTML in Markdown
