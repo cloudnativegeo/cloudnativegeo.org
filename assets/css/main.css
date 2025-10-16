@@ -1146,6 +1146,33 @@ a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); b
   }
 }
 
+/* Mobile typography and measure */
+@media (max-width: 769px) {
+  body {
+    font-size: 2rem; /* Reduce base size for better readability on small screens */
+  }
+
+  /* Blog/article paragraph sizing a touch smaller */
+  main#content article p {
+    font-size: 1.7rem;
+  }
+
+  /* Match homepage post summaries to article paragraph size */
+  main#content ul#posts .post-summary {
+    font-size: 1.7rem;
+  }
+
+  /* Homepage hero paragraph copy slightly smaller */
+  .home-hero p {
+    font-size: 1.8rem;
+  }
+}
+
+/* Desktop and default: match homepage post summaries to article paragraph size */
+main#content ul#posts .post-summary {
+  font-size: 1.84rem;
+}
+
 /* Logo Carousel Styles */
 .logo-carousel {
   width: 100%;
