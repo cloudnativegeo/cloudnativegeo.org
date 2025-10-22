@@ -18,22 +18,32 @@
         </div>
     {{- end -}}
 	
-	{{- /* Show posts for current year (2025) */ -}}
-	{{- $currentYear := "2025" -}}
-	{{- $currentYearPages := where .Site.RegularPages "Section" "blog" -}}
-	{{- $currentYearPages = where $currentYearPages "File.Dir" (printf "blog/%s/" $currentYear) -}}
-	
-	{{- if $currentYearPages -}}
-		<ul id="posts">
-			{{ range $currentYearPages }} {{ .Render "li" }}
-			{{- end }}
-		</ul>
-	{{- end -}}
-	
 	{{- /* Determine if this is a year archive page or main blog page */ -}}
 	{{- $isYearArchive := false -}}
 	{{- if .File.Dir -}}
 		{{- $isYearArchive = ne .File.Dir "blog/" -}}
+	{{- end -}}
+
+	{{- if not $isYearArchive -}}
+		{{- /* Show posts for current year (2025) on main blog page only) */ -}}
+		{{- $currentYear := "2025" -}}
+		{{- $currentYearPages := where .Site.RegularPages "Section" "blog" -}}
+		{{- $currentYearPages = where $currentYearPages "File.Dir" (printf "blog/%s/" $currentYear) -}}
+		{{- if $currentYearPages -}}
+			<ul id="posts">
+				{{ range $currentYearPages }} {{ .Render "li" }}{{- end }}
+			</ul>
+		{{- end -}}
+	{{- else -}}
+		{{- /* Year archive: show only posts from the year in the URL */ -}}
+		{{- $year := .File.Dir | replaceRE "blog/([0-9]+)/" "$1" -}}
+		{{- $yearPages := where .Site.RegularPages "Section" "blog" -}}
+		{{- $yearPages = where $yearPages "File.Dir" (printf "blog/%s/" $year) -}}
+		{{- if $yearPages -}}
+			<ul id="posts">
+				{{ range $yearPages }} {{ .Render "li" }}{{- end }}
+			</ul>
+		{{- end -}}
 	{{- end -}}
 	
 	{{- if not $isYearArchive -}}
