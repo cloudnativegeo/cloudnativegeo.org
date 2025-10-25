@@ -7,9 +7,6 @@ summary: "The first European STAC sprint brought together developers at ESA ESRI
 ---
 
 From October 14-16, the STAC and Zarr communities came together at ESA ESRIN in Frascati, Italy, for the first-ever STAC sprint in Europe focused on advancing cloud-native multidimensional geospatial data. After three intensive days of collaborative development, we're excited to share what we accomplished and the path forward for STAC-Zarr integration.
-
-The only thing that I think is ‘off’ in the post is the timeline that says GeoParquet 1.1 was ‘published three months after the introduction of `GEOMETRY` and `GEOGRAPHY` in Parquet’. GeoParquet 1.1 was June 19th of 2024, while the geospatial types landed in Parquet core in March of 2025.
-
 {{< img src="images/251025-stac-sprint-group-photo.jpg">}}
 *Participants gathered at ESA ESRIN for the first European STAC sprint*
 
