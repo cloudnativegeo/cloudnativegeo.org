@@ -14,7 +14,7 @@ From October 14-16, the STAC and Zarr communities came together at ESA ESRIN in 
 
 Twenty-six developers from across Europe and beyond converged on ESA's facility in Frascati, representing a remarkable cross-section of the geospatial data community. Organizations including ESA, CEDA, DLR, EODC, Eurac Research, CloudFerro, Terradue, Element 84, Development Seed, DKRZ, Tilebox, and many others brought their unique perspectives and expertise to hammer out how multidimensional data should be represented in STAC.
 
-What made this sprint particularly powerful was the convergence of two communities—STAC and Zarr—working together on shared problems. When you bring together people who deeply understand both specifications, the conversations become incredibly productive and the solutions more robust.
+What made this sprint particularly powerful was the convergence of two communities—STAC and Zarr—working together on shared problems. For several years there have been discussions and ideas floating around about how to use STAC with Zarr, but getting everyone together, and being able to look at some existing implementations proved incredibly fruitful.
 
 The sprint focused on fundamental questions that our community faces every day: How do you represent multidimensional Zarr stores in STAC? What's the best way to handle variables and dimensions for datacubes? How should we navigate hierarchical Zarr structures? These aren't theoretical exercises—they're the real challenges faced by organizations working with petabytes of Earth observation data.
 
