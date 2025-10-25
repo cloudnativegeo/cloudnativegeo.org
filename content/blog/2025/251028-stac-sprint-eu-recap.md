@@ -30,7 +30,7 @@ The sprint produced several concrete outputs that will shape how we work with mu
 
 - **[EOPF STAC Patterns](https://github.com/EOPF-Sample-Service/eopf-stac/pull/54)**: ESA-specific best practices for their Earth Observation Processing Framework (EOPF) Zarr products, ensuring that Sentinel data in Zarr format can be properly cataloged and discovered.
 
-- **[STAC in Zarr](https://github.com/radiantearth/community-sprints/blob/main/14102025-esrin-rome-italy/sprint-notes/STAC%20in%20Zarr.md)**: Explorations into embedding STAC metadata directly inside Zarr stores, opening up fascinating possibilities for self-describing data archives.
+- **[STAC in Zarr](https://github.com/radiantearth/community-sprints/blob/main/14102025-esrin-rome-italy/sprint-notes/STAC%20in%20Zarr.md)**: Explorations into embedding STAC metadata directly inside Zarr stores, making it trivial to create a STAC object directly from the Zarr metadata and ensuring that Zarr stores are entirely self-describing.
 
 {{< img src="images/251025-stac-sprint-at-work.jpg">}}
 *Participants collaborating during the sprint sessions*
