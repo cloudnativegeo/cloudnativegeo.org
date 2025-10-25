@@ -6,7 +6,7 @@ author_title: "Europe Partnership Lead & Solutions Engineer at Development Seed,
 summary: "The first European STAC sprint brought together developers at ESA ESRIN to establish practical patterns and best practices for integrating STAC with Zarr for cloud-native multidimensional geospatial data."
 ---
 
-From October 14-16, the STAC and Zarr communities came together at ESA ESRIN in Frascati, Italy, for the first-ever STAC sprint in Europe focused on advancing cloud-native multidimensional geospatial data. After three intensive days of collaborative development, we're excited to share what we accomplished and the path forward for STAC-Zarr integration.
+From October 14-16, the STAC and Zarr communities came together at ESA ESRIN in Frascati, Italy, for the first-ever STAC sprint in Europe focused on advancing cloud-native multidimensional geospatial data. After three intensive days of collaborative development, we're excited to share what we accomplished and what we hope to be the path forward for STAC-Zarr integration.
 {{< img src="images/251025-stac-sprint-group-photo.jpg">}}
 *Participants gathered at ESA ESRIN for the first European STAC sprint*
 
