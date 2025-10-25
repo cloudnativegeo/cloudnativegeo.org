@@ -41,13 +41,13 @@ On Friday, October 17th, STAC sprint participants were invited to join the Zarr 
 
 ## Beyond STAC
 
-While the technical achievements were substantial, some of the most valuable moments came from informal conversations and community building. On Wednesday evening, Development Seed and Eartmover sponsored a happy hour at Casadante in Rome, bringing together participants from both the STAC sprint and the concurrent Zarr Summit. Seeing people from Earth observation, climate science, and cloud infrastructure all discussing the same data challenges was remarkable.
+While the technical achievements were substantial, some of the most valuable moments came from informal conversations and community building. On Wednesday evening, Development Seed and Earthmover sponsored a happy hour at Casadante in Rome, bringing together participants from both the STAC sprint and the concurrent Zarr Summit. Seeing people from Earth observation, climate science, and cloud infrastructure all discussing the same data challenges was remarkable.
 
 
 {{< img src="images/251025-stac-sprint-aperitivo.png">}}
 *Aperitivo at Casadante with STAC and Zarr communities*
 
-On Monday, ESA graciously provided a tour of their multimedia center and long-term archive facilities, including what may be one of the first catalogs of Earth observation data ever created. These glimpses into the history and future of Earth observation provided valuable context for our work.
+On Tuesday, ESA graciously provided a tour of their multimedia center and long-term archive facilities, including what may be one of the first catalogs of Earth observation data ever created. These glimpses into the history and future of Earth observation provided valuable context for our work.
 
 {{< img src="images/251025-stac-sprint-esa-visit.jpg">}}
 *Exploring ESA's phi experience center and the early version of Earth observation catalog*
