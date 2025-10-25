@@ -12,7 +12,7 @@ From October 14-16, the STAC and Zarr communities came together at ESA ESRIN in 
 
 ## A Community Comes Together
 
-Twenty-six developers from across Europe and beyond converged on ESA's facility in Frascati, representing a remarkable cross-section of the geospatial data community. Organizations including ESA, CEDA, DLR, EODC, Eurac Research, CloudFerro, Terradue, Element 84, Development Seed, DKRZ, Tilebox, and many others brought their unique perspectives and expertise to tackle some of the most pressing challenges in cloud-native geospatial data.
+Twenty-six developers from across Europe and beyond converged on ESA's facility in Frascati, representing a remarkable cross-section of the geospatial data community. Organizations including ESA, CEDA, DLR, EODC, Eurac Research, CloudFerro, Terradue, Element 84, Development Seed, DKRZ, Tilebox, and many others brought their unique perspectives and expertise to hammer out how multidimensional data should be represented in STAC.
 
 What made this sprint particularly powerful was the convergence of two communities—STAC and Zarr—working together on shared problems. When you bring together people who deeply understand both specifications, the conversations become incredibly productive and the solutions more robust.
 
