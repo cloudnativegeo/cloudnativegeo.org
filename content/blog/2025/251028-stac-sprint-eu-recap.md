@@ -66,7 +66,7 @@ Want to contribute to these efforts or learn more? Here's how you can participat
 
 - **GitHub**: Follow the issues and PRs linked above. Your feedback on the best practices draft is especially valuable right now.
 - **Community Meetings**: Join the biweekly STAC Community meetups (every other Monday at 11 a.m. EST). Add yourself to the [STAC Community Google Group](https://groups.google.com/g/stac-community) to receive meeting invitations.
-- **Slack**: Connect with the community on the [Cloud-Native Geospatial Foundation Slack](https://join.slack.com/t/cloudnativegeo/shared_invite/zt-259rmhcyo-bT6tabt3X_5_s6zUfxCwEg).
+- **Slack**: Connect with the community on the [Cloud-Native Geospatial Forum Slack](https://join.slack.com/t/cloudnativegeo/shared_invite/zt-259rmhcyo-bT6tabt3X_5_s6zUfxCwEg).
 
 ## Acknowledgments
 
