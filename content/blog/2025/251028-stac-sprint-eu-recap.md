@@ -1,14 +1,13 @@
 ---
-date: 2025-10-28T08:00:00-00:00
+date: 2025-10-25T08:00:00-00:00
 title: "STAC+Zarr Community Sprint 2025 Recap"
-author: "[Emmanuel Mathot](https://www.linkedin.com/in/emmanuelmathot/)"
-author_title: "Europe Partnership Lead & Solutions Engineer at Development Seed, STAC PSC Member"
+author: "[Emmanuel Mathot](https://www.linkedin.com/in/emmanuelmathot/),[Julia Signell](https://www.linkedin.com/in/jsignell/), & [Michelle Roby](https://www.linkedin.com/in/the-michelle-roby/)"
+author_title: "STAC PSC Members"
 summary: "The first European STAC sprint brought together developers at ESA ESRIN to establish practical patterns and best practices for integrating STAC with Zarr for cloud-native multidimensional geospatial data."
 ---
 
 From October 14-16, the STAC and Zarr communities came together at ESA ESRIN in Frascati, Italy, for the first-ever STAC sprint in Europe focused on advancing cloud-native multidimensional geospatial data. After three intensive days of collaborative development, we're excited to share what we accomplished and what we hope to be the path forward for STAC-Zarr integration.
-{{< img src="images/251025-stac-sprint-group-photo.jpg">}}
-*Participants gathered at ESA ESRIN for the first European STAC sprint*
+{{< img src="images/251025-stac-sprint-group-photo.jpg" caption="Participants gathered at ESA ESRIN for the first European STAC sprint">}}
 
 ## A Community Comes Together
 
@@ -32,8 +31,7 @@ The sprint produced several concrete outputs that will shape how we work with mu
 
 - **[STAC in Zarr](https://github.com/radiantearth/community-sprints/blob/main/14102025-esrin-rome-italy/sprint-notes/STAC%20in%20Zarr.md)**: Explorations into embedding STAC metadata directly inside Zarr stores, making it trivial to create a STAC object directly from the Zarr metadata and ensuring that Zarr stores are entirely self-describing.
 
-{{< img src="images/251025-stac-sprint-at-work.jpg">}}
-*Participants collaborating during the sprint sessions*
+{{< img src="images/251025-stac-sprint-at-work.png" caption="Participants collaborating during the sprint sessions">}}
 
 ## Connecting with the Zarr Community
 
@@ -43,14 +41,11 @@ On Friday, October 17th, STAC sprint participants were invited to join the Zarr 
 
 While the technical achievements were substantial, some of the most valuable moments came from informal conversations and community building. On Wednesday evening, Development Seed and Earthmover sponsored a happy hour at Casadante in Rome, bringing together participants from both the STAC sprint and the concurrent Zarr Summit. Seeing people from Earth observation, climate science, and cloud infrastructure all discussing the same data challenges was remarkable.
 
-
-{{< img src="images/251025-stac-sprint-aperitivo.png">}}
-*Aperitivo at Casadante with STAC and Zarr communities*
+{{< img src="images/251025-stac-sprint-aperitivo.jpg" caption="Aperitivo at Casadante with STAC and Zarr communities">}}
 
 On Tuesday, ESA graciously provided a tour of their multimedia center and long-term archive facilities, including what may be one of the first catalogs of Earth observation data ever created. These glimpses into the history and future of Earth observation provided valuable context for our work.
 
-{{< img src="images/251025-stac-sprint-esa-visit.jpg">}}
-*Exploring ESA's phi experience center and the early version of Earth observation catalog*
+{{< img src="images/251025-stac-sprint-esa-visit.png" caption="Exploring ESA's phi experience center and the early version of Earth observation catalog">}}
 
 ## Why This Matters
 
