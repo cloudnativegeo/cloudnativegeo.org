@@ -57,7 +57,7 @@ On Tuesday, ESA graciously provided a tour of their multimedia center and long-t
 
 The STAC specification has been relatively quiet over the past couple of years, and that's actually a sign of success. The specs are stable, it is now a [OGC community standard](https://www.ogc.org/standards/stac/), and companies are building production systems on them. But we're entering a new phase now.
 
-Multidimensional arrays are fundamentally different from traditional geospatial files. Zarr is rapidly becoming the format of choice for massive Earth observation datasets, with major organizations like ESA (with EOPF) making plans to distribute archival data as Zarr. STAC needs to evolve to handle this properly—not through changes to the core specification, but through the development of clear patterns and best practices.
+Multidimensional arrays are fundamentally different from traditional geospatial files. Zarr is rapidly becoming the format of choice for massive Earth observation datasets, with major organizations like ESA (with EOPF) making plans to distribute archival data as Zarr. STAC needs to evolve to handle this properly—not through changes to the core specification, but through the development of clear patterns, best practices, and extensions
 
 This sprint was about establishing those patterns before the community fragments into incompatible implementations. The work we did here will influence how organizations catalog and discover multidimensional Earth observation data for years to come.
 
