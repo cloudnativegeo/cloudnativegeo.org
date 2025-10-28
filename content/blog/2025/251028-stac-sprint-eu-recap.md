@@ -33,7 +33,7 @@ The sprint produced several concrete outputs that will shape how we work with mu
 
 - **[Datacube Extension Overhaul of Variables](https://github.com/stac-extensions/datacube/issue/30)**: A proposal to replace `cube:variables` with `bands` to better align with how STAC structures metadata. This change could make the datacube extension more intuitive and powerful for multidimensional datasets. This PR will probably require further discussion before merging, as it represents a breaking change in the extension.
 
-- **[EOPF STAC Patterns](https://github.com/EOPF-Sample-Service/eopf-stac/pull/54)**: ESA-specific best practices for their Earth Observation Processing Framework (EOPF) Zarr products, ensuring that Sentinel data in Zarr format can be properly cataloged and discovered.
+- **[EOPF STAC Patterns](https://github.com/EOPF-Sample-Service/eopf-stac/pull/54)**: ESA-specific best practices for their Earth Observation Processing Framework (EOPF) Zarr products. EOPF represents the larges effort to-date of representing Zarr stores in STAC. Aligning EOPF STAC with the newly emerging best practices serves as a test of the feasibility of these best practices and provides a concrete example. Part of this effort also involves reusing existing STAC extensions wherever possible to improve compatibility between EOPF products and external products.
 
 - **[STAC in Zarr](https://github.com/radiantearth/community-sprints/blob/main/14102025-esrin-rome-italy/sprint-notes/STAC%20in%20Zarr.md)**: Explorations into embedding STAC metadata directly inside Zarr stores, making it trivial to create a STAC object directly from the Zarr metadata and ensuring that Zarr stores are entirely self-describing.
 
