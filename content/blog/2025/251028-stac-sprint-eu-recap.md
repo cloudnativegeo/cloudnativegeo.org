@@ -13,7 +13,7 @@ From October 14-16, the STAC and Zarr communities came together at ESA ESRIN in 
 
 Twenty-six developers from across Europe and beyond converged on ESA's facility in Frascati, representing a remarkable cross-section of the geospatial data community. Organizations including ESA, CEDA, DLR, EODC, Eurac Research, CloudFerro, Terradue, Element 84, Development Seed, DKRZ, Tilebox, and many others brought their unique perspectives and expertise to hammer out how multidimensional data should be represented in STAC.
 
-What made this sprint particularly powerful was the convergence of two communities—STAC and Zarr—working together on shared problems. For several years there have been discussions and ideas floating around about how to use STAC with Zarr, but getting everyone together, and being able to look at some existing implementations proved incredibly fruitful.
+What made this sprint particularly powerful was the convergence of two communities, STAC and Zarr, working together on shared problems. For several years there have been discussions and ideas floating around about how to use STAC with Zarr, but getting everyone together, and being able to look at some existing implementations proved incredibly fruitful.
 
 The sprint focused on fundamental questions that STAC faces as it gains popularity outside of the Earth observation community:
 
@@ -21,7 +21,7 @@ The sprint focused on fundamental questions that STAC faces as it gains populari
 - What's the best way to handle variables and dimensions for datacubes?
 - How should we navigate hierarchical Zarr structures?
 
-These aren't theoretical exercises—they're the real challenges faced by organizations working with petabytes of Earth observation data.
+These aren't theoretical exercises, they're the real challenges faced by organizations working with petabytes of Earth observation data.
 
 ## Key Achievements
 
@@ -41,7 +41,7 @@ The sprint produced several concrete outputs that will shape how we work with mu
 
 ## Connecting with the Zarr Community
 
-On Friday, October 17th, STAC sprint participants were invited to join the Zarr Adopter Summit, which was happening the same week in Rome. This was a perfect opportunity to share our progress and learnings with the broader Zarr community. Several sprint participants presented the work accomplished during the week, including the proposal for a [Zarr convention](https://github.com/zarr-conventions/zarr-conventions-spec) for STAC (similar to a STAC extension, but defined within Zarr metadata to describe how STAC metadata can be embedded in Zarr stores). This cross-pollination between communities—with STAC folks learning more about Zarr developments and Zarr folks understanding STAC use cases—exemplified the collaborative spirit that makes open standards work so well.
+On Friday, October 17th, STAC sprint participants were invited to join the Zarr Adopter Summit, which was happening the same week in Rome. This was a perfect opportunity to share our progress and learnings with the broader Zarr community. Several sprint participants presented the work accomplished during the week, including the proposal for a [Zarr convention](https://github.com/zarr-conventions/zarr-conventions-spec) for STAC (similar to a STAC extension, but defined within Zarr metadata to describe how STAC metadata can be embedded in Zarr stores). This cross-pollination between communities, with STAC folks learning more about Zarr developments and Zarr folks understanding STAC use cases, exemplified the collaborative spirit that makes open standards work so well.
 
 ## Beyond STAC
 
@@ -57,7 +57,7 @@ On Tuesday, ESA graciously provided a tour of their multimedia center and long-t
 
 The STAC specification has been relatively quiet over the past couple of years, and that's actually a sign of success. The specs are stable, it is now a [OGC community standard](https://www.ogc.org/standards/stac/), and companies are building production systems on them. But we're entering a new phase now.
 
-Multidimensional arrays are fundamentally different from traditional geospatial files. Zarr is rapidly becoming the format of choice for massive Earth observation datasets, with major organizations like ESA (with EOPF) making plans to distribute archival data as Zarr. STAC needs to evolve to handle this properly—not through changes to the core specification, but through the development of clear patterns, best practices, and extensions
+Multidimensional arrays are fundamentally different from traditional geospatial files. Zarr is rapidly becoming the format of choice for massive Earth observation datasets, with major organizations like ESA (with EOPF) making plans to distribute archival data as Zarr. STAC needs to evolve to handle this properly, not through changes to the core specification, but through the development of clear patterns, best practices, and extensions
 
 This sprint was about establishing those patterns before the community fragments into incompatible implementations. The work we did here will influence how organizations catalog and discover multidimensional Earth observation data for years to come.
 
