@@ -27,7 +27,7 @@ These aren't theoretical exercises, they're the real challenges faced by organiz
 
 ### Specification Work
 
-The sprint produced several concrete outputs that will shape how we work with multidimensional geospatial data:
+The sprint produced several concrete proposals that will shape how we work with multidimensional geospatial data:
 
 - **[Best Practices for STAC Zarr and N-Dimensional Arrays](https://github.com/radiantearth/stac-best-practices/pull/29)**: A comprehensive draft providing guidance on using Zarr with STAC. This is significant because, until now, nobody had proper guidance on this integration. The PR is ready for community review and needs feedback to refine and finalize the recommendations. We would like to merge it by the end of November to provide clarity to implementers. We encourage everyone to review and contribute feedback by participating in the next community meetings or commenting directly on the PR.
 
