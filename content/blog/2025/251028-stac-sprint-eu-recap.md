@@ -41,7 +41,7 @@ The sprint produced several concrete outputs that will shape how we work with mu
 
 ## Connecting with the Zarr Community
 
-On Friday, October 17th, STAC sprint participants were invited to join the Zarr Adopter Summit, which was happening the same week in Rome. This was a perfect opportunity to share our progress and learnings with the broader Zarr community. Several sprint participants presented the work accomplished during the week, including the proposal for a STAC convention. This cross-pollination between communities—with STAC folks learning more about Zarr developments and Zarr folks understanding STAC use cases—exemplified the collaborative spirit that makes open standards work so well.
+On Friday, October 17th, STAC sprint participants were invited to join the Zarr Adopter Summit, which was happening the same week in Rome. This was a perfect opportunity to share our progress and learnings with the broader Zarr community. Several sprint participants presented the work accomplished during the week, including the proposal for a [Zarr convention](https://github.com/zarr-conventions/zarr-conventions-spec) for STAC (similar to a STAC extension, but defined within Zarr metadata to describe how STAC metadata can be embedded in Zarr stores). This cross-pollination between communities—with STAC folks learning more about Zarr developments and Zarr folks understanding STAC use cases—exemplified the collaborative spirit that makes open standards work so well.
 
 ## Beyond STAC
 
