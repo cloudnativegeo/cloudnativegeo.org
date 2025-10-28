@@ -31,7 +31,7 @@ The sprint produced several concrete outputs that will shape how we work with mu
 
 - **[Best Practices for STAC Zarr and N-Dimensional Arrays](https://github.com/radiantearth/stac-best-practices/pull/29)**: A comprehensive draft providing guidance on using Zarr with STAC. This is significant because, until now, nobody had proper guidance on this integration. The PR is ready for community review and needs feedback to refine and finalize the recommendations. We would like to merge it soon to provide clarity to implementers.
 
-- **[Datacube Extension Overhaul](https://github.com/stac-extensions/datacube/issue/30)**: A proposal to replace variables with bands to better align with how STAC structures metadata. This change will make the datacube extension more intuitive and powerful for multidimensional datasets. This PR will probably require further discussion before merging, as it represents a breaking change in the extension.
+- **[Datacube Extension Overhaul of Variables](https://github.com/stac-extensions/datacube/issue/30)**: A proposal to replace `cube:variables` with `bands` to better align with how STAC structures metadata. This change could make the datacube extension more intuitive and powerful for multidimensional datasets. This PR will probably require further discussion before merging, as it represents a breaking change in the extension.
 
 - **[EOPF STAC Patterns](https://github.com/EOPF-Sample-Service/eopf-stac/pull/54)**: ESA-specific best practices for their Earth Observation Processing Framework (EOPF) Zarr products, ensuring that Sentinel data in Zarr format can be properly cataloged and discovered.
 
