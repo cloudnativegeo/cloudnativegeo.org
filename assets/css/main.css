@@ -79,6 +79,17 @@
   --funder-logo-filter: none;
 }
 
+/* Document View Transitions */
+@view-transition {
+  navigation: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     /* Text colors - much lighter for proper contrast */
