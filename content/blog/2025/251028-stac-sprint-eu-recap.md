@@ -1,5 +1,5 @@
 ---
-date: 2025-10-25T08:00:00-00:00
+date: 2025-11-03T08:00:00-00:00
 title: "STAC+Zarr Community Sprint 2025 Recap"
 author: "[Emmanuel Mathot](https://www.linkedin.com/in/emmanuelmathot/),[Julia Signell](https://www.linkedin.com/in/jsignell/), & [Michelle Roby](https://www.linkedin.com/in/the-michelle-roby/)"
 author_title: "STAC PSC Members"
@@ -51,13 +51,13 @@ While the technical achievements were substantial, some of the most valuable mom
 
 On Tuesday, ESA graciously provided a tour of their multimedia center and long-term archive facilities, including what may be one of the first catalogs of Earth observation data ever created. These glimpses into the history and future of Earth observation provided valuable context for our work.
 
-{{< img src="images/251025-stac-sprint-esa-visit.png" caption="Exploring ESA's phi experience center and the early version of Earth observation catalog">}}
+{{< img src="images/251025-stac-sprint-esa-visit.png" caption="Exploring ESA’s Φ-lab experience center and the early version of Earth observation catalog">}}
 
 ## Why This Matters
 
 The STAC specification has been relatively quiet over the past couple of years, and that's actually a sign of success. The specs are stable, it is now a [OGC community standard](https://www.ogc.org/standards/stac/), and companies are building production systems on them. But we're entering a new phase now.
 
-Multidimensional arrays are fundamentally different from traditional geospatial files. Zarr is rapidly becoming the format of choice for massive Earth observation datasets, with major organizations like ESA (with EOPF) making plans to distribute archival data as Zarr. STAC needs to evolve to handle this properly, not through changes to the core specification, but through the development of clear patterns, best practices, and extensions
+Multidimensional arrays are fundamentally different from traditional geospatial files. Zarr is rapidly becoming the format of choice for massive Earth observation datasets, with major organizations like ESA (with EOPF) making plans to distribute archival data as Zarr. STAC needs to evolve to handle this properly, not through changes to the core specification, but through the development of clear patterns, best practices, and extensions.
 
 This sprint was about establishing those patterns before the community fragments into incompatible implementations. The work we did here will influence how organizations catalog and discover multidimensional Earth observation data for years to come.
 
