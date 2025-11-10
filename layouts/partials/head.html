@@ -53,6 +53,6 @@
     {{- /* OpenGraph metadata */ -}}
     {{- partial "opengraph.html" . -}}
     
-    <link rel="canonical" href="{{ .Permalink }}" />
+    <link rel="canonical" href="{{ .Permalink | absURL }}" />
     <title>{{ .Title }}{{if not .IsHome}} | {{ .Site.Title }} {{end}}</title>
 </head>
