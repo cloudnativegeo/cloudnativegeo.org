@@ -52,7 +52,10 @@
     
     {{- /* OpenGraph metadata */ -}}
     {{- partial "opengraph.html" . -}}
-    
+
     <link rel="canonical" href="{{ .Permalink | absURL }}" />
     <title>{{ .Title }}{{if not .IsHome}} | {{ .Site.Title }} {{end}}</title>
+
+    {{- /* Vercel Web Analytics */ -}}
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
