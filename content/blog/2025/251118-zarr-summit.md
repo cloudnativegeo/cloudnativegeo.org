@@ -49,7 +49,7 @@ The developer days included group discussions, breakout groups, and unstructured
 * Virtual Zarr \- We brainstormed the future of Virtual Zarr, including how to support the approach [Kerchunk](https://github.com/fsspec/kerchunk) pioneered and [Virtualizarr](https://github.com/zarr-developers/virtualizarr) popularized within a Zarr-native structure.  
 * Cross-language conformance \- We improved compatibility testing to ensure feature parity across Python, Rust, Julia, and other implementations.
 
-{{< img src="images/251118-zarr-summit2.jpg" caption="Set of images from the Zarr Summit developer days - group picture on the roof, developers collaborating on computers, and developer pointing at the whiteboard>}}
+{{< img src="images/251118-zarr-summit2.jpg" caption="Set of images from the Zarr Summit developer days - group picture on the roof, developers collaborating on computers, and developer pointing at the whiteboard">}}
 
 ![][image2]
 
@@ -86,7 +86,7 @@ Workshops covered practical topics, including [Icechunk deep dives](https://gith
 
 The summit brought together a truly global community. Participants traveled from Liverpool, Oslo, São Paulo, Hamburg, Bari, Cardiff, Ottawa, and many other cities across Europe, North America, South America, Africa, and Australia. The cross-disciplinary breadth of participants made the summit truly special. Collocating with the STAC Sprint in Rome also enabled unique cross-community collaboration—our joint aperitivo and Friday's shared sessions brought together Zarr and STAC developers in ways that wouldn't have been possible otherwise. The face-to-face interactions throughout the event built trust, accelerated problem-solving, and created relationships that will continue to benefit the Zarr ecosystem long after the summit ended.
 
-{{< img src="images/251118-zarr-summit3.jpg" caption="Set of images from the Zarr Summit adopter days - presentation in the main room, breakout groups, and sunset aperitivo >}}
+{{< img src="images/251118-zarr-summit3.jpg" caption="Set of images from the Zarr Summit adopter days - presentation in the main room, breakout groups, and sunset aperitivo">}}
 
 ## The future
 
