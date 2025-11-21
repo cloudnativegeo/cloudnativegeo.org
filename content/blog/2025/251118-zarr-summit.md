@@ -1,5 +1,5 @@
 ---
-date: 2025-11-18T08:00:00-00:00
+date: 2025-11-20T08:00:00-00:00
 title: "2025 Zarr Summit Recap"
 author: "[Max Jones](https://www.linkedin.com/in/maxrjones/), [Davis Bennett](https://www.linkedin.com/in/davis-bennett-62922126a/), [Joe Hamman](https://www.linkedin.com/in/jhamman/), [Michelle Roby](https://www.linkedin.com/in/the-michelle-roby/)"
 author_title: "Zarr Summit Organizing Team"
