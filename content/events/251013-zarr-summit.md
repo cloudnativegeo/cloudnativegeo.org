@@ -30,6 +30,6 @@ image_url: ""
 cta_text: "See event details"
 cta_url: "https://zarr.dev/zarr-summit-2025/"
 hide_cta: true
-passed: false
+passed: true
 ---
 

@@ -942,7 +942,7 @@ a#mcgovern { background-image: url("/img/funders/mcgovern.svg"); background-size
 a#microsoft { background-image: url("/img/funders/microsoft.svg"); background-size: 80%; }
 a#nasa { background-image: url("/img/funders/nasa.svg"); background-size: 50%; }
 a#ncics { background-image: url("/img/funders/ncics.svg"); background-size: 70%; }
-a#omf { background-image: url("/img/funders/omf.svg"); background-size: 40%; }
+a#omf { background-image: url("/img/funders/omf.svg"); background-size: 80%; }
 a#omidyar { background-image: url("/img/funders/omidyar.svg"); background-size: 80%; }
 a#planet { background-image: url("/img/funders/planet.svg"); background-size: 60%; }
 a#safe { background-image: url("/img/funders/safe.svg"); background-size: 40%; }
@@ -1360,59 +1360,6 @@ main#content ul#posts .post-summary {
   text-decoration: underline;
 }
 
-
-/* Individual logo styles for carousel and showcase */
-/* Large row carousel logos */
-a#ai2-carousel-large, a#ai2-carousel-large-dup, a#ai2-showcase { background-image: url("/img/funders/ai2.svg"); background-size: 60%; }
-a#aws-carousel-large, a#aws-carousel-large-dup, a#aws-showcase { background-image: url("/img/funders/aws.svg"); background-size: 50%; }
-a#boettiger-carousel-large, a#boettiger-carousel-large-dup, a#boettiger-showcase { background-image: url("/img/funders/boettiger.svg"); background-size: 70%; }
-a#clark-cga-carousel-large, a#clark-cga-carousel-large-dup, a#clark-cga-showcase { background-image: url("/img/funders/clark-cga.svg"); background-size: 70%; }
-a#devseed-carousel-large, a#devseed-carousel-large-dup, a#devseed-showcase { background-image: url("/img/funders/devseed.svg"); background-size: 80%; }
-a#earthmover-carousel-large, a#earthmover-carousel-large-dup, a#earthmover-showcase { background-image: url("/img/funders/earthmover.svg"); background-size: 80%; }
-a#esri-carousel-large, a#esri-carousel-large-dup, a#esri-showcase { background-image: url("/img/funders/esri.svg"); background-size: 70%; }
-a#fused-carousel-large, a#fused-carousel-large-dup, a#fused-showcase { background-image: url("/img/funders/fused.svg"); background-size: 90%; }
-a#google-carousel-large, a#google-carousel-large-dup, a#google-showcase { background-image: url("/img/funders/google.svg"); background-size: 66%; }
-a#hotosm-carousel-large, a#hotosm-carousel-large-dup, a#hotosm-showcase { background-image: url("/img/funders/hotosm.svg"); background-size: 50%; }
-a#linz-carousel-large, a#linz-carousel-large-dup, a#linz-showcase { background-image: url("/img/funders/linz.svg"); background-size: 76%; }
-a#nasa-carousel-large, a#nasa-carousel-large-dup, a#nasa-showcase { background-image: url("/img/funders/nasa.svg"); background-size: 60%; }
-a#ncics-carousel-large, a#ncics-carousel-large-dup, a#ncics-showcase { background-image: url("/img/funders/ncics.svg"); background-size: 80%; }
-a#omf-carousel-large, a#omf-carousel-large-dup, a#omf-showcase { background-image: url("/img/funders/omf.svg"); background-size: 50%; }
-a#safe-carousel-large, a#safe-carousel-large-dup, a#safe-showcase { background-image: url("/img/funders/safe.svg"); background-size: 50%; }
-a#schmidt-ocean-carousel-large, a#schmidt-ocean-carousel-large-dup, a#schmidt-ocean-showcase { background-image: url("/img/funders/schmidt-ocean.svg"); background-size: 70%; }
-a#sparkgeo-carousel-large, a#sparkgeo-carousel-large-dup, a#sparkgeo-showcase { background-image: url("/img/funders/sparkgeo.svg"); background-size: 60%; }
-a#splunk-carousel-large, a#splunk-carousel-large-dup, a#splunk-showcase { background-image: url("/img/funders/splunk.svg"); background-size: 70%; }
-a#tge-carousel-large, a#tge-carousel-large-dup, a#tge-showcase { background-image: url("/img/funders/tge.svg"); background-size: 80%; }
-a#tgi-carousel-large, a#tgi-carousel-large-dup, a#tgi-showcase { background-image: url("/img/funders/tgi.svg"); background-size: 46%; }
-a#twente-carousel-large, a#twente-carousel-large-dup, a#twente-showcase { background-image: url("/img/funders/twente.png"); background-size: 76%; }
-a#vliz-carousel-large, a#vliz-carousel-large-dup, a#vliz-showcase { background-image: url("/img/funders/vliz.svg"); background-size: 46%; }
-a#wherobots-carousel-large, a#wherobots-carousel-large-dup, a#wherobots-showcase { background-image: url("/img/funders/wherobots.svg"); background-size: 80%; }
-a#yale-geospatial-carousel-large, a#yale-geospatial-carousel-large-dup, a#yale-geospatial-showcase { background-image: url("/img/funders/yale-geospatial.svg"); background-size: 86%; }
-
-/* Small row carousel logos (reverse direction) */
-a#ai2-carousel-small, a#ai2-carousel-small-dup { background-image: url("/img/funders/ai2.svg"); background-size: 50%; }
-a#aws-carousel-small, a#aws-carousel-small-dup { background-image: url("/img/funders/aws.svg"); background-size: 40%; }
-a#boettiger-carousel-small, a#boettiger-carousel-small-dup { background-image: url("/img/funders/boettiger.svg"); background-size: 60%; }
-a#clark-cga-carousel-small, a#clark-cga-carousel-small-dup { background-image: url("/img/funders/clark-cga.svg"); background-size: 60%; }
-a#devseed-carousel-small, a#devseed-carousel-small-dup { background-image: url("/img/funders/devseed.svg"); background-size: 70%; }
-a#earthmover-carousel-small, a#earthmover-carousel-small-dup { background-image: url("/img/funders/earthmover.svg"); background-size: 70%; }
-a#esri-carousel-small, a#esri-carousel-small-dup { background-image: url("/img/funders/esri.svg"); background-size: 60%; }
-a#fused-carousel-small, a#fused-carousel-small-dup { background-image: url("/img/funders/fused.svg"); background-size: 80%; }
-a#google-carousel-small, a#google-carousel-small-dup { background-image: url("/img/funders/google.svg"); background-size: 56%; }
-a#hotosm-carousel-small, a#hotosm-carousel-small-dup { background-image: url("/img/funders/hotosm.svg"); background-size: 40%; }
-a#linz-carousel-small, a#linz-carousel-small-dup { background-image: url("/img/funders/linz.svg"); background-size: 66%; }
-a#nasa-carousel-small, a#nasa-carousel-small-dup { background-image: url("/img/funders/nasa.svg"); background-size: 50%; }
-a#ncics-carousel-small, a#ncics-carousel-small-dup { background-image: url("/img/funders/ncics.svg"); background-size: 70%; }
-a#omf-carousel-small, a#omf-carousel-small-dup { background-image: url("/img/funders/omf.svg"); background-size: 40%; }
-a#safe-carousel-small, a#safe-carousel-small-dup { background-image: url("/img/funders/safe.svg"); background-size: 40%; }
-a#schmidt-ocean-carousel-small, a#schmidt-ocean-carousel-small-dup { background-image: url("/img/funders/schmidt-ocean.svg"); background-size: 60%; }
-a#sparkgeo-carousel-small, a#sparkgeo-carousel-small-dup { background-image: url("/img/funders/sparkgeo.svg"); background-size: 50%; }
-a#splunk-carousel-small, a#splunk-carousel-small-dup { background-image: url("/img/funders/splunk.svg"); background-size: 60%; }
-a#tge-carousel-small, a#tge-carousel-small-dup { background-image: url("/img/funders/tge.svg"); background-size: 70%; }
-a#tgi-carousel-small, a#tgi-carousel-small-dup { background-image: url("/img/funders/tgi.svg"); background-size: 36%; }
-a#twente-carousel-small, a#twente-carousel-small-dup { background-image: url("/img/funders/twente.png"); background-size: 66%; }
-a#vliz-carousel-small, a#vliz-carousel-small-dup { background-image: url("/img/funders/vliz.svg"); background-size: 36%; }
-a#wherobots-carousel-small, a#wherobots-carousel-small-dup { background-image: url("/img/funders/wherobots.svg"); background-size: 70%; }
-a#yale-geospatial-carousel-small, a#yale-geospatial-carousel-small-dup { background-image: url("/img/funders/yale-geospatial.svg"); background-size: 76%; }
 
 /* Screen reader only class */
 .sr-only {

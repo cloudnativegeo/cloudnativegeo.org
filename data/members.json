@@ -63,7 +63,7 @@
     "name": "Development Seed",
     "url": "https://developmentseed.org",
     "id": "devseed",
-    "logo_size": "70%"
+    "logo_size": "80%"
   },
   {
     "name": "Amazon Web Services",
@@ -123,7 +123,7 @@
     "name": "Overture Maps Foundation",
     "url": "https://overturemaps.org",
     "id": "omf",
-    "logo_size": "40%"
+    "logo_size": "60%"
   },
   {
     "name": "Toitū Te Whenua Land Information New Zealand",
@@ -141,6 +141,12 @@
     "name": "Allen Institute for AI",
     "url": "https://allenai.org",
     "id": "ai2",
+    "logo_size": "50%"
+  },
+  {
+    "name": "Varda Foundation",
+    "url": "https://varda.ag",
+    "id": "varda",
     "logo_size": "50%"
   }
 ]

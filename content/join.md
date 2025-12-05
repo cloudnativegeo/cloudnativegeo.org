@@ -21,24 +21,19 @@ For individuals:
 
 | Level    | Eligibility | Annual Fee |
 | :-------- | :------- | -------: |
-| Professional | Open to all. | $195 |
-| Startup | Open to individuals employed at companies less than 2 years old and with fewer than 3 employees | $99 |
-| Nonprofit | Open to staff of nonprofits. | $20 |
-| Student | Open to students who are currently enrolled on a full-time basis. | $20 |
-| Scholarship | Open to individuals learning via non-conventional programs such as internships, apprentices, online, and other methods. | $20 |
-| Special situations | [Fill out this form](https://share.hsforms.com/14y-ZTG4XRvC_T6sBZQVPoQrzpx6) to request waived membership fees due to financial hardship. | Fee waived |
+| Professional | Open to all. | [$195](https://app.joinit.com/o/cng/JpyBZWK9WDF6Hnv3D) |
+| Startup | Open to individuals employed at companies less than 2 years old and with fewer than 3 employees. | [$99](https://app.joinit.com/o/cng/gnGGenuDptQjCuAnN) |
+| Nonprofit | Open to staff of nonprofits. | [$65](https://app.joinit.com/o/cng/scXjNc9hEvW7ih7i3) |
+| Students and Scholarship| Open to students who are currently enrolled on a full-time basis, and individuals learning via non-conventional programs such as internships, apprentices, online, and other methods. | [$20](https://app.joinit.com/o/cng/6ndETeHt3ZGkXHa6z) |
+| Special situations | [Fill out this form](https://app.joinit.com/o/cng/itKZNg9pJF4qsGLXB) to request waived membership fees due to financial hardship. | [Fee waived](https://app.joinit.com/o/cng/itKZNg9pJF4qsGLXB) |
 
 For organizations:
 
 | Level    | Benefits | Annual Fee |
 | :-------- | :------- | -------: |
-| Non-profit & educational institutions | Individual memberships for 2 faculty and up to 8 students (or 10 staff for non-profits), logo on website. | $500 |
-| Commercial enterprises and government organizations | Individual memberships for 8 staff, logo on website, 1 branded blog post, and ad in two newsletters. Choice of speaking opportunity at one event, joint webinar, or a booth at CNG annual in-person event. | $5,000 |
+| Non-profit & educational institutions | Individual memberships for up to 10 staff members, logo on website. | [$500](https://app.joinit.com/o/cng/itKZNg9pJF4qsGLXB) |
+| Commercial enterprises and government organizations | Individual memberships for up to 10 staff members, logo on website, 1 branded blog post, and ad in two newsletters. Choice of speaking opportunity at one event, joint webinar, or a booth at CNG annual in-person event. | [$5,000](https://app.joinit.com/o/cng/N9zecgu85FdaEYWTD) |
 
 Membership fees are effectively donations to [Radiant Earth's](https://radiant.earth/) general fund. If you would like to support our work without becoming a CNG member, you can [donate to Radiant Earth](https://radiant.earth/donate/) and mention CNG in your donation comment.
-
-### Membership Sign up
-
-<link rel="stylesheet" type="text/css" href="https://api.membercenter.net/forms/css/sq-payment-form.css"> <script src="https://js.stripe.com/v3/"></script> <script type="text/javascript" src="https://api.membercenter.net/payments/payment_form.js?id=10015"></script> <div class="sq-payment-form" id="sq-payment-form1"></div>
 
 If you are unable to pay by credit card, please write to us at hello@cloudnativegeo.org.

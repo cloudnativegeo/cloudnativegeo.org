@@ -1,21 +1,28 @@
-{{- $members := .Site.Data.members -}}
+{{- $membersLarge := shuffle .Site.Data.members -}}
+{{- $membersSmall := shuffle .Site.Data.members -}}
 <section class="logo-carousel" aria-label="Community member logos">
   <div class="logo-carousel-container">
     <!-- Row 1: Large logos, slow animation -->
     <div class="logo-carousel-row logo-carousel-row-large" aria-hidden="true">
       <div class="logo-carousel-track">
-        {{- range $members -}}
+        {{- range $membersLarge -}}
+        {{- $logoPath := printf "/img/funders/%s.svg" .id -}}
+        {{- if eq .id "twente" -}}{{- $logoPath = "/img/funders/twente.png" -}}{{- end -}}
         <div class="logo-carousel-item logo-carousel-item-large">
-          <a href="{{ .url }}" class="logo-carousel-link" id="{{ .id }}-carousel-large" 
+          <a href="{{ .url }}" class="logo-carousel-link"
+             style="background-image: url('{{ $logoPath }}'); background-size: {{ .logo_size }};"
              aria-label="Visit {{ .name }} website">
             <span class="sr-only">{{ .name }}</span>
           </a>
         </div>
         {{- end -}}
         <!-- Duplicate set for seamless loop -->
-        {{- range $members -}}
+        {{- range $membersLarge -}}
+        {{- $logoPath := printf "/img/funders/%s.svg" .id -}}
+        {{- if eq .id "twente" -}}{{- $logoPath = "/img/funders/twente.png" -}}{{- end -}}
         <div class="logo-carousel-item logo-carousel-item-large">
-          <a href="{{ .url }}" class="logo-carousel-link" id="{{ .id }}-carousel-large-dup" 
+          <a href="{{ .url }}" class="logo-carousel-link"
+             style="background-image: url('{{ $logoPath }}'); background-size: {{ .logo_size }};"
              aria-label="Visit {{ .name }} website">
             <span class="sr-only">{{ .name }}</span>
           </a>
@@ -27,18 +34,24 @@
     <!-- Row 2: Smaller logos, medium animation -->
     <div class="logo-carousel-row logo-carousel-row-small" aria-hidden="true">
       <div class="logo-carousel-track">
-        {{- range $members -}}
+        {{- range $membersSmall -}}
+        {{- $logoPath := printf "/img/funders/%s.svg" .id -}}
+        {{- if eq .id "twente" -}}{{- $logoPath = "/img/funders/twente.png" -}}{{- end -}}
         <div class="logo-carousel-item logo-carousel-item-small">
-          <a href="{{ .url }}" class="logo-carousel-link" id="{{ .id }}-carousel-small" 
+          <a href="{{ .url }}" class="logo-carousel-link"
+             style="background-image: url('{{ $logoPath }}'); background-size: {{ .logo_size }};"
              aria-label="Visit {{ .name }} website">
             <span class="sr-only">{{ .name }}</span>
           </a>
         </div>
         {{- end -}}
         <!-- Duplicate set for seamless loop -->
-        {{- range $members -}}
+        {{- range $membersSmall -}}
+        {{- $logoPath := printf "/img/funders/%s.svg" .id -}}
+        {{- if eq .id "twente" -}}{{- $logoPath = "/img/funders/twente.png" -}}{{- end -}}
         <div class="logo-carousel-item logo-carousel-item-small">
-          <a href="{{ .url }}" class="logo-carousel-link" id="{{ .id }}-carousel-small-dup" 
+          <a href="{{ .url }}" class="logo-carousel-link"
+             style="background-image: url('{{ $logoPath }}'); background-size: {{ .logo_size }};"
              aria-label="Visit {{ .name }} website">
             <span class="sr-only">{{ .name }}</span>
           </a>

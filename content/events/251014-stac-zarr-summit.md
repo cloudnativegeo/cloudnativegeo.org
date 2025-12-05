@@ -25,6 +25,6 @@ image_url: ""
 cta_text: "Apply Here"
 cta_url: "https://docs.google.com/forms/d/e/1FAIpQLScadkegSNe41bjUqlbZcPgxs6GCqWCRVgV3_I-uAaEdtQlB1w/viewform"
 hide_cta: true
-passed: false
+passed: true
 ---
 
