@@ -19,20 +19,20 @@ Membership fees ensure that our members are all committed to creating a healthy 
 
 For individuals:
 
-| Level    | Eligibility | Annual Fee |
-| :-------- | :------- | -------: |
-| Professional | Open to all. | [$195](https://app.joinit.com/o/cng/JpyBZWK9WDF6Hnv3D) |
-| Startup | Open to individuals employed at companies less than 2 years old and with fewer than 3 employees. | [$99](https://app.joinit.com/o/cng/gnGGenuDptQjCuAnN) |
-| Nonprofit | Open to staff of nonprofits. | [$65](https://app.joinit.com/o/cng/scXjNc9hEvW7ih7i3) |
-| Students and Scholarship| Open to students who are currently enrolled on a full-time basis, and individuals learning via non-conventional programs such as internships, apprentices, online, and other methods. | [$20](https://app.joinit.com/o/cng/6ndETeHt3ZGkXHa6z) |
-| Special situations | [Fill out this form](https://app.joinit.com/o/cng/itKZNg9pJF4qsGLXB) to request waived membership fees due to financial hardship. | [Fee waived](https://app.joinit.com/o/cng/itKZNg9pJF4qsGLXB) |
+| Level     | Annual Fee |
+| :-------- | -------: |
+| **Professional**<br> Open to all. | [$195](https://app.joinit.com/o/cng/JpyBZWK9WDF6Hnv3D) |
+| **Startup**<br> Open to individuals employed at companies less than 2 years old and with fewer than 3 employees. | [$99](https://app.joinit.com/o/cng/gnGGenuDptQjCuAnN) |
+| **Nonprofit**<br> Open to staff of nonprofits. | [$65](https://app.joinit.com/o/cng/scXjNc9hEvW7ih7i3) |
+| **Students and Scholarship**<br> Open to students who are currently enrolled on a full-time basis, and individuals learning via non-conventional programs such as internships, apprentices, online, and other methods. | [$20](https://app.joinit.com/o/cng/6ndETeHt3ZGkXHa6z) |
+| **Special situations**<br> [Fill out this form](https://app.joinit.com/o/cng/itKZNg9pJF4qsGLXB) to request waived membership fees due to financial hardship. | [Fee waived](https://app.joinit.com/o/cng/itKZNg9pJF4qsGLXB) |
 
 For organizations:
 
-| Level    | Benefits | Annual Fee |
-| :-------- | :------- | -------: |
-| Non-profit & educational institutions | Individual memberships for up to 10 staff members, logo on website. | [$500](https://app.joinit.com/o/cng/itKZNg9pJF4qsGLXB) |
-| Commercial enterprises and government organizations | Individual memberships for up to 10 staff members, logo on website, 1 branded blog post, and ad in two newsletters. Choice of speaking opportunity at one event, joint webinar, or a booth at CNG annual in-person event. | [$5,000](https://app.joinit.com/o/cng/N9zecgu85FdaEYWTD) |
+| Level    | Annual Fee |
+| :------- | -------: |
+| **Non-profit & educational institutions**<br> Individual memberships for up to 10 staff members, logo on website. | [$500](https://app.joinit.com/o/cng/itKZNg9pJF4qsGLXB) |
+| **Commercial enterprises and government organizations**<br> Individual memberships for up to 10 staff members, logo on website, 1 branded blog post, and ad in two newsletters. Choice of speaking opportunity at one event, joint webinar, or a booth at CNG annual in-person event. | [$5,000](https://app.joinit.com/o/cng/N9zecgu85FdaEYWTD) |
 
 Membership fees are effectively donations to [Radiant Earth's](https://radiant.earth/) general fund. If you would like to support our work without becoming a CNG member, you can [donate to Radiant Earth](https://radiant.earth/donate/) and mention CNG in your donation comment.
 

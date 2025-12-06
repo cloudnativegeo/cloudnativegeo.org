@@ -1,21 +1,27 @@
 /* Font declarations */
 @font-face {
   font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMonoVariable-Regular.woff2") format("woff2-variations");
-  font-weight: 100 900;
-  font-style: normal;
+  src: url("/fonts/BerkeleyMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "BerkeleyMono";
+  src: url("/fonts/BerkeleyMono-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: "iAWriterQuattro";
   src: url("/fonts/iAWriterQuattroS-Regular.woff2") format("woff2");
+  font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "iAWriterQuattro";
   src: url("/fonts/iAWriterQuattroS-Bold.woff2") format("woff2");
-  font-weight: bold;
+  font-weight: 700;
   font-display: swap;
 }
 @font-face {
@@ -601,10 +607,11 @@ table th {
 table td {
   padding: 0.5em 1.5em 1em 0;
   vertical-align: top;
+  font-weight: 400;
 }
 
-table td:first-child {
-  font-weight: 600;
+table th {
+  font-weight: 700;
 }
 
 table td:last-child {
@@ -1206,13 +1213,13 @@ main#content ul#posts .post-summary {
   }
   
   .logo-carousel-item-large {
-    width: 160px;
-    height: 80px;
+    width: 200px;
+    height: 100px;
   }
-  
+
   .logo-carousel-item-small {
-    width: 120px;
-    height: 60px;
+    width: 150px;
+    height: 75px;
   }
   
   .logo-carousel-track {
@@ -1262,13 +1269,13 @@ main#content ul#posts .post-summary {
 }
 
 .logo-carousel-item-large {
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  height: 125px;
 }
 
 .logo-carousel-item-small {
-  width: 140px;
-  height: 70px;
+  width: 175px;
+  height: 87px;
 }
 
 .logo-carousel-link {
