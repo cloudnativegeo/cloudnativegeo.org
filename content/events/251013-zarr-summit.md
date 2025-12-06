@@ -1,7 +1,7 @@
 ---
-weight: 2
+date: 2025-10-13
 title: "Zarr Development & Adopter Summit"
-when_date: "13-17 October, 2025"
+when_date: "13 - 17 October, 2025"
 where: "Rome, Italy"
 description: "The people steering, implementing, and adopting Zarr to accelerate progress and shape the future of open science with multi-dimensional data are gathering together in Rome, Italy this fall.  
 

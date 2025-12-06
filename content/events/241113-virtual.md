@@ -1,5 +1,5 @@
 ---
-weight: 2
+date: 2024-11-13
 title: "Virtual Conference 2024"
 when_date: "13 November 2024"
 when_time: "10:00am-6:00pm EDT"

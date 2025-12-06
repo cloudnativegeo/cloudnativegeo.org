@@ -1,5 +1,5 @@
 ---
-weight: 5
+date: 2024-10-02
 title: "Introduction to Cloud-Native Geospatial: African Perspectives"
 when_date: "2 October 2024"
 when_time: "9 AM EDT / 2 PM WAT / 3 PM SAST / 4 PM EAT"

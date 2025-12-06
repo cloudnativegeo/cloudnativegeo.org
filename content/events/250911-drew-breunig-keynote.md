@@ -1,5 +1,5 @@
 ---
-weight: 1
+date: 2025-09-11
 title: "Making Place as Easy as Time with Drew Breunig"
 when_date: "11 September, 2025"
 when_time: "9 AM PT | 12 PM ET"

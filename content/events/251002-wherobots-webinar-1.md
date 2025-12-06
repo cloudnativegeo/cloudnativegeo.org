@@ -1,5 +1,5 @@
 ---
-weight: 1
+date: 2025-10-02
 title: "Webinar: Introducing SedonaDB, SpatialBench, and Startup Accelerator Program"
 when_date: "02 October, 2025"
 when_time: "9 AM PT | 12 PM ET"

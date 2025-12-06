@@ -1,5 +1,5 @@
 ---
-weight: 4
+date: 2024-10-09
 title: "Geospatial Careers: Insights for Women"
 when_date: "9 & 16 October 2024"
 when_time: "10 AM EST / 4 PM CEST / 7:30 PM IST"

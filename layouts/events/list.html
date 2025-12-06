@@ -42,10 +42,8 @@
 <hr>
 <h2>Past Events</h2>
 <ul id="events">
-    {{ range where .Pages "Section" "events" }}
-        {{ if .Params.passed }}
-            {{ .Render "li" }}
-        {{ end }}
+    {{ range (where .Pages "Params.passed" true).ByDate.Reverse }}
+        {{ .Render "li" }}
     {{ end }}
 </ul>
 
