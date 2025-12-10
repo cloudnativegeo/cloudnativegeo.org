@@ -108,7 +108,7 @@ We're so grateful to [The Navigation Fund](https://www.navigation.org/) for supp
 
 We greatly appreciate [GeoBeyond](http://www.geobeyond.it/) and [B-Open](https://www.bopen.eu/)'s gracious sponsorship of the Zarr Summit.
 
-The institutional support from [Cloud-Native Geospatial](https://cloudnativegeo.org/) (CNG), [Development Seed](https://developmentseed.org/), [Earthmover](https://earthmover.io/), and NASA's Office of Data Science and Informatics[^1] also made this event possible — thank you for your commitment to open source and open science\!
+The institutional support from [Cloud-Native Geospatial](https://cloudnativegeo.org/) (CNG), [Development Seed](https://developmentseed.org/), [Earthmover](https://earthmover.io/), and [NASA](https://www.nasa.gov/)'s Office of Data Science and Informatics[^1] also made this event possible — thank you for your commitment to open source and open science\!
 
 Most importantly, thank you to everyone who participated for bringing so much enthusiasm, knowledge, and collaborative spirit to the event. Your energy and commitment to the Zarr ecosystem made this summit truly special. We're excited to continue building together\!
 
