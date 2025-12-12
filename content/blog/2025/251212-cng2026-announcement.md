@@ -2,8 +2,6 @@
 title: "Join Us at CNG Forum 2026: Building the Future of Cloud-Native Geospatial"
 date: 2025-12-12T00:00:38-04:00
 summary: "Join us at CNG Forum 2026 on 6-9 October 2026 in Snowbird, Utah for the second annual gathering."
-author: "[Chris Holmes](https://beta.source.coop/cholmes)"
-author_title: "Product Architect, Planet" 
 ---
 
 Next October, we're bringing the global cloud-native geospatial community back to the mountains of Utah. CNG Forum 2026 will gather geospatial data practitioners from governments, startups, universities, and enterprises who are shaping how we work with geospatial data and AI.
