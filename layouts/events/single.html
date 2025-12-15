@@ -4,9 +4,10 @@
   <header id="post-header">
     <h1>{{ .Title }}</h1>
     <ul class="event-meta">
-      <li class="event-when"><span class="event-meta-tip">Date:</span> {{ .Params.when_date | markdownify }}</li>
+      <li class="event-when"><span class="event-meta-tip">Date:</span> {{ with .Params.display_date }}{{ . | markdownify }}{{ else }}{{ .Params.event_date | time.Format "02 January 2006" }}{{ end }}</li>
       {{if isset .Params "when_time"}}<li class="event-when"><span class="event-meta-tip">Time:</span> {{ .Params.when_time | markdownify }}</li>{{ end }}
-      {{ if not .Params.passed }}
+      {{ $eventDate := .Params.event_date | default .Date }}
+      {{ if ge (time $eventDate) now }}
         <li class="event-where"><span class="event-meta-tip">Where:</span> {{ .Params.where | markdownify }}</li>
         <li class="event-price"><span class="event-meta-tip">Cost:</span> {{ .Params.price | markdownify }}</li>
       {{ end }}

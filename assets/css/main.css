@@ -450,7 +450,7 @@ main#content abbr {
 
 /* index.html styles */
 main#content ul#posts,
-main#content ul#events {
+main#content ul.events {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -461,13 +461,13 @@ main#content ul#posts span.post-byline {
 }
 
 main#content ul#posts li,
-main#content ul#events li {
+main#content ul.events li {
   margin: 0.5em 0 1.5em 0;
   padding: 0;
 }
 
 main#content ul#posts li a.post-title,
-main#content ul#events li a.post-title {
+main#content ul.events li a.post-title {
   font-weight: 600;
 }
 

@@ -26,10 +26,11 @@
 </header>
 
 <h2>Upcoming Events</h2>
-<ul id="events">
+<ul class="events">
     {{ $hasUpcoming := false }}
     {{ range where .Pages "Section" "events" }}
-        {{ if not .Params.passed }}
+        {{ $eventDate := .Params.event_date | default .Date }}
+        {{ if ge (time $eventDate) now }}
             {{ $hasUpcoming = true }}
             {{ .Render "li" }}
         {{ end }}
@@ -41,9 +42,12 @@
 
 <hr>
 <h2>Past Events</h2>
-<ul id="events">
-    {{ range (where .Pages "Params.passed" true).ByDate.Reverse }}
-        {{ .Render "li" }}
+<ul class="events">
+    {{ range where .Pages "Section" "events" }}
+        {{ $eventDate := .Params.event_date | default .Date }}
+        {{ if lt (time $eventDate) now }}
+            {{ .Render "li" }}
+        {{ end }}
     {{ end }}
 </ul>
 
