@@ -58,7 +58,7 @@ We've designed sponsorship opportunities for organizations of all sizes. For org
 
 Beyond the event itself, sponsorship allows us to stay community-led and create a unique space for geospatial data practitioners year-round.
 
-[Sponsor the forum today.](http://2026.cloudnativegeo.org/sponsor)
+[Sponsor the forum today](https://2026.cloudnativegeo.org/#/sponsor?lang=en).
 
 ## **Why this matters**
 
