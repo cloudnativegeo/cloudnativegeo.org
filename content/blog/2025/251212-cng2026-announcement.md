@@ -42,11 +42,11 @@ Super Early Bird registration is now open through January 9, 2026. After that, w
 
 For the Cloud-Native in Practice track, we're looking for case studies, lessons learned, and honest accounts of what works in production. The bar for talk acceptance will be higher this year, but this is intentional to make sure all talks clearly align with their track. 
 
-The [submission deadline is May 17](https://2026.cloudnativegeo.org/callforspeakers).
+The [submission deadline is May 17](https://2026.cloudnativegeo.org/#/callforspeakers?lang=en).
 
 **Exhibit at the forum**
 
-Want to showcase your tools, products, research, or projects? Apply to [become an exhibitor](https://2026.cloudnativegeo.org/exhibitors). 
+Want to showcase your tools, products, research, or projects? Apply to [become an exhibitor](https://2026.cloudnativegeo.org/#/exhibitors?lang=en). 
 
 If your organization is an existing CNG Commercial member, you can exhibit for free (space permitting, first-come, first-served basis). 
 
