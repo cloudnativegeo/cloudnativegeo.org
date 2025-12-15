@@ -1,7 +1,8 @@
 ---
 date: 2024-10-02
+event_date: 2024-10-02
 title: "Introduction to Cloud-Native Geospatial: African Perspectives"
-when_date: "2 October 2024"
+display_date: "2 October 2024"
 when_time: "9 AM EDT / 2 PM WAT / 3 PM SAST / 4 PM EAT"
 where: "Virtual"
 cta_text: "Watch the recording"
@@ -11,5 +12,4 @@ description: "In this webinar, moderated by [Dalton Lunga](https://www.linkedin.
 price: "Free"
 image_url: ""
 hide_cta: true
-passed: true
 ---

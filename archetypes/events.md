@@ -1,11 +1,12 @@
 ---
 title: ""
-when_date: ""
+event_date: ""
+display_date: ""
 when_time: ""
 where: ""
 description: ""
 price: ""
 image_url: ""
 cta_text: ""
-hubspot_url: ""
+cta_url: ""
 ---
