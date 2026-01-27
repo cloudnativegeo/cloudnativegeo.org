@@ -2,10 +2,10 @@
 date: "2026-01-27T09:16:16-08:00"
 title: "Announcing Sprints to Define Standards for Earth Observation Vector Embeddings"
 tags: []
-summary: "Radiant Earth, Planet, and Clark University are convening a two-day in-person sprint on March 10-11, 2026 at Clark University in Worcester, Massachusetts focused on defining standards for Earth observation (EO) vector embeddings."
+summary: "CNG, Planet, and Clark University are convening a two-day in-person sprint on March 10-11, 2026 at Clark University in Worcester, Massachusetts focused on defining standards for Earth observation (EO) vector embeddings."
 ---
 
-Radiant Earth, Planet, and Clark University are convening a two-day in-person sprint on March 10-11, 2026 at Clark University in Worcester, Massachusetts focused on defining standards for Earth observation (EO) vector embeddings. The goal of this sprint is to collaboratively draft and align on a practical specification that can be tested, extended, and adopted by the broader EO community.
+CNG, Planet, and Clark University are convening a two-day in-person sprint on March 10-11, 2026 at Clark University in Worcester, Massachusetts focused on defining standards for Earth observation (EO) vector embeddings. The goal of this sprint is to collaboratively draft and align on a practical specification that can be tested, extended, and adopted by the broader EO community.
 
 ## The potential of EO vector embeddings
 

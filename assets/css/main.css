@@ -970,6 +970,11 @@ a#vliz { background-image: url("/img/funders/vliz.svg"); background-size: 36%; }
 a#wherobots { background-image: url("/img/funders/wherobots.svg"); background-size: 70%; }
 a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); background-size: 76%; }
 
+/* Logo fill - light mode (blue, no hover change) */
+.cng-logo {
+  fill: var(--color-brand-hover);
+}
+
 /* Dark mode overrides - consolidated */
 @media (prefers-color-scheme: dark) {
   /* Code and inline elements */
@@ -1015,6 +1020,15 @@ a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); b
     filter: var(--funder-logo-filter);
   }
 
+  /* Logo fill - same as text color */
+  .cng-logo {
+    fill: var(--color-text);
+    transition: fill 0.2s ease;
+  }
+
+  a:hover .cng-logo {
+    fill: var(--color-brand-hover);
+  }
 }
 
 /* Desktop responsive styles */
@@ -1371,15 +1385,6 @@ main#content ul#posts .post-summary {
 
 /* Dark mode specific overrides */
 @media (prefers-color-scheme: dark) {
-  .cng-logo {
-    fill: var(--color-white);
-    transition: fill 0.2s ease;
-  }
-
-  a:hover .cng-logo {
-    fill: var(--color-brand-hover);
-  }
-
   h1#logo a,
   h1#logo {
     background-image: url('/img/ref-logo-white.svg');
