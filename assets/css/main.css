@@ -13,19 +13,6 @@
 }
 
 @font-face {
-  font-family: "iAWriterMono";
-  src: url("/fonts/iAWriterMonoS-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: "iAWriterMono";
-  src: url("/fonts/iAWriterMonoS-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "iAWriterQuattro";
   src: url("/fonts/iAWriterQuattroS-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -46,7 +33,7 @@
 @font-face {
   font-family: "iAWriterQuattro";
   src: url("/fonts/iAWriterQuattroS-BoldItalic.woff2") format("woff2");
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
@@ -242,7 +229,7 @@ div#logo {
 }
 
 div#banner nav {
-  font-family: "iAWriterMono", "Courier New", Courier, monospace;
+  font-family: "IBMPlexSansMono", "SF Mono", "Consolas", "Monaco", "Menlo", "Liberation Mono", "Courier New", monospace;
   float: right;
   text-align: right;
   margin: 0;
@@ -382,15 +369,6 @@ main {
   margin-bottom: 2em;
   padding-bottom: 2em;
 }
-
-div#banner,
-main#content,
-main#content h2,
-main#content h3,
-footer p,
-main ul#homepage-blog,
-main#content ol,
-main#content ul,
 
 /* Remove h1 here to allow default bottom margin for better spacing */
 main#content h2,
@@ -838,7 +816,7 @@ main#content blockquote {
 main#content code,
 main#content pre,
 main#content table {
-  font-family: "IBMPlexSansMono", "iAWriterMono", monospace;
+  font-family: "IBMPlexSansMono", "SF Mono", "Consolas", "Monaco", "Menlo", "Liberation Mono", "Courier New", monospace;
 }
 
 main#content code {
@@ -1037,15 +1015,6 @@ a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); b
     filter: var(--funder-logo-filter);
   }
 
-  /* Logo fill */
-  .cng-logo {
-    fill: var(--color-white) !important;
-    transition: fill 0.2s ease;
-  }
-
-  a:hover .cng-logo {
-    fill: var(--color-brand-hover) !important;
-  }
 }
 
 /* Desktop responsive styles */
