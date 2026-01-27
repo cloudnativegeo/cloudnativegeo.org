@@ -1,5 +1,18 @@
 /* Font declarations */
 @font-face {
+  font-family: "IBMPlexSansMono";
+  src: url("/fonts/IBMPlexMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBMPlexSansMono";
+  src: url("/fonts/IBMPlexMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "iAWriterMono";
   src: url("/fonts/iAWriterMonoS-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -825,7 +838,7 @@ main#content blockquote {
 main#content code,
 main#content pre,
 main#content table {
-  font-family: "iAWriterMono", monospace;
+  font-family: "IBMPlexSansMono", "iAWriterMono", monospace;
 }
 
 main#content code {
