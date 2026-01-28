@@ -25,14 +25,12 @@
 	{{- end -}}
 
 	{{- if not $isYearArchive -}}
-		{{- /* Show posts for current year (2025) on main blog page only) */ -}}
-		{{- $currentYear := "2025" -}}
-		{{- $currentYearPages := where .Site.RegularPages "Section" "blog" -}}
-		{{- $currentYearPages = where $currentYearPages "File.Dir" (printf "blog/%s/" $currentYear) -}}
+		{{- /* Main blog page: show 10 most recent posts from entire blog section */ -}}
+		{{- $recentPosts := first 10 (where .Site.RegularPages "Section" "blog") -}}
 		{{- /* Pages are already sorted by date (newest first) by default */ -}}
-		{{- if $currentYearPages -}}
+		{{- if $recentPosts -}}
 			<ul id="posts">
-				{{ range $currentYearPages }} {{ .Render "li" }}{{- end }}
+				{{ range $recentPosts }} {{ .Render "li" }}{{- end }}
 			</ul>
 		{{- end -}}
 	{{- else -}}
@@ -47,65 +45,60 @@
 			</ul>
 		{{- end -}}
 	{{- end -}}
-	
+
 	{{- if not $isYearArchive -}}
-		{{- /* Show archive links for previous years (main blog page only) */ -}}
-		{{- $archiveYears := slice "2024" "2023" -}}
-		{{- $hasArchives := false -}}
-		{{- range $archiveYears -}}
-			{{- $year := . -}}
-			{{- $yearPages := where $.Site.RegularPages "Section" "blog" -}}
-			{{- $yearPages = where $yearPages "File.Dir" (printf "blog/%s/" $year) -}}
-			{{- if $yearPages -}}
-				{{- $hasArchives = true -}}
+		{{- /* Show archive links for years with posts (main blog page only) */ -}}
+		{{- /* Collect all years that have posts by examining File.Dir */ -}}
+		{{- $allYears := slice -}}
+		{{- range where .Site.RegularPages "Section" "blog" -}}
+			{{- if .File.Dir -}}
+				{{- if ne .File.Dir "blog/" -}}
+					{{- $year := .File.Dir | replaceRE "blog/([0-9]+)/" "$1" -}}
+					{{- if not (in $allYears $year) -}}
+						{{- $allYears = $allYears | append $year -}}
+					{{- end -}}
+				{{- end -}}
 			{{- end -}}
 		{{- end -}}
-		
-		{{- if $hasArchives -}}
+
+		{{- if $allYears -}}
 			<h2>Archives</h2>
 			<ul>
-				{{- range $archiveYears -}}
+				{{- /* Sort years in descending order */ -}}
+				{{- range sort $allYears "value" "desc" -}}
 					{{- $year := . -}}
 					{{- $yearPages := where $.Site.RegularPages "Section" "blog" -}}
 					{{- $yearPages = where $yearPages "File.Dir" (printf "blog/%s/" $year) -}}
-					{{- if $yearPages -}}
-						<li><a href="/blog/{{ $year }}/">{{ $year }} ({{ len $yearPages }} posts)</a></li>
-					{{- end -}}
+					<li><a href="/blog/{{ $year }}/">{{ $year }} ({{ len $yearPages }} posts)</a></li>
 				{{- end -}}
 			</ul>
 		{{- end -}}
 	{{- else -}}
 		{{- /* Show links to other years (year archive pages only) */ -}}
 		{{- $currentYear := .File.Dir | replaceRE "blog/([0-9]+)/" "$1" -}}
-		{{- $allYears := slice "2024" "2023" -}}
+		{{- /* Collect all years that have posts */ -}}
 		{{- $otherYears := slice -}}
-		{{- range $allYears -}}
-			{{- if ne . $currentYear -}}
-				{{- $otherYears = $otherYears | append . -}}
+		{{- range where $.Site.RegularPages "Section" "blog" -}}
+			{{- if .File.Dir -}}
+				{{- if ne .File.Dir "blog/" -}}
+					{{- $year := .File.Dir | replaceRE "blog/([0-9]+)/" "$1" -}}
+					{{- if and (ne $year $currentYear) (not (in $otherYears $year)) -}}
+						{{- $otherYears = $otherYears | append $year -}}
+					{{- end -}}
+				{{- end -}}
 			{{- end -}}
 		{{- end -}}
-		
-		{{- $hasOtherYears := false -}}
-		{{- range $otherYears -}}
-			{{- $year := . -}}
-			{{- $yearPages := where $.Site.RegularPages "Section" "blog" -}}
-			{{- $yearPages = where $yearPages "File.Dir" (printf "blog/%s/" $year) -}}
-			{{- if $yearPages -}}
-				{{- $hasOtherYears = true -}}
-			{{- end -}}
-		{{- end -}}
-		
-		{{- if $hasOtherYears -}}
+
+		{{- if $otherYears -}}
 			<h2>Other Years</h2>
 			<ul>
 				<li><a href="/blog/">Most recent posts</a></li>
-				{{- range $otherYears -}}
+				{{- /* Sort years in descending order */ -}}
+				{{- range sort $otherYears "value" "desc" -}}
 					{{- $year := . -}}
 					{{- $yearPages := where $.Site.RegularPages "Section" "blog" -}}
 					{{- $yearPages = where $yearPages "File.Dir" (printf "blog/%s/" $year) -}}
-					{{- if $yearPages -}}
-						<li><a href="/blog/{{ $year }}/">{{ $year }} ({{ len $yearPages }} posts)</a></li>
-					{{- end -}}
+					<li><a href="/blog/{{ $year }}/">{{ $year }} ({{ len $yearPages }} posts)</a></li>
 				{{- end -}}
 			</ul>
 		{{- end -}}

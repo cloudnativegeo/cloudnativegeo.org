@@ -1,13 +1,13 @@
 /* Font declarations */
 @font-face {
-  font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-Regular.woff2") format("woff2");
+  font-family: "IBMPlexSansMono";
+  src: url("/fonts/IBMPlexMono-Regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
-  font-family: "BerkeleyMono";
-  src: url("/fonts/BerkeleyMono-Bold.woff2") format("woff2");
+  font-family: "IBMPlexSansMono";
+  src: url("/fonts/IBMPlexMono-Bold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
 }
@@ -33,7 +33,7 @@
 @font-face {
   font-family: "iAWriterQuattro";
   src: url("/fonts/iAWriterQuattroS-BoldItalic.woff2") format("woff2");
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
@@ -45,42 +45,46 @@
   --color-text-secondary: #394548;
   --color-text-muted: #666666;
   --color-text-dark: #3d3d3d;
-  
+
   /* Background colors */
   --color-bg: #f2f4f6;
   --color-bg-footer: #e8ecf0;
-  --color-bg-code: #eeeff1;
-  
+  --color-bg-code: #e5e7ea;
+
+  /* Code colors - darker background and text for light mode */
+  --color-code-text: #1a1d23;
+  --color-code-border: #d0d3d8;
+
   /* Link colors */
   --color-link: #2126f7;
   --color-link-hover: #3a3ef8;
-  
+
   /* Brand color for UI elements (logo, nav, buttons) */
   --color-brand-hover: #2126f7;
-  
+
   /* Accent colors */
   --color-accent: #ffd626;
   --color-accent-transparent-light: rgba(255, 214, 38, 0.15);
   --color-accent-transparent-hover: rgba(255, 214, 38, 0.25);
-  
+
   /* Border colors */
   --color-border: #ccc;
   --color-border-dark: #b1b1b1;
-  
+
   /* Special colors */
   --color-white: #ffffff;
   --color-duotone: #008080;
-  
+
   /* Shadow colors */
   --color-shadow-light: #999;
   --color-shadow-medium: #888;
   --shadow-box: 0px 2px 1px var(--color-shadow-light);
   --shadow-box-hover: 0 2px 4px var(--color-shadow-light);
   --shadow-box-active: 0 1px 0 var(--color-shadow-medium);
-  
+
   /* Text shadows */
   --text-shadow: 1px 1px 1px #e0ded8;
-  
+
   /* Filters */
   --funder-logo-filter: none;
 }
@@ -103,34 +107,38 @@
     --color-text-secondary: #d5dae3;
     --color-text-muted: #a8b0c0;
     --color-text-dark: #d5dae3;
-    
+
     /* Background colors - subtle blue tint, more muted than Solarized */
     --color-bg: #1d232b;
     --color-bg-footer: #14191f;
-    --color-bg-code: #21272f;
-    
+    --color-bg-code: #16191f;
+
+    /* Code colors - high contrast for readability */
+    --color-code-text: #f5f7fa;
+    --color-code-border: #3d4654;
+
     /* Link colors - cyan-leaning for better contrast with blue-tinted bg */
     --color-link: #60b5ff;
     --color-link-hover: #7dc7ff;
-    
+
     /* Brand color for UI elements (logo, nav, buttons) - same in both modes */
     --color-brand-hover: #2126f7;
-    
+
     /* Accent colors - keeping original yellow */
     --color-accent: #ffd626;
     --color-accent-transparent-light: rgba(255, 214, 38, 0.15);
     --color-accent-transparent-hover: rgba(255, 214, 38, 0.25);
-    
+
     /* Border colors - lighter for visibility */
     --color-border: #2d3542;
     --color-border-dark: #3d4654;
-    
+
     /* Special colors */
     --color-white: #ffffff;
-    
+
     /* Text shadows */
     --text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    
+
     /* Filters */
     --funder-logo-filter: brightness(0) invert(1);
   }
@@ -221,7 +229,7 @@ div#logo {
 }
 
 div#banner nav {
-  font-family: "BerkeleyMono", "Courier New", Courier, monospace;
+  font-family: "IBMPlexSansMono", "SF Mono", "Consolas", "Monaco", "Menlo", "Liberation Mono", "Courier New", monospace;
   float: right;
   text-align: right;
   margin: 0;
@@ -361,15 +369,6 @@ main {
   margin-bottom: 2em;
   padding-bottom: 2em;
 }
-
-div#banner,
-main#content,
-main#content h2,
-main#content h3,
-footer p,
-main ul#homepage-blog,
-main#content ol,
-main#content ul,
 
 /* Remove h1 here to allow default bottom margin for better spacing */
 main#content h2,
@@ -817,12 +816,14 @@ main#content blockquote {
 main#content code,
 main#content pre,
 main#content table {
-  font-family: "BerkeleyMono", monospace;
+  font-family: "IBMPlexSansMono", "SF Mono", "Consolas", "Monaco", "Menlo", "Liberation Mono", "Courier New", monospace;
 }
 
 main#content code {
   font-size: 0.96em;
   padding: 0.3em 0.4em;
+  background-color: var(--color-bg-code);
+  color: var(--color-code-text);
 }
 
 main#content pre {
@@ -834,7 +835,9 @@ main#content pre {
   margin: 20px 0;
   padding: 1.5rem 1.5rem;
   line-height: 1.4;
-  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-code);
+  color: var(--color-code-text);
+  border: 1px solid var(--color-code-border);
 }
 
 
@@ -967,6 +970,11 @@ a#vliz { background-image: url("/img/funders/vliz.svg"); background-size: 36%; }
 a#wherobots { background-image: url("/img/funders/wherobots.svg"); background-size: 70%; }
 a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); background-size: 76%; }
 
+/* Logo fill - light mode (blue, no hover change) */
+.cng-logo {
+  fill: var(--color-brand-hover);
+}
+
 /* Dark mode overrides - consolidated */
 @media (prefers-color-scheme: dark) {
   /* Code and inline elements */
@@ -1003,12 +1011,6 @@ a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); b
     color: var(--color-text-dark);
   }
 
-  /* Code blocks */
-  main#content code,
-  main#content pre {
-    background-color: var(--color-bg-code);
-  }
-
   /* Funder logos */
   ul#funderlogos li {
     background-color: transparent;
@@ -1018,14 +1020,14 @@ a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); b
     filter: var(--funder-logo-filter);
   }
 
-  /* Logo fill */
+  /* Logo fill - same as text color */
   .cng-logo {
-    fill: var(--color-white) !important;
+    fill: var(--color-text);
     transition: fill 0.2s ease;
   }
 
   a:hover .cng-logo {
-    fill: var(--color-brand-hover) !important;
+    fill: var(--color-brand-hover);
   }
 }
 
@@ -1383,15 +1385,6 @@ main#content ul#posts .post-summary {
 
 /* Dark mode specific overrides */
 @media (prefers-color-scheme: dark) {
-  .cng-logo {
-    fill: var(--color-white);
-    transition: fill 0.2s ease;
-  }
-
-  a:hover .cng-logo {
-    fill: var(--color-brand-hover);
-  }
-
   h1#logo a,
   h1#logo {
     background-image: url('/img/ref-logo-white.svg');

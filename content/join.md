@@ -25,7 +25,7 @@ For individuals:
 | **Startup**<br> Open to individuals employed at companies less than 2 years old and with fewer than 3 employees. | [$99](https://app.joinit.com/o/cng/gnGGenuDptQjCuAnN) |
 | **Nonprofit**<br> Open to staff of nonprofits. | [$65](https://app.joinit.com/o/cng/scXjNc9hEvW7ih7i3) |
 | **Students and Scholarship**<br> Open to students who are currently enrolled on a full-time basis, and individuals learning via non-conventional programs such as internships, apprentices, online, and other methods. | [$20](https://app.joinit.com/o/cng/6ndETeHt3ZGkXHa6z) |
-| **Special situations**<br> [Fill out this form](https://app.joinit.com/o/cng/itKZNg9pJF4qsGLXB) to request waived membership fees due to financial hardship. | [Fee waived](https://app.joinit.com/o/cng/itKZNg9pJF4qsGLXB) |
+| **Special situations**<br> [Fill out this form](https://app.joinit.com/o/cng/WAJY54rTTgGw8sGTi) to request waived membership fees due to financial hardship. | [Fee waived](https://app.joinit.com/o/cng/WAJY54rTTgGw8sGTi) |
 
 For organizations:
 

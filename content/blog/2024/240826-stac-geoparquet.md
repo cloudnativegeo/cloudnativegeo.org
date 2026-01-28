@@ -98,9 +98,9 @@ Or using [ibis] we can get the average cloudiness per platform for each hour:
 ...     ).aggregate(cloud_cover=_["eo:cloud_cover"].mean(), count=_.count())
 ...     .order_by(["platform", "hour"])
 ... )
-┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━┓
-┃ platform    ┃ hour                ┃ cloud_cover ┃ count ┃
-┡━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━┩
+┌─────────────┬─────────────────────┬─────────────┬───────┐
+│ platform    │ hour                │ cloud_cover │ count │
+├─────────────┼─────────────────────┼─────────────┼───────┤
 │ string      │ timestamp           │ float64     │ int64 │
 ├─────────────┼─────────────────────┼─────────────┼───────┤
 │ Sentinel-2A │ 2020-01-01 02:00:00 │   63.445030 │   192 │
