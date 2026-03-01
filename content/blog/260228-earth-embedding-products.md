@@ -177,6 +177,8 @@ Cost estimates use AWS S3 Standard first-tier pricing: $0.023/GB/month storage, 
 - File issues when things break — maintainers can't fix what they don't know about
 - Compare products on the same AOI before committing to one at scale
 
+**Want to help define these standards?** Cloud-Native Geo is hosting a [sprint to define best practices for Earth Observation vector embeddings](https://cloudnativegeo.org/blog/2026/01/announcing-sprints-to-define-best-practices-for-earth-observation-vector-embeddings/). If you care about making these products interoperable, get involved.
+
 ## Read the paper
 
 Fang, H., Stewart, A. J., Corley, I., Zhu, X. X., & Azizpour, H. (2026). Earth Embeddings as Products: Taxonomy, Ecosystem, and Standardized Access. [arXiv:2601.13134](https://arxiv.org/abs/2601.13134).
