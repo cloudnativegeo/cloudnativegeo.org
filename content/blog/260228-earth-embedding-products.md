@@ -13,13 +13,11 @@ Late last year our team spent three days debugging why AlphaEarth embeddings loa
 
 It keeps happening. Every new Earth embedding product ships like a snowflake, and if you want to compare or stack them, you end up writing glue code for half a dozen geospatial libraries. Our [paper](https://arxiv.org/abs/2601.13134) formalizes this with a taxonomy and TorchGeo integration. This post is about what keeps breaking and why the ecosystem still needs some work.
 
-> Moving AlphaEarth's 465 TB out of [Earth Engine](https://earthengine.google.com/) cost tens of thousands of dollars in egress fees. [Taylor Geospatial Engine](https://tgengine.org/building-frictionless-geospatial-ai-making-alphaearth-foundations-embeddings-accessible/) and [Radiant Earth](https://radiant.earth/) paid that bill so the rest of us don't have to — shoutout [Jeff Albrecht](https://github.com/geospatial-jeff) for the heavy lifting. Where you host and how you format at inference time sets the bill for everyone downstream.
+Moving AlphaEarth's 465 TB out of [Earth Engine](https://earthengine.google.com/) cost tens of thousands of dollars in egress fees. [Taylor Geospatial Engine](https://tgengine.org/building-frictionless-geospatial-ai-making-alphaearth-foundations-embeddings-accessible/) and [Radiant Earth](https://radiant.earth/) paid that bill so the rest of us don't have to — shoutout [Jeff Albrecht](https://github.com/geospatial-jeff) for the heavy lifting. Where you host and how you format at inference time sets the bill for everyone downstream.
 
 ## Three layers, one tradeoff
 
-In the paper we organize the ecosystem into three layers. The data layer is where most decisions get made. Patch embeddings are cheap and small but sacrifice spatial detail. Pixel embeddings preserve more, but storage and bandwidth get expensive fast.
-
-The tools layer is where you figure out if embeddings are any good: benchmarks, [intrinsic dimension analysis](https://arxiv.org/abs/2511.02101). The value layer is what you build on top: mapping, retrieval, time-series. Most teams jump to the value layer without spending enough time in the tools layer first.
+In the paper we organize the ecosystem into three layers: data, tools, and value. The **data layer** is where most decisions get made. Patch embeddings are cheap and small but sacrifice spatial detail. Pixel embeddings preserve more, but storage and bandwidth get expensive fast. The **tools layer** is where you figure out if embeddings are any good: benchmarks, [intrinsic dimension analysis](https://arxiv.org/abs/2511.02101). The **value layer** is what you build on top: mapping, retrieval, time-series. Most teams jump to the value layer without spending enough time in the tools layer first.
 
 | **Data** | **Tools** | **Value** |
 |:--------:|:---------:|:--------:|
@@ -46,9 +44,9 @@ Here's what we hit integrating each product into TorchGeo:
 
 - **[Tessera](https://arxiv.org/abs/2506.20380):** Hidden behind an [API](https://github.com/ucam-eo/geotessera) running on a university server. Returns raw numpy arrays, not geospatial data. No CRS, no bounds, no metadata. You get numbers and a prayer. Their team is quite responsive and open to collaborations though.
 
-- **[AlphaEarth](https://arxiv.org/abs/2507.22291):** Originally locked inside Earth Engine. Moving 465 TB to [Source Cooperative](https://source.coop/tge-labs/aef) cost tens of thousands of dollars in egress fees. [Taylor Geospatial Engine](https://tgengine.org/building-frictionless-geospatial-ai-making-alphaearth-foundations-embeddings-accessible/) and Radiant Earth paid that bill so the rest of us don't have to — shoutout [Jeff Albrecht](https://github.com/geospatial-jeff) for the heavy lifting.
+- **[AlphaEarth](https://arxiv.org/abs/2507.22291):** Originally locked inside Earth Engine. After migrating 465 TB to [Source Cooperative](https://source.coop/tge-labs/aef), we built a [GeoParquet tile index](https://data.source.coop/tge-labs/aef/v1/annual/aef_index.parquet) and converted it to [STAC-GeoParquet](https://github.com/stac-utils/stac-geoparquet) for easy [visualization in the browser](https://developmentseed.org/stac-map/?href=https://data.source.coop/tge-labs/aef/v1/annual/aef_index_stac_geoparquet.parquet).
 
-> Every team solves distribution independently. You pay the tax once per product.
+> Every team solves distribution independently. You pay the tax once per product per user.
 
 ## What loading *should* look like vs what it actually looks like
 
@@ -79,8 +77,6 @@ bbox = (-0.2, 51.4, 0.1, 51.6)  # (min_lon, min_lat, max_lon, max_lat)
 tiles_to_fetch = gt.registry.load_blocks_for_region(bounds=bbox, year=2024)
 embeddings = gt.fetch_embeddings(tiles_to_fetch)  # Returns raw numpy — no spatial reference
 ```
-
-*Note: We built a [GeoParquet tile index](https://data.source.coop/tge-labs/aef/v1/annual/aef_index.parquet) for AlphaEarth and converted it to [STAC-GeoParquet](https://github.com/stac-utils/stac-geoparquet) for easy [visualization in the browser](https://developmentseed.org/stac-map/?href=https://data.source.coop/tge-labs/aef/v1/annual/aef_index_stac_geoparquet.parquet) after migrating AEF to Source Cooperative.*
 
 ## What's actually out there right now
 
@@ -128,13 +124,17 @@ Cost estimates use [AWS S3 Standard](https://aws.amazon.com/s3/pricing/) first-t
 
 - **Cloud-native formats are table stakes.** [GeoParquet](https://geoparquet.org/), [COG](https://www.cogeo.org/), [GeoZarr](https://github.com/zarr-developers/geozarr-spec). Pick one and commit. Bespoke formats are a tax on every downstream user and they compound across products. The choice between vector and raster formats depends on your embedding type: patch-level embeddings fit naturally in GeoParquet (geometry + embedding vector per row), while dense pixel-level embeddings belong in raster formats like COG or Zarr. Hybrid models like [OlmoEarth](https://allenai.org/olmoearth) can produce both pixel and patch embeddings at different patch sizes — patch embeddings are just lower-resolution pixel embeddings and can be stored as dense Zarr or COG just the same.
 
-- **Dimensionality and precision matter.** Nearly every foundation model uses a [Vision Transformer](https://arxiv.org/abs/2010.11929), so your embedding width is dictated by the variant: ViT-B (768), ViT-L (1024), ViT-H (1280). At float32 that difference alone can 1.7x your storage bill — and nobody has systematically studied whether all those dimensions are even necessary. Tessera experimented with quantization-aware training, AEF found they can simply cast to int8 with no noticeable loss on downstream tasks. We need a real study and to start shipping quantized embeddings by default. Beyond lossy approaches like quantization (float32 to int8), lossless compressors like [pcodec](https://github.com/pcodec/pcodec) can yield 2–5x compression on floating-point arrays — compression strategy deserves its own deep dive, which we'll cover in a future post.
+- **Dimensionality and precision matter.** Nearly every foundation model uses a [Vision Transformer](https://arxiv.org/abs/2010.11929), so your embedding width is dictated by the variant: ViT-B (768), ViT-L (1024), ViT-H (1280). At float32 that difference alone can 1.7x your storage bill — and nobody has systematically studied whether all those dimensions are even necessary. Tessera experimented with quantization-aware training, AEF found they can simply cast to int8 with no noticeable loss on downstream tasks. We need a real study and to start shipping quantized embeddings by default.
+
+- **Compression is a separate lever.** Beyond lossy approaches like quantization (float32 to int8), lossless compressors like [pcodec](https://github.com/pcodec/pcodec) can yield 2–5x compression on floating-point arrays — compression strategy deserves its own deep dive, which we'll cover in a future post.
 
 - **Benchmarks must ship with models.** Private benchmarks kill reproducibility. If I can't run your eval, your numbers don't exist.
 
 - **Embeddings need provenance.** Uncertainty estimates, source imagery hashes, model versions. Not all Sentinel-2 is made equal: L2A, [quarterly cloudless mosaics](https://dataspace.copernicus.eu/news/2023-11-28-quarterly-cloudless-sentinel-2-mosaics-available-data-collections-and-copernicus), and different [processing baseline versions](https://sentinels.copernicus.eu/web/sentinel/-/copernicus-sentinel-2-major-products-upgrade-upcoming) all shift the reflectance distribution, which breaks the input normalization that most satellite ML models depend on. Without provenance you can't tell if a difference is real or an artifact.
 
-- **Temporal embeddings are still undercooked.** AlphaEarth, Tessera, and Presto encode time, but most released embeddings are annual composites that wash out everything shorter than a year. A field that rotates from winter wheat to summer corn? Both crops get averaged into the same embedding. Phenology and flooding have the same problem. Until embeddings ship at native temporal resolution, change detection stays mostly manual.
+- **Train on the messy Earth.** Clouds, haze, snow, shadow — that's just what Earth looks like. Most teams curate their pretraining scenes by heavily filtering by cloud cover, then act surprised when the model falls apart at inference-time over the Amazon. The kicker is these same models pretrain on Sentinel-1 SAR, which sees through clouds anyway. Pretrain on the full distribution.
+
+- **Temporal embeddings are still undercooked.** AlphaEarth, Tessera, and Presto encode time, but most released embeddings are annual composites that wash out everything shorter than a year. A field that rotates from winter wheat to summer corn? Both crops get averaged into the same embedding. Phenology and flooding have the same problem. Until embeddings ship at native temporal resolution, sub-annual change detection stays mostly manual.
 
 ## What you can do
 
