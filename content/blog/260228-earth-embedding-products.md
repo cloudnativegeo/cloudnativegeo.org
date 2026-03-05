@@ -13,7 +13,7 @@ Late last year our team spent three days debugging why AlphaEarth embeddings loa
 
 It keeps happening. Every new Earth embedding product ships like a snowflake, and if you want to compare or stack them, you end up writing glue code for half a dozen geospatial libraries. Our [paper](https://arxiv.org/abs/2601.13134) formalizes this with a taxonomy and TorchGeo integration. This post is about what keeps breaking and why the ecosystem still needs some work.
 
-> Moving AlphaEarth's 465 TB out of [Earth Engine](https://earthengine.google.com/) cost tens of thousands of dollars in egress fees. [Taylor Geospatial Engine](https://tgengine.org/building-frictionless-geospatial-ai-making-alphaearth-foundations-embeddings-accessible/) and [Radiant Earth](https://radiant.earth/) paid that bill so the rest of us don't have to — shoutout [Jeff Albrecht](https://github.com/geospatial-jeff) for the heavy lifting. Where you host and how you format at training time sets the bill for everyone downstream.
+> Moving AlphaEarth's 465 TB out of [Earth Engine](https://earthengine.google.com/) cost tens of thousands of dollars in egress fees. [Taylor Geospatial Engine](https://tgengine.org/building-frictionless-geospatial-ai-making-alphaearth-foundations-embeddings-accessible/) and [Radiant Earth](https://radiant.earth/) paid that bill so the rest of us don't have to — shoutout [Jeff Albrecht](https://github.com/geospatial-jeff) for the heavy lifting. Where you host and how you format at inference time sets the bill for everyone downstream.
 
 ## Three layers, one tradeoff
 
