@@ -102,7 +102,7 @@ For a city-scale workflow, any of these will do. At global coverage the lack of 
 
 ## The part everyone underestimates: storage
 
-Nobody does the storage math until it's too late. `embedding_dim × dtype × spatial_resolution` compounds fast. A city-scale analysis is fine. Continent-scale? Pixel embeddings explode. None of this shows up in model cards.
+Nobody does the storage math until it's too late. `embedding_dim × dtype × spatial_resolution` compounds fast. A city-scale analysis is fine. Continent-scale? Pixel embeddings explode. None of this shows up in model cards. This mirrors a well-known challenge with hyperspectral data — tools optimized for 3-band RGB imagery often break when faced with hundreds of bands, and embedding dimensions present the same scaling problem.
 
 ### Continent-scale storage + cost (Africa, 30M km²)
 
@@ -126,9 +126,9 @@ Cost estimates use [AWS S3 Standard](https://aws.amazon.com/s3/pricing/) first-t
 
 - **Stop over-indexing on Sentinel-1/2.** The oceans, atmosphere, and hyperspectral exist. We can't keep claiming we model the Earth if the majority of Earth is out of scope.
 
-- **Cloud-native formats are table stakes.** [GeoParquet](https://geoparquet.org/), [COG](https://www.cogeo.org/), [GeoZarr](https://github.com/zarr-developers/geozarr-spec). Pick one and commit. Bespoke formats are a tax on every downstream user and they compound across products.
+- **Cloud-native formats are table stakes.** [GeoParquet](https://geoparquet.org/), [COG](https://www.cogeo.org/), [GeoZarr](https://github.com/zarr-developers/geozarr-spec). Pick one and commit. Bespoke formats are a tax on every downstream user and they compound across products. The choice between vector and raster formats depends on your embedding type: patch-level embeddings fit naturally in GeoParquet (geometry + embedding vector per row), while dense pixel-level embeddings belong in raster formats like COG or Zarr. Hybrid models like [OlmoEarth](https://allenai.org/olmoearth) can produce both pixel and patch embeddings at different patch sizes — patch embeddings are just lower-resolution pixel embeddings and can be stored as dense Zarr or COG just the same.
 
-- **Dimensionality and precision matter.** Nearly every foundation model uses a [Vision Transformer](https://arxiv.org/abs/2010.11929), so your embedding width is dictated by the variant: ViT-B (768), ViT-L (1024), ViT-H (1280). At float32 that difference alone can 1.7x your storage bill — and nobody has systematically studied whether all those dimensions are even necessary. Tessera experimented with quantization-aware training, AEF found they can simply cast to int8 with no noticeable loss on downstream tasks. We need a real study and to start shipping quantized embeddings by default.
+- **Dimensionality and precision matter.** Nearly every foundation model uses a [Vision Transformer](https://arxiv.org/abs/2010.11929), so your embedding width is dictated by the variant: ViT-B (768), ViT-L (1024), ViT-H (1280). At float32 that difference alone can 1.7x your storage bill — and nobody has systematically studied whether all those dimensions are even necessary. Tessera experimented with quantization-aware training, AEF found they can simply cast to int8 with no noticeable loss on downstream tasks. We need a real study and to start shipping quantized embeddings by default. Beyond lossy approaches like quantization (float32 to int8), lossless compressors like [pcodec](https://github.com/pcodec/pcodec) can yield 2–5x compression on floating-point arrays — compression strategy deserves its own deep dive, which we'll cover in a future post.
 
 - **Benchmarks must ship with models.** Private benchmarks kill reproducibility. If I can't run your eval, your numbers don't exist.
 
