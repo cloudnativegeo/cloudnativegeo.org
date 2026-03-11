@@ -59,7 +59,7 @@ Here's what we hit integrating each product into TorchGeo:
 
 - **[Clay](https://source.coop/clay/clay-model-v0-embeddings):** Non-standard tile naming; had to reverse-engineer the grid layout from file paths. v1.5 now ships [NAIP](https://source.coop/clay/clay-v1-5-naip-2) (CONUS, 2010–2021) and [Sentinel-2](https://source.coop/clay/clay-v1-5-sentinel2) (partial global, 2018–2024) embeddings at 1024 dims. NAIP patches are 256m (1m GSD) vs Sentinel-2 at 2.56km (10m GSD), so the storage math is very different.
 
-- **[Major TOM](https://huggingface.co/Major-TOM):** Parquet. One of the first large-scale embedding products — a good early step, though the original models (DINOv2, SigLIP, SSL4EO) are now dated compared to modern geospatial foundation models. Distributed on Hugging Face rather than a cloud-native geospatial catalog.
+- **[Major TOM](https://huggingface.co/Major-TOM):** Parquet. One of the first large-scale embedding products — a good early step, though the original models (DINOv2, SigLIP, SSL4EO) are now dated compared to modern geospatial foundation models. Using multiple models enabled direct comparison of embedding outputs across architectures. Uses the Major TOM grid rather than the more common MGRS grid, which requires reprojection to align with other datasets. Distributed on Hugging Face rather than a cloud-native geospatial catalog.
 
 - **[Earth Index](https://source.coop/earthgenome/earthindexembeddings):** Clean GeoParquet. This is what all of them should look like. Also check out the [source imagery](https://source.coop/earthgenome/earthindeximagery).
 
