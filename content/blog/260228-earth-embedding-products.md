@@ -69,7 +69,7 @@ Here's what we hit integrating each product into TorchGeo:
 
 - **[Tessera](https://arxiv.org/abs/2506.20380):** Hidden behind an [API](https://github.com/ucam-eo/geotessera) running on a university server. Returns raw numpy arrays, not geospatial data. No CRS, no bounds, no metadata. You get numbers and a prayer. Their team is quite responsive and open to collaborations though.
 
-- **[AlphaEarth](https://arxiv.org/abs/2507.22291):** Originally locked inside Earth Engine. After migrating 465 TB to [Source Cooperative](https://source.coop/tge-labs/aef), we built a [GeoParquet tile index](https://data.source.coop/tge-labs/aef/v1/annual/aef_index.parquet) and converted it to [STAC-GeoParquet](https://github.com/stac-utils/stac-geoparquet) for easy [visualization in the browser](https://developmentseed.org/stac-map/?href=https://data.source.coop/tge-labs/aef/v1/annual/aef_index_stac_geoparquet.parquet).
+- **[AlphaEarth](https://arxiv.org/abs/2507.22291):** Originally locked inside Earth Engine/GCP. After migrating 465 TB to [Source Cooperative](https://source.coop/tge-labs/aef), we converted the [tile index](https://data.source.coop/tge-labs/aef/v1/annual/aef_index.parquet) to [STAC-GeoParquet](https://github.com/stac-utils/stac-geoparquet) for easy [visualization in the browser](https://developmentseed.org/stac-map/?href=https://data.source.coop/tge-labs/aef/v1/annual/aef_index_stac_geoparquet.parquet).
 
 > Every team solves distribution independently. You pay the tax once per product per user.
 
