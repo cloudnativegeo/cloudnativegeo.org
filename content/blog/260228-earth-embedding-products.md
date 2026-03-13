@@ -19,12 +19,37 @@ Moving AlphaEarth's 465 TB out of [Earth Engine](https://earthengine.google.com/
 
 In the paper we organize the ecosystem into three layers: data, tools, and value. The **data layer** is where most decisions get made. Patch embeddings are cheap and small but sacrifice spatial detail. Pixel embeddings preserve more, but storage and bandwidth get expensive fast. The **tools layer** is where you figure out if embeddings are any good: benchmarks, [intrinsic dimension analysis](https://arxiv.org/abs/2511.02101). The **value layer** is what you build on top: mapping, retrieval, time-series. Most teams jump to the value layer without spending enough time in the tools layer first.
 
-| **Data** | **Tools** | **Value** |
-|:--------:|:---------:|:--------:|
-| **Embeddings** | **Analysis** | **Applications** |
-| Location embeddings | Benchmarks | Mapping |
-| Patch embeddings | Intrinsic dimension | Retrieval |
-| Pixel embeddings | Open challenges | Time-series |
+<table style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th style="text-align: center; padding: 0.5em 1em; border-bottom: 1px solid var(--color-text);"><strong>Data</strong></th>
+      <th style="text-align: center; padding: 0.5em 1em; border-bottom: 1px solid var(--color-text); border-left: 1px solid var(--color-text);"><strong>Tools</strong></th>
+      <th style="text-align: center; padding: 0.5em 1em; border-bottom: 1px solid var(--color-text); border-left: 1px solid var(--color-text);"><strong>Value</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center; padding: 0.5em 1em;"><strong>Embeddings</strong></td>
+      <td style="text-align: center; padding: 0.5em 1em; border-left: 1px solid var(--color-text);"><strong>Analysis</strong></td>
+      <td style="text-align: center; padding: 0.5em 1em; border-left: 1px solid var(--color-text);"><strong>Applications</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; padding: 0.5em 1em;">Location embeddings</td>
+      <td style="text-align: center; padding: 0.5em 1em; border-left: 1px solid var(--color-text);">Benchmarks</td>
+      <td style="text-align: center; padding: 0.5em 1em; border-left: 1px solid var(--color-text);">Mapping</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; padding: 0.5em 1em;">Patch embeddings</td>
+      <td style="text-align: center; padding: 0.5em 1em; border-left: 1px solid var(--color-text);">Intrinsic dimension</td>
+      <td style="text-align: center; padding: 0.5em 1em; border-left: 1px solid var(--color-text);">Retrieval</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; padding: 0.5em 1em;">Pixel embeddings</td>
+      <td style="text-align: center; padding: 0.5em 1em; border-left: 1px solid var(--color-text);">Open challenges</td>
+      <td style="text-align: center; padding: 0.5em 1em; border-left: 1px solid var(--color-text);">Time-series</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Everything ships, nothing plugs in
 
@@ -34,7 +59,7 @@ Here's what we hit integrating each product into TorchGeo:
 
 - **[Clay](https://source.coop/clay/clay-model-v0-embeddings):** Non-standard tile naming; had to reverse-engineer the grid layout from file paths. v1.5 now ships [NAIP](https://source.coop/clay/clay-v1-5-naip-2) (CONUS, 2010–2021) and [Sentinel-2](https://source.coop/clay/clay-v1-5-sentinel2) (partial global, 2018–2024) embeddings at 1024 dims. NAIP patches are 256m (1m GSD) vs Sentinel-2 at 2.56km (10m GSD), so the storage math is very different.
 
-- **[Major TOM](https://huggingface.co/Major-TOM):** Parquet with nested geometry columns; required custom deserialization.
+- **[Major TOM](https://huggingface.co/Major-TOM):** Parquet. One of the first large-scale embedding products — a good early step, though the original models (DINOv2, SigLIP, SSL4EO) are now dated compared to modern geospatial foundation models. Using multiple models enabled direct comparison of embedding outputs across architectures. Uses the Major TOM grid rather than the more common MGRS grid, which requires reprojection to align with other datasets. Distributed on Hugging Face rather than a cloud-native geospatial catalog.
 
 - **[Earth Index](https://source.coop/earthgenome/earthindexembeddings):** Clean GeoParquet. This is what all of them should look like. Also check out the [source imagery](https://source.coop/earthgenome/earthindeximagery).
 
@@ -44,7 +69,7 @@ Here's what we hit integrating each product into TorchGeo:
 
 - **[Tessera](https://arxiv.org/abs/2506.20380):** Hidden behind an [API](https://github.com/ucam-eo/geotessera) running on a university server. Returns raw numpy arrays, not geospatial data. No CRS, no bounds, no metadata. You get numbers and a prayer. Their team is quite responsive and open to collaborations though.
 
-- **[AlphaEarth](https://arxiv.org/abs/2507.22291):** Originally locked inside Earth Engine. After migrating 465 TB to [Source Cooperative](https://source.coop/tge-labs/aef), we built a [GeoParquet tile index](https://data.source.coop/tge-labs/aef/v1/annual/aef_index.parquet) and converted it to [STAC-GeoParquet](https://github.com/stac-utils/stac-geoparquet) for easy [visualization in the browser](https://developmentseed.org/stac-map/?href=https://data.source.coop/tge-labs/aef/v1/annual/aef_index_stac_geoparquet.parquet).
+- **[AlphaEarth](https://arxiv.org/abs/2507.22291):** Originally locked inside Earth Engine/GCP. After migrating 465 TB to [Source Cooperative](https://source.coop/tge-labs/aef), we converted the [tile index](https://data.source.coop/tge-labs/aef/v1/annual/aef_index.parquet) to [STAC-GeoParquet](https://github.com/stac-utils/stac-geoparquet) for easy [visualization in the browser](https://developmentseed.org/stac-map/?href=https://data.source.coop/tge-labs/aef/v1/annual/aef_index_stac_geoparquet.parquet).
 
 > Every team solves distribution independently. You pay the tax once per product per user.
 
@@ -124,7 +149,7 @@ Cost estimates use [AWS S3 Standard](https://aws.amazon.com/s3/pricing/) first-t
 
 - **Cloud-native formats are table stakes.** [GeoParquet](https://geoparquet.org/), [COG](https://www.cogeo.org/), [GeoZarr](https://github.com/zarr-developers/geozarr-spec). Pick one and commit. Bespoke formats are a tax on every downstream user and they compound across products. The choice between vector and raster formats depends on your embedding type: patch-level embeddings fit naturally in GeoParquet (geometry + embedding vector per row), while dense pixel-level embeddings belong in raster formats like COG or Zarr. Hybrid models like [OlmoEarth](https://allenai.org/olmoearth) can produce both pixel and patch embeddings at different patch sizes — patch embeddings are just lower-resolution pixel embeddings and can be stored as dense Zarr or COG just the same.
 
-- **Dimensionality and precision matter.** Nearly every foundation model uses a [Vision Transformer](https://arxiv.org/abs/2010.11929), so your embedding width is dictated by the variant: ViT-B (768), ViT-L (1024), ViT-H (1280). At float32 that difference alone can 1.7x your storage bill — and nobody has systematically studied whether all those dimensions are even necessary. Tessera experimented with quantization-aware training, AEF found they can simply cast to int8 with no noticeable loss on downstream tasks. We need a real study and to start shipping quantized embeddings by default.
+- **Dimensionality and precision matter.** Nearly every foundation model uses a [Vision Transformer](https://arxiv.org/abs/2010.11929), so your embedding width is dictated by the variant: ViT-B (768), ViT-L (1024), ViT-H (1280). At float32 that difference alone can 1.7x your storage bill — and nobody has systematically studied whether all those dimensions are even necessary. Tessera experimented with quantization-aware training, AEF constructed a controlled study and found that quantizing during inference to int8 resulted in no noticeable loss on downstream performance. But what about 4-bits or even binary? How does this affect downstream performance for benchmarks of varying resolution, spatial extent, temporal cadence? Does quantization filter the signal of anomalies or rare events seen in geospatial data? These are open questions, and we should start shipping quantized embeddings by default to investigate.
 
 - **Compression is a separate lever.** Beyond lossy approaches like quantization (float32 to int8), lossless compressors like [pcodec](https://github.com/pcodec/pcodec) can yield 2–5x compression on floating-point arrays — compression strategy deserves its own deep dive, which we'll cover in a future post.
 
