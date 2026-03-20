@@ -1,12 +1,12 @@
 ---
 title: "Code of Conduct"
-date: 2024-09-13T22:31:32-04:00
+date: 2026-03-19T22:31:32-04:00
 prs_open: true
 hide_cta: true
 ---
 
 ## Introduction
-This code of conduct applies to all spaces the Cloud-Native Geo (CNG) manages, including public and private mailing lists, issue trackers, wikis, blogs, X (Twitter), LinkedIn, Discourse, Slack, and any other communication channels our communities use. A code of conduct specific to in-person events (ie., conferences) is in the CNG anti-harassment policy.
+This code of conduct applies to all spaces managed by the Cloud-Native Geospatial Forum (CNG), including public and private mailing lists, issue trackers, wikis, blogs, social media channels, Slack, and any other communication channels our communities use. A code of conduct specific to in-person events (ie., conferences) is in [the CNG anti-harassment policy](/anti-harrassment-policy).
 
 We expect everyone who participates in the CNG community formally or informally or claims any affiliation with CNG to honor this code of conduct in any CNG-related activities especially when representing CNG in any role.
 
