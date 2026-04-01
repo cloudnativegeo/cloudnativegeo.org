@@ -36,10 +36,16 @@
     "logo_size": "56%"
   },
   {
-    "name": "Taylor Geospatial Institute",
+    "name": "Taylor Geospatial",
     "url": "https://taylorgeospatial.org",
-    "id": "tgi",
-    "logo_size": "36%"
+    "id": "tg",
+    "logo_size": "80%"
+  },
+  {
+    "name": "University of Münster Institute for Geoinformatics",
+    "url": "https://www.uni-muenster.de/Geoinformatics/",
+    "id": "ifgi",
+    "logo_size": "70%"
   },
   {
     "name": "Splunk",
@@ -51,12 +57,6 @@
     "name": "Wherobots",
     "url": "https://wherobots.com",
     "id": "wherobots",
-    "logo_size": "70%"
-  },
-  {
-    "name": "Taylor Geospatial Engine",
-    "url": "https://tgengine.org",
-    "id": "tge",
     "logo_size": "70%"
   },
   {

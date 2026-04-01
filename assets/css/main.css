@@ -86,7 +86,7 @@
   --text-shadow: 1px 1px 1px #e0ded8;
 
   /* Filters */
-  --funder-logo-filter: none;
+  --filter-adaptive: none;
 }
 
 /* Document View Transitions */
@@ -140,7 +140,7 @@
     --text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 
     /* Filters */
-    --funder-logo-filter: brightness(0) invert(1);
+    --filter-adaptive: brightness(0) invert(1);
   }
 
   body {
@@ -931,6 +931,12 @@ ul#funderlogos li a:hover {
   height: 48px;
 }
 
+/* Adaptive images: invert in dark mode to approximate --color-text */
+ul#funderlogos li a,
+.sponsor-logos img,
+.img-adaptive img {
+  filter: var(--filter-adaptive);
+}
 
 /* Individual funder logo images and sizes - consolidated */
 a#ai2 { background-image: url("/img/funders/ai2.svg"); background-size: 50%; }
@@ -1018,10 +1024,6 @@ a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); b
     background-color: transparent;
   }
   
-  ul#funderlogos li a {
-    filter: var(--funder-logo-filter);
-  }
-
   /* Logo fill - same as text color */
   .cng-logo {
     fill: var(--color-text);
@@ -1431,11 +1433,7 @@ main#content ul#posts .post-summary {
   }
 
   .logo-carousel-link {
-    filter: var(--funder-logo-filter);
+    filter: var(--filter-adaptive);
   }
 
-  /* Sponsor logos in content (dark mode inversion) */
-  .sponsor-logos img {
-    filter: var(--funder-logo-filter);
-  }
 }
