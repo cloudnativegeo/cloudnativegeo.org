@@ -12,12 +12,6 @@
     "pic": "/editorial-board/dana-bauer.jpg"
   },
   {
-    "name": "Dr. Brianna (Pagán) Corremonte",
-    "title": "Deputy Manager",
-    "affiliation": "NASA Goddard Earth Sciences Data and Information Services Center",
-    "pic": "/editorial-board/brianna-pagan.jpg"
-  },
-  {
     "name": "Tyler Erickson",
     "title": "Founder",
     "affiliation": "VorGeo",
@@ -30,9 +24,15 @@
     "pic": "/editorial-board/matt-forest.jpg"
   },
   {
+    "name": "Brian Freitag",
+    "title": "Research Computer Scientist",
+    "affiliation": "NASA Marshall Space Flight Center Office of Data Science and Informatics",
+    "pic": "/editorial-board/brian-freitag.png"
+  },
+  {
     "name": "Matthew Hanson",
-    "title": "Director of Aerospace",
-    "affiliation": "Element 84",
+    "title": "Principal Applied AI Engineer",
+    "affiliation": "LGND",
     "pic": "/editorial-board/matthew-hanson.jpg"
   },
   {
@@ -60,15 +60,15 @@
     "pic": "/editorial-board/amy-rose.jpg"
   },
   {
+    "name": "Julia Wagemann",
+    "title": "Co-Founder",
+    "affiliation": "thriveGEO",
+    "pic": "/editorial-board/julia-wagemann.png"
+  },
+  {
     "name": "Qiusheng Wu",
     "title": "Associate Professor and Director of Graduate Studies",
     "affiliation": "Department of Geography and Sustainability at the University of Tennessee, Knoxville",
     "pic": "/editorial-board/qiusheng-wu.jpg"
-  },
-  {
-    "name": "Zhuangfang NaNa Yi",
-    "title": "Principal Machine Learning Scientist",
-    "affiliation": "Regrow",
-    "pic": "/editorial-board/nana-yi.jpg"
   }
 ]
