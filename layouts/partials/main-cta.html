@@ -1,8 +1,26 @@
 <div class="main-cta">
-{{- range first 1 (where site.RegularPages "Section" "ctas") }}
-  <span class=cta-head>{{ .Params.cta_head }}</span>
+{{ $upcoming := slice }}
+{{ range where site.RegularPages "Section" "events" }}
+  {{ $eventDate := .Params.event_date | default .Date }}
+  {{ if ge (time $eventDate) now }}
+    {{ $upcoming = $upcoming | append . }}
+  {{ end }}
+{{ end }}
+{{ $upcoming = sort $upcoming "Params.event_date" }}
+{{ if $upcoming }}
+  <span class="cta-head">Upcoming CNG Events</span>
+  {{ range first 2 $upcoming }}
+  <div class="cta-event">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p class="cta-when">{{ with .Params.display_date }}{{ . | markdownify }}{{ else }}{{ $eventDate := .Params.event_date | default .Date }}{{ time $eventDate | time.Format "02 January 2006" }}{{ end }}{{ with .Params.where }} <br> {{ . }}{{ end }}</p>
+  </div>
+  {{ end }}
+{{ else }}
+  {{ range first 1 (where site.RegularPages "Section" "ctas") }}
+  <span class="cta-head">{{ .Params.cta_head }}</span>
   <h3>{{if isset .Params "title_url"}}<a href="{{ .Params.title_url }}">{{end}}{{ .Title }}{{if isset .Params "title_url"}}</a>{{end}}</h3>
   {{if isset .Params "when"}}<p class="cta-when">{{ .Params.when }}</p>{{end}}
   <div class="main-cta-url">{{if isset .Params "cta_url"}}<a href="{{ .Params.cta_url }}">{{end}}{{ .Params.cta_text }}{{if isset .Params "cta_url"}}</a>{{end}}</div>
-{{- end }}
+  {{ end }}
+{{ end }}
 </div>

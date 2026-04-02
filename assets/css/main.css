@@ -572,15 +572,22 @@ div.site-description {
 div.main-cta {
   display: block;
   width: 100%;
-  padding: 0.5em 0 1.5em 0;
+  padding: 0.5em 0 0em 0;
   margin: 0 0 1em 0;
   border-top: 2px var(--color-accent) solid;
   border-bottom: 2px var(--color-accent) solid;
 }
 
 span.cta-head {
+  display: block;
   text-transform: uppercase;
   font-size: 80%;
+  margin: 0 0 .8em 0;
+}
+
+p.cta-when {
+  font-size: 80%;
+  margin: 0;
 }
 
 main#content div.main-cta h3 {
@@ -590,6 +597,10 @@ main#content div.main-cta h3 {
 
 div.main-cta-url {
   margin: 1em 0 0 0;
+}
+
+div.cta-event + div.cta-event {
+  margin-top: 0.75em;
 }
 
 table {
@@ -1128,7 +1139,7 @@ a#yale-geospatial { background-image: url("/img/funders/yale-geospatial.svg"); b
   div.main-cta {
     width: 30%;
     margin-left: 5%;
-    padding: .5em 1em 1.5em 1em;
+    padding: .5em 1em .5em 1em;
     float: right;
     border-top: none;
     border-left: 2px var(--color-accent) solid;
