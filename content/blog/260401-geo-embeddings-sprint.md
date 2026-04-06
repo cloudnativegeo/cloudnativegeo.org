@@ -1,7 +1,7 @@
 ---
 date: "2026-04-01T00:00:00-06:00"
 slug: geo-embeddings-sprint-march-2026
-title: "Geo-Embeddings Sprint: Advancing standards for Earth observation embeddings"
+title: "Geo-Embeddings Sprint: Advancing Standards for Earth Observation Embeddings"
 tags: []
 summary: "CNG, Planet, and Clark University co-hosted the Geo-Embeddings Sprint in Worcester to define patterns and best practices for storing, cataloging, and accessing EO embeddings—and launched geoembeddings.org as a living resource for the community."
 author: "[Eli Simonson](https://www.linkedin.com/in/eli-simonson/) and [Michelle Roby](https://www.linkedin.com/in/the-michelle-roby/)"

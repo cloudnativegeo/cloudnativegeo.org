@@ -1,6 +1,6 @@
 ---
 date: 2025-09-22T08:00:00-00:00
-title: "Redefining cloud native with the Coalesced Chunk Retrieval Protocol"
+title: "Redefining Cloud Native with the Coalesced Chunk Retrieval Protocol"
 author: "[Jarrett Keifer](https://www.linkedin.com/in/jarrettkeifer)"
 author_title: "Senior Geospatial Software Engineer, Element 84"
 summary: "What happens if we question current assumptions around CNG

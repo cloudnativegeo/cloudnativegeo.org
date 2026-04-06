@@ -1,5 +1,5 @@
 ---
-title: "Coding QGIS Plug-ins with AI coding tools"
+title: "Coding QGIS Plug-ins with AI Coding Tools"
 date: 2025-02-05T01:00:38-04:00
 summary: "Want to build your own QGIS plugins and any other geospatial tools? Read this account of using AI tools to code a plugin for QGIS."
 author: "[Chris Holmes](https://www.linkedin.com/in/opencholmes)"

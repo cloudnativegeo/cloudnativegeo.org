@@ -1,5 +1,5 @@
 ---
-title: "A deep dive into GeoParquet Downloader QGIS Plug-in"
+title: "A Deep Dive into GeoParquet Downloader QGIS Plug-in"
 date: 2025-02-01T01:00:38-04:00
 summary: "An overview of the QGIS plug-in development and the motivations behind creating the plug-in."
 author: "[Chris Holmes](https://www.linkedin.com/in/opencholmes)"

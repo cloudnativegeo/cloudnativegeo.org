@@ -1,6 +1,6 @@
 ---
 date: 2025-10-09T08:00:00-00:00
-title: "GeoParquet & Parquet geospatial types: A time of transition"
+title: "GeoParquet & Parquet Geospatial Types: A Time of Transition"
 author: "[Chris Holmes](https://www.linkedin.com/in/opencholmes/)"
 author_title: "Planet Fellow, Open & VP Product/Strategy/Partnerships & CNG Editorial Board Member"
 summary: "This post makes the case for how the GeoParquet spec is preparing to phase out its own geometric format in favor of full Parquet compatibility."
