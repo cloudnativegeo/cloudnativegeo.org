@@ -11,7 +11,7 @@ CNG is the convening space for geospatial data practitioners. The sharing of kno
 
 That is why we are launching the CNG Mentorship Pilot Program: a roughly six-month program that pairs geospatial professionals with mentees for regular one-on-one meetings to help the mentee grow in their career. The program runs from May through October 2026, culminating with an optional in-person meetup at CNG Forum 2026 in Snowbird, Utah. We're starting with a small cohort so we can match thoughtfully, support participants well, and learn what makes these relationships work. The goal is to build something that scales.
 
-About the program
+## About the program
 
 Mentor-mentee pairs will meet at least twice a month for an hour each meeting. In the end, pairs or individuals from a pair who want to share their experience will have an opportunity to present at CNG 2026\.
 
@@ -39,4 +39,4 @@ Applications are open now for both mentors and mentees.
 
 We'll finalize pairings in early May and reach out to everyone before the May training.
 
-Questions? Reach out to Michelle Roby at michelle@radiant.earth.
+**Questions?** Reach out to Michelle Roby at michelle@radiant.earth.
