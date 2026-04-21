@@ -148,5 +148,11 @@
     "url": "https://varda.ag",
     "id": "varda",
     "logo_size": "50%"
+  },
+  {
+    "name": "TM2Space",
+    "url": "https://www.tm2.space/",
+    "id": "tm2s",
+    "logo_size": "60%"
   }
 ]
