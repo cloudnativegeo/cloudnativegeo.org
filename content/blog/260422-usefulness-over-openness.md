@@ -145,3 +145,5 @@ To quantify the relative usefulness grade of open data or an open dataset, we cr
 </table>
 
 **Figure 2\.** An example of a scorecard for FEMA open data derived by a group participant.
+
+The next two Beyond Open Data blogs will come out in the coming weeks. You can read the full white paper at https://cloudnativegeo.org/beyond-open-data-white-paper.pdf. 
