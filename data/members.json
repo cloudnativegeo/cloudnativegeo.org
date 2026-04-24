@@ -6,6 +6,12 @@
     "logo_size": "70%"
   },
   {
+    "name": "Element 84",
+    "url": "https://element84.com",
+    "id": "element84",
+    "logo_size": "60%"
+  },
+  {
     "name": "NASA",
     "url": "https://www.nasa.gov",
     "id": "nasa",
@@ -84,6 +90,12 @@
     "logo_size": "60%"
   },
   {
+    "name": "C-Trees",
+    "url": "https://ctrees.org",
+    "id": "ctrees",
+    "logo_size": "70%"
+  },
+  {
     "name": "Humanitarian OpenStreetMap Team",
     "url": "https://www.hotosm.org",
     "id": "hotosm",
@@ -153,6 +165,12 @@
     "name": "TM2Space",
     "url": "https://www.tm2.space/",
     "id": "tm2s",
+    "logo_size": "60%"
+  },
+  {
+    "name": "Planet",
+    "url": "https://planet.com",
+    "id": "planet",
     "logo_size": "60%"
   }
 ]
