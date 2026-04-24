@@ -6,6 +6,8 @@ summary: "Beyond Open Data white paper thesis 1: Usefulness is a better measure 
 author: "[Brianna R. (Pagán) Corremonte](https://www.linkedin.com/in/brianna-r-pag%C3%A1n-corremonte-phd-8a49a46b/) and  [Thomas Hervey](https://www.linkedin.com/in/t-hervey/)"
 ---
 
+*This white paper was co-written by many individuals from the CNG Forum 2025 Beyond Open Data breakout discussion group.  Credit to the co-authors and group leaders of this effort — Bill Greer, Kevin Bullock, Pete Gadomski, Tyler Erickson, Marc Prioleau, and Sean Gorman — whose expertise and leadership were integral to this work. Additional credit to the numerous additional contributors whose collective efforts supported the development and completion of this report.*
+
 Why consider what lies “beyond” open data? We are currently in an era of exponential data growth and unprecedented accessibility, driven by rapid technological advancements and the rise of automated agents capable of consuming data at scale. While historical efforts to champion "open data" established admirable goals, the colloquial concept has become lackluster and antiquated. Making data broadly accessible, in theory, does not inherently make it *useful* in practice.
 
 Historically, "openness" has often been treated as a binary checkbox, yet defined by varying degrees of adherence to a range of different criteria such as licensing. This is problematic because, in this example, a license alone does not dictate utility. We need a better way to represent the ultimate goal of open data: moving beyond a basic baseline of “openness” to evaluate data on a future-looking *spectrum of usefulness*.
