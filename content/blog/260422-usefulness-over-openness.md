@@ -3,10 +3,10 @@ date: "2026-04-22T00:00:00-06:00"
 title: "Beyond Open Data: Usefulness is a better measure of quality than openness"
 tags: []
 summary: "Beyond Open Data white paper thesis 1: Usefulness is a better measure of quality than openness."
-author: "[Brianna R. (Pagán) Corremonte](https://www.linkedin.com/in/brianna-r-pag%C3%A1n-corremonte-phd-8a49a46b/) and  [Thomas Hervey](https://www.linkedin.com/in/t-hervey/)"
+author: "[Bill Greer](https://www.linkedin.com/in/billfgreer/), [Kevin Bullock](https://www.linkedin.com/in/kevbullock/), [Tammy Glazer](https://www.linkedin.com/in/tammy-glazer-44286776/), [Tom Lee](https://www.linkedin.com/in/tom-lee-a2112387/), [Matt Price](https://www.linkedin.com/in/matthewwprice/), [Thomas Hervey](https://www.linkedin.com/in/t-hervey/)"
 ---
 
-*This white paper was co-written by many individuals from the CNG Forum 2025 Beyond Open Data breakout discussion group.  Credit to the co-authors and group leaders of this effort — Bill Greer, Kevin Bullock, Pete Gadomski, Tyler Erickson, Marc Prioleau, and Sean Gorman — whose expertise and leadership were integral to this work. Additional credit to the numerous additional contributors whose collective efforts supported the development and completion of this report.*
+*This white paper was co-written by many individuals from the CNG Forum 2025 Beyond Open Data breakout discussion group.  Credit to the numerous additional contributors whose collective efforts supported the development and completion of this report.*
 
 Why consider what lies “beyond” open data? We are currently in an era of exponential data growth and unprecedented accessibility, driven by rapid technological advancements and the rise of automated agents capable of consuming data at scale. While historical efforts to champion "open data" established admirable goals, the colloquial concept has become lackluster and antiquated. Making data broadly accessible, in theory, does not inherently make it *useful* in practice.
 
