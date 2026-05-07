@@ -1,0 +1,21 @@
+/* Generated from brand/brand.json by brand/emit_css.py. Do not edit. */
+/* Run `python brand/emit_css.py --fan-out` after editing brand.json.    */
+
+:root {
+  /* Palette — brand identity. */
+  --palette-primary: #2126F7;  /* Bonus Blue */
+  --palette-highlight: #FFD626;  /* Sunshine Yellow */
+  --palette-surface: #F2F4F6;  /* Soft White */
+
+  /* Roles — functional tokens. Reach for these in handwritten CSS. */
+  --color-background: var(--palette-surface);
+  --color-background-dark: #1D232B;
+  --color-text: #2F343B;
+  --color-accent: var(--palette-primary);
+  --color-highlight: var(--palette-highlight);
+  --color-link: var(--palette-primary);
+  --color-link-hover: #1B1FD4;
+  --color-success: #137A4D;
+  --color-warning: #B87A00;
+  --color-danger: #C8261E;
+}
