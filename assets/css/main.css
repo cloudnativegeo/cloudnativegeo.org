@@ -1479,3 +1479,46 @@ main#content ul#posts .post-summary {
   }
 
 }
+
+/* =====================================================================
+   Brand-aligned typography
+   ---------------------------------------------------------------------
+   The CNG brand README is explicit: Berkeley Mono is for "code, eyebrows,
+   small labels, format names (STAC, COG, GeoParquet, Zarr), URLs, metadata."
+   Two patterns from that vocabulary:
+
+   1. .eyebrow — small uppercase mono label sitting above a headline or at
+      the top of a card. Pattern from brand/index.html. Use sparingly.
+   2. Dates render in Berkeley Mono with tabular figures, so vertical
+      columns of dates align without table tricks.
+
+   Both rules reach for the var(--color-text-muted) role token so they
+   adapt to dark mode automatically.
+   ===================================================================== */
+
+.eyebrow {
+  font-family: "Berkeley Mono", "SF Mono", "Consolas", "Monaco", "Menlo", monospace;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.6rem 0;
+  line-height: 1.2;
+}
+
+/* Dates everywhere — events, blog posts, list pages — render in Berkeley
+   Mono with tabular figures. The shared selector covers every spot the
+   templates emit a date today. */
+.event-date,
+.event-when,
+span.event-meta-tip,
+.post-meta time,
+main#content ul#posts li time,
+article header time,
+.blog-list time,
+li time {
+  font-family: "Berkeley Mono", "SF Mono", "Consolas", "Monaco", "Menlo", monospace;
+  font-feature-settings: "tnum";
+  letter-spacing: 0.02em;
+}
