@@ -37,7 +37,7 @@
            editing brand.json. */ -}}
     {{ $brandVars := resources.Get "css/_brand-vars.css" }}
     {{ $main := resources.Get "css/main.css" }}
-    {{ $mainCSS := slice $brandVars $main | resources.Concat "css/main.css" | minify | fingerprint }}
+    {{ $mainCSS := slice $brandVars $main | resources.Concat "css/site-bundle.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" integrity="{{ $mainCSS.Data.Integrity }}">
     
     {{- /* Syntax highlighting CSS - only load on blog posts or pages with highlight: true */ -}}
