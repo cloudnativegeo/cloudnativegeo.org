@@ -31,8 +31,13 @@
     <link rel="prefetch" href="/blog/">
     {{ end }}
     
-    {{- /* Main CSS file with fingerprinting for cache busting */ -}}
-    {{ $mainCSS := resources.Get "css/main.css" | minify | fingerprint }}
+    {{- /* Main CSS — generated brand vars concatenated ahead of main.css.
+           _brand-vars.css is generated from ../../brand/brand.json by emit_css.py;
+           do not edit by hand. Re-run `python brand/emit_css.py --fan-out` after
+           editing brand.json. */ -}}
+    {{ $brandVars := resources.Get "css/_brand-vars.css" }}
+    {{ $main := resources.Get "css/main.css" }}
+    {{ $mainCSS := slice $brandVars $main | resources.Concat "css/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" integrity="{{ $mainCSS.Data.Integrity }}">
     
     {{- /* Syntax highlighting CSS - only load on blog posts or pages with highlight: true */ -}}

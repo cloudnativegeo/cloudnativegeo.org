@@ -11,8 +11,7 @@
   --color-background: var(--palette-surface);
   --color-background-dark: #1D232B;
   --color-text: #2F343B;
-  --color-accent: var(--palette-primary);
-  --color-highlight: var(--palette-highlight);
+  --color-accent: var(--palette-highlight);
   --color-link: var(--palette-primary);
   --color-link-hover: #1B1FD4;
   --color-success: #137A4D;

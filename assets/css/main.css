@@ -38,7 +38,16 @@
   font-display: swap;
 }
 
-/* CSS Custom Properties */
+/* CSS Custom Properties.
+   Brand identity colors come from _brand-vars.css (concatenated by Hugo,
+   generated from ../../brand/brand.json by emit_css.py). Available:
+     --palette-primary    (Bonus Blue)
+     --palette-surface    (Soft White)
+     --palette-highlight  (Sunshine Yellow)
+   Plus role aliases: --color-{background, text, accent, link, link-hover,
+   success, warning, danger, background-dark}. Site-specific working tokens
+   below derive from --palette-* via color-mix() so palette changes cascade.
+*/
 :root {
   /* Text colors */
   --color-text: #2f343b;
@@ -47,7 +56,7 @@
   --color-text-dark: #3d3d3d;
 
   /* Background colors */
-  --color-bg: #f2f4f6;
+  --color-bg: var(--palette-surface);
   --color-bg-footer: #e8ecf0;
   --color-bg-code: #e5e7ea;
 
@@ -55,17 +64,17 @@
   --color-code-text: #1a1d23;
   --color-code-border: #d0d3d8;
 
-  /* Link colors */
-  --color-link: #2126f7;
-  --color-link-hover: #3a3ef8;
+  /* Link colors — pull from brand-vars; --color-link-hover not redeclared
+     here, brand-vars provides #1B1FD4. */
+  --color-link: var(--palette-primary);
 
-  /* Brand color for UI elements (logo, nav, buttons) */
-  --color-brand-hover: #2126f7;
+  /* Brand color for UI elements (logo, nav, buttons) — always Bonus Blue. */
+  --color-brand-hover: var(--palette-primary);
 
-  /* Accent colors */
-  --color-accent: #ffd626;
-  --color-accent-transparent-light: rgba(255, 214, 38, 0.15);
-  --color-accent-transparent-hover: rgba(255, 214, 38, 0.25);
+  /* Accent colors. Sunshine Yellow with derived alpha levels. */
+  --color-accent: var(--palette-highlight);
+  --color-accent-transparent-light: color-mix(in srgb, var(--palette-highlight) 15%, transparent);
+  --color-accent-transparent-hover: color-mix(in srgb, var(--palette-highlight) 25%, transparent);
 
   /* Border colors */
   --color-border: #ccc;
@@ -108,8 +117,9 @@
     --color-text-muted: #a8b0c0;
     --color-text-dark: #d5dae3;
 
-    /* Background colors - subtle blue tint, more muted than Solarized */
-    --color-bg: #1d232b;
+    /* Background colors - subtle blue tint, more muted than Solarized.
+       --color-bg pulls from brand role background_dark (#1D232B). */
+    --color-bg: var(--color-background-dark);
     --color-bg-footer: #14191f;
     --color-bg-code: #16191f;
 
@@ -117,17 +127,18 @@
     --color-code-text: #f5f7fa;
     --color-code-border: #3d4654;
 
-    /* Link colors - cyan-leaning for better contrast with blue-tinted bg */
+    /* Link colors - cyan-leaning for better contrast with blue-tinted bg.
+       Dark-mode-specific overrides; not from palette. */
     --color-link: #60b5ff;
     --color-link-hover: #7dc7ff;
 
-    /* Brand color for UI elements (logo, nav, buttons) - same in both modes */
-    --color-brand-hover: #2126f7;
+    /* Brand color for UI elements (logo, nav, buttons) - always Bonus Blue. */
+    --color-brand-hover: var(--palette-primary);
 
-    /* Accent colors - keeping original yellow */
-    --color-accent: #ffd626;
-    --color-accent-transparent-light: rgba(255, 214, 38, 0.15);
-    --color-accent-transparent-hover: rgba(255, 214, 38, 0.25);
+    /* Accent colors - Sunshine Yellow with derived alpha. */
+    --color-accent: var(--palette-highlight);
+    --color-accent-transparent-light: color-mix(in srgb, var(--palette-highlight) 15%, transparent);
+    --color-accent-transparent-hover: color-mix(in srgb, var(--palette-highlight) 25%, transparent);
 
     /* Border colors - lighter for visibility */
     --color-border: #2d3542;
