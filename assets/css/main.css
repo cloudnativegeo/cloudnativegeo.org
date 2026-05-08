@@ -1522,3 +1522,15 @@ li time {
   font-feature-settings: "tnum";
   letter-spacing: 0.02em;
 }
+
+/* Footer colophon — the paragraphs sitting directly under <footer> (after
+   the connect block and the <hr>) are pure metadata: "this is what the
+   site is and who made it." Mono signals site machinery. The connect
+   block above the rule stays in body face. */
+footer > p {
+  font-family: "Berkeley Mono", "SF Mono", "Consolas", "Monaco", "Menlo", monospace;
+  font-size: 1.4rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.01em;
+}
+footer > p a { color: var(--color-link); }
