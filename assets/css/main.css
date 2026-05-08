@@ -1539,3 +1539,21 @@ footer > p {
   letter-spacing: 0.01em;
 }
 footer > p a { color: var(--color-link); }
+
+/* Homepage Upcoming CNG Events box (rendered by partials/main-cta.html).
+   The header is an eyebrow; the date+location paragraph carries the
+   familiar metadata feel — both belong in Berkeley Mono. The .cta-when
+   paragraph holds both the date and (after a <br>) the location, so a
+   single rule on the paragraph covers both. */
+.main-cta .cta-head {
+  font-family: "Berkeley Mono", "SF Mono", "Consolas", "Monaco", "Menlo", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
+
+.cta-when {
+  font-family: "Berkeley Mono", "SF Mono", "Consolas", "Monaco", "Menlo", monospace;
+  font-feature-settings: "tnum";
+  letter-spacing: 0.02em;
+}
