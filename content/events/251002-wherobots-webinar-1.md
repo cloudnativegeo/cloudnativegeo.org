@@ -2,7 +2,7 @@
 date: 2025-10-02
 event_date: 2025-10-02
 title: "Webinar: Introducing SedonaDB, SpatialBench, and Startup Accelerator Program"
-display_date: "02 October, 2025"
+display_date: "02 October 2025"
 when_time: "9 AM PT | 12 PM ET"
 where: "Virtual"
 description: "Are you building a next-generation application for spatial data in the cloud?  \

@@ -8,9 +8,12 @@ relativeURLs = true
 
 [params]
   description = "Where geospatial data users create the future together."
-  copyright = "Copyright © 2024 Radiant Earth"
   dark = "auto"
   highlight = true
+
+# Copyright is rendered with the current year in layouts/partials/footer.html
+# (Hugo config values are static, so the year cannot be templated here.)
+copyright = "© Radiant Earth"
 
 [menu]
   [[menu.main]]

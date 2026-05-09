@@ -2,7 +2,7 @@
 date: 2025-09-11
 event_date: 2025-09-11
 title: "Making Place as Easy as Time with Drew Breunig"
-display_date: "11 September, 2025"
+display_date: "11 September 2025"
 when_time: "9 AM PT | 12 PM ET"
 where: "Virtual"
 description: "Why is time so easy to work with in data—and place so hard?
