@@ -216,40 +216,11 @@ nav, nav a, .nav-item {
   line-height: 1; /* Tight for navigation */
 }
 
-/* Spacing utilities - comprehensive set for common patterns */
-.m-0 { margin: 0; }
-.p-0 { padding: 0; }
-.mx-auto { margin-left: auto; margin-right: auto; }
-.my-1 { margin-top: 1em; margin-bottom: 1em; }
-.my-2 { margin-top: 2em; margin-bottom: 2em; }
-.my-3 { margin-top: 3em; margin-bottom: 3em; }
-.mb-0 { margin-bottom: 0; }
-.mb-1 { margin-bottom: 1em; }
-.mb-2 { margin-bottom: 2em; }
-.mt-1 { margin-top: 1em; }
-.mt-2 { margin-top: 2em; }
-.px-1 { padding-left: 1em; padding-right: 1em; }
-.py-1 { padding-top: 1em; padding-bottom: 1em; }
-.py-2 { padding-top: 2em; padding-bottom: 2em; }
-
-/* Typography scale - consistent font sizes */
-.text-xs { font-size: 0.75rem; }
-.text-sm { font-size: 0.875rem; }
-.text-base { font-size: 1rem; }
-.text-lg { font-size: 1.125rem; }
-.text-xl { font-size: 1.25rem; }
-.text-2xl { font-size: 1.5rem; }
-.text-3xl { font-size: 1.875rem; }
-.text-4xl { font-size: 2.25rem; }
-.text-5xl { font-size: 3rem; }
-
-/* Display utilities - common display values */
+/* The site uses component CSS, not utilities. The one display class below
+   is in active use; the rest of the spacing / type-scale / display utility
+   blocks were speculative scaffolding and got removed. Reach for a named
+   selector before adding a utility. */
 .block { display: block; }
-.inline { display: inline; }
-.inline-block { display: inline-block; }
-.flex { display: flex; }
-.grid { display: grid; }
-.hidden { display: none; }
 
 /* Header and navigation */
 header#page-header {

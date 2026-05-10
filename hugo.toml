@@ -2,8 +2,6 @@ baseURL = "https://cloudnativegeo.org"
 title = "Cloud-Native Geospatial Forum - CNG"
 languageCode = "en-US"
 enableInlineShortcodes = true
-pygmentsCodeFences = true
-pygmentsUseClasses = true
 relativeURLs = true
 
 [params]
@@ -64,12 +62,20 @@ copyright = "© Radiant Earth"
   blog = "blog/:year/:month/:slug/"
   events = "events/:slug/"
 
-[markup.goldmark.renderer]
-  # Allow HTML in Markdown
-  unsafe = true
+[markup]
+  [markup.goldmark.renderer]
+    # Allow HTML in Markdown.
+    unsafe = true
 
   [markup.tableOfContents]
     ordered = true
+
+  [markup.highlight]
+    # Modern replacement for the legacy pygmentsCodeFences /
+    # pygmentsUseClasses flags. noClasses=false emits class-based syntax
+    # tokens that assets/css/syntax.css then styles.
+    codeFences = true
+    noClasses  = false
 
 [imaging]
   # Use cached images and don't reprocess unless source changes
